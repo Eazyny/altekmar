@@ -73,8 +73,21 @@ const HeaderTwo = () => {
                     </button>
                     <div className="widget widget-about footer-widget">
                         <div className="footer-logo footer-img">
-                            <Link href="/pages/homepage/home-1">
-                                <img src="/main-assets/img/logo.svg" alt="logo" width={100} height={50} />
+                            <Link href="/">
+                                <img
+    src="/brand/altekmar-logo.svg"
+    alt="Altekmar"
+    width={180}
+    height={64}
+    className="altekmar-logo altekmar-logo-sidebar"
+    style={{
+        display: "block",
+        width: "180px",
+        maxWidth: "100%",
+        height: "64px",
+        objectFit: "contain",
+    }}
+/>
                             </Link>
                         </div>
                         <p className="about-text mb-4">
@@ -166,7 +179,22 @@ const HeaderTwo = () => {
                             <div className="row align-items-center justify-content-lg-start justify-content-between">
                                 <div className="col-auto">
                                     <div className="header-logo">
-                                        <Link href="/pages/homepage/home-1"><img src="/main-assets/img/logo.svg" alt="logo" /></Link>
+                                        <Link href="/">
+    <img
+        src="/brand/altekmar-logo.svg"
+        alt="Altekmar"
+        width={170}
+        height={58}
+        className="altekmar-logo altekmar-logo-header"
+        style={{
+            display: "block",
+            width: "170px",
+            maxWidth: "100%",
+            height: "58px",
+            objectFit: "contain",
+        }}
+    />
+</Link>
                                     </div>
                                 </div>
                                 <div className="col-auto menu-bar ms-xxl-0">
@@ -179,7 +207,7 @@ const HeaderTwo = () => {
                                                         <Link href="#">Multipage</Link>
                                                         <ul className="sub-menu">
                                                             <li>
-                                                                <Link href="/pages/homepage/home-1">Home 01</Link>
+                                                                <Link href="/">Home 01</Link>
                                                             </li>
                                                             <li>
                                                                 <Link href="/pages/homepage/home-2">Home 02</Link>

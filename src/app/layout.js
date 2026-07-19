@@ -17,6 +17,7 @@ export const metadata = {
   },
 };
 import "~/public/main-assets/css/fonts.css";
+import "./altekmar-overrides.css";
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
