@@ -49,7 +49,7 @@ const ProjectDetails = () => {
                                                 <img src="/main-assets/img/icon/service-icon1-1.png" alt="img" />
                                             </div>
                                             <div className="service-card_content">
-                                                <h4 className="service-card_title"><Link href="/pages/innerpage/service-details">Full Principal Contractor service</Link></h4>
+                                                <h4 className="service-card_title"><Link href="/service-details">Full Principal Contractor service</Link></h4>
                                                 <p className="service-card_text">There are many passages of lorem ipsum available</p>
                                             </div>
                                         </div>
@@ -60,7 +60,7 @@ const ProjectDetails = () => {
                                                 <img src="/main-assets/img/icon/service-icon1-2.png" alt="img" />
                                             </div>
                                             <div className="service-card_content">
-                                                <h4 className="service-card_title"><Link href="/pages/innerpage/service-details">Full-time Onsite Supervision</Link></h4>
+                                                <h4 className="service-card_title"><Link href="/service-details">Full-time Onsite Supervision</Link></h4>
                                                 <p className="service-card_text">There are many passages of lorem ipsum available</p>
                                             </div>
                                         </div>
@@ -71,7 +71,7 @@ const ProjectDetails = () => {
                                                 <img src="/main-assets/img/icon/service-icon1-3.png" alt="img" />
                                             </div>
                                             <div className="service-card_content">
-                                                <h4 className="service-card_title"><Link href="/pages/innerpage/service-details">Timber and steel frame construction</Link></h4>
+                                                <h4 className="service-card_title"><Link href="/service-details">Timber and steel frame construction</Link></h4>
                                                 <p className="service-card_text">There are many passages of lorem ipsum available</p>
                                             </div>
                                         </div>

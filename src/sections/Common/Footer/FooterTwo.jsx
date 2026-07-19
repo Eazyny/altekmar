@@ -10,7 +10,7 @@ const FooterTwo = () => {
                 <div className="container">
                     <div className="footer-top-1">
                         <div className="footer-logo">
-                            <Link href="/pages/homepage/home-1">
+                            <Link href="/">
                                 <img src="/main-assets/img/logo-white.svg" alt="Construz" />
                             </Link>
                         </div>
@@ -54,36 +54,36 @@ const FooterTwo = () => {
                                     <div className="menu-all-pages-container grid-style">
                                         <ul className="menu">
                                             <li>
-                                                <Link href="/pages/innerpage/about">About Us</Link>
+                                                <Link href="/about">About Us</Link>
                                             </li>
                                             <li>
-                                                <Link href="/pages/innerpage/service">What We Do</Link>
+                                                <Link href="/service">What We Do</Link>
                                             </li>
                                             <li>
-                                                <Link href="/pages/innerpage/service">News & Article</Link>
+                                                <Link href="/service">News & Article</Link>
                                             </li>
                                             <li>
-                                                <Link href="/pages/innerpage/service">Success Story</Link>
+                                                <Link href="/service">Success Story</Link>
                                             </li>
                                             <li>
-                                                <Link href="/pages/innerpage/service">FAQ’s</Link>
+                                                <Link href="/service">FAQ’s</Link>
                                             </li>
                                         </ul>
                                         <ul className="menu">
                                             <li>
-                                                <Link href="/pages/innerpage/team">Our Team</Link>
+                                                <Link href="/about">Our Team</Link>
                                             </li>
                                             <li>
-                                                <Link href="/pages/innerpage/service">Careers</Link>
+                                                <Link href="/service">Careers</Link>
                                             </li>
                                             <li>
-                                                <Link href="/pages/innerpage/service">Testimonials</Link>
+                                                <Link href="/service">Testimonials</Link>
                                             </li>
                                             <li>
-                                                <Link href="/pages/innerpage/contact">Privacy Policy</Link>
+                                                <Link href="/contact">Privacy Policy</Link>
                                             </li>
                                             <li>
-                                                <Link href="/pages/innerpage/contact">Terms of use</Link>
+                                                <Link href="/contact">Terms of use</Link>
                                             </li>
                                         </ul>
                                     </div>
@@ -141,9 +141,9 @@ const FooterTwo = () => {
                             </div>
                             <div className="col-auto">
                                 <div className="footer-links">
-                                    <Link href="/pages/innerpage/contact">Terms & Condition</Link>
-                                    <Link href="/pages/innerpage/contact">Privacy Policy</Link>
-                                    <Link href="/pages/innerpage/contact">Contact Us</Link>
+                                    <Link href="/contact">Terms & Condition</Link>
+                                    <Link href="/contact">Privacy Policy</Link>
+                                    <Link href="/contact">Contact Us</Link>
                                 </div>
                             </div>
                         </div>

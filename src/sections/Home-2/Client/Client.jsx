@@ -46,52 +46,52 @@ const Client = () => {
                 <Slider {...settings} className="row global-carousel client-slider1">
                     <div className="col-lg-auto">
                         <div className="client-logo">
-                            <Link href="/pages/homepage/home-1"><img src="/main-assets/img/client/client-1-1.svg" alt="img" /></Link>
+                            <Link href="/"><img src="/main-assets/img/client/client-1-1.svg" alt="img" /></Link>
                         </div>
                     </div>
                     <div className="col-lg-auto">
                         <div className="client-logo">
-                            <Link href="/pages/homepage/home-1"><img src="/main-assets/img/client/client-1-2.svg" alt="img" /></Link>
+                            <Link href="/"><img src="/main-assets/img/client/client-1-2.svg" alt="img" /></Link>
                         </div>
                     </div>
                     <div className="col-lg-auto">
                         <div className="client-logo">
-                            <Link href="/pages/homepage/home-1"><img src="/main-assets/img/client/client-1-3.svg" alt="img" /></Link>
+                            <Link href="/"><img src="/main-assets/img/client/client-1-3.svg" alt="img" /></Link>
                         </div>
                     </div>
                     <div className="col-lg-auto">
                         <div className="client-logo">
-                            <Link href="/pages/homepage/home-1"><img src="/main-assets/img/client/client-1-4.svg" alt="img" /></Link>
+                            <Link href="/"><img src="/main-assets/img/client/client-1-4.svg" alt="img" /></Link>
                         </div>
                     </div>
                     <div className="col-lg-auto">
                         <div className="client-logo">
-                            <Link href="/pages/homepage/home-1"><img src="/main-assets/img/client/client-1-5.svg" alt="img" /></Link>
+                            <Link href="/"><img src="/main-assets/img/client/client-1-5.svg" alt="img" /></Link>
                         </div>
                     </div>
                     <div className="col-lg-auto">
                         <div className="client-logo">
-                            <Link href="/pages/homepage/home-1"><img src="/main-assets/img/client/client-1-1.svg" alt="img" /></Link>
+                            <Link href="/"><img src="/main-assets/img/client/client-1-1.svg" alt="img" /></Link>
                         </div>
                     </div>
                     <div className="col-lg-auto">
                         <div className="client-logo">
-                            <Link href="/pages/homepage/home-1"><img src="/main-assets/img/client/client-1-2.svg" alt="img" /></Link>
+                            <Link href="/"><img src="/main-assets/img/client/client-1-2.svg" alt="img" /></Link>
                         </div>
                     </div>
                     <div className="col-lg-auto">
                         <div className="client-logo">
-                            <Link href="/pages/homepage/home-1"><img src="/main-assets/img/client/client-1-3.svg" alt="img" /></Link>
+                            <Link href="/"><img src="/main-assets/img/client/client-1-3.svg" alt="img" /></Link>
                         </div>
                     </div>
                     <div className="col-lg-auto">
                         <div className="client-logo">
-                            <Link href="/pages/homepage/home-1"><img src="/main-assets/img/client/client-1-4.svg" alt="img" /></Link>
+                            <Link href="/"><img src="/main-assets/img/client/client-1-4.svg" alt="img" /></Link>
                         </div>
                     </div>
                     <div className="col-lg-auto">
                         <div className="client-logo">
-                            <Link href="/pages/homepage/home-1"><img src="/main-assets/img/client/client-1-5.svg" alt="img" /></Link>
+                            <Link href="/"><img src="/main-assets/img/client/client-1-5.svg" alt="img" /></Link>
                         </div>
                     </div>
                 </Slider>

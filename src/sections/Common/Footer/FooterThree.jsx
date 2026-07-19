@@ -12,7 +12,7 @@ const FooterThree = () => {
                         <div className="col-md-6 col-xl-4">
                             <div className="widget widget-about footer-widget">
                                 <div className="footer-logo">
-                                    <a href="/pages/homepage/home-1"><img src="/main-assets/img/logo-white.svg" alt="Construz" /></a>
+                                    <a href="/"><img src="/main-assets/img/logo-white.svg" alt="Construz" /></a>
                                 </div>
                                 <p className="about-text">Holisticly underwhelm ethical solutions whereas maintainable strategic theme areas. Uniquely optimize quality interface before resource.</p>
                                 <h4 className="about-year">Since 2000</h4>
@@ -26,18 +26,18 @@ const FooterThree = () => {
                                 <h3 className="widget_title">Useful Links</h3>
                                 <div className="menu-all-pages-container grid-style">
                                     <ul className="menu">
-                                        <li><a href="/pages/innerpage/about">About Us</a></li>
-                                        <li><a href="/pages/innerpage/service">What We Do</a></li>
-                                        <li><a href="/pages/innerpage/service">News & Article</a></li>
-                                        <li><a href="/pages/innerpage/service">Success Story</a></li>
-                                        <li><a href="/pages/innerpage/service">FAQ’s</a></li>
+                                        <li><a href="/about">About Us</a></li>
+                                        <li><a href="/service">What We Do</a></li>
+                                        <li><a href="/service">News & Article</a></li>
+                                        <li><a href="/service">Success Story</a></li>
+                                        <li><a href="/service">FAQ’s</a></li>
                                     </ul>
                                     <ul className="menu">
-                                        <li><a href="/pages/innerpage/team">Our Team</a></li>
-                                        <li><a href="/pages/innerpage/service">Careers</a></li>
-                                        <li><a href="/pages/innerpage/service">Testimonials</a></li>
-                                        <li><a href="/pages/innerpage/contact">Privacy Policy</a></li>
-                                        <li><a href="/pages/innerpage/contact">Terms of use</a></li>
+                                        <li><a href="/about">Our Team</a></li>
+                                        <li><a href="/service">Careers</a></li>
+                                        <li><a href="/service">Testimonials</a></li>
+                                        <li><a href="/contact">Privacy Policy</a></li>
+                                        <li><a href="/contact">Terms of use</a></li>
                                     </ul>
                                 </div>
                             </div>

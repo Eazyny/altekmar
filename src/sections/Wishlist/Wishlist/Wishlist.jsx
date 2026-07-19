@@ -27,10 +27,10 @@ const Wishlist = () => {
                                             </button>
                                         </td>
                                         <td className="product-thumbnail">
-                                            <Link href="/pages/innerpage/shop-details"><img src="/main-assets/img/product/product_1_4.jpg" className="attachment-woocommerce_thumbnail size-woocommerce_thumbnail" alt="image" /></Link>
+                                            <Link href="/shop-details"><img src="/main-assets/img/product/product_1_4.jpg" className="attachment-woocommerce_thumbnail size-woocommerce_thumbnail" alt="image" /></Link>
                                         </td>
                                         <td className="product-name">
-                                            <Link href="/pages/innerpage/shop-details">Chainsaw Machine</Link>
+                                            <Link href="/shop-details">Chainsaw Machine</Link>
                                         </td>
                                         <td className="product-price wishlist-product-price-flex">
                                             <span className="woocommerce-Price-amount amount"><bdi><span className="woocommerce-Price-currencySymbol">$</span>45.00</bdi></span>
@@ -42,7 +42,7 @@ const Wishlist = () => {
                                             </p>
                                         </td>
                                         <td className="product-action">
-                                            <Link href="/pages/innerpage/shop-details">
+                                            <Link href="/shop-details">
                                                 <button className="button btn" name="tinvwl-add-to-cart" value="58" title="Add to Cart">
                                                     <i className="ri-shopping-cart-2-line"></i>
                                                     <span className="tinvwl-txt">Add to Cart</span>
@@ -56,10 +56,10 @@ const Wishlist = () => {
                                             </button>
                                         </td>
                                         <td className="product-thumbnail">
-                                            <Link href="/pages/innerpage/shop-details"><img src="/main-assets/img/product/product_1_5.jpg" className="attachment-woocommerce_thumbnail size-woocommerce_thumbnail" alt="image" /></Link>
+                                            <Link href="/shop-details"><img src="/main-assets/img/product/product_1_5.jpg" className="attachment-woocommerce_thumbnail size-woocommerce_thumbnail" alt="image" /></Link>
                                         </td>
                                         <td className="product-name">
-                                            <Link href="/pages/innerpage/shop-details">Construction Hat</Link>
+                                            <Link href="/shop-details">Construction Hat</Link>
                                         </td>
                                         <td className="product-price wishlist-product-price-flex">
                                             <ins><span className="woocommerce-Price-amount amount"><bdi><span className="woocommerce-Price-currencySymbol">$</span>18.00</bdi></span></ins>
@@ -69,7 +69,7 @@ const Wishlist = () => {
                                             <p className="stock in-stock"><i className="ri-check-line"></i><span className="tinvwl-txt">In stock</span></p>
                                         </td>
                                         <td className="product-action">
-                                            <Link href="/pages/innerpage/shop-details">
+                                            <Link href="/shop-details">
                                                 <button className="button btn" name="tinvwl-add-to-cart" value="60" title="Add to Cart">
                                                     <i className="ri-shopping-cart-2-line"></i>
                                                     <span className="tinvwl-txt">Add to Cart</span>
@@ -83,10 +83,10 @@ const Wishlist = () => {
                                             </button>
                                         </td>
                                         <td className="product-thumbnail">
-                                            <Link href="/pages/innerpage/shop-details"><img src="/main-assets/img/product/product_1_6.jpg" className="attachment-woocommerce_thumbnail size-woocommerce_thumbnail" alt="image" /></Link>
+                                            <Link href="/shop-details"><img src="/main-assets/img/product/product_1_6.jpg" className="attachment-woocommerce_thumbnail size-woocommerce_thumbnail" alt="image" /></Link>
                                         </td>
                                         <td className="product-name">
-                                            <Link href="/pages/innerpage/shop-details">Sparta Demolition Hamme</Link>
+                                            <Link href="/shop-details">Sparta Demolition Hamme</Link>
                                         </td>
                                         <td className="product-price wishlist-product-price-flex">
                                             <ins><span className="woocommerce-Price-amount amount"><bdi><span className="woocommerce-Price-currencySymbol">$</span>18.00</bdi></span></ins>
@@ -96,7 +96,7 @@ const Wishlist = () => {
                                             <p className="stock in-stock"><i className="ri-check-line"></i><span className="tinvwl-txt">In stock</span></p>
                                         </td>
                                         <td className="product-action">
-                                            <Link href="/pages/innerpage/shop-details">
+                                            <Link href="/shop-details">
                                                 <button className="button btn" name="tinvwl-add-to-cart" value="60" title="Add to Cart">
                                                     <i className="ri-shopping-cart-2-line"></i>
                                                     <span className="tinvwl-txt">Add to Cart</span>

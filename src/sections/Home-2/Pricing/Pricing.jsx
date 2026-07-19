@@ -49,7 +49,7 @@ const Pricing = () => {
                                             </ul>
                                         </div>
                                     </div>
-                                    <Link href="/pages/innerpage/project-details" className="btn-with-icon" tabIndex="-1">
+                                    <Link href="/project-details" className="btn-with-icon" tabIndex="-1">
                                         GET START NOW
                                         <span className="btn-icon">
                                             <i className="ri-arrow-right-up-line"></i>
@@ -81,7 +81,7 @@ const Pricing = () => {
                                             </ul>
                                         </div>
                                     </div>
-                                    <Link href="/pages/innerpage/project-details" className="btn-with-icon" tabIndex="-1">
+                                    <Link href="/project-details" className="btn-with-icon" tabIndex="-1">
                                         GET START NOW
                                         <span className="btn-icon">
                                             <i className="ri-arrow-right-up-line"></i>
@@ -107,7 +107,7 @@ const Pricing = () => {
                                             </ul>
                                         </div>
                                     </div>
-                                    <Link href="/pages/innerpage/project-details" className="btn-with-icon" tabIndex="-1">
+                                    <Link href="/project-details" className="btn-with-icon" tabIndex="-1">
                                         GET START NOW
                                         <span className="btn-icon">
                                             <i className="ri-arrow-right-up-line"></i>
@@ -137,7 +137,7 @@ const Pricing = () => {
                                             </ul>
                                         </div>
                                     </div>
-                                    <Link href="/pages/innerpage/project-details" className="btn-with-icon" tabIndex="-1">
+                                    <Link href="/project-details" className="btn-with-icon" tabIndex="-1">
                                         GET START NOW
                                         <span className="btn-icon">
                                             <i className="ri-arrow-right-up-line"></i>
@@ -169,7 +169,7 @@ const Pricing = () => {
                                             </ul>
                                         </div>
                                     </div>
-                                    <Link href="/pages/innerpage/project-details" className="btn-with-icon" tabIndex="-1">
+                                    <Link href="/project-details" className="btn-with-icon" tabIndex="-1">
                                         GET START NOW
                                         <span className="btn-icon">
                                             <i className="ri-arrow-right-up-line"></i>
@@ -195,7 +195,7 @@ const Pricing = () => {
                                             </ul>
                                         </div>
                                     </div>
-                                    <Link href="/pages/innerpage/project-details" className="btn-with-icon" tabIndex="-1">
+                                    <Link href="/project-details" className="btn-with-icon" tabIndex="-1">
                                         GET START NOW
                                         <span className="btn-icon">
                                             <i className="ri-arrow-right-up-line"></i>

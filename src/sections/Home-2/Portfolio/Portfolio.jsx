@@ -67,7 +67,7 @@ const Portfolio = () => {
                     </div>
                     <div className="col-lg-auto">
                         <div className="sec-btn">
-                            <Link href="/pages/innerpage/project" className="btn">View All Projects <i className="ri-arrow-right-up-line"></i></Link>
+                            <Link href="/project" className="btn">View All Projects <i className="ri-arrow-right-up-line"></i></Link>
                         </div>
                     </div>
                 </div>
@@ -86,10 +86,10 @@ const Portfolio = () => {
                                     <div className="portfolio-card-details">
                                         <span className="portfolio-card-subtitle">{img.category}</span>
                                         <h4 className="portfolio-card-title">
-                                            <Link href="/pages/innerpage/project-details">{img.title}</Link>
+                                            <Link href="/project-details">{img.title}</Link>
                                         </h4>
                                         <p className="portofolio-card-text">Building since 09,01,2024</p>
-                                        <Link href="/pages/innerpage/project-details" className="btn-with-icon">
+                                        <Link href="/project-details" className="btn-with-icon">
                                             VIEW DETAILS
                                             <span className="btn-icon">
                                                 <i className="ri-arrow-right-up-line"></i>

@@ -20,7 +20,7 @@ const TeamThree = () => {
           </div>
           <div className="col-md-auto">
             <div className="sec-btn">
-              <Link href="/pages/innerpage/about" className="btn">
+              <Link href="/about" className="btn">
                 View All Members <i className="ri-arrow-right-up-line"></i>
               </Link>
             </div>
@@ -35,7 +35,7 @@ const TeamThree = () => {
             >
               <div className="team-card_content max-width-reset-team">
                 <h4 className="team-card_title">
-                  <Link href="/pages/innerpage/team-details">Penelopa Miller</Link>
+                  <Link href="/about">Penelopa Miller</Link>
                 </h4>
                 <span className="team-card_desig">Head of Production</span>
                 <div className="team-social_wrap">
@@ -70,7 +70,7 @@ const TeamThree = () => {
             >
               <div className="team-card_content max-width-reset-team">
                 <h4 className="team-card_title">
-                  <Link href="/pages/innerpage/team-details">Mark Ronaldo</Link>
+                  <Link href="/about">Mark Ronaldo</Link>
                 </h4>
                 <span className="team-card_desig">Sr. Engineer</span>
                 <div className="team-social_wrap">
@@ -105,7 +105,7 @@ const TeamThree = () => {
             >
               <div className="team-card_content max-width-reset-team">
                 <h4 className="team-card_title">
-                  <Link href="/pages/innerpage/team-details">John Maxwell</Link>
+                  <Link href="/about">John Maxwell</Link>
                 </h4>
                 <span className="team-card_desig">Project Management</span>
                 <div className="team-social_wrap">

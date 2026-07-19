@@ -77,12 +77,12 @@ const CartArea = () => {
               {cartItems.map(item => (
                 <tr className="cart_item" key={item.id}>
                   <td data-title="Product">
-                    <Link className="cart-productimage" href="landing-assets/shop-details">
+                    <Link className="cart-productimage" href="/shop-details">
                       <img width="91" height="91" src={item.image} alt="Image" />
                     </Link>
                   </td>
                   <td data-title="Name">
-                    <Link className="cart-productname" href="landing-assets/shop-details">
+                    <Link className="cart-productname" href="/shop-details">
                       {item.name}
                     </Link>
                   </td>
@@ -130,7 +130,7 @@ const CartArea = () => {
                   <button type="submit" className="btn">
                     Update cart
                   </button>
-                  <Link href="/pages/innerpage/shop" className="btn style-border3">
+                  <Link href="/shop" className="btn style-border3">
                     Continue Shopping
                   </Link>
                 </td>
@@ -170,7 +170,7 @@ const CartArea = () => {
               </tfoot>
             </table>
             <div className="wc-proceed-to-checkout mb-30">
-              <Link href="/pages/innerpage/checkout" className="btn btn-fw">
+              <Link href="/checkout" className="btn btn-fw">
                 Proceed to checkout
               </Link>
             </div>

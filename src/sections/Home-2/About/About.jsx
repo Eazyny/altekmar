@@ -56,7 +56,7 @@ const About = () => {
                             </div>
                         </div>
                         <div className="btn-group mt-60">
-                            <Link href="/pages/innerpage/about" className="btn style3">Explore Our Company <i className="ri-arrow-right-up-line"></i></Link>
+                            <Link href="/about" className="btn style3">Explore Our Company <i className="ri-arrow-right-up-line"></i></Link>
                         </div>
                     </div>
                 </div>

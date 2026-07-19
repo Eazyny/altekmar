@@ -21,11 +21,11 @@ const Service = () => {
                                 <div className="service-card_icon">
                                     <img src="/main-assets/img/icon/service-icon1-1.png" alt="img" />
                                 </div>
-                                <h4 className="service-card_title"><Link href="/pages/innerpage/service-details">General construction</Link></h4>
+                                <h4 className="service-card_title"><Link href="/service-details">General construction</Link></h4>
                                 <p className="service-card_text">There are many passages of lorem ipsum available</p>
                                 <div className="btn-wrap">
                                     <div className="icon-btn"><i className="ri-arrow-right-up-line"></i></div>
-                                    <Link href="/pages/innerpage/service-details" className="btn">Explore Service <i className="ri-arrow-right-up-line"></i></Link>
+                                    <Link href="/service-details" className="btn">Explore Service <i className="ri-arrow-right-up-line"></i></Link>
                                 </div>
                             </div>
                         </div>
@@ -39,11 +39,11 @@ const Service = () => {
                                 <div className="service-card_icon">
                                     <img src="/main-assets/img/icon/service-icon1-2.png" alt="img" />
                                 </div>
-                                <h4 className="service-card_title"><Link href="/pages/innerpage/service-details">Property maintenance</Link></h4>
+                                <h4 className="service-card_title"><Link href="/service-details">Property maintenance</Link></h4>
                                 <p className="service-card_text">There are many passages of lorem ipsum available</p>
                                 <div className="btn-wrap">
                                     <div className="icon-btn"><i className="ri-arrow-right-up-line"></i></div>
-                                    <Link href="/pages/innerpage/service-details" className="btn">Explore Service <i className="ri-arrow-right-up-line"></i></Link>
+                                    <Link href="/service-details" className="btn">Explore Service <i className="ri-arrow-right-up-line"></i></Link>
                                 </div>
                             </div>
                         </div>
@@ -57,11 +57,11 @@ const Service = () => {
                                 <div className="service-card_icon">
                                     <img src="/main-assets/img/icon/service-icon1-3.png" alt="img" />
                                 </div>
-                                <h4 className="service-card_title"><Link href="/pages/innerpage/service-details">Project management</Link></h4>
+                                <h4 className="service-card_title"><Link href="/service-details">Project management</Link></h4>
                                 <p className="service-card_text">There are many passages of lorem ipsum available</p>
                                 <div className="btn-wrap">
                                     <div className="icon-btn"><i className="ri-arrow-right-up-line"></i></div>
-                                    <Link href="/pages/innerpage/service-details" className="btn">Explore Service <i className="ri-arrow-right-up-line"></i></Link>
+                                    <Link href="/service-details" className="btn">Explore Service <i className="ri-arrow-right-up-line"></i></Link>
                                 </div>
                             </div>
                         </div>
@@ -75,11 +75,11 @@ const Service = () => {
                                 <div className="service-card_icon">
                                     <img src="/main-assets/img/icon/service-icon1-4.png" alt="img" />
                                 </div>
-                                <h4 className="service-card_title"><Link href="/pages/innerpage/service-details">Virtual design & build</Link></h4>
+                                <h4 className="service-card_title"><Link href="/service-details">Virtual design & build</Link></h4>
                                 <p className="service-card_text">There are many passages of lorem ipsum available</p>
                                 <div className="btn-wrap">
                                     <div className="icon-btn"><i className="ri-arrow-right-up-line"></i></div>
-                                    <Link href="/pages/innerpage/service-details" className="btn">Explore Service <i className="ri-arrow-right-up-line"></i></Link>
+                                    <Link href="/service-details" className="btn">Explore Service <i className="ri-arrow-right-up-line"></i></Link>
                                 </div>
                             </div>
                         </div>
@@ -93,11 +93,11 @@ const Service = () => {
                                 <div className="service-card_icon">
                                     <img src="/main-assets/img/icon/service-icon1-5.png" alt="img" />
                                 </div>
-                                <h4 className="service-card_title h5"><Link href="/pages/innerpage/service-details">Proconstruction</Link></h4>
+                                <h4 className="service-card_title h5"><Link href="/service-details">Proconstruction</Link></h4>
                                 <p className="service-card_text">There are many passages of lorem ipsum available</p>
                                 <div className="btn-wrap">
                                     <div className="icon-btn"><i className="ri-arrow-right-up-line"></i></div>
-                                    <Link href="/pages/innerpage/service-details" className="btn">Explore Service <i className="ri-arrow-right-up-line"></i></Link>
+                                    <Link href="/service-details" className="btn">Explore Service <i className="ri-arrow-right-up-line"></i></Link>
                                 </div>
                             </div>
                         </div>

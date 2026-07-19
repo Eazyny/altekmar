@@ -83,7 +83,7 @@ const ServiceDetails = () => {
                       </div>
                       <div className="service-card_content item-decoration">
                         <h4 className="service-card_title">
-                          <Link href="/pages/innerpage/service-details">
+                          <Link href="/service-details">
                             Full Principal Contractor service
                           </Link>
                         </h4>
@@ -100,7 +100,7 @@ const ServiceDetails = () => {
                       </div>
                       <div className="service-card_content item-decoration">
                         <h4 className="service-card_title">
-                          <Link href="/pages/innerpage/service-details">
+                          <Link href="/service-details">
                             Full-time Onsite Supervision
                           </Link>
                         </h4>
@@ -117,7 +117,7 @@ const ServiceDetails = () => {
                       </div>
                       <div className="service-card_content item-decoration">
                         <h4 className="service-card_title">
-                          <Link href="/pages/innerpage/service-details">
+                          <Link href="/service-details">
                             Timber and steel frame construction
                           </Link>
                         </h4>

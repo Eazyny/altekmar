@@ -11,8 +11,8 @@ const BreadcumbTwelve = () => {
                         <div className="breadcumb-content">
                             <h1 className="breadcumb-title">Shop Details</h1>
                             <ul className="breadcumb-menu">
-                                <li><Link href="/pages/homepage/home-1"><i className="ri-home-4-fill"></i> HOME</Link></li>
-                                <li><Link href="/pages/innerpage/shop">SHOP</Link></li>
+                                <li><Link href="/"><i className="ri-home-4-fill"></i> HOME</Link></li>
+                                <li><Link href="/shop">SHOP</Link></li>
                                 <li className="active">SHOP DETAILS</li>
                             </ul>
                         </div>

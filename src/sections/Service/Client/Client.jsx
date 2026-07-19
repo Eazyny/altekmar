@@ -37,70 +37,70 @@ const ClientTwoSharedSection = ({ isSubscribe }) => {
                 >
                     <div className="col-lg-auto">
                         <div className="client-logo">
-                            <Link href="/pages/homepage/home-1">
+                            <Link href="/">
                                 <img src="/main-assets/img/client/client-2-1.svg" alt="img" />
                             </Link>
                         </div>
                     </div>
                     <div className="col-lg-auto">
                         <div className="client-logo">
-                            <Link href="/pages/homepage/home-1">
+                            <Link href="/">
                                 <img src="/main-assets/img/client/client-2-2.svg" alt="img" />
                             </Link>
                         </div>
                     </div>
                     <div className="col-lg-auto">
                         <div className="client-logo">
-                            <Link href="/pages/homepage/home-1">
+                            <Link href="/">
                                 <img src="/main-assets/img/client/client-2-3.svg" alt="img" />
                             </Link>
                         </div>
                     </div>
                     <div className="col-lg-auto">
                         <div className="client-logo">
-                            <Link href="/pages/homepage/home-1">
+                            <Link href="/">
                                 <img src="/main-assets/img/client/client-2-4.svg" alt="img" />
                             </Link>
                         </div>
                     </div>
                     <div className="col-lg-auto">
                         <div className="client-logo">
-                            <Link href="/pages/homepage/home-1">
+                            <Link href="/">
                                 <img src="/main-assets/img/client/client-2-5.svg" alt="img" />
                             </Link>
                         </div>
                     </div>
                     <div className="col-lg-auto">
                         <div className="client-logo">
-                            <Link href="/pages/homepage/home-1">
+                            <Link href="/">
                                 <img src="/main-assets/img/client/client-2-1.svg" alt="img" />
                             </Link>
                         </div>
                     </div>
                     <div className="col-lg-auto">
                         <div className="client-logo">
-                            <Link href="/pages/homepage/home-1">
+                            <Link href="/">
                                 <img src="/main-assets/img/client/client-2-2.svg" alt="img" />
                             </Link>
                         </div>
                     </div>
                     <div className="col-lg-auto">
                         <div className="client-logo">
-                            <Link href="/pages/homepage/home-1">
+                            <Link href="/">
                                 <img src="/main-assets/img/client/client-2-3.svg" alt="img" />
                             </Link>
                         </div>
                     </div>
                     <div className="col-lg-auto">
                         <div className="client-logo">
-                            <Link href="/pages/homepage/home-1">
+                            <Link href="/">
                                 <img src="/main-assets/img/client/client-2-4.svg" alt="img" />
                             </Link>
                         </div>
                     </div>
                     <div className="col-lg-auto">
                         <div className="client-logo">
-                            <Link href="/pages/homepage/home-1">
+                            <Link href="/">
                                 <img src="/main-assets/img/client/client-2-5.svg" alt="img" />
                             </Link>
                         </div>

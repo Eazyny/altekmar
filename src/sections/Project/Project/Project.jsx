@@ -51,10 +51,10 @@ const Project = () => {
                                 <div className="portfolio-card-details">
                                     <span className="portfolio-card-subtitle">Category</span>
                                     <h4 className="portfolio-card-title">
-                                        <a href="/pages/innerpage/project-details">Project Title</a>
+                                        <a href="/project-details">Project Title</a>
                                     </h4>
                                     <p className="portofolio-card-text">Building since 09,01,2024</p>
-                                    <a href="/pages/innerpage/project-details" className="btn-with-icon">
+                                    <a href="/project-details" className="btn-with-icon">
                                         VIEW DETAILS
                                         <span className="btn-icon">
                                             <i className="ri-arrow-right-up-line"></i>
@@ -67,10 +67,10 @@ const Project = () => {
                 </div>
                 <div className="pagination justify-content-center">
                     <ul>
-                        <li><a className="active" href="/pages/innerpage/blog">01</a></li>
-                        <li><a href="/pages/innerpage/blog">02</a></li>
-                        <li><a href="/pages/innerpage/blog">03</a></li>
-                        <li><a href="/pages/innerpage/blog"><i className="ri-arrow-right-line"></i></a></li>
+                        <li><a className="active" href="/project">01</a></li>
+                        <li><a href="/project">02</a></li>
+                        <li><a href="/project">03</a></li>
+                        <li><a href="/project"><i className="ri-arrow-right-line"></i></a></li>
                     </ul>
                 </div>
             </div>

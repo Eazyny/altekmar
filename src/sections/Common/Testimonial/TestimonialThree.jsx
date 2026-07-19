@@ -178,7 +178,7 @@ const TestimonialThree = () => {
                 the first true generator.
               </p>
               <div className="btn-group">
-                <Link href="landing-assets/contact" className="btn style6">
+                <Link href="/contact" className="btn style6">
                   Contact with Us <i className="ri-arrow-right-up-line"></i>
                 </Link>
               </div>

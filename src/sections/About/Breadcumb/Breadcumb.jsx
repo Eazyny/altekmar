@@ -18,7 +18,7 @@ const Breadcumb = () => {
               <h1 className="breadcumb-title">About Us</h1>
               <ul className="breadcumb-menu">
                 <li>
-                  <Link href="/pages/homepage/home-1">
+                  <Link href="/">
                     <i className="ri-home-4-fill"></i> HOME
                   </Link>
                 </li>

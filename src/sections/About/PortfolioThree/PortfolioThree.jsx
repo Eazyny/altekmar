@@ -68,7 +68,7 @@ const PortfolioThree = () => {
                   <div className="media-left">
                     <span className="portfolio-card-subtitle">Building</span>
                     <h4 className="portfolio-card-title">
-                      <Link href="/pages/innerpage/project-details">
+                      <Link href="/project-details">
                         General Construction
                       </Link>
                     </h4>
@@ -77,7 +77,7 @@ const PortfolioThree = () => {
                     </p>
                   </div>
                 </div>
-                <Link href="/pages/innerpage/project-details" className="btn">
+                <Link href="/project-details" className="btn">
                   Explore Service <i className="ri-arrow-right-up-line"></i>
                 </Link>
               </div>
@@ -97,7 +97,7 @@ const PortfolioThree = () => {
                   <div className="media-left">
                     <span className="portfolio-card-subtitle">Building</span>
                     <h4 className="portfolio-card-title">
-                      <Link href="/pages/innerpage/project-details">
+                      <Link href="/project-details">
                         General Construction
                       </Link>
                     </h4>
@@ -106,7 +106,7 @@ const PortfolioThree = () => {
                     </p>
                   </div>
                 </div>
-                <Link href="/pages/innerpage/project-details" className="btn">
+                <Link href="/project-details" className="btn">
                   Explore Service <i className="ri-arrow-right-up-line"></i>
                 </Link>
               </div>
@@ -126,7 +126,7 @@ const PortfolioThree = () => {
                   <div className="media-left">
                     <span className="portfolio-card-subtitle">Building</span>
                     <h4 className="portfolio-card-title">
-                      <Link href="/pages/innerpage/project-details">
+                      <Link href="/project-details">
                         General Construction
                       </Link>
                     </h4>
@@ -135,7 +135,7 @@ const PortfolioThree = () => {
                     </p>
                   </div>
                 </div>
-                <Link href="/pages/innerpage/project-details" className="btn">
+                <Link href="/project-details" className="btn">
                   Explore Service <i className="ri-arrow-right-up-line"></i>
                 </Link>
               </div>
@@ -155,7 +155,7 @@ const PortfolioThree = () => {
                   <div className="media-left">
                     <span className="portfolio-card-subtitle">Building</span>
                     <h4 className="portfolio-card-title">
-                      <Link href="/pages/innerpage/project-details">
+                      <Link href="/project-details">
                         General Construction
                       </Link>
                     </h4>
@@ -164,7 +164,7 @@ const PortfolioThree = () => {
                     </p>
                   </div>
                 </div>
-                <Link href="/pages/innerpage/project-details" className="btn">
+                <Link href="/project-details" className="btn">
                   Explore Service <i className="ri-arrow-right-up-line"></i>
                 </Link>
               </div>
@@ -184,7 +184,7 @@ const PortfolioThree = () => {
                   <div className="media-left">
                     <span className="portfolio-card-subtitle">Building</span>
                     <h4 className="portfolio-card-title">
-                      <Link href="/pages/innerpage/project-details">
+                      <Link href="/project-details">
                         General Construction
                       </Link>
                     </h4>
@@ -193,7 +193,7 @@ const PortfolioThree = () => {
                     </p>
                   </div>
                 </div>
-                <Link href="/pages/innerpage/project-details" className="btn">
+                <Link href="/project-details" className="btn">
                   Explore Service <i className="ri-arrow-right-up-line"></i>
                 </Link>
               </div>
@@ -213,7 +213,7 @@ const PortfolioThree = () => {
                   <div className="media-left">
                     <span className="portfolio-card-subtitle">Building</span>
                     <h4 className="portfolio-card-title">
-                      <Link href="/pages/innerpage/project-details">
+                      <Link href="/project-details">
                         General Construction
                       </Link>
                     </h4>
@@ -222,7 +222,7 @@ const PortfolioThree = () => {
                     </p>
                   </div>
                 </div>
-                <Link href="/pages/innerpage/project-details" className="btn">
+                <Link href="/project-details" className="btn">
                   Explore Service <i className="ri-arrow-right-up-line"></i>
                 </Link>
               </div>

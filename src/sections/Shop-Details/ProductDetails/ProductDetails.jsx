@@ -132,8 +132,8 @@ const ProductDetails = () => {
                                 </div>
                                 <div className="product_meta">
                                     <span className="sku_wrapper">SKU: <span className="sku">wheel-fits-chevy-camaro</span></span>
-                                    <span className="posted_in">Category: <Link href="/pages/innerpage/shop" rel="tag">Tires & Wheels</Link></span>
-                                    <span>Tags: <Link href="/pages/innerpage/shop">automotive parts</Link><Link href="/pages/innerpage/shop">wheels</Link></span>
+                                    <span className="posted_in">Category: <Link href="/shop" rel="tag">Tires & Wheels</Link></span>
+                                    <span>Tags: <Link href="/shop">automotive parts</Link><Link href="/shop">wheels</Link></span>
                                 </div>
                             </div>
                         </div>
@@ -247,7 +247,7 @@ const ProductDetails = () => {
                                                         recusandae perspiciatis, sint maxime dolor quam doloribus!
                                                     </p>
                                                     <div className="reply_and_edit">
-                                                        <Link href="/pages/innerpage/blog-details" className="reply-btn">
+                                                        <Link href="/project" className="reply-btn">
                                                             Reply <i className="ri-arrow-right-up-line"></i>
                                                         </Link>
                                                     </div>
@@ -270,7 +270,7 @@ const ProductDetails = () => {
                                                                 repudiandae quaerat eligendi?
                                                             </p>
                                                             <div className="reply_and_edit">
-                                                                <Link href="/pages/innerpage/blog-details" className="reply-btn">
+                                                                <Link href="/project" className="reply-btn">
                                                                     Reply <i className="ri-arrow-right-up-line"></i>
                                                                 </Link>
                                                             </div>
@@ -293,7 +293,7 @@ const ProductDetails = () => {
                                                         plug-and-play markets whereas synergistic scenarios.
                                                     </p>
                                                     <div className="reply_and_edit">
-                                                        <Link href="/pages/innerpage/blog-details" className="reply-btn">
+                                                        <Link href="/project" className="reply-btn">
                                                             Reply <i className="ri-arrow-right-up-line"></i>
                                                         </Link>
                                                     </div>
@@ -335,7 +335,7 @@ const ProductDetails = () => {
                             </div>
                             <div className="col-md-auto shop-details-card-space-none">
                                 <div className="sec-btn mb-40">
-                                    <Link href="/pages/innerpage/shop" className="btn">
+                                    <Link href="/shop" className="btn">
                                         VIEW ALL PRODUCTS
                                     </Link>
                                 </div>
@@ -357,10 +357,10 @@ const ProductDetails = () => {
                                         <img src="/main-assets/img/product/product_1_1.jpg" alt="Product Image" />
                                         <div className="actions">
                                             <button onClick={handleOpenMagnificPopup} className="icon-btn popup-content"><i className="ri-eye-line"></i></button>
-                                            <Link href="/pages/innerpage/cart" className="icon-btn">
+                                            <Link href="/cart" className="icon-btn">
                                                 <i className="ri-shopping-cart-line"></i>
                                             </Link>
-                                            <Link href="/pages/innerpage/wishlist" className="icon-btn">
+                                            <Link href="/wishlist" className="icon-btn">
                                                 <i className="ri-heart-line"></i>
                                             </Link>
                                         </div>
@@ -374,7 +374,7 @@ const ProductDetails = () => {
                                             <i className="ri-star-fill"></i>
                                         </span>
                                         <h3 className="product-title">
-                                            <Link href="/pages/innerpage/shop-details">Hardware Toolbox</Link>
+                                            <Link href="/shop-details">Hardware Toolbox</Link>
                                         </h3>
                                         <span className="price">
                                             <del>$30</del> $25
@@ -388,10 +388,10 @@ const ProductDetails = () => {
                                         <img src="/main-assets/img/product/product_1_2.jpg" alt="Product Image" />
                                         <div className="actions">
                                             <button onClick={handleOpenMagnificPopup} className="icon-btn popup-content"><i className="ri-eye-line"></i></button>
-                                            <Link href="/pages/innerpage/cart" className="icon-btn">
+                                            <Link href="/cart" className="icon-btn">
                                                 <i className="ri-shopping-cart-line"></i>
                                             </Link>
-                                            <Link href="/pages/innerpage/wishlist" className="icon-btn">
+                                            <Link href="/wishlist" className="icon-btn">
                                                 <i className="ri-heart-line"></i>
                                             </Link>
                                         </div>
@@ -405,7 +405,7 @@ const ProductDetails = () => {
                                             <i className="ri-star-fill"></i>
                                         </span>
                                         <h3 className="product-title">
-                                            <Link href="/pages/innerpage/shop-details">Drill Machine</Link>
+                                            <Link href="/shop-details">Drill Machine</Link>
                                         </h3>
                                         <span className="price">
                                             <del>$300</del> $250
@@ -419,10 +419,10 @@ const ProductDetails = () => {
                                         <img src="/main-assets/img/product/product_1_3.jpg" alt="Product Image" />
                                         <div className="actions">
                                             <button onClick={handleOpenMagnificPopup} className="icon-btn popup-content"><i className="ri-eye-line"></i></button>
-                                            <Link href="/pages/innerpage/cart" className="icon-btn">
+                                            <Link href="/cart" className="icon-btn">
                                                 <i className="ri-shopping-cart-line"></i>
                                             </Link>
-                                            <Link href="/pages/innerpage/wishlist" className="icon-btn">
+                                            <Link href="/wishlist" className="icon-btn">
                                                 <i className="ri-heart-line"></i>
                                             </Link>
                                         </div>
@@ -436,7 +436,7 @@ const ProductDetails = () => {
                                             <i className="ri-star-fill"></i>
                                         </span>
                                         <h3 className="product-title">
-                                            <Link href="/pages/innerpage/shop-details">Claw Hammer</Link>
+                                            <Link href="/shop-details">Claw Hammer</Link>
                                         </h3>
                                         <span className="price">
                                             <del>$130</del> $125
@@ -450,10 +450,10 @@ const ProductDetails = () => {
                                         <img src="/main-assets/img/product/product_1_4.jpg" alt="Product Image" />
                                         <div className="actions">
                                             <button onClick={handleOpenMagnificPopup} className="icon-btn popup-content"><i className="ri-eye-line"></i></button>
-                                            <Link href="/pages/innerpage/cart" className="icon-btn">
+                                            <Link href="/cart" className="icon-btn">
                                                 <i className="ri-shopping-cart-line"></i>
                                             </Link>
-                                            <Link href="/pages/innerpage/wishlist" className="icon-btn">
+                                            <Link href="/wishlist" className="icon-btn">
                                                 <i className="ri-heart-line"></i>
                                             </Link>
                                         </div>
@@ -467,7 +467,7 @@ const ProductDetails = () => {
                                             <i className="ri-star-fill"></i>
                                         </span>
                                         <h3 className="product-title">
-                                            <Link href="/pages/innerpage/shop-details">Chainsaw Machine</Link>
+                                            <Link href="/shop-details">Chainsaw Machine</Link>
                                         </h3>
                                         <span className="price">
                                             <del>$130</del> $125
@@ -481,10 +481,10 @@ const ProductDetails = () => {
                                         <img src="/main-assets/img/product/product_1_5.jpg" alt="Product Image" />
                                         <div className="actions">
                                             <button onClick={handleOpenMagnificPopup} className="icon-btn popup-content"><i className="ri-eye-line"></i></button>
-                                            <Link href="/pages/innerpage/cart" className="icon-btn">
+                                            <Link href="/cart" className="icon-btn">
                                                 <i className="ri-shopping-cart-line"></i>
                                             </Link>
-                                            <Link href="/pages/innerpage/wishlist" className="icon-btn">
+                                            <Link href="/wishlist" className="icon-btn">
                                                 <i className="ri-heart-line"></i>
                                             </Link>
                                         </div>
@@ -498,7 +498,7 @@ const ProductDetails = () => {
                                             <i className="ri-star-fill"></i>
                                         </span>
                                         <h3 className="product-title">
-                                            <Link href="/pages/innerpage/shop-details">Construction Hat</Link>
+                                            <Link href="/shop-details">Construction Hat</Link>
                                         </h3>
                                         <span className="price">
                                             <del>$150</del> $125
@@ -550,14 +550,14 @@ const ProductDetails = () => {
                                                     type="number" className="qty-input" step="1" min="1" max="100" name="quantity" value={quantity} title="Qty" />
                                                 <button onClick={incrementQuantity} className="quantity-plus qty-btn"><i className="ri-add-line"></i></button>
                                             </div>
-                                            <Link href="/pages/innerpage/cart">
+                                            <Link href="/cart">
                                                 <button className="btn">Add to Cart</button>
                                             </Link>
                                         </div>
                                         <div className="product_meta">
                                             <span className="sku_wrapper">SKU: <span className="sku">wheel-fits-chevy-camaro</span></span>
-                                            <span className="posted_in">Category: <Link href="/pages/innerpage/shop" rel="tag">Tires & Wheels</Link></span>
-                                            <span>Tags: <Link href="/pages/innerpage/shop">automotive parts</Link><Link href="/pages/innerpage/shop">wheels</Link></span>
+                                            <span className="posted_in">Category: <Link href="/shop" rel="tag">Tires & Wheels</Link></span>
+                                            <span>Tags: <Link href="/shop">automotive parts</Link><Link href="/shop">wheels</Link></span>
                                         </div>
                                     </div>
                                 </div>

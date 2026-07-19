@@ -11,7 +11,6 @@ import FooterTwo from "~/sections/Common/Footer/FooterTwo";
 import CounterThree from "~/sections/Common/Counter/CounterThree";
 import TestimonialThree from "~/sections/Common/Testimonial/TestimonialThree";
 import Scroll from "~/sections/Common/Scroll";
-import Portfolio from "~/sections/Home-1/Portfolio";
 export default function AboutPage() {
   return (
     <>
@@ -20,7 +19,7 @@ export default function AboutPage() {
       <AboutThree />
       <WhyChooseThree />
       <ProcessThree />
-      <Portfolio />
+      <PortfolioThree />
       <CounterThree />
       <TestimonialThree />
       <TeamThree />

@@ -14,7 +14,7 @@ const Service = () => {
                             <span className="sub-title"><img src="/main-assets/img/icon/section-subtitle-icon.svg" alt="img" /> What We Do</span>
                             <h2 className="sec-title">OUR SERVICES THAT WE PROVIDE</h2>
                             <div className="btn-group mt-50 justify-content-xl-start justify-content-center">
-                                <Link href="/pages/innerpage/service" className="btn">VIEW ALL SERVICES <i className="ri-arrow-right-up-line"></i></Link>
+                                <Link href="/service" className="btn">VIEW ALL SERVICES <i className="ri-arrow-right-up-line"></i></Link>
                             </div>
                         </div>
                     </div>
@@ -30,10 +30,10 @@ const Service = () => {
                                     <div className="service-card_icon">
                                         <img src="/main-assets/img/icon/service-icon2-1.svg" alt="img" />
                                     </div>
-                                    <h4 className="service-card_title"><Link href="/pages/innerpage/service-details">GENERAL CONSTRUCTION</Link></h4>
+                                    <h4 className="service-card_title"><Link href="/service-details">GENERAL CONSTRUCTION</Link></h4>
                                     <p className="service-card_text">There are many passages of lorem ipsum available</p>
                                     <div className="btn-wrap">
-                                        <Link href="/pages/innerpage/service-details" className="btn-with-icon">
+                                        <Link href="/service-details" className="btn-with-icon">
                                             READ MORE
                                             <span className="btn-icon">
                                                 <i className="ri-arrow-right-up-line"></i>
@@ -52,10 +52,10 @@ const Service = () => {
                                     <div className="service-card_icon">
                                         <img src="/main-assets/img/icon/service-icon2-2.svg" alt="img" />
                                     </div>
-                                    <h4 className="service-card_title"><Link href="/pages/innerpage/service-details">RENOVATION AND REMODELING</Link></h4>
+                                    <h4 className="service-card_title"><Link href="/service-details">RENOVATION AND REMODELING</Link></h4>
                                     <p className="service-card_text">There are many passages of lorem ipsum available</p>
                                     <div className="btn-wrap">
-                                        <Link href="/pages/innerpage/service-details" className="btn-with-icon">
+                                        <Link href="/service-details" className="btn-with-icon">
                                             READ MORE
                                             <span className="btn-icon">
                                                 <i className="ri-arrow-right-up-line"></i>
@@ -74,10 +74,10 @@ const Service = () => {
                                     <div className="service-card_icon">
                                         <img src="/main-assets/img/icon/service-icon2-3.svg" alt="img" />
                                     </div>
-                                    <h4 className="service-card_title"><Link href="/pages/innerpage/service-details">COMMERCIAL CONSTRUCTION</Link></h4>
+                                    <h4 className="service-card_title"><Link href="/service-details">COMMERCIAL CONSTRUCTION</Link></h4>
                                     <p className="service-card_text">There are many passages of lorem ipsum available</p>
                                     <div className="btn-wrap">
-                                        <Link href="/pages/innerpage/service-details" className="btn-with-icon">
+                                        <Link href="/service-details" className="btn-with-icon">
                                             READ MORE
                                             <span className="btn-icon">
                                                 <i className="ri-arrow-right-up-line"></i>
@@ -96,10 +96,10 @@ const Service = () => {
                                     <div className="service-card_icon">
                                         <img src="/main-assets/img/icon/service-icon2-4.svg" alt="img" />
                                     </div>
-                                    <h4 className="service-card_title"><Link href="/pages/innerpage/service-details">VIRTUAL DESIGN & BUILDING</Link></h4>
+                                    <h4 className="service-card_title"><Link href="/service-details">VIRTUAL DESIGN & BUILDING</Link></h4>
                                     <p className="service-card_text">There are many passages of lorem ipsum available</p>
                                     <div className="btn-wrap">
-                                        <Link href="/pages/innerpage/service-details" className="btn-with-icon">
+                                        <Link href="/service-details" className="btn-with-icon">
                                             READ MORE
                                             <span className="btn-icon">
                                                 <i className="ri-arrow-right-up-line"></i>

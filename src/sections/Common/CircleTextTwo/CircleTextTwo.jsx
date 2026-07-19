@@ -6,7 +6,7 @@ const CircleTextTwo = () => {
 
     return (
         <div className="about-three__img-icon-box circleWrap4">
-            <Link href="/pages/innerpage/contact">
+            <Link href="/contact">
                 <div className="round-text circleWrap3 circle-text-4-new">
                     <svg
                         xmlns="http://www.w3.org/2000/svg"

@@ -74,7 +74,7 @@ const HeaderOne = () => {
                     </button>
                     <div className="widget widget-about footer-widget">
                         <div className="footer-logo footer-img">
-                            <Link href="/pages/homepage/home-1">
+                            <Link href="/">
                                 <img src="/main-assets/img/logo.svg" alt="logo" width={100} height={50} />
                             </Link>
                         </div>
@@ -106,52 +106,52 @@ const HeaderOne = () => {
                         <div className="recent-post-wrap mt-40">
                             <div className="recent-post">
                                 <div className="media-img">
-                                    <Link href="/pages/innerpage/blog-details">
+                                    <Link href="/project">
                                         <img src="/main-assets/img/blog/recent-post1.png" alt="Blog Image" width={100} height={100} />
                                     </Link>
                                 </div>
                                 <div className="media-body">
                                     <h4 className="post-title">
-                                        <Link className="text-inherit" href="/pages/innerpage/blog-details">Best features of
+                                        <Link className="text-inherit" href="/project">Best features of
                                             Building construction work</Link>
                                     </h4>
                                     <div className="recent-post-meta">
-                                        <Link href="/pages/innerpage/blog">By Nicholes</Link>
-                                        <Link href="/pages/innerpage/blog">30 min ago</Link>
+                                        <Link href="/project">By Nicholes</Link>
+                                        <Link href="/project">30 min ago</Link>
                                     </div>
                                 </div>
                             </div>
                             <div className="recent-post">
                                 <div className="media-img">
-                                    <Link href="/pages/innerpage/blog-details">
+                                    <Link href="/project">
                                         <img src="/main-assets/img/blog/recent-post2.png" alt="Blog Image" width={100} height={100} />
                                     </Link>
                                 </div>
                                 <div className="media-body">
                                     <h4 className="post-title">
-                                        <Link className="text-inherit" href="/pages/innerpage/blog-details">The beast team is a
+                                        <Link className="text-inherit" href="/project">The beast team is a
                                             around and how we make it</Link>
                                     </h4>
                                     <div className="recent-post-meta">
-                                        <Link href="/pages/innerpage/blog">By Nicholes</Link>
-                                        <Link href="/pages/innerpage/blog">2 days ago</Link>
+                                        <Link href="/project">By Nicholes</Link>
+                                        <Link href="/project">2 days ago</Link>
                                     </div>
                                 </div>
                             </div>
                             <div className="recent-post">
                                 <div className="media-img">
-                                    <Link href="/pages/innerpage/blog-details">
+                                    <Link href="/project">
                                         <img src="/main-assets/img/blog/recent-post4.png" alt="Blog Image" width={100} height={100} />
                                     </Link>
                                 </div>
                                 <div className="media-body">
                                     <h4 className="post-title">
-                                        <Link className="text-inherit" href="/pages/innerpage/blog-details">A well designed
+                                        <Link className="text-inherit" href="/project">A well designed
                                             construction website is user accessible</Link>
                                     </h4>
                                     <div className="recent-post-meta">
-                                        <Link href="/pages/innerpage/blog">By Nicholes</Link>
-                                        <Link href="/pages/innerpage/blog">3 week ago</Link>
+                                        <Link href="/project">By Nicholes</Link>
+                                        <Link href="/project">3 week ago</Link>
                                     </div>
                                 </div>
                             </div>
@@ -196,14 +196,14 @@ const HeaderOne = () => {
                 <div className={`sticky-wrapper ${isSticky ? 'sticky' : ''}`}>
                     <div className="menu-area">
                         <div className="header-navbar-logo">
-                            <Link href="/pages/homepage/home-1"><img src="/main-assets/img/logo.svg" alt="logo" /></Link>
+                            <Link href="/"><img src="/main-assets/img/logo.svg" alt="logo" /></Link>
                         </div>
                         <div className="logo-bg"></div>
                         <div className="container">
                             <div className="row align-items-center justify-content-lg-start justify-content-between">
                                 <div className="col-auto d-xxl-none d-block">
                                     <div className="header-logo">
-                                        <Link href="/pages/homepage/home-1"><img src="/main-assets/img/logo.svg" alt="logo" /></Link>
+                                        <Link href="/"><img src="/main-assets/img/logo.svg" alt="logo" /></Link>
                                     </div>
                                 </div>
                                 <div className="col-auto menu-bar ms-xxl-0">
@@ -216,19 +216,19 @@ const HeaderOne = () => {
                                                         <Link href="#">Multipage</Link>
                                                         <ul className="sub-menu">
                                                             <li>
-                                                                <Link href="/pages/homepage/home-1">Home 01</Link>
+                                                                <Link href="/">Home 01</Link>
                                                             </li>
                                                             <li>
-                                                                <Link href="/pages/homepage/home-2">Home 02</Link>
+                                                                <Link href="/">Home 02</Link>
                                                             </li>
                                                             <li>
-                                                                <Link href="/pages/homepage/home-3">Home 03</Link>
+                                                                <Link href="/">Home 03</Link>
                                                             </li>
                                                             <li>
-                                                                <Link href="/pages/homepage/home-4">Home 04</Link>
+                                                                <Link href="/">Home 04</Link>
                                                             </li>
                                                             <li>
-                                                                <Link href="/pages/homepage/home-5">Home 05</Link>
+                                                                <Link href="/">Home 05</Link>
                                                             </li>
                                                         </ul>
                                                     </li>
@@ -236,58 +236,58 @@ const HeaderOne = () => {
                                                         <Link href="#">Onepage</Link>
                                                         <ul className="sub-menu">
                                                             <li>
-                                                                <Link href="/pages/homepage/home-1-op">Home 01 Onepage</Link>
+                                                                <Link href="/">Home 01 Onepage</Link>
                                                             </li>
                                                             <li>
-                                                                <Link href="/pages/homepage/home-2-op">Home 02 Onepage</Link>
+                                                                <Link href="/">Home 02 Onepage</Link>
                                                             </li>
                                                             <li>
-                                                                <Link href="/pages/homepage/home-3-op">Home 03 Onepage</Link>
+                                                                <Link href="/">Home 03 Onepage</Link>
                                                             </li>
                                                             <li>
-                                                                <Link href="/pages/homepage/home-4-op">Home 04 Onepage</Link>
+                                                                <Link href="/">Home 04 Onepage</Link>
                                                             </li>
                                                             <li>
-                                                                <Link href="/pages/homepage/home-5-op">Home 05 Onepage</Link>
+                                                                <Link href="/">Home 05 Onepage</Link>
                                                             </li>
                                                         </ul>
                                                     </li>
                                                 </ul>
                                             </li>
                                             <li>
-                                                <Link href="/pages/innerpage/about">ABOUT</Link>
+                                                <Link href="/about">ABOUT</Link>
                                             </li>
                                             <li className="menu-item-has-children">
                                                 <Link href="#">SERVICES</Link>
                                                 <ul className="sub-menu">
-                                                    <li><Link href="/pages/innerpage/service">Service</Link></li>
-                                                    <li><Link href="/pages/innerpage/service-details">Service Details</Link></li>
+                                                    <li><Link href="/service">Service</Link></li>
+                                                    <li><Link href="/service-details">Service Details</Link></li>
                                                 </ul>
                                             </li>
                                             <li className="menu-item-has-children">
                                                 <Link href="#">PAGES</Link>
                                                 <ul className="sub-menu">
-                                                    <li><Link href="/pages/innerpage/project">Project Page</Link></li>
-                                                    <li><Link href="/pages/innerpage/project-details">Project Details</Link></li>
-                                                    <li><Link href="/pages/innerpage/team">Team Page</Link></li>
-                                                    <li><Link href="/pages/innerpage/team-details">Team Details</Link></li>
-                                                    <li><Link href="/pages/innerpage/shop">Shop Page</Link></li>
-                                                    <li><Link href="/pages/innerpage/shop-details">Shop Details</Link></li>
-                                                    <li><Link href="/pages/innerpage/cart">Cart</Link></li>
-                                                    <li><Link href="/pages/innerpage/checkout">Checkout</Link></li>
-                                                    <li><Link href="/pages/innerpage/wishlist">Wishlist</Link></li>
+                                                    <li><Link href="/project">Project Page</Link></li>
+                                                    <li><Link href="/project-details">Project Details</Link></li>
+                                                    <li><Link href="/about">Team Page</Link></li>
+                                                    <li><Link href="/about">Team Details</Link></li>
+                                                    <li><Link href="/shop">Shop Page</Link></li>
+                                                    <li><Link href="/shop-details">Shop Details</Link></li>
+                                                    <li><Link href="/cart">Cart</Link></li>
+                                                    <li><Link href="/checkout">Checkout</Link></li>
+                                                    <li><Link href="/wishlist">Wishlist</Link></li>
                                                 </ul>
                                             </li>
                                             <li className="menu-item-has-children">
                                                 <Link href="#">NEWS</Link>
                                                 <ul className="sub-menu">
-                                                    <li><Link href="/pages/innerpage/blog">News</Link></li>
-                                                    <li><Link href="/pages/innerpage/blog-details">News Details</Link></li>
+                                                    <li><Link href="/project">News</Link></li>
+                                                    <li><Link href="/project">News Details</Link></li>
                                                 </ul>
                                             </li>
 
                                             <li>
-                                                <Link href="/pages/innerpage/contact">CONTACT</Link>
+                                                <Link href="/contact">CONTACT</Link>
                                             </li>
                                         </ul>
                                     </nav>
@@ -297,7 +297,7 @@ const HeaderOne = () => {
                                 </div>
                                 <div className="col-auto d-xl-block d-none space-left">
                                     <div className="header-button">
-                                        <Link href="/pages/innerpage/about" className="btn header-one-extra-style">GET IN TOUCH <i className="ri-arrow-right-up-line"></i></Link>
+                                        <Link href="/about" className="btn header-one-extra-style">GET IN TOUCH <i className="ri-arrow-right-up-line"></i></Link>
                                         <button onClick={handleSearchPopupOpen} type="button" className="search-btn searchBoxToggler simple-icon">
                                             <i className="ri-search-line"></i>
                                         </button>

@@ -7,7 +7,7 @@ const FooterTwo = () => {
             <div className="container">
                 <div className="footer-top-1">
                     <div className="footer-logo">
-                        <Link href="/pages/homepage/home-1"><img src="/main-assets/img/logo-white.svg" alt="Construz" /></Link>
+                        <Link href="/"><img src="/main-assets/img/logo-white.svg" alt="Construz" /></Link>
                     </div>
                     <div className="subscribe-box">
                         <p className="subscribe-box_text">Subscribe for the latest news. Stay updated on the latest trends.</p>
@@ -33,14 +33,14 @@ const FooterTwo = () => {
                                 <h3 className="widget_title">Useful Links</h3>
                                 <div className="menu-all-pages-container grid-style">
                                     <ul className="menu">
-                                        <li><Link href="/pages/innerpage/about">About Us</Link></li>
-                                        <li><Link href="/pages/innerpage/service">What We Do</Link></li>
+                                        <li><Link href="/about">About Us</Link></li>
+                                        <li><Link href="/service">What We Do</Link></li>
                                         <li><Link href="/pages/innerpage/news">News & Article</Link></li>
                                         <li><Link href="/pages/innerpage/success">Success Story</Link></li>
-                                        <li><Link href="/pages/innerpage/service">FAQ’s</Link></li>
+                                        <li><Link href="/service">FAQ’s</Link></li>
                                     </ul>
                                     <ul className="menu">
-                                        <li><Link href="/pages/innerpage/team">Our Team</Link></li>
+                                        <li><Link href="/about">Our Team</Link></li>
                                         <li><Link href="/pages/innerpage/careers">Careers</Link></li>
                                         <li><Link href="/pages/innerpage/testimonials">Testimonials</Link></li>
                                         <li><Link href="/pages/innerpage/privacy">Privacy Policy</Link></li>
@@ -87,7 +87,7 @@ const FooterTwo = () => {
                             <div className="footer-links">
                                 <Link href="/pages/innerpage/terms">Terms & Condition</Link>
                                 <Link href="/pages/innerpage/privacy">Privacy Policy</Link>
-                                <Link href="/pages/innerpage/contact">Contact Us</Link>
+                                <Link href="/contact">Contact Us</Link>
                             </div>
                         </div>
                     </div>

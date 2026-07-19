@@ -125,7 +125,7 @@ const Hero = () => {
                         <div className="round-text">
                           <CircleTextTwo />
                         </div>
-                        <Link href="/pages/innerpage/contact" className="hero-tag_icon">
+                        <Link href="/contact" className="hero-tag_icon">
                           <i className="ri-arrow-right-up-line"></i>
                         </Link>
                       </div>
@@ -170,7 +170,7 @@ const Hero = () => {
                         <div className="round-text">
                           <CircleTextTwo />
                         </div>
-                        <Link href="/pages/innerpage/contact" className="hero-tag_icon">
+                        <Link href="/contact" className="hero-tag_icon">
                           <i className="ri-arrow-right-up-line"></i>
                         </Link>
                       </div>
@@ -215,7 +215,7 @@ const Hero = () => {
                         <div className="round-text">
                           <CircleTextTwo />
                         </div>
-                        <Link href="/pages/innerpage/contact" className="hero-tag_icon">
+                        <Link href="/contact" className="hero-tag_icon">
                           <i className="ri-arrow-right-up-line"></i>
                         </Link>
                       </div>
