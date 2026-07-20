@@ -122,7 +122,7 @@ const Service = () => {
                                 <i className="ri-phone-fill"></i>
                             </div>
                             <div className="cta-contact-grid-details">
-                                <Link className="link" href="tel:+123551579209">+123 551 579 209</Link>
+                                <Link className="link" href="/contact">+123 551 579 209</Link>
                                 <h6 className="title">Mon - Sat : 10am - 07pm</h6>
                             </div>
                         </div>

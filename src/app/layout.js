@@ -7,11 +7,13 @@ import "~/public/main-assets/css/slick.min.css";
 import "~/public/main-assets/css/style.css";
 import "~/public/main-assets/css/react-adjustment.css";
 import "~/public/main-assets/css/fonts.css";
+import LanguageProvider from "~/i18n/LanguageProvider";
 import "./altekmar-overrides.css";
 
 export const metadata = {
-  title: "Altekmar",
-  description: "Soluciones integradas para proyectos, equipos e instalaciones.",
+  title: "Altekmar | Equipos, Sistemas y Construcción",
+  description:
+    "Elevadores, generadores, aire acondicionado, seguridad, equipos y contratación general en República Dominicana.",
   icons: {
     icon: [
       {
@@ -39,8 +41,10 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="es">
-      <body>{children}</body>
+    <html lang="es" suppressHydrationWarning>
+      <body>
+        <LanguageProvider>{children}</LanguageProvider>
+      </body>
     </html>
   );
 }

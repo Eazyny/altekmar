@@ -25,3 +25,244 @@ img[src="/brand/altekmar-logo.svg"] {
         max-height: 50px !important;
     }
 }
+
+/* Bilingual controls added without changing the Home 2 visual system */
+.altekmar-language-switch {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    min-width: 74px;
+    min-height: 44px;
+    padding: 0 12px;
+    color: var(--title-color, #171717);
+    background: transparent;
+    border: 1px solid currentColor;
+    border-radius: 0;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 1;
+    letter-spacing: 0.08em;
+    transition: color 0.2s ease, background-color 0.2s ease;
+}
+
+.altekmar-language-switch:hover {
+    color: var(--white-color, #fff);
+    background: var(--title-color, #171717);
+}
+
+.altekmar-language-switch span:not(.is-active) {
+    opacity: 0.45;
+}
+
+.altekmar-language-switch .is-active {
+    color: var(--theme-color, #ea5501);
+    opacity: 1;
+}
+
+.header-button .altekmar-language-switch {
+    flex: 0 0 auto;
+}
+
+.altekmar-mobile-language {
+    margin-left: auto;
+    margin-right: 14px;
+}
+
+.mobile-logo .altekmar-language-switch {
+    min-width: 68px;
+    min-height: 38px;
+}
+
+.footer-logo img[src="/main-assets/img/logo.svg"] {
+    filter: brightness(0) invert(1);
+}
+
+@media (max-width: 1199px) {
+    .header-button .altekmar-language-switch {
+        display: none;
+    }
+}
+/* ALTEKMAR GOTS ELEVATOR CATALOG START */
+.altekmar-elevator-card .product-img {
+  min-height: 340px;
+  background: #f7f7f5;
+}
+
+.altekmar-elevator-card .product-img > img {
+  width: 100%;
+  height: 340px;
+  padding: 18px;
+  object-fit: contain;
+  background: #f7f7f5;
+}
+
+.altekmar-elevator-card .product-title {
+  min-height: 3.1em;
+}
+
+.altekmar-product-label {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 12px;
+}
+
+.altekmar-product-label i,
+.altekmar-authorized-retailer i {
+  color: var(--theme-color, #ea5501);
+}
+
+.altekmar-quote-price {
+  font-size: 15px !important;
+  font-weight: 700;
+}
+
+.altekmar-shop-empty {
+  display: grid;
+  place-items: center;
+  min-height: 320px;
+  padding: 40px;
+  text-align: center;
+  border: 1px solid #e6e6e6;
+}
+
+.altekmar-shop-empty i {
+  margin-bottom: 12px;
+  font-size: 42px;
+}
+
+.altekmar-elevator-gallery .product-big-img .img {
+  display: grid;
+  place-items: center;
+  min-height: 580px;
+  background: #f7f7f5;
+}
+
+.altekmar-elevator-gallery .product-big-img img {
+  width: 100%;
+  height: 580px;
+  padding: 24px;
+  object-fit: contain;
+}
+
+.altekmar-elevator-thumbnails {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: 10px;
+  margin-top: 14px;
+}
+
+.altekmar-elevator-thumbnails button {
+  height: 92px;
+  padding: 6px;
+  overflow: hidden;
+  background: #f7f7f5;
+  border: 1px solid #dedede;
+  cursor: pointer;
+}
+
+.altekmar-elevator-thumbnails button.is-active {
+  border-color: var(--theme-color, #ea5501);
+}
+
+.altekmar-elevator-thumbnails img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.altekmar-detail-quote {
+  font-size: 18px !important;
+}
+
+.altekmar-authorized-retailer {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.altekmar-detail-actions {
+  flex-wrap: wrap;
+}
+
+.product-tab-style1 .nav-link {
+  border: 0;
+  background: transparent;
+}
+
+.altekmar-elevator-details .woocommerce-table th {
+  width: 38%;
+}
+
+@media (max-width: 767px) {
+  .altekmar-elevator-card .product-img,
+  .altekmar-elevator-card .product-img > img {
+    height: 300px;
+    min-height: 300px;
+  }
+
+  .altekmar-elevator-gallery .product-big-img .img,
+  .altekmar-elevator-gallery .product-big-img img {
+    height: 420px;
+    min-height: 420px;
+  }
+
+  .altekmar-elevator-thumbnails {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+}
+/* ALTEKMAR GOTS ELEVATOR CATALOG END */
+/* ALTEKMAR MULTI CATEGORY CATALOG START */
+.altekmar-category-card {
+  height: 100%;
+}
+
+.altekmar-category-card .product-img {
+  min-height: 360px;
+  background: #f7f7f5;
+}
+
+.altekmar-category-card .product-img img {
+  width: 100%;
+  height: 360px;
+  padding: 22px;
+  object-fit: contain;
+}
+
+.altekmar-category-description {
+  min-height: 5.5em;
+  margin-top: 14px;
+}
+
+.altekmar-category-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 14px;
+  padding-top: 20px;
+  margin-top: 20px;
+  border-top: 1px solid #e5e5e5;
+}
+
+.altekmar-category-footer > span {
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.widget_categories li.active > a {
+  color: var(--theme-color, #ea5501);
+}
+
+@media (max-width: 767px) {
+  .altekmar-category-card .product-img,
+  .altekmar-category-card .product-img img {
+    height: 310px;
+    min-height: 310px;
+  }
+
+  .altekmar-category-description {
+    min-height: auto;
+  }
+}
+/* ALTEKMAR MULTI CATEGORY CATALOG END */

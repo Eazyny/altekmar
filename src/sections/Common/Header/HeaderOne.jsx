@@ -2,6 +2,7 @@
 import Link from "next/link";
 import { useEffect, useRef, useState } from "react";
 import MultiPageMobileMenu from "../MultiPageMobileMenu/MultiPageMobileMenu";
+import LanguageSwitcher from "~/i18n/LanguageSwitcher";
 
 const HeaderOne = () => {
     const [isSticky, setIsSticky] = useState(false);
@@ -75,7 +76,7 @@ const HeaderOne = () => {
                     <div className="widget widget-about footer-widget">
                         <div className="footer-logo footer-img">
                             <Link href="/">
-                                <img src="/main-assets/img/logo.svg" alt="logo" width={100} height={50} />
+                                <img src="/main-assets/img/logo.svg" alt="Altekmar" width={100} height={50} />
                             </Link>
                         </div>
                         <p className="about-text mb-4">
@@ -84,7 +85,7 @@ const HeaderOne = () => {
                         </p>
 
                         <p className="footer-text">
-                            <Link href="tel:851555961658">
+                            <Link href="/contact">
                                 <i className="ri-phone-line space-right-sidebar-icon"></i>+85 155 596 1658
                             </Link>
                         </p>
@@ -93,7 +94,7 @@ const HeaderOne = () => {
                             York, USA - 67452
                         </p>
                         <p className="footer-text">
-                            <Link href="mailto:support@gmail.com">
+                            <Link href="/contact">
                                 <i className="ri-mail-line space-right-sidebar-icon"></i>support@gmail.com
                             </Link>
                         </p>
@@ -185,7 +186,7 @@ const HeaderOne = () => {
                                     <div className="header-links ps-0">
                                         <ul>
                                             <li><i className="ri-time-line"></i>Mon - Sat / 8am : 12pm</li>
-                                            <li><i className="ri-map-pin-line"></i><Link href="https://www.google.com/maps">96 Jones Street, New York, USA</Link></li>
+                                            <li><i className="ri-map-pin-line"></i><Link href="/contact">96 Jones Street, New York, USA</Link></li>
                                         </ul>
                                     </div>
                                 </div>
@@ -196,99 +197,42 @@ const HeaderOne = () => {
                 <div className={`sticky-wrapper ${isSticky ? 'sticky' : ''}`}>
                     <div className="menu-area">
                         <div className="header-navbar-logo">
-                            <Link href="/"><img src="/main-assets/img/logo.svg" alt="logo" /></Link>
+                            <Link href="/"><img src="/main-assets/img/logo.svg" alt="Altekmar" /></Link>
                         </div>
                         <div className="logo-bg"></div>
                         <div className="container">
                             <div className="row align-items-center justify-content-lg-start justify-content-between">
                                 <div className="col-auto d-xxl-none d-block">
                                     <div className="header-logo">
-                                        <Link href="/"><img src="/main-assets/img/logo.svg" alt="logo" /></Link>
+                                        <Link href="/"><img src="/main-assets/img/logo.svg" alt="Altekmar" /></Link>
                                     </div>
                                 </div>
                                 <div className="col-auto menu-bar ms-xxl-0">
                                     <nav className="main-menu d-none d-lg-inline-block">
                                         <ul>
+                                            <li><Link href="/">HOME</Link></li>
+                                            <li><Link href="/about">ABOUT</Link></li>
                                             <li className="menu-item-has-children">
-                                                <Link href="#">HOME</Link>
+                                                <Link href="/service">SERVICES</Link>
                                                 <ul className="sub-menu">
-                                                    <li className="menu-item-has-children">
-                                                        <Link href="#">Multipage</Link>
-                                                        <ul className="sub-menu">
-                                                            <li>
-                                                                <Link href="/">Home 01</Link>
-                                                            </li>
-                                                            <li>
-                                                                <Link href="/">Home 02</Link>
-                                                            </li>
-                                                            <li>
-                                                                <Link href="/">Home 03</Link>
-                                                            </li>
-                                                            <li>
-                                                                <Link href="/">Home 04</Link>
-                                                            </li>
-                                                            <li>
-                                                                <Link href="/">Home 05</Link>
-                                                            </li>
-                                                        </ul>
-                                                    </li>
-                                                    <li className="menu-item-has-children">
-                                                        <Link href="#">Onepage</Link>
-                                                        <ul className="sub-menu">
-                                                            <li>
-                                                                <Link href="/">Home 01 Onepage</Link>
-                                                            </li>
-                                                            <li>
-                                                                <Link href="/">Home 02 Onepage</Link>
-                                                            </li>
-                                                            <li>
-                                                                <Link href="/">Home 03 Onepage</Link>
-                                                            </li>
-                                                            <li>
-                                                                <Link href="/">Home 04 Onepage</Link>
-                                                            </li>
-                                                            <li>
-                                                                <Link href="/">Home 05 Onepage</Link>
-                                                            </li>
-                                                        </ul>
-                                                    </li>
+                                                    <li><Link href="/service-details">Elevators & Vertical Mobility</Link></li>
+                                                    <li><Link href="/service-details">Generators & Power Systems</Link></li>
+                                                    <li><Link href="/service-details">Air Conditioning & HVAC</Link></li>
+                                                    <li><Link href="/service-details">Security Systems</Link></li>
+                                                    <li><Link href="/service-details">General Contracting</Link></li>
                                                 </ul>
                                             </li>
-                                            <li>
-                                                <Link href="/about">ABOUT</Link>
-                                            </li>
+                                            <li><Link href="/project">PROJECTS</Link></li>
                                             <li className="menu-item-has-children">
-                                                <Link href="#">SERVICES</Link>
+                                                <Link href="/shop">SHOP</Link>
                                                 <ul className="sub-menu">
-                                                    <li><Link href="/service">Service</Link></li>
-                                                    <li><Link href="/service-details">Service Details</Link></li>
+                                                    <li><Link href="/shop">Equipment & Products</Link></li>
+                                                    <li><Link href="/shop-details">Product Details</Link></li>
+                                                    <li><Link href="/cart">Request Cart</Link></li>
+                                                    <li><Link href="/wishlist">Saved Products</Link></li>
                                                 </ul>
                                             </li>
-                                            <li className="menu-item-has-children">
-                                                <Link href="#">PAGES</Link>
-                                                <ul className="sub-menu">
-                                                    <li><Link href="/project">Project Page</Link></li>
-                                                    <li><Link href="/project-details">Project Details</Link></li>
-                                                    <li><Link href="/about">Team Page</Link></li>
-                                                    <li><Link href="/about">Team Details</Link></li>
-                                                    <li><Link href="/shop">Shop Page</Link></li>
-                                                    <li><Link href="/shop-details">Shop Details</Link></li>
-                                                    <li><Link href="/cart">Cart</Link></li>
-                                                    <li><Link href="/checkout">Checkout</Link></li>
-                                                    <li><Link href="/wishlist">Wishlist</Link></li>
-                                                </ul>
-                                            </li>
-                                            <li className="menu-item-has-children">
-                                                <Link href="#">NEWS</Link>
-                                                <ul className="sub-menu">
-                                                    <li><Link href="/project">News</Link></li>
-                                                    <li><Link href="/project">News Details</Link></li>
-                                                </ul>
-                                            </li>
-
-                                            <li>
-                                                <Link href="/contact">CONTACT</Link>
-                                            </li>
+                                            <li><Link href="/contact">CONTACT</Link></li>
                                         </ul>
                                     </nav>
                                     <div className="navbar-right d-inline-flex d-lg-none">
@@ -297,7 +241,8 @@ const HeaderOne = () => {
                                 </div>
                                 <div className="col-auto d-xl-block d-none space-left">
                                     <div className="header-button">
-                                        <Link href="/about" className="btn header-one-extra-style">GET IN TOUCH <i className="ri-arrow-right-up-line"></i></Link>
+                                        <LanguageSwitcher />
+                                        <Link href="/contact" className="btn header-one-extra-style">GET A QUOTE <i className="ri-arrow-right-up-line"></i></Link>
                                         <button onClick={handleSearchPopupOpen} type="button" className="search-btn searchBoxToggler simple-icon">
                                             <i className="ri-search-line"></i>
                                         </button>
@@ -314,7 +259,7 @@ const HeaderOne = () => {
                             </div>
                             <div className="navbar-right-desc-details">
                                 <h6 className="title">Call us any time</h6>
-                                <Link className="link" href="tel:+2590256215">+123 556 8824</Link>
+                                <Link className="link" href="/contact">+123 556 8824</Link>
                             </div>
                         </div>
                     </div>
@@ -324,4 +269,4 @@ const HeaderOne = () => {
     );
 };
 
-export default HeaderOne; 
+export default HeaderOne;

@@ -36,7 +36,7 @@ const Pricing = () => {
                                     <h4 className="pricing-card_title">Basic Plan</h4>
                                     <p className="pricing-card_text">What you will get in this plan</p>
                                     <h4 className="pricing-card_price">
-                                        <span className="pricing-card_currency">$</span>299<span className="pricing-card_duration">Month</span>
+                                        <span className="pricing-card_currency"></span>299<span className="pricing-card_duration">Month</span>
                                     </h4>
                                     <div className="pricing-card-details">
                                         <div className="checklist">
@@ -62,7 +62,7 @@ const Pricing = () => {
                                     <h4 className="pricing-card_title">Standard Plans</h4>
                                     <p className="pricing-card_text">What you will get in this plan</p>
                                     <h4 className="pricing-card_price">
-                                        <span className="pricing-card_currency">$</span>460<span className="pricing-card_duration">Month</span>
+                                        <span className="pricing-card_currency"></span>460<span className="pricing-card_duration">Month</span>
                                     </h4>
                                     <div className="pricing-card-details">
                                         <div className="pricing-card-icon">
@@ -94,7 +94,7 @@ const Pricing = () => {
                                     <h4 className="pricing-card_title">Premium Plan</h4>
                                     <p className="pricing-card_text">What you will get in this plan</p>
                                     <h4 className="pricing-card_price">
-                                        <span className="pricing-card_currency">$</span>850<span className="pricing-card_duration">Month</span>
+                                        <span className="pricing-card_currency"></span>850<span className="pricing-card_duration">Month</span>
                                     </h4>
                                     <div className="pricing-card-details">
                                         <div className="checklist">
@@ -124,7 +124,7 @@ const Pricing = () => {
                                     <h4 className="pricing-card_title">Basic Plan</h4>
                                     <p className="pricing-card_text">What you will get in this plan</p>
                                     <h4 className="pricing-card_price">
-                                        <span className="pricing-card_currency">$</span>599<span className="pricing-card_duration">YEAR</span>
+                                        <span className="pricing-card_currency"></span>599<span className="pricing-card_duration">YEAR</span>
                                     </h4>
                                     <div className="pricing-card-details">
                                         <div className="checklist">
@@ -150,7 +150,7 @@ const Pricing = () => {
                                     <h4 className="pricing-card_title">Standard Plans</h4>
                                     <p className="pricing-card_text">What you will get in this plan</p>
                                     <h4 className="pricing-card_price">
-                                        <span className="pricing-card_currency">$</span>860<span className="pricing-card_duration">YEAR</span>
+                                        <span className="pricing-card_currency"></span>860<span className="pricing-card_duration">YEAR</span>
                                     </h4>
                                     <div className="pricing-card-details">
                                         <div className="pricing-card-icon">
@@ -182,7 +182,7 @@ const Pricing = () => {
                                     <h4 className="pricing-card_title">Premium Plan</h4>
                                     <p className="pricing-card_text">What you will get in this plan</p>
                                     <h4 className="pricing-card_price">
-                                        <span className="pricing-card_currency">$</span>1250<span className="pricing-card_duration">YEAR</span>
+                                        <span className="pricing-card_currency"></span>1250<span className="pricing-card_duration">YEAR</span>
                                     </h4>
                                     <div className="pricing-card-details">
                                         <div className="checklist">

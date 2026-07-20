@@ -38,8 +38,8 @@ const Contact = () => {
                                     </div>
                                     <div className="contact-grid-details">
                                         <h4 className="contact-grid-title">Phone Number</h4>
-                                        <p className="contact-grid-text"><Link href="tel:225515792670">(+22) 551-579-2670</Link></p>
-                                        <p className="contact-grid-text"><Link href="tel:002345672569">+ (00) 234-567-2569</Link></p>
+                                        <p className="contact-grid-text"><Link href="/contact">(+22) 551-579-2670</Link></p>
+                                        <p className="contact-grid-text"><Link href="/contact">+ (00) 234-567-2569</Link></p>
                                     </div>
                                 </div>
                             </div>
@@ -51,7 +51,7 @@ const Contact = () => {
                                     <div className="contact-grid-details">
                                         <h4 className="contact-grid-title">Email Address</h4>
                                         <p className="contact-grid-text">Response within 2 hour</p>
-                                        <p className="contact-grid-text"><Link href="mailto:support@construz.com">support@construz.com</Link></p>
+                                        <p className="contact-grid-text"><Link href="/contact">support@construz.com</Link></p>
                                     </div>
                                 </div>
                             </div>

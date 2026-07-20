@@ -55,7 +55,7 @@ const TeamThree = () => {
               <div className="team-card_img team-card-white-space-none">
                 <img src="/main-assets/img/team/team-1-1.png" alt="img" />
               </div>
-              <Link href="tel:0023745671379" className="contact-btn-wrap">
+              <Link href="/contact" className="contact-btn-wrap">
                 <span className="number">(+00) 347 456 1379</span>
                 <div className="icon-btn">
                   <i className="ri-phone-fill"></i>
@@ -90,7 +90,7 @@ const TeamThree = () => {
               <div className="team-card_img team-card-white-space-none">
                 <img src="/main-assets/img/team/team-1-2.png" alt="img" />
               </div>
-              <Link href="tel:0023745671379" className="contact-btn-wrap">
+              <Link href="/contact" className="contact-btn-wrap">
                 <span className="number">(+00) 347 456 1379</span>
                 <div className="icon-btn">
                   <i className="ri-phone-fill"></i>
@@ -125,7 +125,7 @@ const TeamThree = () => {
               <div className="team-card_img team-card-white-space-none">
                 <img src="/main-assets/img/team/team-1-3.png" alt="img" />
               </div>
-              <Link href="tel:0023745671379" className="contact-btn-wrap">
+              <Link href="/contact" className="contact-btn-wrap">
                 <span className="number">(+00) 347 456 1379</span>
                 <div className="icon-btn">
                   <i className="ri-phone-fill"></i>

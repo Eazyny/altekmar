@@ -1,0 +1,2761 @@
+{
+  "schemaVersion": 2,
+  "manufacturer": "GOTS Elevator",
+  "retailer": "Altekmar",
+  "importedAt": "2026-07-20T00:57:32.718Z",
+  "categoryCount": 6,
+  "productCount": 53,
+  "categories": [
+    {
+      "slug": "passenger",
+      "sourceSlug": "passenger-elevator",
+      "sourceUrl": "https://www.gotselevator.com/product-category/passenger-elevator/",
+      "title": {
+        "en": "Passenger Elevators",
+        "es": "Elevadores de pasajeros"
+      },
+      "description": {
+        "en": "Passenger elevator solutions for residential, commercial and mixed-use buildings.",
+        "es": "Elevadores de pasajeros para edificios residenciales, comerciales y de uso mixto."
+      },
+      "productCount": 29,
+      "products": [
+        {
+          "id": "800kg-mirror-finish-passenger-elevator-stainless-steel-lift",
+          "categorySlug": "passenger",
+          "category": {
+            "en": "Passenger Elevators",
+            "es": "Elevadores de pasajeros"
+          },
+          "manufacturer": "GOTS Elevator",
+          "authorizedRetailer": "Altekmar",
+          "sku": null,
+          "source": {
+            "english": "https://www.gotselevator.com/product/800kg-mirror-finish-passenger-elevator-stainless-steel-lift/",
+            "spanish": "https://www.gotselevator.com/es/producto/800kg-mirror-finish-passenger-elevator-stainless-steel-lift/",
+            "category": "https://www.gotselevator.com/product-category/passenger-elevator/",
+            "importedAt": "2026-07-20T00:54:26.350Z"
+          },
+          "title": {
+            "en": "800kg Mirror Finish Passenger Elevator – Stainless Steel Lift",
+            "es": "Ascensor de pasajeros de 800 kg con acabado espejo"
+          },
+          "description": {
+            "en": "This passenger elevator is equipped with a fully computerized control system, designed to improve operational intelligence and reliability.",
+            "es": "Ascensor de pasajeros de 800 kg con acabado espejo, diseñado para ofrecer transporte vertical seguro, cómodo y eficiente. La capacidad, el recorrido, la velocidad y los acabados se configuran según las necesidades del proyecto."
+          },
+          "specifications": {
+            "Item": "Specification",
+            "Product Name": "Passenger Elevator",
+            "Load Capacity": "500 – 1000 kg",
+            "Rated Load (Typical)": "800 kg",
+            "Capacity": "6 – 10 Persons",
+            "Rated Speed": "1.0 – 2.0 m/s",
+            "Application": "Office Buildings, Hotels, Residential",
+            "Control System": "Computerized Elevator Control",
+            "Handrail Options": "Stainless Steel / Wood / Customized",
+            "Certification": "CE, 3C",
+            "Warranty": "12 Months After Shipping"
+          },
+          "images": [
+            {
+              "sourceUrl": "https://www.gotselevator.com/wp-content/uploads/2026/03/passenger-elevator.jpg",
+              "file": "main-assets/img/elevators/gots/passenger/800kg-mirror-finish-passenger-elevator-stainless-steel-lift/01-passenger-elevator-5b1aeaaf.jpg",
+              "publicUrl": "/main-assets/img/elevators/gots/passenger/800kg-mirror-finish-passenger-elevator-stainless-steel-lift/01-passenger-elevator-5b1aeaaf.jpg",
+              "bytes": 52572,
+              "contentType": "image/jpeg"
+            }
+          ],
+          "featuredImage": "/main-assets/img/elevators/gots/passenger/800kg-mirror-finish-passenger-elevator-stainless-steel-lift/01-passenger-elevator-5b1aeaaf.jpg",
+          "needsSpanishReview": false,
+          "localization": {
+            "es": "Altekmar localized catalog copy"
+          }
+        },
+        {
+          "id": "passenger-elevator-high-speed-efficiency-unmatched-passenger-comfort",
+          "categorySlug": "passenger",
+          "category": {
+            "en": "Passenger Elevators",
+            "es": "Elevadores de pasajeros"
+          },
+          "manufacturer": "GOTS Elevator",
+          "authorizedRetailer": "Altekmar",
+          "sku": null,
+          "source": {
+            "english": "https://www.gotselevator.com/product/passenger-elevator-high-speed-efficiency-unmatched-passenger-comfort/",
+            "spanish": "https://www.gotselevator.com/es/producto/passenger-elevator-high-speed-efficiency-unmatched-passenger-comfort/",
+            "category": "https://www.gotselevator.com/product-category/passenger-elevator/",
+            "importedAt": "2026-07-20T00:54:55.754Z"
+          },
+          "title": {
+            "en": "High-Speed Efficiency & Unmatched Passenger Comfort",
+            "es": "Alta velocidad, eficiencia y confort superior para pasajeros"
+          },
+          "description": {
+            "en": "The GOTS Passenger Elevator series is designed to meet the vertical transportation needs of modern urban architecture.VVVF control technology",
+            "es": "Alta velocidad, eficiencia y confort superior para pasajeros, diseÃ±ado para ofrecer transporte vertical seguro, cÃ³modo y eficiente. La capacidad, el recorrido, la velocidad y los acabados se configuran segÃºn las necesidades del proyecto."
+          },
+          "specifications": {
+            "Feature": "Specifications",
+            "Rated Load": "450kg / 630kg / 800kg / 1000kg / 1150kg / 1350kg / 1600kg",
+            "Rated Speed": "1.0 m/s, 1.5 m/s, 1.75 m/s, 2.0 m/s, 2.5 m/s, 3.0 m/s",
+            "Drive System": "PM Gearless Traction Machine (Energy-Saving)",
+            "Control System": "32-bit Micro-computer Integrated Intelligent Control",
+            "Elevator Type": "Machine Room (MR) / Machine Room-Less (MRL)",
+            "Leveling Accuracy": "± 2mm",
+            "Max Travel Height": "Up to 120 meters (Customizable for high-rise)"
+          },
+          "images": [
+            {
+              "sourceUrl": "https://www.gotselevator.com/wp-content/uploads/2025/08/TS-J01-1000.png",
+              "file": "main-assets/img/elevators/gots/passenger/passenger-elevator-high-speed-efficiency-unmatched-passenger-comfort/01-ts-j01-1000-f807fa48.png",
+              "publicUrl": "/main-assets/img/elevators/gots/passenger/passenger-elevator-high-speed-efficiency-unmatched-passenger-comfort/01-ts-j01-1000-f807fa48.png",
+              "bytes": 530551,
+              "contentType": "image/png"
+            },
+            {
+              "sourceUrl": "https://www.gotselevator.com/wp-content/uploads/2026/01/J03.jpg",
+              "file": "main-assets/img/elevators/gots/passenger/passenger-elevator-high-speed-efficiency-unmatched-passenger-comfort/02-j03-530cd30f.jpg",
+              "publicUrl": "/main-assets/img/elevators/gots/passenger/passenger-elevator-high-speed-efficiency-unmatched-passenger-comfort/02-j03-530cd30f.jpg",
+              "bytes": 93466,
+              "contentType": "image/jpeg"
+            }
+          ],
+          "featuredImage": "/main-assets/img/elevators/gots/passenger/passenger-elevator-high-speed-efficiency-unmatched-passenger-comfort/01-ts-j01-1000-f807fa48.png",
+          "needsSpanishReview": false,
+          "localization": {
+            "es": "Altekmar localized catalog copy"
+          }
+        },
+        {
+          "id": "passenger-lifts-for-homes",
+          "categorySlug": "passenger",
+          "category": {
+            "en": "Passenger Elevators",
+            "es": "Elevadores de pasajeros"
+          },
+          "manufacturer": "GOTS Elevator",
+          "authorizedRetailer": "Altekmar",
+          "sku": null,
+          "source": {
+            "english": "https://www.gotselevator.com/product/passenger-lifts-for-homes/",
+            "spanish": "https://www.gotselevator.com/es/producto/passenger-lifts-for-homes/",
+            "category": "https://www.gotselevator.com/product-category/passenger-elevator/",
+            "importedAt": "2026-07-20T00:54:27.465Z"
+          },
+          "title": {
+            "en": "J19 Hydraulic Passenger Liftes",
+            "es": "J19 Elevador hidraulico de pasajeros"
+          },
+          "description": {
+            "en": "Gots elevator Professional passenger lift manufacturers offering competitive price for passenger elevator projects worldwide.",
+            "es": "J19 Elevador hidraulico de pasajeros, diseÃ±ado para ofrecer transporte vertical seguro, cÃ³modo y eficiente. La capacidad, el recorrido, la velocidad y los acabados se configuran segÃºn las necesidades del proyecto."
+          },
+          "specifications": {
+            "2": "4600 · 1700",
+            "Rated Load(kg)": "Rated Speed(m/s) · Overhead(OH) Clearance(mm) · PIT(P) Clearance(mm)",
+            "450-1600": "1 · 4400 · 1500",
+            "1.5": "4500 · 1600",
+            "1.75": "4600 · 1700",
+            "2.5": "4700 · 1800",
+            "Specifications": "Machine Room Clear Height(mm) · Rated Load(kg) · Rated Speed(m/s) · Machine Room Hook Capacity",
+            "450-1050kg\n1-1.75m/s": "2200 · 450-1050 · 1/1.5/1.75 · 3 tons",
+            "1150kg\n1-1.75m/s": "2500 · 1150-1600 · 1/1.5/1.75 · 4 tons",
+            "800-1050kg\n2-2.5m/s": "2500 · 800-1050 · 2/2.5 · 4 tons",
+            "1350-1600kg\n2-2.5m/s": "2500 · – · – ·"
+          },
+          "images": [
+            {
+              "sourceUrl": "https://www.gotselevator.com/wp-content/uploads/2026/01/passenger-lift-companies-1.jpg",
+              "file": "main-assets/img/elevators/gots/passenger/passenger-lifts-for-homes/01-passenger-lift-companies-1-a100683c.jpg",
+              "publicUrl": "/main-assets/img/elevators/gots/passenger/passenger-lifts-for-homes/01-passenger-lift-companies-1-a100683c.jpg",
+              "bytes": 56359,
+              "contentType": "image/jpeg"
+            }
+          ],
+          "featuredImage": "/main-assets/img/elevators/gots/passenger/passenger-lifts-for-homes/01-passenger-lift-companies-1-a100683c.jpg",
+          "needsSpanishReview": false,
+          "localization": {
+            "es": "Altekmar localized catalog copy"
+          }
+        },
+        {
+          "id": "mrl-passenger-elevator-machine-roomless-building-lift",
+          "categorySlug": "passenger",
+          "category": {
+            "en": "Passenger Elevators",
+            "es": "Elevadores de pasajeros"
+          },
+          "manufacturer": "GOTS Elevator",
+          "authorizedRetailer": "Altekmar",
+          "sku": null,
+          "source": {
+            "english": "https://www.gotselevator.com/product/mrl-passenger-elevator-machine-roomless-building-lift/",
+            "spanish": "https://www.gotselevator.com/es/producto/mrl-passenger-elevator-machine-roomless-building-lift/",
+            "category": "https://www.gotselevator.com/product-category/passenger-elevator/",
+            "importedAt": "2026-07-20T00:54:28.598Z"
+          },
+          "title": {
+            "en": "MRL Passenger Elevator – Machine Roomless Electric Building Lift",
+            "es": "MRL Elevador de pasajeros – electrico sin cuarto de maquinas"
+          },
+          "description": {
+            "en": "High-quality passenger elevator cabin featuring stainless steel finishes, LED lighting, and durable marble flooring by Gots Elevator.",
+            "es": "MRL Elevador de pasajeros – electrico sin cuarto de maquinas, diseÃ±ado para ofrecer transporte vertical seguro, cÃ³modo y eficiente. La capacidad, el recorrido, la velocidad y los acabados se configuran segÃºn las necesidades del proyecto."
+          },
+          "specifications": {
+            "Item": "Specification",
+            "Product Name": "MRL Passenger Elevator",
+            "Type": "Machine Roomless Building Lift",
+            "Load Capacity": "450 – 1600 kg",
+            "Rated Speed": "1.0 / 1.5 / 1.75 / 2.0 / 2.5 m/s",
+            "Control System": "VVVF Control",
+            "Door Type": "Center Opening Door",
+            "Door Knife": "Double",
+            "Power Supply": "380V / 220V 50Hz",
+            "Machine Room": "Not Required",
+            "Certification": "CE"
+          },
+          "images": [
+            {
+              "sourceUrl": "https://www.gotselevator.com/wp-content/uploads/2025/09/TS-B49-1000.png",
+              "file": "main-assets/img/elevators/gots/passenger/mrl-passenger-elevator-machine-roomless-building-lift/01-ts-b49-1000-3b8a776b.png",
+              "publicUrl": "/main-assets/img/elevators/gots/passenger/mrl-passenger-elevator-machine-roomless-building-lift/01-ts-b49-1000-3b8a776b.png",
+              "bytes": 547904,
+              "contentType": "image/png"
+            }
+          ],
+          "featuredImage": "/main-assets/img/elevators/gots/passenger/mrl-passenger-elevator-machine-roomless-building-lift/01-ts-b49-1000-3b8a776b.png",
+          "needsSpanishReview": false,
+          "localization": {
+            "es": "Altekmar localized catalog copy"
+          }
+        },
+        {
+          "id": "cutting-edge-space-saving-technology-for-modern-buildings",
+          "categorySlug": "passenger",
+          "category": {
+            "en": "Passenger Elevators",
+            "es": "Elevadores de pasajeros"
+          },
+          "manufacturer": "GOTS Elevator",
+          "authorizedRetailer": "Altekmar",
+          "sku": null,
+          "source": {
+            "english": "https://www.gotselevator.com/product/cutting-edge-space-saving-technology-for-modern-buildings/",
+            "spanish": "https://www.gotselevator.com/es/producto/cutting-edge-space-saving-technology-for-modern-buildings/",
+            "category": "https://www.gotselevator.com/product-category/passenger-elevator/",
+            "importedAt": "2026-07-20T00:54:29.716Z"
+          },
+          "title": {
+            "en": "MRL Passenger Elevator: Cutting-Edge Space-Saving",
+            "es": "Elevador de pasajeros MRL con diseño avanzado que ahorra espacio"
+          },
+          "description": {
+            "en": "TS-J01 elevator features a stainless steel cabin, soft LED lighting, advanced 32-bit control system, smooth door operation, and reliable safety performance.",
+            "es": "Elevador de pasajeros MRL con diseño avanzado que ahorra espacio, diseÃ±ado para ofrecer transporte vertical seguro, cÃ³modo y eficiente. La capacidad, el recorrido, la velocidad y los acabados se configuran segÃºn las necesidades del proyecto."
+          },
+          "specifications": {
+            "Feature": "Specifications",
+            "Rated Load": "450kg / 630kg / 800kg / 1000kg / 1250kg / 1600kg",
+            "Rated Speed": "1.0 m/s, 1.5 m/s, 1.75 m/s, 2.0 m/s, 2.5 m/s, 3.0 m/s (High-Speed)",
+            "Control System": "32-Bit Micro-computer Integrated Intelligent Control",
+            "Drive System": "Gearless Permanent Magnet Synchronous (PM) Motor",
+            "Door Opening": "Center Opening / Side Opening",
+            "Levelling Accuracy": "± 2mm",
+            "Noise Level": "≤ 48 dB"
+          },
+          "images": [
+            {
+              "sourceUrl": "https://www.gotselevator.com/wp-content/uploads/2025/08/TS-J01-1000.png",
+              "file": "main-assets/img/elevators/gots/passenger/cutting-edge-space-saving-technology-for-modern-buildings/01-ts-j01-1000-f807fa48.png",
+              "publicUrl": "/main-assets/img/elevators/gots/passenger/cutting-edge-space-saving-technology-for-modern-buildings/01-ts-j01-1000-f807fa48.png",
+              "bytes": 530551,
+              "contentType": "image/png"
+            }
+          ],
+          "featuredImage": "/main-assets/img/elevators/gots/passenger/cutting-edge-space-saving-technology-for-modern-buildings/01-ts-j01-1000-f807fa48.png",
+          "needsSpanishReview": false,
+          "localization": {
+            "es": "Altekmar localized catalog copy"
+          }
+        },
+        {
+          "id": "passenger-elevator-stainless-steel-black-titanium-lift",
+          "categorySlug": "passenger",
+          "category": {
+            "en": "Passenger Elevators",
+            "es": "Elevadores de pasajeros"
+          },
+          "manufacturer": "GOTS Elevator",
+          "authorizedRetailer": "Altekmar",
+          "sku": null,
+          "source": {
+            "english": "https://www.gotselevator.com/product/passenger-elevator-stainless-steel-black-titanium-lift/",
+            "spanish": "https://www.gotselevator.com/es/producto/passenger-elevator-stainless-steel-black-titanium-lift/",
+            "category": "https://www.gotselevator.com/product-category/passenger-elevator/",
+            "importedAt": "2026-07-20T00:54:30.832Z"
+          },
+          "title": {
+            "en": "Passenger Elevator – Stainless Steel Black Titanium Lift",
+            "es": "Ascensor de pasajeros – Ascensor de acero inoxidable con acabado de titanio negro"
+          },
+          "description": {
+            "en": "High-quality passenger elevator with stainless steel and black titanium cabin design. Load capacity from 450kg to 1600kg with speeds up to 2.5 m/s.",
+            "es": "Ascensor de pasajeros – acabado de acero inoxidable y titanio negro, diseñado para ofrecer transporte vertical seguro, cómodo y eficiente. La capacidad, el recorrido, la velocidad y los acabados se configuran según las necesidades del proyecto."
+          },
+          "specifications": {
+            "Item": "Specification",
+            "Product Name": "Passenger Elevator",
+            "Load Capacity": "450 – 1600 kg",
+            "Rated Speed": "1.0 – 2.5 m/s",
+            "Max Travel Height": "120 m",
+            "Drive System": "AC / DC",
+            "Drive Type": "VVVF Drive",
+            "Control System": "VVVF Elevator Control System",
+            "Motor Power": "10 kW – 15 kW",
+            "Power Supply": "380V / 50–60Hz (Three-Phase Five-Wire)",
+            "Certification": "ISO9001 / CE / CCC",
+            "Warranty": "12 Months After Shipping"
+          },
+          "images": [
+            {
+              "sourceUrl": "https://www.gotselevator.com/wp-content/uploads/2026/03/golden-diamond.jpg",
+              "file": "main-assets/img/elevators/gots/passenger/passenger-elevator-stainless-steel-black-titanium-lift/01-golden-diamond-afe99eee.jpg",
+              "publicUrl": "/main-assets/img/elevators/gots/passenger/passenger-elevator-stainless-steel-black-titanium-lift/01-golden-diamond-afe99eee.jpg",
+              "bytes": 66321,
+              "contentType": "image/jpeg"
+            }
+          ],
+          "featuredImage": "/main-assets/img/elevators/gots/passenger/passenger-elevator-stainless-steel-black-titanium-lift/01-golden-diamond-afe99eee.jpg",
+          "needsSpanishReview": false,
+          "localization": {
+            "es": "Altekmar localized catalog copy"
+          }
+        },
+        {
+          "id": "branded-passenger-elevator-installation-service-rj-09",
+          "categorySlug": "passenger",
+          "category": {
+            "en": "Passenger Elevators",
+            "es": "Elevadores de pasajeros"
+          },
+          "manufacturer": "GOTS Elevator",
+          "authorizedRetailer": "Altekmar",
+          "sku": null,
+          "source": {
+            "english": "https://www.gotselevator.com/product/branded-passenger-elevator-installation-service-rj-09/",
+            "spanish": "https://www.gotselevator.com/es/producto/branded-passenger-elevator-installation-service-rj-09/",
+            "category": "https://www.gotselevator.com/product-category/passenger-elevator/",
+            "importedAt": "2026-07-20T00:54:57.275Z"
+          },
+          "title": {
+            "en": "RJ-09 Custom Passenger Elevator",
+            "es": "Elevador de pasajeros personalizado RJ-09"
+          },
+          "description": {
+            "en": "No two buildings share the same structure or traffic demands.Gots provides custom passenger elevator solutions to match real project conditions.",
+            "es": "Elevador de pasajeros personalizado RJ-09, diseñado para ofrecer transporte vertical seguro, cómodo y eficiente. La capacidad, el recorrido, la velocidad y los acabados se configuran según las necesidades del proyecto."
+          },
+          "specifications": {},
+          "images": [
+            {
+              "sourceUrl": "https://www.gotselevator.com/wp-content/uploads/2025/04/10-1.png",
+              "file": "main-assets/img/elevators/gots/passenger/branded-passenger-elevator-installation-service-rj-09/01-10-1-5f7fb803.png",
+              "publicUrl": "/main-assets/img/elevators/gots/passenger/branded-passenger-elevator-installation-service-rj-09/01-10-1-5f7fb803.png",
+              "bytes": 555066,
+              "contentType": "image/png"
+            },
+            {
+              "sourceUrl": "https://www.gotselevator.com/wp-content/uploads/2025/04/910a1ae6-370c-4c29-a0b9-a5ad52dc2d02.jpg",
+              "file": "main-assets/img/elevators/gots/passenger/branded-passenger-elevator-installation-service-rj-09/02-910a1ae6-370c-4c29-a0b9-a5ad52dc2d02-3c9abb0d.jpg",
+              "publicUrl": "/main-assets/img/elevators/gots/passenger/branded-passenger-elevator-installation-service-rj-09/02-910a1ae6-370c-4c29-a0b9-a5ad52dc2d02-3c9abb0d.jpg",
+              "bytes": 356316,
+              "contentType": "image/jpeg"
+            },
+            {
+              "sourceUrl": "https://www.gotselevator.com/wp-content/uploads/2025/04/max3329.jpg",
+              "file": "main-assets/img/elevators/gots/passenger/branded-passenger-elevator-installation-service-rj-09/03-max3329-7b584ab9.jpg",
+              "publicUrl": "/main-assets/img/elevators/gots/passenger/branded-passenger-elevator-installation-service-rj-09/03-max3329-7b584ab9.jpg",
+              "bytes": 110844,
+              "contentType": "image/jpeg"
+            }
+          ],
+          "featuredImage": "/main-assets/img/elevators/gots/passenger/branded-passenger-elevator-installation-service-rj-09/01-10-1-5f7fb803.png",
+          "needsSpanishReview": false,
+          "localization": {
+            "es": "Altekmar localized catalog copy"
+          }
+        },
+        {
+          "id": "ts-j06-elevator-cabin-optional-upgrade",
+          "categorySlug": "passenger",
+          "category": {
+            "en": "Passenger Elevators",
+            "es": "Elevadores de pasajeros"
+          },
+          "manufacturer": "GOTS Elevator",
+          "authorizedRetailer": "Altekmar",
+          "sku": null,
+          "source": {
+            "english": "https://www.gotselevator.com/product/ts-j06-elevator-cabin-optional-upgrade/",
+            "spanish": "https://www.gotselevator.com/es/producto/ts-j06-elevator-cabin-optional-upgrade/",
+            "category": "https://www.gotselevator.com/product-category/passenger-elevator/",
+            "importedAt": "2026-07-20T00:54:31.931Z"
+          },
+          "title": {
+            "en": "RJ-10 Elevator Cabin (Optional Upgrade)",
+            "es": "RJ-10 Elevador de pasajeros"
+          },
+          "description": {
+            "en": "TS-J06 elevator cabin features rose gold mirror walls, acrylic lighting ceiling, PVC marble flooring, smart 32-bit control system, reliable safety design.",
+            "es": "RJ-10 Elevador de pasajeros, diseÃ±ado para ofrecer transporte vertical seguro, cÃ³modo y eficiente. La capacidad, el recorrido, la velocidad y los acabados se configuran segÃºn las necesidades del proyecto."
+          },
+          "specifications": {
+            "2": "4600 · 1700",
+            "Rated Load(kg)": "Rated Speed(m/s) · Overhead(OH) Clearance(mm) · PIT(P) Clearance(mm)",
+            "450-1600": "1 · 4400 · 1500",
+            "1.5": "4500 · 1600",
+            "1.75": "4600 · 1700",
+            "2.5": "4700 · 1800",
+            "Specifications": "Machine Room Clear Height(mm) · Rated Load(kg) · Rated Speed(m/s) · Machine Room Hook Capacity",
+            "450-1050kg\n1-1.75m/s": "2200 · 450-1050 · 1/1.5/1.75 · 3 tons",
+            "1150kg\n1-1.75m/s": "2500 · 1150-1600 · 1/1.5/1.75 · 4 tons",
+            "800-1050kg\n2-2.5m/s": "2500 · 800-1050 · 2/2.5 · 4 tons",
+            "1350-1600kg\n2-2.5m/s": "2500 · – · – · –"
+          },
+          "images": [
+            {
+              "sourceUrl": "https://www.gotselevator.com/wp-content/uploads/2026/01/passenger-lift.jpg",
+              "file": "main-assets/img/elevators/gots/passenger/ts-j06-elevator-cabin-optional-upgrade/01-passenger-lift-6d9a373c.jpg",
+              "publicUrl": "/main-assets/img/elevators/gots/passenger/ts-j06-elevator-cabin-optional-upgrade/01-passenger-lift-6d9a373c.jpg",
+              "bytes": 59973,
+              "contentType": "image/jpeg"
+            }
+          ],
+          "featuredImage": "/main-assets/img/elevators/gots/passenger/ts-j06-elevator-cabin-optional-upgrade/01-passenger-lift-6d9a373c.jpg",
+          "needsSpanishReview": false,
+          "localization": {
+            "es": "Altekmar localized catalog copy"
+          }
+        },
+        {
+          "id": "small-sightseeing-home-passenger-elevator-panoramic-glass-lift",
+          "categorySlug": "passenger",
+          "category": {
+            "en": "Passenger Elevators",
+            "es": "Elevadores de pasajeros"
+          },
+          "manufacturer": "GOTS Elevator",
+          "authorizedRetailer": "Altekmar",
+          "sku": null,
+          "source": {
+            "english": "https://www.gotselevator.com/product/small-sightseeing-home-passenger-elevator-panoramic-glass-lift/",
+            "spanish": "https://www.gotselevator.com/es/producto/small-sightseeing-home-passenger-elevator-panoramic-glass-lift/",
+            "category": "https://www.gotselevator.com/product-category/passenger-elevator/",
+            "importedAt": "2026-07-20T00:54:33.047Z"
+          },
+          "title": {
+            "en": "Small Sightseeing Home Passenger Elevator",
+            "es": "Ascensor residencial panorámico de tamaño reducido"
+          },
+          "description": {
+            "en": "TS-J01 elevator features a stainless steel cabin, soft LED lighting, advanced 32-bit control system, smooth door operation, and reliable safety performance.",
+            "es": "Ascensor residencial panorámico de tamaño reducido, diseñado para ofrecer transporte vertical seguro, cómodo y eficiente. La capacidad, el recorrido, la velocidad y los acabados se configuran según las necesidades del proyecto."
+          },
+          "specifications": {
+            "450": "1.0 · 1100×1100 · 800×2100 · 2050×1850 · 4500 · 1500",
+            "630": "1.0 · 1400×1100 · 800×2100 · 2250×1900 · 4500 · 1500",
+            "800": "1.0 · 1400×1350 · 800×2100 · 2200×1950 · 4000 · 1500",
+            "1000": "1.0 · 1500×1550 · 900×2100 · 2350×2150 · 4000 · 1600",
+            "1600": "1.0 · 1800×2000 · 1100×2100 · 2900×2200 · 4350 · 1500",
+            "Item": "Specification",
+            "Product Name": "Passenger Elevator",
+            "Type": "Panoramic Glass Passenger Lift",
+            "Brand": "GOTS",
+            "Place of Origin": "China",
+            "Load Capacity": "450 – 1600 kg",
+            "Rated Speed": "1.0 – 1.75 m/s",
+            "Control System": "VVVF Elevator Control",
+            "Drive System": "AC / DC",
+            "Feature": "Low Noise, Smooth Operation",
+            "Warranty": "12 Months After Shipping",
+            "Certification": "CE, 3C",
+            "Load (kg)": "Speed (m/s) · Car Size (mm) · Door Opening (mm) · Shaft Size (mm) · Top Height (mm) · Pit Depth (mm)"
+          },
+          "images": [
+            {
+              "sourceUrl": "https://www.gotselevator.com/wp-content/uploads/2025/08/TS-J01-1000.png",
+              "file": "main-assets/img/elevators/gots/passenger/small-sightseeing-home-passenger-elevator-panoramic-glass-lift/01-ts-j01-1000-f807fa48.png",
+              "publicUrl": "/main-assets/img/elevators/gots/passenger/small-sightseeing-home-passenger-elevator-panoramic-glass-lift/01-ts-j01-1000-f807fa48.png",
+              "bytes": 530551,
+              "contentType": "image/png"
+            }
+          ],
+          "featuredImage": "/main-assets/img/elevators/gots/passenger/small-sightseeing-home-passenger-elevator-panoramic-glass-lift/01-ts-j01-1000-f807fa48.png",
+          "needsSpanishReview": false,
+          "localization": {
+            "es": "Altekmar localized catalog copy"
+          }
+        },
+        {
+          "id": "branded-passenger-elevator-installation-service-ts-b01",
+          "categorySlug": "passenger",
+          "category": {
+            "en": "Passenger Elevators",
+            "es": "Elevadores de pasajeros"
+          },
+          "manufacturer": "GOTS Elevator",
+          "authorizedRetailer": "Altekmar",
+          "sku": null,
+          "source": {
+            "english": "https://www.gotselevator.com/product/branded-passenger-elevator-installation-service-ts-b01/",
+            "spanish": "https://www.gotselevator.com/es/producto/branded-passenger-elevator-installation-service-ts-b01/",
+            "category": "https://www.gotselevator.com/product-category/passenger-elevator/",
+            "importedAt": "2026-07-20T00:54:52.950Z"
+          },
+          "title": {
+            "en": "TS-B01 Custom Passenger Elevator Solutions for Unique Buildings",
+            "es": "TS-B01 Soluciones personalizadas de elevadores de pasajeros para edificios singulares"
+          },
+          "description": {
+            "en": "Our engineers analyze shaft space, traffic flow, and architectural style.Then, we configure elevators that fit both function and design.",
+            "es": "TS-B01 Soluciones personalizadas de elevadores de pasajeros para edificios singulares, diseÃ±ado para ofrecer transporte vertical seguro, cÃ³modo y eficiente. La capacidad, el recorrido, la velocidad y los acabados se configuran segÃºn las necesidades del proyecto."
+          },
+          "specifications": {},
+          "images": [
+            {
+              "sourceUrl": "https://www.gotselevator.com/wp-content/uploads/2025/04/1-1.png",
+              "file": "main-assets/img/elevators/gots/passenger/branded-passenger-elevator-installation-service-ts-b01/01-1-1-c3f0ef65.png",
+              "publicUrl": "/main-assets/img/elevators/gots/passenger/branded-passenger-elevator-installation-service-ts-b01/01-1-1-c3f0ef65.png",
+              "bytes": 609001,
+              "contentType": "image/png"
+            },
+            {
+              "sourceUrl": "https://www.gotselevator.com/wp-content/uploads/2025/04/910a1ae6-370c-4c29-a0b9-a5ad52dc2d02.jpg",
+              "file": "main-assets/img/elevators/gots/passenger/branded-passenger-elevator-installation-service-ts-b01/02-910a1ae6-370c-4c29-a0b9-a5ad52dc2d02-3c9abb0d.jpg",
+              "publicUrl": "/main-assets/img/elevators/gots/passenger/branded-passenger-elevator-installation-service-ts-b01/02-910a1ae6-370c-4c29-a0b9-a5ad52dc2d02-3c9abb0d.jpg",
+              "bytes": 356316,
+              "contentType": "image/jpeg"
+            },
+            {
+              "sourceUrl": "https://www.gotselevator.com/wp-content/uploads/2025/04/max3329.jpg",
+              "file": "main-assets/img/elevators/gots/passenger/branded-passenger-elevator-installation-service-ts-b01/03-max3329-7b584ab9.jpg",
+              "publicUrl": "/main-assets/img/elevators/gots/passenger/branded-passenger-elevator-installation-service-ts-b01/03-max3329-7b584ab9.jpg",
+              "bytes": 110844,
+              "contentType": "image/jpeg"
+            }
+          ],
+          "featuredImage": "/main-assets/img/elevators/gots/passenger/branded-passenger-elevator-installation-service-ts-b01/01-1-1-c3f0ef65.png",
+          "needsSpanishReview": false,
+          "localization": {
+            "es": "Altekmar localized catalog copy"
+          }
+        },
+        {
+          "id": "branded-passenger-elevator-installation-service-ts-b03",
+          "categorySlug": "passenger",
+          "category": {
+            "en": "Passenger Elevators",
+            "es": "Elevadores de pasajeros"
+          },
+          "manufacturer": "GOTS Elevator",
+          "authorizedRetailer": "Altekmar",
+          "sku": null,
+          "source": {
+            "english": "https://www.gotselevator.com/product/branded-passenger-elevator-installation-service-ts-b03/",
+            "spanish": "https://www.gotselevator.com/es/producto/branded-passenger-elevator-installation-service-ts-b03/",
+            "category": "https://www.gotselevator.com/product-category/passenger-elevator/",
+            "importedAt": "2026-07-20T00:54:54.454Z"
+          },
+          "title": {
+            "en": "TS-B03 Passenger Elevators for Commercial Buildings",
+            "es": "TS-B03 Elevadores de pasajeros para edificios comerciales"
+          },
+          "description": {
+            "en": "Every Gots passenger elevator meets EN81-20, CE, and ISO standards.We apply precise control logic and stable drive systems",
+            "es": "TS-B03 Elevadores de pasajeros para edificios comerciales, diseÃ±ado para ofrecer transporte vertical seguro, cÃ³modo y eficiente. La capacidad, el recorrido, la velocidad y los acabados se configuran segÃºn las necesidades del proyecto."
+          },
+          "specifications": {},
+          "images": [
+            {
+              "sourceUrl": "https://www.gotselevator.com/wp-content/uploads/2025/04/2-2.png",
+              "file": "main-assets/img/elevators/gots/passenger/branded-passenger-elevator-installation-service-ts-b03/01-2-2-a0ac11f8.png",
+              "publicUrl": "/main-assets/img/elevators/gots/passenger/branded-passenger-elevator-installation-service-ts-b03/01-2-2-a0ac11f8.png",
+              "bytes": 544564,
+              "contentType": "image/png"
+            },
+            {
+              "sourceUrl": "https://www.gotselevator.com/wp-content/uploads/2025/04/910a1ae6-370c-4c29-a0b9-a5ad52dc2d02.jpg",
+              "file": "main-assets/img/elevators/gots/passenger/branded-passenger-elevator-installation-service-ts-b03/02-910a1ae6-370c-4c29-a0b9-a5ad52dc2d02-3c9abb0d.jpg",
+              "publicUrl": "/main-assets/img/elevators/gots/passenger/branded-passenger-elevator-installation-service-ts-b03/02-910a1ae6-370c-4c29-a0b9-a5ad52dc2d02-3c9abb0d.jpg",
+              "bytes": 356316,
+              "contentType": "image/jpeg"
+            },
+            {
+              "sourceUrl": "https://www.gotselevator.com/wp-content/uploads/2025/04/max3329.jpg",
+              "file": "main-assets/img/elevators/gots/passenger/branded-passenger-elevator-installation-service-ts-b03/03-max3329-7b584ab9.jpg",
+              "publicUrl": "/main-assets/img/elevators/gots/passenger/branded-passenger-elevator-installation-service-ts-b03/03-max3329-7b584ab9.jpg",
+              "bytes": 110844,
+              "contentType": "image/jpeg"
+            }
+          ],
+          "featuredImage": "/main-assets/img/elevators/gots/passenger/branded-passenger-elevator-installation-service-ts-b03/01-2-2-a0ac11f8.png",
+          "needsSpanishReview": false,
+          "localization": {
+            "es": "Altekmar localized catalog copy"
+          }
+        },
+        {
+          "id": "branded-passenger-elevator-installation-service-ts-b10",
+          "categorySlug": "passenger",
+          "category": {
+            "en": "Passenger Elevators",
+            "es": "Elevadores de pasajeros"
+          },
+          "manufacturer": "GOTS Elevator",
+          "authorizedRetailer": "Altekmar",
+          "sku": null,
+          "source": {
+            "english": "https://www.gotselevator.com/product/branded-passenger-elevator-installation-service-ts-b10/",
+            "spanish": "https://www.gotselevator.com/es/producto/branded-passenger-elevator-installation-service-ts-b10/",
+            "category": "https://www.gotselevator.com/product-category/passenger-elevator/",
+            "importedAt": "2026-07-20T00:55:00.383Z"
+          },
+          "title": {
+            "en": "TS-B10 Passenger Elevator",
+            "es": "Ascensor de pasajeros TS-B10"
+          },
+          "description": {
+            "en": "As a professional passenger elevator manufacturer, Gots combines automation, precision engineering, and large-scale production.",
+            "es": "Ascensor de pasajeros TS-B10, diseñado para ofrecer transporte vertical seguro, cómodo y eficiente. La capacidad, el recorrido, la velocidad y los acabados se configuran según las necesidades del proyecto."
+          },
+          "specifications": {},
+          "images": [
+            {
+              "sourceUrl": "https://www.gotselevator.com/wp-content/uploads/2025/04/3-1.png",
+              "file": "main-assets/img/elevators/gots/passenger/branded-passenger-elevator-installation-service-ts-b10/01-3-1-8731002d.png",
+              "publicUrl": "/main-assets/img/elevators/gots/passenger/branded-passenger-elevator-installation-service-ts-b10/01-3-1-8731002d.png",
+              "bytes": 544143,
+              "contentType": "image/png"
+            },
+            {
+              "sourceUrl": "https://www.gotselevator.com/wp-content/uploads/2025/04/910a1ae6-370c-4c29-a0b9-a5ad52dc2d02.jpg",
+              "file": "main-assets/img/elevators/gots/passenger/branded-passenger-elevator-installation-service-ts-b10/02-910a1ae6-370c-4c29-a0b9-a5ad52dc2d02-3c9abb0d.jpg",
+              "publicUrl": "/main-assets/img/elevators/gots/passenger/branded-passenger-elevator-installation-service-ts-b10/02-910a1ae6-370c-4c29-a0b9-a5ad52dc2d02-3c9abb0d.jpg",
+              "bytes": 356316,
+              "contentType": "image/jpeg"
+            },
+            {
+              "sourceUrl": "https://www.gotselevator.com/wp-content/uploads/2025/04/max3329.jpg",
+              "file": "main-assets/img/elevators/gots/passenger/branded-passenger-elevator-installation-service-ts-b10/03-max3329-7b584ab9.jpg",
+              "publicUrl": "/main-assets/img/elevators/gots/passenger/branded-passenger-elevator-installation-service-ts-b10/03-max3329-7b584ab9.jpg",
+              "bytes": 110844,
+              "contentType": "image/jpeg"
+            }
+          ],
+          "featuredImage": "/main-assets/img/elevators/gots/passenger/branded-passenger-elevator-installation-service-ts-b10/01-3-1-8731002d.png",
+          "needsSpanishReview": false,
+          "localization": {
+            "es": "Altekmar localized catalog copy"
+          }
+        },
+        {
+          "id": "branded-passenger-elevator-installation-service-ts-b23",
+          "categorySlug": "passenger",
+          "category": {
+            "en": "Passenger Elevators",
+            "es": "Elevadores de pasajeros"
+          },
+          "manufacturer": "GOTS Elevator",
+          "authorizedRetailer": "Altekmar",
+          "sku": null,
+          "source": {
+            "english": "https://www.gotselevator.com/product/branded-passenger-elevator-installation-service-ts-b23/",
+            "spanish": "https://www.gotselevator.com/es/producto/branded-passenger-elevator-installation-service-ts-b23/",
+            "category": "https://www.gotselevator.com/product-category/passenger-elevator/",
+            "importedAt": "2026-07-20T00:54:58.775Z"
+          },
+          "title": {
+            "en": "TS-B23 Energy-Efficient Passenger Elevators for Buildings",
+            "es": "TS-B23 Ascensores de pasajeros de bajo consumo energético para edificios"
+          },
+          "description": {
+            "en": "Our Gots elevators integrate multiple energy-saving technologies.These features operate automatically during movement and idle periods.",
+            "es": "TS-B23 Ascensores de pasajeros de bajo consumo energético para edificios, diseñado para ofrecer transporte vertical seguro, cómodo y eficiente. La capacidad, el recorrido, la velocidad y los acabados se configuran según las necesidades del proyecto."
+          },
+          "specifications": {},
+          "images": [
+            {
+              "sourceUrl": "https://www.gotselevator.com/wp-content/uploads/2025/04/4-2.png",
+              "file": "main-assets/img/elevators/gots/passenger/branded-passenger-elevator-installation-service-ts-b23/01-4-2-b7960ff4.png",
+              "publicUrl": "/main-assets/img/elevators/gots/passenger/branded-passenger-elevator-installation-service-ts-b23/01-4-2-b7960ff4.png",
+              "bytes": 358856,
+              "contentType": "image/png"
+            },
+            {
+              "sourceUrl": "https://www.gotselevator.com/wp-content/uploads/2025/04/910a1ae6-370c-4c29-a0b9-a5ad52dc2d02.jpg",
+              "file": "main-assets/img/elevators/gots/passenger/branded-passenger-elevator-installation-service-ts-b23/02-910a1ae6-370c-4c29-a0b9-a5ad52dc2d02-3c9abb0d.jpg",
+              "publicUrl": "/main-assets/img/elevators/gots/passenger/branded-passenger-elevator-installation-service-ts-b23/02-910a1ae6-370c-4c29-a0b9-a5ad52dc2d02-3c9abb0d.jpg",
+              "bytes": 356316,
+              "contentType": "image/jpeg"
+            },
+            {
+              "sourceUrl": "https://www.gotselevator.com/wp-content/uploads/2025/04/max3329.jpg",
+              "file": "main-assets/img/elevators/gots/passenger/branded-passenger-elevator-installation-service-ts-b23/03-max3329-7b584ab9.jpg",
+              "publicUrl": "/main-assets/img/elevators/gots/passenger/branded-passenger-elevator-installation-service-ts-b23/03-max3329-7b584ab9.jpg",
+              "bytes": 110844,
+              "contentType": "image/jpeg"
+            }
+          ],
+          "featuredImage": "/main-assets/img/elevators/gots/passenger/branded-passenger-elevator-installation-service-ts-b23/01-4-2-b7960ff4.png",
+          "needsSpanishReview": false,
+          "localization": {
+            "es": "Altekmar localized catalog copy"
+          }
+        },
+        {
+          "id": "gots-elevator-cabin-ts-b26-optional",
+          "categorySlug": "passenger",
+          "category": {
+            "en": "Passenger Elevators",
+            "es": "Elevadores de pasajeros"
+          },
+          "manufacturer": "GOTS Elevator",
+          "authorizedRetailer": "Altekmar",
+          "sku": null,
+          "source": {
+            "english": "https://www.gotselevator.com/product/gots-elevator-cabin-ts-b26-optional/",
+            "spanish": "https://www.gotselevator.com/es/producto/gots-elevator-cabin-ts-b26-optional/",
+            "category": "https://www.gotselevator.com/product-category/passenger-elevator/",
+            "importedAt": "2026-07-20T00:54:34.165Z"
+          },
+          "title": {
+            "en": "TS-B26 Modern Elevator Cabin Design for Passenger Elevators",
+            "es": "TS-B26 Elevador de pasajeros"
+          },
+          "description": {
+            "en": "Discover modern elevator cabin design with premium materials, LED lighting, and refined finishes, engineered by a global elevator manufacturer.",
+            "es": "TS-B26 Elevador de pasajeros, diseÃ±ado para ofrecer transporte vertical seguro, cÃ³modo y eficiente. La capacidad, el recorrido, la velocidad y los acabados se configuran segÃºn las necesidades del proyecto."
+          },
+          "specifications": {},
+          "images": [
+            {
+              "sourceUrl": "https://www.gotselevator.com/wp-content/uploads/2025/09/TS-B26-1000.png",
+              "file": "main-assets/img/elevators/gots/passenger/gots-elevator-cabin-ts-b26-optional/01-ts-b26-1000-e592e2e2.png",
+              "publicUrl": "/main-assets/img/elevators/gots/passenger/gots-elevator-cabin-ts-b26-optional/01-ts-b26-1000-e592e2e2.png",
+              "bytes": 577558,
+              "contentType": "image/png"
+            }
+          ],
+          "featuredImage": "/main-assets/img/elevators/gots/passenger/gots-elevator-cabin-ts-b26-optional/01-ts-b26-1000-e592e2e2.png",
+          "needsSpanishReview": false,
+          "localization": {
+            "es": "Altekmar localized catalog copy"
+          }
+        },
+        {
+          "id": "gots-elevator-cabin-ts-b28-optional",
+          "categorySlug": "passenger",
+          "category": {
+            "en": "Passenger Elevators",
+            "es": "Elevadores de pasajeros"
+          },
+          "manufacturer": "GOTS Elevator",
+          "authorizedRetailer": "Altekmar",
+          "sku": null,
+          "source": {
+            "english": "https://www.gotselevator.com/product/gots-elevator-cabin-ts-b28-optional/",
+            "spanish": "https://www.gotselevator.com/es/producto/gots-elevator-cabin-ts-b28-optional/",
+            "category": "https://www.gotselevator.com/product-category/passenger-elevator/",
+            "importedAt": "2026-07-20T00:54:49.099Z"
+          },
+          "title": {
+            "en": "TS-B28 Passenger Elevator with Intelligent Production",
+            "es": "Elevador de pasajeros TS-B28 con producción inteligente"
+          },
+          "description": {
+            "en": "As a professional passenger elevator manufacturer, Gots Elevator combines automation, precision engineering, and large-scale production.",
+            "es": "Elevador de pasajeros TS-B28 con producción inteligente, diseñado para ofrecer transporte vertical seguro, cómodo y eficiente. La capacidad, el recorrido, la velocidad y los acabados se configuran según las necesidades del proyecto."
+          },
+          "specifications": {},
+          "images": [
+            {
+              "sourceUrl": "https://www.gotselevator.com/wp-content/uploads/2025/08/TS-B28-1000.png",
+              "file": "main-assets/img/elevators/gots/passenger/gots-elevator-cabin-ts-b28-optional/01-ts-b28-1000-7f177112.png",
+              "publicUrl": "/main-assets/img/elevators/gots/passenger/gots-elevator-cabin-ts-b28-optional/01-ts-b28-1000-7f177112.png",
+              "bytes": 476849,
+              "contentType": "image/png"
+            }
+          ],
+          "featuredImage": "/main-assets/img/elevators/gots/passenger/gots-elevator-cabin-ts-b28-optional/01-ts-b28-1000-7f177112.png",
+          "needsSpanishReview": false,
+          "localization": {
+            "es": "Altekmar localized catalog copy"
+          }
+        },
+        {
+          "id": "gots-elevator-cabin-ts-b49-optional",
+          "categorySlug": "passenger",
+          "category": {
+            "en": "Passenger Elevators",
+            "es": "Elevadores de pasajeros"
+          },
+          "manufacturer": "GOTS Elevator",
+          "authorizedRetailer": "Altekmar",
+          "sku": null,
+          "source": {
+            "english": "https://www.gotselevator.com/product/gots-elevator-cabin-ts-b49-optional/",
+            "spanish": "https://www.gotselevator.com/es/producto/gots-elevator-cabin-ts-b49-optional/",
+            "category": "https://www.gotselevator.com/product-category/passenger-elevator/",
+            "importedAt": "2026-07-20T00:54:39.842Z"
+          },
+          "title": {
+            "en": "TS-B49 Passenger Elevator Cabin with Premium Interior Materials",
+            "es": "Cabina de ascensor de pasajeros TS-B49 con materiales interiores de primera calidad"
+          },
+          "description": {
+            "en": "High-quality passenger elevator cabin featuring stainless steel finishes, LED lighting, and durable marble flooring by Gots Elevator.",
+            "es": "TS-B49 Cabina de ascensor de pasajeros con materiales interiores de primera calidad, diseñado para ofrecer transporte vertical seguro, cómodo y eficiente. La capacidad, el recorrido, la velocidad y los acabados se configuran según las necesidades del proyecto."
+          },
+          "specifications": {},
+          "images": [
+            {
+              "sourceUrl": "https://www.gotselevator.com/wp-content/uploads/2025/09/TS-B49-1000.png",
+              "file": "main-assets/img/elevators/gots/passenger/gots-elevator-cabin-ts-b49-optional/01-ts-b49-1000-3b8a776b.png",
+              "publicUrl": "/main-assets/img/elevators/gots/passenger/gots-elevator-cabin-ts-b49-optional/01-ts-b49-1000-3b8a776b.png",
+              "bytes": 547904,
+              "contentType": "image/png"
+            }
+          ],
+          "featuredImage": "/main-assets/img/elevators/gots/passenger/gots-elevator-cabin-ts-b49-optional/01-ts-b49-1000-3b8a776b.png",
+          "needsSpanishReview": false,
+          "localization": {
+            "es": "Altekmar localized catalog copy"
+          }
+        },
+        {
+          "id": "gots-elevator-cabin-ts-j01-optional",
+          "categorySlug": "passenger",
+          "category": {
+            "en": "Passenger Elevators",
+            "es": "Elevadores de pasajeros"
+          },
+          "manufacturer": "GOTS Elevator",
+          "authorizedRetailer": "Altekmar",
+          "sku": null,
+          "source": {
+            "english": "https://www.gotselevator.com/product/gots-elevator-cabin-ts-j01-optional/",
+            "spanish": "https://www.gotselevator.com/es/producto/gots-elevator-cabin-ts-j01-optional/",
+            "category": "https://www.gotselevator.com/product-category/passenger-elevator/",
+            "importedAt": "2026-07-20T00:54:51.365Z"
+          },
+          "title": {
+            "en": "TS-J01 Elevator Cabin | Stainless Steel Design & Smart Control",
+            "es": "TS-J01 Elevador de pasajeros"
+          },
+          "description": {
+            "en": "TS-J01 elevator features a stainless steel cabin, soft LED lighting, advanced 32-bit control system, smooth door operation, and reliable safety performance.",
+            "es": "TS-J01 Elevador de pasajeros, diseÃ±ado para ofrecer transporte vertical seguro, cÃ³modo y eficiente. La capacidad, el recorrido, la velocidad y los acabados se configuran segÃºn las necesidades del proyecto."
+          },
+          "specifications": {
+            "2": "4600 · 1700",
+            "Rated Load(kg)": "Rated Speed(m/s) · Overhead(OH) Clearance(mm) · PIT(P) Clearance(mm)",
+            "450-1600": "1 · 4400 · 1500",
+            "1.5": "4500 · 1600",
+            "1.75": "4600 · 1700",
+            "2.5": "4700 · 1800",
+            "Specifications": "Machine Room Clear Height(mm) · Rated Load(kg) · Rated Speed(m/s) · Machine Room Hook Capacity",
+            "450-1050kg\n1-1.75m/s": "2200 · 450-1050 · 1/1.5/1.75 · 3 tons",
+            "1150kg\n1-1.75m/s": "2500 · 1150-1600 · 1/1.5/1.75 · 4 tons",
+            "800-1050kg\n2-2.5m/s": "2500 · 800-1050 · 2/2.5 · 4 tons",
+            "1350-1600kg\n2-2.5m/s": "2500 · – · – · –"
+          },
+          "images": [
+            {
+              "sourceUrl": "https://www.gotselevator.com/wp-content/uploads/2025/08/TS-J01-1000.png",
+              "file": "main-assets/img/elevators/gots/passenger/gots-elevator-cabin-ts-j01-optional/01-ts-j01-1000-f807fa48.png",
+              "publicUrl": "/main-assets/img/elevators/gots/passenger/gots-elevator-cabin-ts-j01-optional/01-ts-j01-1000-f807fa48.png",
+              "bytes": 530551,
+              "contentType": "image/png"
+            }
+          ],
+          "featuredImage": "/main-assets/img/elevators/gots/passenger/gots-elevator-cabin-ts-j01-optional/01-ts-j01-1000-f807fa48.png",
+          "needsSpanishReview": false,
+          "localization": {
+            "es": "Altekmar localized catalog copy"
+          }
+        },
+        {
+          "id": "gots-elevator-cabin-ts-j09-optional",
+          "categorySlug": "passenger",
+          "category": {
+            "en": "Passenger Elevators",
+            "es": "Elevadores de pasajeros"
+          },
+          "manufacturer": "GOTS Elevator",
+          "authorizedRetailer": "Altekmar",
+          "sku": null,
+          "source": {
+            "english": "https://www.gotselevator.com/product/gots-elevator-cabin-ts-j09-optional/",
+            "spanish": "https://www.gotselevator.com/es/producto/gots-elevator-cabin-ts-j09-optional/",
+            "category": "https://www.gotselevator.com/product-category/passenger-elevator/",
+            "importedAt": "2026-07-20T00:54:47.954Z"
+          },
+          "title": {
+            "en": "TS-J09 Passenger Elevators Designed for Easy Maintenance",
+            "es": "TS-J09 - Ascensores de pasajeros diseñados para un fácil mantenimiento."
+          },
+          "description": {
+            "en": "TS-J09 luxury elevator cabin features rose gold stainless steel, acrylic lighting ceiling, smart 32-bit control system, smooth operation, reliable safety.",
+            "es": "TS-J09 - Ascensores de pasajeros diseñados para un fácil mantenimiento., diseñado para ofrecer transporte vertical seguro, cómodo y eficiente. La capacidad, el recorrido, la velocidad y los acabados se configuran según las necesidades del proyecto."
+          },
+          "specifications": {
+            "2": "4600 · 1700",
+            "Rated Load(kg)": "Rated Speed(m/s) · Overhead(OH) Clearance(mm) · PIT(P) Clearance(mm)",
+            "450-1600": "1 · 4400 · 1500",
+            "1.5": "4500 · 1600",
+            "1.75": "4600 · 1700",
+            "2.5": "4700 · 1800",
+            "Specifications": "Machine Room Clear Height(mm) · Rated Load(kg) · Rated Speed(m/s) · Machine Room Hook Capacity",
+            "450-1050kg\n1-1.75m/s": "2200 · 450-1050 · 1/1.5/1.75 · 3 tons",
+            "1150kg\n1-1.75m/s": "2500 · 1150-1600 · 1/1.5/1.75 · 4 tons",
+            "800-1050kg\n2-2.5m/s": "2500 · 800-1050 · 2/2.5 · 4 tons",
+            "1350-1600kg\n2-2.5m/s": "2500 · – · – · –"
+          },
+          "images": [
+            {
+              "sourceUrl": "https://www.gotselevator.com/wp-content/uploads/2025/08/TS-J09-1000.png",
+              "file": "main-assets/img/elevators/gots/passenger/gots-elevator-cabin-ts-j09-optional/01-ts-j09-1000-82d069dd.png",
+              "publicUrl": "/main-assets/img/elevators/gots/passenger/gots-elevator-cabin-ts-j09-optional/01-ts-j09-1000-82d069dd.png",
+              "bytes": 837866,
+              "contentType": "image/png"
+            }
+          ],
+          "featuredImage": "/main-assets/img/elevators/gots/passenger/gots-elevator-cabin-ts-j09-optional/01-ts-j09-1000-82d069dd.png",
+          "needsSpanishReview": false,
+          "localization": {
+            "es": "Altekmar localized catalog copy"
+          }
+        },
+        {
+          "id": "ts-j12",
+          "categorySlug": "passenger",
+          "category": {
+            "en": "Passenger Elevators",
+            "es": "Elevadores de pasajeros"
+          },
+          "manufacturer": "GOTS Elevator",
+          "authorizedRetailer": "Altekmar",
+          "sku": null,
+          "source": {
+            "english": "https://www.gotselevator.com/product/ts-j12/",
+            "spanish": "https://www.gotselevator.com/es/producto/ts-j12/",
+            "category": "https://www.gotselevator.com/product-category/passenger-elevator/",
+            "importedAt": "2026-07-20T00:54:37.535Z"
+          },
+          "title": {
+            "en": "TS-J12 Luxury Elevator Cabin",
+            "es": "TS-J12 Elevador de pasajeros"
+          },
+          "description": {
+            "en": "TS-J12 luxury elevator cabin features titanium-plated design, acrylic ceiling, marble PVC floor, and a smart 32-bit control system.",
+            "es": "TS-J12 Elevador de pasajeros, diseÃ±ado para ofrecer transporte vertical seguro, cÃ³modo y eficiente. La capacidad, el recorrido, la velocidad y los acabados se configuran segÃºn las necesidades del proyecto."
+          },
+          "specifications": {
+            "2": "4600 · 1700",
+            "Rated Load(kg)": "Rated Speed(m/s) · Overhead(OH) Clearance(mm) · PIT(P) Clearance(mm)",
+            "450-1600": "1 · 4400 · 1500",
+            "1.5": "4500 · 1600",
+            "1.75": "4600 · 1700",
+            "2.5": "4700 · 1800",
+            "Specifications": "Machine Room Clear Height(mm) · Rated Load(kg) · Rated Speed(m/s) · Machine Room Hook Capacity",
+            "450-1050kg\n1-1.75m/s": "2200 · 450-1050 · 1/1.5/1.75 · 3 tons",
+            "1150kg\n1-1.75m/s": "2500 · 1150-1600 · 1/1.5/1.75 · 4 tons",
+            "800-1050kg\n2-2.5m/s": "2500 · 800-1050 · 2/2.5 · 4 tons",
+            "1350-1600kg\n2-2.5m/s": "2500 · – · – · –"
+          },
+          "images": [
+            {
+              "sourceUrl": "https://www.gotselevator.com/wp-content/uploads/2026/01/lift-elevator-price.jpg",
+              "file": "main-assets/img/elevators/gots/passenger/ts-j12/01-lift-elevator-price-941b3e1f.jpg",
+              "publicUrl": "/main-assets/img/elevators/gots/passenger/ts-j12/01-lift-elevator-price-941b3e1f.jpg",
+              "bytes": 147552,
+              "contentType": "image/jpeg"
+            }
+          ],
+          "featuredImage": "/main-assets/img/elevators/gots/passenger/ts-j12/01-lift-elevator-price-941b3e1f.jpg",
+          "needsSpanishReview": false,
+          "localization": {
+            "es": "Altekmar localized catalog copy"
+          }
+        },
+        {
+          "id": "gots-elevator-cabin-ts-j13-optional",
+          "categorySlug": "passenger",
+          "category": {
+            "en": "Passenger Elevators",
+            "es": "Elevadores de pasajeros"
+          },
+          "manufacturer": "GOTS Elevator",
+          "authorizedRetailer": "Altekmar",
+          "sku": null,
+          "source": {
+            "english": "https://www.gotselevator.com/product/gots-elevator-cabin-ts-j13-optional/",
+            "spanish": "https://www.gotselevator.com/es/producto/gots-elevator-cabin-ts-j13-optional/",
+            "category": "https://www.gotselevator.com/product-category/passenger-elevator/",
+            "importedAt": "2026-07-20T00:54:42.247Z"
+          },
+          "title": {
+            "en": "TS-J13 Interior Elevator",
+            "es": "TS-J13 Elevador Interior"
+          },
+          "description": {
+            "en": "Professional Gots elevator interior manufacturer offering stylish cabin designs with advanced lighting and premium materials.",
+            "es": "TS-J13 Elevador interior, diseñado para ofrecer transporte vertical seguro, cómodo y eficiente. La capacidad, el recorrido, la velocidad y los acabados se configuran según las necesidades del proyecto."
+          },
+          "specifications": {},
+          "images": [
+            {
+              "sourceUrl": "https://www.gotselevator.com/wp-content/uploads/2025/08/TS-J13-1000.png",
+              "file": "main-assets/img/elevators/gots/passenger/gots-elevator-cabin-ts-j13-optional/01-ts-j13-1000-8c1d31fc.png",
+              "publicUrl": "/main-assets/img/elevators/gots/passenger/gots-elevator-cabin-ts-j13-optional/01-ts-j13-1000-8c1d31fc.png",
+              "bytes": 758882,
+              "contentType": "image/png"
+            }
+          ],
+          "featuredImage": "/main-assets/img/elevators/gots/passenger/gots-elevator-cabin-ts-j13-optional/01-ts-j13-1000-8c1d31fc.png",
+          "needsSpanishReview": false,
+          "localization": {
+            "es": "Altekmar localized catalog copy"
+          }
+        },
+        {
+          "id": "ts-j13-elevator-cabin-luxury-stainless-steel-design-smart-control",
+          "categorySlug": "passenger",
+          "category": {
+            "en": "Passenger Elevators",
+            "es": "Elevadores de pasajeros"
+          },
+          "manufacturer": "GOTS Elevator",
+          "authorizedRetailer": "Altekmar",
+          "sku": null,
+          "source": {
+            "english": "https://www.gotselevator.com/product/ts-j13-elevator-cabin-luxury-stainless-steel-design-smart-control/",
+            "spanish": "https://www.gotselevator.com/es/producto/ts-j13-elevator-cabin-luxury-stainless-steel-design-smart-control/",
+            "category": "https://www.gotselevator.com/product-category/passenger-elevator/",
+            "importedAt": "2026-07-20T00:54:38.719Z"
+          },
+          "title": {
+            "en": "TS-J13 Luxury Elevator Cabin",
+            "es": "TS-J13 Elevador de pasajeros"
+          },
+          "description": {
+            "en": "TS-J13 luxury elevator cabin with titanium gold stainless steel, mirror panels, smart control system, smooth operation, and reliable safety design.",
+            "es": "TS-J13 Elevador de pasajeros, diseÃ±ado para ofrecer transporte vertical seguro, cÃ³modo y eficiente. La capacidad, el recorrido, la velocidad y los acabados se configuran segÃºn las necesidades del proyecto."
+          },
+          "specifications": {
+            "2": "4600 · 1700",
+            "Rated Load(kg)": "Rated Speed(m/s) · Overhead(OH) Clearance(mm) · PIT(P) Clearance(mm)",
+            "450-1600": "1 · 4400 · 1500",
+            "1.5": "4500 · 1600",
+            "1.75": "4600 · 1700",
+            "2.5": "4700 · 1800",
+            "Specifications": "Machine Room Clear Height(mm) · Rated Load(kg) · Rated Speed(m/s) · Machine Room Hook Capacity",
+            "450-1050kg\n1-1.75m/s": "2200 · 450-1050 · 1/1.5/1.75 · 3 tons",
+            "1150kg\n1-1.75m/s": "2500 · 1150-1600 · 1/1.5/1.75 · 4 tons",
+            "800-1050kg\n2-2.5m/s": "2500 · 800-1050 · 2/2.5 · 4 tons",
+            "1350-1600kg\n2-2.5m/s": "2500 · – · – · –"
+          },
+          "images": [
+            {
+              "sourceUrl": "https://www.gotselevator.com/wp-content/uploads/2026/01/J13.jpg",
+              "file": "main-assets/img/elevators/gots/passenger/ts-j13-elevator-cabin-luxury-stainless-steel-design-smart-control/01-j13-37668c68.jpg",
+              "publicUrl": "/main-assets/img/elevators/gots/passenger/ts-j13-elevator-cabin-luxury-stainless-steel-design-smart-control/01-j13-37668c68.jpg",
+              "bytes": 123853,
+              "contentType": "image/jpeg"
+            }
+          ],
+          "featuredImage": "/main-assets/img/elevators/gots/passenger/ts-j13-elevator-cabin-luxury-stainless-steel-design-smart-control/01-j13-37668c68.jpg",
+          "needsSpanishReview": false,
+          "localization": {
+            "es": "Altekmar localized catalog copy"
+          }
+        },
+        {
+          "id": "ts-j03-elevator-cabin-optional-upgrade",
+          "categorySlug": "passenger",
+          "category": {
+            "en": "Passenger Elevators",
+            "es": "Elevadores de pasajeros"
+          },
+          "manufacturer": "GOTS Elevator",
+          "authorizedRetailer": "Altekmar",
+          "sku": null,
+          "source": {
+            "english": "https://www.gotselevator.com/product/ts-j03-elevator-cabin-optional-upgrade/",
+            "spanish": "https://www.gotselevator.com/es/producto/ts-j03-elevator-cabin-optional-upgrade/",
+            "category": "https://www.gotselevator.com/product-category/passenger-elevator/",
+            "importedAt": "2026-07-20T00:54:36.428Z"
+          },
+          "title": {
+            "en": "TS-J22 Elevator Cabin (Optional Upgrade)",
+            "es": "TS-J22 Elevador de pasajeros"
+          },
+          "description": {
+            "en": "TS-J03 elevator cabin featuring integrated TS-D19 ceiling, soft LED lighting, mixed stainless steel wall finishes, durable PVC marble flooring..",
+            "es": "TS-J22 Elevador de pasajeros, diseÃ±ado para ofrecer transporte vertical seguro, cÃ³modo y eficiente. La capacidad, el recorrido, la velocidad y los acabados se configuran segÃºn las necesidades del proyecto."
+          },
+          "specifications": {
+            "2": "4600 · 1700",
+            "Rated Load(kg)": "Rated Speed(m/s) · Overhead(OH) Clearance(mm) · PIT(P) Clearance(mm)",
+            "450-1600": "1 · 4400 · 1500",
+            "1.5": "4500 · 1600",
+            "1.75": "4600 · 1700",
+            "2.5": "4700 · 1800",
+            "Specifications": "Machine Room Clear Height(mm) · Rated Load(kg) · Rated Speed(m/s) · Machine Room Hook Capacity",
+            "450-1050kg\n1-1.75m/s": "2200 · 450-1050 · 1/1.5/1.75 · 3 tons",
+            "1150kg\n1-1.75m/s": "2500 · 1150-1600 · 1/1.5/1.75 · 4 tons",
+            "800-1050kg\n2-2.5m/s": "2500 · 800-1050 · 2/2.5 · 4 tons",
+            "1350-1600kg\n2-2.5m/s": "2500 · – · – · –"
+          },
+          "images": [
+            {
+              "sourceUrl": "https://www.gotselevator.com/wp-content/uploads/2026/01/silver-knot.jpg",
+              "file": "main-assets/img/elevators/gots/passenger/ts-j03-elevator-cabin-optional-upgrade/01-silver-knot-f3a9a694.jpg",
+              "publicUrl": "/main-assets/img/elevators/gots/passenger/ts-j03-elevator-cabin-optional-upgrade/01-silver-knot-f3a9a694.jpg",
+              "bytes": 59168,
+              "contentType": "image/jpeg"
+            }
+          ],
+          "featuredImage": "/main-assets/img/elevators/gots/passenger/ts-j03-elevator-cabin-optional-upgrade/01-silver-knot-f3a9a694.jpg",
+          "needsSpanishReview": false,
+          "localization": {
+            "es": "Altekmar localized catalog copy"
+          }
+        },
+        {
+          "id": "gots-elevator-cabin-ts-j25-optional",
+          "categorySlug": "passenger",
+          "category": {
+            "en": "Passenger Elevators",
+            "es": "Elevadores de pasajeros"
+          },
+          "manufacturer": "GOTS Elevator",
+          "authorizedRetailer": "Altekmar",
+          "sku": null,
+          "source": {
+            "english": "https://www.gotselevator.com/product/gots-elevator-cabin-ts-j25-optional/",
+            "spanish": "https://www.gotselevator.com/es/producto/gots-elevator-cabin-ts-j25-optional/",
+            "category": "https://www.gotselevator.com/product-category/passenger-elevator/",
+            "importedAt": "2026-07-20T00:54:50.248Z"
+          },
+          "title": {
+            "en": "TS-J25 Energy Efficient Passenger Elevators for Buildings",
+            "es": "TS-J25 Ascensores de pasajeros energéticamente eficientes para edificios"
+          },
+          "description": {
+            "en": "Energy efficiency now defines modern building standards.Gots passenger elevators support sustainability while improving daily performance.",
+            "es": "TS-J25 Ascensores de pasajeros energéticamente eficientes para edificios, diseñado para ofrecer transporte vertical seguro, cómodo y eficiente. La capacidad, el recorrido, la velocidad y los acabados se configuran según las necesidades del proyecto."
+          },
+          "specifications": {},
+          "images": [
+            {
+              "sourceUrl": "https://www.gotselevator.com/wp-content/uploads/2025/08/TS-J25-1000.png",
+              "file": "main-assets/img/elevators/gots/passenger/gots-elevator-cabin-ts-j25-optional/01-ts-j25-1000-52271d1d.png",
+              "publicUrl": "/main-assets/img/elevators/gots/passenger/gots-elevator-cabin-ts-j25-optional/01-ts-j25-1000-52271d1d.png",
+              "bytes": 502202,
+              "contentType": "image/png"
+            }
+          ],
+          "featuredImage": "/main-assets/img/elevators/gots/passenger/gots-elevator-cabin-ts-j25-optional/01-ts-j25-1000-52271d1d.png",
+          "needsSpanishReview": false,
+          "localization": {
+            "es": "Altekmar localized catalog copy"
+          }
+        },
+        {
+          "id": "gots-elevator-cabin-rj-03-optional",
+          "categorySlug": "passenger",
+          "category": {
+            "en": "Passenger Elevators",
+            "es": "Elevadores de pasajeros"
+          },
+          "manufacturer": "GOTS Elevator",
+          "authorizedRetailer": "Altekmar",
+          "sku": null,
+          "source": {
+            "english": "https://www.gotselevator.com/product/gots-elevator-cabin-rj-03-optional/",
+            "spanish": "https://www.gotselevator.com/es/producto/gots-elevator-cabin-rj-03-optional/",
+            "category": "https://www.gotselevator.com/product-category/passenger-elevator/",
+            "importedAt": "2026-07-20T00:54:46.823Z"
+          },
+          "title": {
+            "en": "TS-J27 Custom Passenger Elevator Tailored to Your Building",
+            "es": "TS-J27 Ascensor de pasajeros personalizado a la medida de su edificio"
+          },
+          "description": {
+            "en": "Passenger Elevator series from Gots Elevator offers smooth, quiet, and energy-saving performance with advanced gearless traction and intelligent control..",
+            "es": "TS-J27 Ascensor de pasajeros personalizado a la medida de su edificio, diseñado para ofrecer transporte vertical seguro, cómodo y eficiente. La capacidad, el recorrido, la velocidad y los acabados se configuran según las necesidades del proyecto."
+          },
+          "specifications": {},
+          "images": [
+            {
+              "sourceUrl": "https://www.gotselevator.com/wp-content/uploads/2025/08/luxury-mountain.jpg",
+              "file": "main-assets/img/elevators/gots/passenger/gots-elevator-cabin-rj-03-optional/01-luxury-mountain-01d98464.jpg",
+              "publicUrl": "/main-assets/img/elevators/gots/passenger/gots-elevator-cabin-rj-03-optional/01-luxury-mountain-01d98464.jpg",
+              "bytes": 65431,
+              "contentType": "image/jpeg"
+            }
+          ],
+          "featuredImage": "/main-assets/img/elevators/gots/passenger/gots-elevator-cabin-rj-03-optional/01-luxury-mountain-01d98464.jpg",
+          "needsSpanishReview": false,
+          "localization": {
+            "es": "Altekmar localized catalog copy"
+          }
+        },
+        {
+          "id": "ts-j18-reliable-elevator-supplier-for-modern-building-projects",
+          "categorySlug": "passenger",
+          "category": {
+            "en": "Passenger Elevators",
+            "es": "Elevadores de pasajeros"
+          },
+          "manufacturer": "GOTS Elevator",
+          "authorizedRetailer": "Altekmar",
+          "sku": null,
+          "source": {
+            "english": "https://www.gotselevator.com/product/ts-j18-reliable-elevator-supplier-for-modern-building-projects/",
+            "spanish": "https://www.gotselevator.com/es/producto/ts-j18-reliable-elevator-supplier-for-modern-building-projects/",
+            "category": "https://www.gotselevator.com/product-category/passenger-elevator/",
+            "importedAt": "2026-07-20T00:54:35.311Z"
+          },
+          "title": {
+            "en": "TS-J28 Reliable Elevator Supplier for Modern Building Projects",
+            "es": "TS-J28 Elevador de pasajeros"
+          },
+          "description": {
+            "en": "TS-J18 elevator cabin with integrated TS-D19 ceiling, soft LED lighting, stainless steel wall finishes, and durable PVC marble flooring.",
+            "es": "TS-J28 Elevador de pasajeros, diseÃ±ado para ofrecer transporte vertical seguro, cÃ³modo y eficiente. La capacidad, el recorrido, la velocidad y los acabados se configuran segÃºn las necesidades del proyecto."
+          },
+          "specifications": {
+            "2": "4600 · 1700",
+            "Rated Load(kg)": "Rated Speed(m/s) · Overhead(OH) Clearance(mm) · PIT(P) Clearance(mm)",
+            "450-1600": "1 · 4400 · 1500",
+            "1.5": "4500 · 1600",
+            "1.75": "4600 · 1700",
+            "2.5": "4700 · 1800",
+            "Specifications": "Machine Room Clear Height(mm) · Rated Load(kg) · Rated Speed(m/s) · Machine Room Hook Capacity",
+            "450-1050kg\n1-1.75m/s": "2200 · 450-1050 · 1/1.5/1.75 · 3 tons",
+            "1150kg\n1-1.75m/s": "2500 · 1150-1600 · 1/1.5/1.75 · 4 tons",
+            "800-1050kg\n2-2.5m/s": "2500 · 800-1050 · 2/2.5 · 4 tons",
+            "1350-1600kg\n2-2.5m/s": "2500 · – · – · –"
+          },
+          "images": [
+            {
+              "sourceUrl": "https://www.gotselevator.com/wp-content/uploads/2026/01/minimal-lines.jpg",
+              "file": "main-assets/img/elevators/gots/passenger/ts-j18-reliable-elevator-supplier-for-modern-building-projects/01-minimal-lines-8524ebdb.jpg",
+              "publicUrl": "/main-assets/img/elevators/gots/passenger/ts-j18-reliable-elevator-supplier-for-modern-building-projects/01-minimal-lines-8524ebdb.jpg",
+              "bytes": 33241,
+              "contentType": "image/jpeg"
+            }
+          ],
+          "featuredImage": "/main-assets/img/elevators/gots/passenger/ts-j18-reliable-elevator-supplier-for-modern-building-projects/01-minimal-lines-8524ebdb.jpg",
+          "needsSpanishReview": false,
+          "localization": {
+            "es": "Altekmar localized catalog copy"
+          }
+        },
+        {
+          "id": "gots-elevator-cabin-ts-j29-optional",
+          "categorySlug": "passenger",
+          "category": {
+            "en": "Passenger Elevators",
+            "es": "Elevadores de pasajeros"
+          },
+          "manufacturer": "GOTS Elevator",
+          "authorizedRetailer": "Altekmar",
+          "sku": null,
+          "source": {
+            "english": "https://www.gotselevator.com/product/gots-elevator-cabin-ts-j29-optional/",
+            "spanish": "https://www.gotselevator.com/es/producto/gots-elevator-cabin-ts-j29-optional/",
+            "category": "https://www.gotselevator.com/product-category/passenger-elevator/",
+            "importedAt": "2026-07-20T00:54:40.971Z"
+          },
+          "title": {
+            "en": "TS-J29 Custom Elevator Cabin Solutions for Modern Buildings",
+            "es": "TS-J29 Elevador de pasajeros"
+          },
+          "description": {
+            "en": "Custom elevator cabin solutions featuring LED lighting, stainless steel panels, and elegant finishes, designed by Gots Elevator.",
+            "es": "TS-J29 Elevador de pasajeros, diseÃ±ado para ofrecer transporte vertical seguro, cÃ³modo y eficiente. La capacidad, el recorrido, la velocidad y los acabados se configuran segÃºn las necesidades del proyecto."
+          },
+          "specifications": {},
+          "images": [
+            {
+              "sourceUrl": "https://www.gotselevator.com/wp-content/uploads/2025/08/TS-J29-1000.png",
+              "file": "main-assets/img/elevators/gots/passenger/gots-elevator-cabin-ts-j29-optional/01-ts-j29-1000-14a61aaa.png",
+              "publicUrl": "/main-assets/img/elevators/gots/passenger/gots-elevator-cabin-ts-j29-optional/01-ts-j29-1000-14a61aaa.png",
+              "bytes": 680879,
+              "contentType": "image/png"
+            }
+          ],
+          "featuredImage": "/main-assets/img/elevators/gots/passenger/gots-elevator-cabin-ts-j29-optional/01-ts-j29-1000-14a61aaa.png",
+          "needsSpanishReview": false,
+          "localization": {
+            "es": "Altekmar localized catalog copy"
+          }
+        },
+        {
+          "id": "gots-elevator-cabin-ts-j34-optional",
+          "categorySlug": "passenger",
+          "category": {
+            "en": "Passenger Elevators",
+            "es": "Elevadores de pasajeros"
+          },
+          "manufacturer": "GOTS Elevator",
+          "authorizedRetailer": "Altekmar",
+          "sku": null,
+          "source": {
+            "english": "https://www.gotselevator.com/product/gots-elevator-cabin-ts-j34-optional/",
+            "spanish": "https://www.gotselevator.com/es/producto/gots-elevator-cabin-ts-j34-optional/",
+            "category": "https://www.gotselevator.com/product-category/passenger-elevator/",
+            "importedAt": "2026-07-20T00:54:45.712Z"
+          },
+          "title": {
+            "en": "TS-J34 Commercial Passenger Elevator for High-Traffic Buildings",
+            "es": "TS-J34 Elevador de pasajeros"
+          },
+          "description": {
+            "en": "Integrated ceiling with LED downlights Efficient ventilation system Black titanium hairline stainless steel walls and doors Artificial marble flooring Moreover, these materials resist wear and simplify maintenance.",
+            "es": "TS-J34 Elevador de pasajeros, diseÃ±ado para ofrecer transporte vertical seguro, cÃ³modo y eficiente. La capacidad, el recorrido, la velocidad y los acabados se configuran segÃºn las necesidades del proyecto."
+          },
+          "specifications": {},
+          "images": [
+            {
+              "sourceUrl": "https://www.gotselevator.com/wp-content/uploads/2025/08/TS-J34-1000.png",
+              "file": "main-assets/img/elevators/gots/passenger/gots-elevator-cabin-ts-j34-optional/01-ts-j34-1000-f63a1f6b.png",
+              "publicUrl": "/main-assets/img/elevators/gots/passenger/gots-elevator-cabin-ts-j34-optional/01-ts-j34-1000-f63a1f6b.png",
+              "bytes": 571473,
+              "contentType": "image/png"
+            }
+          ],
+          "featuredImage": "/main-assets/img/elevators/gots/passenger/gots-elevator-cabin-ts-j34-optional/01-ts-j34-1000-f63a1f6b.png",
+          "needsSpanishReview": false,
+          "localization": {
+            "es": "Altekmar localized catalog copy"
+          }
+        },
+        {
+          "id": "gots-elevator-cabin-ts-j36-optional",
+          "categorySlug": "passenger",
+          "category": {
+            "en": "Passenger Elevators",
+            "es": "Elevadores de pasajeros"
+          },
+          "manufacturer": "GOTS Elevator",
+          "authorizedRetailer": "Altekmar",
+          "sku": null,
+          "source": {
+            "english": "https://www.gotselevator.com/product/gots-elevator-cabin-ts-j36-optional/",
+            "spanish": "https://www.gotselevator.com/es/producto/gots-elevator-cabin-ts-j36-optional/",
+            "category": "https://www.gotselevator.com/product-category/passenger-elevator/",
+            "importedAt": "2026-07-20T00:54:44.598Z"
+          },
+          "title": {
+            "en": "TS-J36 Passenger Elevator Manufacturer with Smart Technology",
+            "es": "TS-J36 Ascensor de pasajeros con tecnología inteligente"
+          },
+          "description": {
+            "en": "Discover modern passenger elevator interiors featuring LED lighting, stainless steel panels, and marble floors—engineered by a global elevator manufacturer.",
+            "es": "TS-J36 Ascensor de pasajeros con tecnología inteligente, diseñado para ofrecer transporte vertical seguro, cómodo y eficiente. La capacidad, el recorrido, la velocidad y los acabados se configuran según las necesidades del proyecto."
+          },
+          "specifications": {},
+          "images": [
+            {
+              "sourceUrl": "https://www.gotselevator.com/wp-content/uploads/2025/08/TS-J36-1000.png",
+              "file": "main-assets/img/elevators/gots/passenger/gots-elevator-cabin-ts-j36-optional/01-ts-j36-1000-1156373c.png",
+              "publicUrl": "/main-assets/img/elevators/gots/passenger/gots-elevator-cabin-ts-j36-optional/01-ts-j36-1000-1156373c.png",
+              "bytes": 719492,
+              "contentType": "image/png"
+            }
+          ],
+          "featuredImage": "/main-assets/img/elevators/gots/passenger/gots-elevator-cabin-ts-j36-optional/01-ts-j36-1000-1156373c.png",
+          "needsSpanishReview": false,
+          "localization": {
+            "es": "Altekmar localized catalog copy"
+          }
+        },
+        {
+          "id": "gots-elevator-cabin-ts-j37-optional",
+          "categorySlug": "passenger",
+          "category": {
+            "en": "Passenger Elevators",
+            "es": "Elevadores de pasajeros"
+          },
+          "manufacturer": "GOTS Elevator",
+          "authorizedRetailer": "Altekmar",
+          "sku": null,
+          "source": {
+            "english": "https://www.gotselevator.com/product/gots-elevator-cabin-ts-j37-optional/",
+            "spanish": "https://www.gotselevator.com/es/producto/gots-elevator-cabin-ts-j37-optional/",
+            "category": "https://www.gotselevator.com/product-category/passenger-elevator/",
+            "importedAt": "2026-07-20T00:54:43.382Z"
+          },
+          "title": {
+            "en": "TS-J37 Passenger Elevator for Residential & Commercial Buildings",
+            "es": "TS-J37 Elevador de pasajeros"
+          },
+          "description": {
+            "en": "Modern buildings demand elevators that move people safely and smoothly.Gots passenger elevators deliver reliable vertical transportation for daily use.",
+            "es": "TS-J37 Elevador de pasajeros, diseÃ±ado para ofrecer transporte vertical seguro, cÃ³modo y eficiente. La capacidad, el recorrido, la velocidad y los acabados se configuran segÃºn las necesidades del proyecto."
+          },
+          "specifications": {},
+          "images": [
+            {
+              "sourceUrl": "https://www.gotselevator.com/wp-content/uploads/2025/08/TS-J37-1000.png",
+              "file": "main-assets/img/elevators/gots/passenger/gots-elevator-cabin-ts-j37-optional/01-ts-j37-1000-7ee04dea.png",
+              "publicUrl": "/main-assets/img/elevators/gots/passenger/gots-elevator-cabin-ts-j37-optional/01-ts-j37-1000-7ee04dea.png",
+              "bytes": 909972,
+              "contentType": "image/png"
+            }
+          ],
+          "featuredImage": "/main-assets/img/elevators/gots/passenger/gots-elevator-cabin-ts-j37-optional/01-ts-j37-1000-7ee04dea.png",
+          "needsSpanishReview": false,
+          "localization": {
+            "es": "Altekmar localized catalog copy"
+          }
+        }
+      ]
+    },
+    {
+      "slug": "villa",
+      "sourceSlug": "villa-elevator",
+      "sourceUrl": "https://www.gotselevator.com/product-category/villa-elevator/",
+      "title": {
+        "en": "Villa & Home Elevators",
+        "es": "Elevadores residenciales y para villas"
+      },
+      "description": {
+        "en": "Compact and customizable home elevators designed for private residences and luxury villas.",
+        "es": "Elevadores compactos y personalizables para viviendas privadas y villas."
+      },
+      "productCount": 4,
+      "products": [
+        {
+          "id": "gots-luxury-villa-elevator-redefining-vertical-living",
+          "categorySlug": "villa",
+          "category": {
+            "en": "Villa & Home Elevators",
+            "es": "Elevadores residenciales y para villas"
+          },
+          "manufacturer": "GOTS Elevator",
+          "authorizedRetailer": "Altekmar",
+          "sku": null,
+          "source": {
+            "english": "https://www.gotselevator.com/product/gots-luxury-villa-elevator-redefining-vertical-living/",
+            "spanish": "https://www.gotselevator.com/es/producto/gots-luxury-villa-elevator-redefining-vertical-living/",
+            "category": "https://www.gotselevator.com/product-category/villa-elevator/",
+            "importedAt": "2026-07-20T00:56:10.975Z"
+          },
+          "title": {
+            "en": "GOTS Luxury Villa Elevator: Redefining Vertical Living",
+            "es": "GOTS Elevador de Lujo para villas: Refiniendo La Vida Vertical"
+          },
+          "description": {
+            "en": "A villa elevator is a strategic investment that redefines home living. It delivers unparalleled convenience and safety, enhances..",
+            "es": "GOTS Elevador de Lujo para villas: Refiniendo La Vida Vertical, pensado para viviendas privadas y villas que requieren movilidad vertical cómoda, diseño compacto y acabados personalizables. La solución se adapta al espacio y al recorrido disponible."
+          },
+          "specifications": {},
+          "images": [
+            {
+              "sourceUrl": "https://www.gotselevator.com/wp-content/uploads/2026/05/%E5%88%AB%E5%A2%85.jpg",
+              "file": "main-assets/img/elevators/gots/villa/gots-luxury-villa-elevator-redefining-vertical-living/01-image-1-8c5bd9b7.jpg",
+              "publicUrl": "/main-assets/img/elevators/gots/villa/gots-luxury-villa-elevator-redefining-vertical-living/01-image-1-8c5bd9b7.jpg",
+              "bytes": 96611,
+              "contentType": "image/jpeg"
+            },
+            {
+              "sourceUrl": "https://www.gotselevator.com/wp-content/uploads/2025/04/bs-9.jpg",
+              "file": "main-assets/img/elevators/gots/villa/gots-luxury-villa-elevator-redefining-vertical-living/02-bs-9-af1045b0.jpg",
+              "publicUrl": "/main-assets/img/elevators/gots/villa/gots-luxury-villa-elevator-redefining-vertical-living/02-bs-9-af1045b0.jpg",
+              "bytes": 367456,
+              "contentType": "image/jpeg"
+            },
+            {
+              "sourceUrl": "https://www.gotselevator.com/wp-content/uploads/2025/04/bs-7.jpg",
+              "file": "main-assets/img/elevators/gots/villa/gots-luxury-villa-elevator-redefining-vertical-living/03-bs-7-f6d75c83.jpg",
+              "publicUrl": "/main-assets/img/elevators/gots/villa/gots-luxury-villa-elevator-redefining-vertical-living/03-bs-7-f6d75c83.jpg",
+              "bytes": 329830,
+              "contentType": "image/jpeg"
+            },
+            {
+              "sourceUrl": "https://www.gotselevator.com/wp-content/uploads/2025/04/bs-8.jpg",
+              "file": "main-assets/img/elevators/gots/villa/gots-luxury-villa-elevator-redefining-vertical-living/04-bs-8-cc7d5960.jpg",
+              "publicUrl": "/main-assets/img/elevators/gots/villa/gots-luxury-villa-elevator-redefining-vertical-living/04-bs-8-cc7d5960.jpg",
+              "bytes": 374754,
+              "contentType": "image/jpeg"
+            }
+          ],
+          "featuredImage": "/main-assets/img/elevators/gots/villa/gots-luxury-villa-elevator-redefining-vertical-living/01-image-1-8c5bd9b7.jpg",
+          "needsSpanishReview": false,
+          "localization": {
+            "es": "Altekmar localized catalog copy"
+          }
+        },
+        {
+          "id": "villa-elevator-installation-service-ts-b33",
+          "categorySlug": "villa",
+          "category": {
+            "en": "Villa & Home Elevators",
+            "es": "Elevadores residenciales y para villas"
+          },
+          "manufacturer": "GOTS Elevator",
+          "authorizedRetailer": "Altekmar",
+          "sku": null,
+          "source": {
+            "english": "https://www.gotselevator.com/product/villa-elevator-installation-service-ts-b33/",
+            "spanish": "https://www.gotselevator.com/es/producto/villa-elevator-installation-service-ts-b33/",
+            "category": "https://www.gotselevator.com/product-category/villa-elevator/",
+            "importedAt": "2026-07-20T00:56:18.648Z"
+          },
+          "title": {
+            "en": "Luxury Villa Elevator: Where Premium Aesthetics Meet Industrial",
+            "es": "Elevador de lujo para villas: Donde la estética premium se encuentra con el estilo industrial."
+          },
+          "description": {
+            "en": "Elevate the comfort and value of your residence with the GOTS Villa Elevator Series. Designed for private luxury homes, multi-story villas,..",
+            "es": "Elevador de Lujo para Villas: Donde la estética premium se encuentra con el estilo industrial., pensado para viviendas privadas y villas que requieren movilidad vertical cÃ³moda, diseÃ±o compacto y acabados personalizables. La soluciÃ³n se adapta al espacio y al recorrido disponible."
+          },
+          "specifications": {
+            "Component": "Technical Detail",
+            "Rated Load": "250kg / 320kg / 400kg / 450kg",
+            "Rated Speed": "0.3 m/s – 0.5 m/s (Smooth Home Speed)",
+            "Drive System": "Permanent Magnet (PM) Gearless Traction",
+            "Control System": "32-Bit Industrial Grade CPU",
+            "Pit Depth": "Shallow Pit (Min. 300mm) or Pitless Options",
+            "Overhead Height": "Low Overhead (Min. 2800mm)",
+            "Materials": "Heavy-duty 10mm Steel Plates + Laminated Safety Glass"
+          },
+          "images": [
+            {
+              "sourceUrl": "https://www.gotselevator.com/wp-content/uploads/2025/04/7.png",
+              "file": "main-assets/img/elevators/gots/villa/villa-elevator-installation-service-ts-b33/01-7-9647ceb3.png",
+              "publicUrl": "/main-assets/img/elevators/gots/villa/villa-elevator-installation-service-ts-b33/01-7-9647ceb3.png",
+              "bytes": 310372,
+              "contentType": "image/png"
+            },
+            {
+              "sourceUrl": "https://www.gotselevator.com/wp-content/uploads/2025/04/bs-9.jpg",
+              "file": "main-assets/img/elevators/gots/villa/villa-elevator-installation-service-ts-b33/02-bs-9-af1045b0.jpg",
+              "publicUrl": "/main-assets/img/elevators/gots/villa/villa-elevator-installation-service-ts-b33/02-bs-9-af1045b0.jpg",
+              "bytes": 367456,
+              "contentType": "image/jpeg"
+            },
+            {
+              "sourceUrl": "https://www.gotselevator.com/wp-content/uploads/2025/04/bs-7.jpg",
+              "file": "main-assets/img/elevators/gots/villa/villa-elevator-installation-service-ts-b33/03-bs-7-f6d75c83.jpg",
+              "publicUrl": "/main-assets/img/elevators/gots/villa/villa-elevator-installation-service-ts-b33/03-bs-7-f6d75c83.jpg",
+              "bytes": 329830,
+              "contentType": "image/jpeg"
+            },
+            {
+              "sourceUrl": "https://www.gotselevator.com/wp-content/uploads/2025/04/bs-8.jpg",
+              "file": "main-assets/img/elevators/gots/villa/villa-elevator-installation-service-ts-b33/04-bs-8-cc7d5960.jpg",
+              "publicUrl": "/main-assets/img/elevators/gots/villa/villa-elevator-installation-service-ts-b33/04-bs-8-cc7d5960.jpg",
+              "bytes": 374754,
+              "contentType": "image/jpeg"
+            }
+          ],
+          "featuredImage": "/main-assets/img/elevators/gots/villa/villa-elevator-installation-service-ts-b33/01-7-9647ceb3.png",
+          "needsSpanishReview": false,
+          "localization": {
+            "es": "Altekmar localized catalog copy"
+          }
+        },
+        {
+          "id": "villa-elevator-installation-service-ts-b32",
+          "categorySlug": "villa",
+          "category": {
+            "en": "Villa & Home Elevators",
+            "es": "Elevadores residenciales y para villas"
+          },
+          "manufacturer": "GOTS Elevator",
+          "authorizedRetailer": "Altekmar",
+          "sku": null,
+          "source": {
+            "english": "https://www.gotselevator.com/product/villa-elevator-installation-service-ts-b32/",
+            "spanish": "https://www.gotselevator.com/es/producto/villa-elevator-installation-service-ts-b32/",
+            "category": "https://www.gotselevator.com/product-category/villa-elevator/",
+            "importedAt": "2026-07-20T00:56:14.113Z"
+          },
+          "title": {
+            "en": "TS-B32 Home Elevator for Modern Villas",
+            "es": "TS-B32 Elevador residencial for Villas Modernas"
+          },
+          "description": {
+            "en": "Designed for villas, duplex homes, and private residences, GOTS home elevators combine comfort, safety, and refined aesthetics for everyday use.",
+            "es": "TS-B32 Elevador residencial para Villas Modernas, pensado para viviendas privadas y villas que requieren movilidad vertical cómoda, diseño compacto y acabados personalizables. La solución se adapta al espacio y al recorrido disponible."
+          },
+          "specifications": {},
+          "images": [
+            {
+              "sourceUrl": "https://www.gotselevator.com/wp-content/uploads/2025/04/1.png",
+              "file": "main-assets/img/elevators/gots/villa/villa-elevator-installation-service-ts-b32/01-1-47a0a540.png",
+              "publicUrl": "/main-assets/img/elevators/gots/villa/villa-elevator-installation-service-ts-b32/01-1-47a0a540.png",
+              "bytes": 536355,
+              "contentType": "image/png"
+            },
+            {
+              "sourceUrl": "https://www.gotselevator.com/wp-content/uploads/2025/04/bs-9.jpg",
+              "file": "main-assets/img/elevators/gots/villa/villa-elevator-installation-service-ts-b32/02-bs-9-af1045b0.jpg",
+              "publicUrl": "/main-assets/img/elevators/gots/villa/villa-elevator-installation-service-ts-b32/02-bs-9-af1045b0.jpg",
+              "bytes": 367456,
+              "contentType": "image/jpeg"
+            },
+            {
+              "sourceUrl": "https://www.gotselevator.com/wp-content/uploads/2025/04/bs-7.jpg",
+              "file": "main-assets/img/elevators/gots/villa/villa-elevator-installation-service-ts-b32/03-bs-7-f6d75c83.jpg",
+              "publicUrl": "/main-assets/img/elevators/gots/villa/villa-elevator-installation-service-ts-b32/03-bs-7-f6d75c83.jpg",
+              "bytes": 329830,
+              "contentType": "image/jpeg"
+            },
+            {
+              "sourceUrl": "https://www.gotselevator.com/wp-content/uploads/2025/04/bs-8.jpg",
+              "file": "main-assets/img/elevators/gots/villa/villa-elevator-installation-service-ts-b32/04-bs-8-cc7d5960.jpg",
+              "publicUrl": "/main-assets/img/elevators/gots/villa/villa-elevator-installation-service-ts-b32/04-bs-8-cc7d5960.jpg",
+              "bytes": 374754,
+              "contentType": "image/jpeg"
+            }
+          ],
+          "featuredImage": "/main-assets/img/elevators/gots/villa/villa-elevator-installation-service-ts-b32/01-1-47a0a540.png",
+          "needsSpanishReview": false,
+          "localization": {
+            "es": "Altekmar localized catalog copy"
+          }
+        },
+        {
+          "id": "villa-elevator-installation-service-ts-b36",
+          "categorySlug": "villa",
+          "category": {
+            "en": "Villa & Home Elevators",
+            "es": "Elevadores residenciales y para villas"
+          },
+          "manufacturer": "GOTS Elevator",
+          "authorizedRetailer": "Altekmar",
+          "sku": null,
+          "source": {
+            "english": "https://www.gotselevator.com/product/villa-elevator-installation-service-ts-b36/",
+            "spanish": "https://www.gotselevator.com/es/producto/villa-elevator-installation-service-ts-b36/",
+            "category": "https://www.gotselevator.com/product-category/villa-elevator/",
+            "importedAt": "2026-07-20T00:56:22.492Z"
+          },
+          "title": {
+            "en": "TS-B36 Safe Home Elevators for Seniors",
+            "es": "TS-B36 Elevadores domésticos seguros para personas mayores"
+          },
+          "description": {
+            "en": "A great safe choice for seniors, GOTS home elevators combine comfort, safety, and refined designs...",
+            "es": "Una excelente opción segura para las personas mayores: los ascensores residenciales GOTS combinan confort, seguridad y diseños refinados."
+          },
+          "specifications": {},
+          "images": [
+            {
+              "sourceUrl": "https://www.gotselevator.com/wp-content/uploads/2025/04/4-1.png",
+              "file": "main-assets/img/elevators/gots/villa/villa-elevator-installation-service-ts-b36/01-4-1-b25bb754.png",
+              "publicUrl": "/main-assets/img/elevators/gots/villa/villa-elevator-installation-service-ts-b36/01-4-1-b25bb754.png",
+              "bytes": 332724,
+              "contentType": "image/png"
+            },
+            {
+              "sourceUrl": "https://www.gotselevator.com/wp-content/uploads/2025/04/bs-9.jpg",
+              "file": "main-assets/img/elevators/gots/villa/villa-elevator-installation-service-ts-b36/02-bs-9-af1045b0.jpg",
+              "publicUrl": "/main-assets/img/elevators/gots/villa/villa-elevator-installation-service-ts-b36/02-bs-9-af1045b0.jpg",
+              "bytes": 367456,
+              "contentType": "image/jpeg"
+            },
+            {
+              "sourceUrl": "https://www.gotselevator.com/wp-content/uploads/2025/04/bs-7.jpg",
+              "file": "main-assets/img/elevators/gots/villa/villa-elevator-installation-service-ts-b36/03-bs-7-f6d75c83.jpg",
+              "publicUrl": "/main-assets/img/elevators/gots/villa/villa-elevator-installation-service-ts-b36/03-bs-7-f6d75c83.jpg",
+              "bytes": 329830,
+              "contentType": "image/jpeg"
+            },
+            {
+              "sourceUrl": "https://www.gotselevator.com/wp-content/uploads/2025/04/bs-8.jpg",
+              "file": "main-assets/img/elevators/gots/villa/villa-elevator-installation-service-ts-b36/04-bs-8-cc7d5960.jpg",
+              "publicUrl": "/main-assets/img/elevators/gots/villa/villa-elevator-installation-service-ts-b36/04-bs-8-cc7d5960.jpg",
+              "bytes": 374754,
+              "contentType": "image/jpeg"
+            }
+          ],
+          "featuredImage": "/main-assets/img/elevators/gots/villa/villa-elevator-installation-service-ts-b36/01-4-1-b25bb754.png",
+          "needsSpanishReview": false,
+          "localization": {
+            "es": "Altekmar localized catalog copy"
+          }
+        }
+      ]
+    },
+    {
+      "slug": "observation",
+      "sourceSlug": "observation-elevator",
+      "sourceUrl": "https://www.gotselevator.com/product-category/observation-elevator/",
+      "title": {
+        "en": "Observation Elevators",
+        "es": "Elevadores panoramicos"
+      },
+      "description": {
+        "en": "Glass and panoramic elevators that combine vertical mobility with architectural visibility.",
+        "es": "Elevadores panorámicos que integran movilidad vertical con una presencia arquitectónica distintiva."
+      },
+      "productCount": 8,
+      "products": [
+        {
+          "id": "elevate-your-vision-with-gots-panoramic-lifts",
+          "categorySlug": "observation",
+          "category": {
+            "en": "Observation Elevators",
+            "es": "Elevadores panorámicos"
+          },
+          "manufacturer": "GOTS Elevator",
+          "authorizedRetailer": "Altekmar",
+          "sku": null,
+          "source": {
+            "english": "https://www.gotselevator.com/product/elevate-your-vision-with-gots-panoramic-lifts/",
+            "spanish": "https://www.gotselevator.com/es/producto/elevate-your-vision-with-gots-panoramic-lifts/",
+            "category": "https://www.gotselevator.com/product-category/observation-elevator/",
+            "importedAt": "2026-07-20T00:56:32.681Z"
+          },
+          "title": {
+            "en": "Elevate Your Vision with GOTS Panoramic Lifts",
+            "es": "Eleva tu vista con elevadores panorámicos GOTS"
+          },
+          "description": {
+            "en": "Elevate the prestige of your building with the GOTS Observation Elevator. Designed for luxury hotels, high-end shopping malls, and modern office towers..",
+            "es": "Eleva tu vista con elevadores panorámicos GOTS, una solución panorámica que combina movilidad vertical, cerramientos transparentes e integración arquitectónica. Puede configurarse según la capacidad, el recorrido y los acabados requeridos."
+          },
+          "specifications": {
+            "Feature": "Details",
+            "Rated Load": "630kg / 800kg / 1000kg / 1250kg / 1600kg",
+            "Rated Speed": "1.0 m/s, 1.5 m/s, 1.75 m/s, 2.0 m/s",
+            "Drive System": "Gearless PM Synchronous Traction Machine",
+            "Glass Type": "12mm+12mm Laminated Safety Glass",
+            "Cabin Frame": "Hairline Stainless Steel / Mirror Gold / Titanium Black",
+            "Control System": "32-Bit Microcomputer Integrated Control"
+          },
+          "images": [
+            {
+              "sourceUrl": "https://www.gotselevator.com/wp-content/uploads/2025/09/G2507%EF%BC%88%E6%99%AE%E9%B2%81%E5%A3%AB%E8%93%9D-1000.png",
+              "file": "main-assets/img/elevators/gots/observation/elevate-your-vision-with-gots-panoramic-lifts/01-g2507-1000-6e58a8cc.png",
+              "publicUrl": "/main-assets/img/elevators/gots/observation/elevate-your-vision-with-gots-panoramic-lifts/01-g2507-1000-6e58a8cc.png",
+              "bytes": 674502,
+              "contentType": "image/png"
+            }
+          ],
+          "featuredImage": "/main-assets/img/elevators/gots/observation/elevate-your-vision-with-gots-panoramic-lifts/01-g2507-1000-6e58a8cc.png",
+          "needsSpanishReview": false,
+          "localization": {
+            "es": "Altekmar localized catalog copy"
+          }
+        },
+        {
+          "id": "premium-panoramic-glass-elevators",
+          "categorySlug": "observation",
+          "category": {
+            "en": "Observation Elevators",
+            "es": "Elevadores panorámicos"
+          },
+          "manufacturer": "GOTS Elevator",
+          "authorizedRetailer": "Altekmar",
+          "sku": null,
+          "source": {
+            "english": "https://www.gotselevator.com/product/premium-panoramic-glass-elevators/",
+            "spanish": "https://www.gotselevator.com/es/producto/premium-panoramic-glass-elevators/",
+            "category": "https://www.gotselevator.com/product-category/observation-elevator/",
+            "importedAt": "2026-07-20T00:56:37.631Z"
+          },
+          "title": {
+            "en": "Elevate Your Vision with GOTS Panoramic Lifts",
+            "es": "Eleva tu vista con elevadores panorámicos GOTS"
+          },
+          "description": {
+            "en": "Elevate the prestige of your building with the GOTS Observation Elevator. Designed for luxury hotels, high-end shopping malls, and modern office towers..",
+            "es": "Eleva tu vista con elevadores panorámicos GOTS, una solución panorámica que combina movilidad vertical, cerramientos transparentes e integración arquitectónica. Puede configurarse según la capacidad, el recorrido y los acabados requeridos."
+          },
+          "specifications": {
+            "Feature": "Specification",
+            "Capacity": "630kg to 1600kg (8 – 21 Persons)",
+            "Speed": "1.0 m/s – 2.5 m/s (Smooth & Silent)",
+            "Drive System": "Advanced VVVF Gearless Traction",
+            "Glass Type": "12mm+ Laminated Safety Glass (Transparent/Tinted)",
+            "Control System": "32-bit Micro-integrated Intelligent System",
+            "Framing Finishes": "Hairline/Mirror Stainless Steel, Gold, or Rose Gold",
+            "Door Type": "Center Opening Glass Doors / Stainless Steel Frames"
+          },
+          "images": [
+            {
+              "sourceUrl": "https://www.gotselevator.com/wp-content/uploads/2026/05/29.jpg",
+              "file": "main-assets/img/elevators/gots/observation/premium-panoramic-glass-elevators/01-29-6ad89a12.jpg",
+              "publicUrl": "/main-assets/img/elevators/gots/observation/premium-panoramic-glass-elevators/01-29-6ad89a12.jpg",
+              "bytes": 63018,
+              "contentType": "image/jpeg"
+            }
+          ],
+          "featuredImage": "/main-assets/img/elevators/gots/observation/premium-panoramic-glass-elevators/01-29-6ad89a12.jpg",
+          "needsSpanishReview": false,
+          "localization": {
+            "es": "Altekmar localized catalog copy"
+          }
+        },
+        {
+          "id": "gots-panoramic-elevator-cabin-g2507-champagne-gold-flat-design-optional",
+          "categorySlug": "observation",
+          "category": {
+            "en": "Observation Elevators",
+            "es": "Elevadores panorámicos"
+          },
+          "manufacturer": "GOTS Elevator",
+          "authorizedRetailer": "Altekmar",
+          "sku": null,
+          "source": {
+            "english": "https://www.gotselevator.com/product/gots-panoramic-elevator-cabin-g2507-champagne-gold-flat-design-optional/",
+            "spanish": "https://www.gotselevator.com/es/producto/gots-panoramic-elevator-cabin-g2507-champagne-gold-flat-design-optional/",
+            "category": "https://www.gotselevator.com/product-category/observation-elevator/",
+            "importedAt": "2026-07-20T00:56:25.279Z"
+          },
+          "title": {
+            "en": "G2505 Public Space Panoramic Elevator",
+            "es": "G2505 Elevador panorámico para espacios públicos"
+          },
+          "description": {
+            "en": "GOTS sightseeing elevators are engineered for public spaces with heavy passenger flow. Featuring stable microcomputer control, VVVF variable frequency drive",
+            "es": "G2505 Elevador panorámico para espacios públicos, una solución panorámica que combina movilidad vertical, cerramientos transparentes e integración arquitectónica. Puede configurarse según la capacidad, el recorrido y los acabados requeridos."
+          },
+          "specifications": {
+            "Model": "Load（kg/People） · Speed（m/s） · Car Dimensions AA*BB\n(MM) · Shaft X*Y\n(MM) · Height Overhead Floor\n(mm)(OH) · Depth of pit（P）（mm） · Main stress points\n(KN)",
+            "R1": "R2 · R3 · R4 · R5",
+            "TKU-630-CO60": "1.5",
+            "TKU-800-CO60": "1.5",
+            "TKU-1050-CO60": "1.5",
+            "TKU-1150-CO60": "1.5",
+            "TKU-1350-CO60": "1.5",
+            "TKU-1600-CO60": "1.5"
+          },
+          "images": [
+            {
+              "sourceUrl": "https://www.gotselevator.com/wp-content/uploads/2025/09/G2507%EF%BC%88%E9%A6%99%E6%A7%9F%E9%87%91-%E5%B9%B3-1000.png",
+              "file": "main-assets/img/elevators/gots/observation/gots-panoramic-elevator-cabin-g2507-champagne-gold-flat-design-optional/01-g2507-1000-706140f5.png",
+              "publicUrl": "/main-assets/img/elevators/gots/observation/gots-panoramic-elevator-cabin-g2507-champagne-gold-flat-design-optional/01-g2507-1000-706140f5.png",
+              "bytes": 560592,
+              "contentType": "image/png"
+            }
+          ],
+          "featuredImage": "/main-assets/img/elevators/gots/observation/gots-panoramic-elevator-cabin-g2507-champagne-gold-flat-design-optional/01-g2507-1000-706140f5.png",
+          "needsSpanishReview": false,
+          "localization": {
+            "es": "Altekmar localized catalog copy"
+          }
+        },
+        {
+          "id": "gots-panoramic-elevator-cabin-g2507-prussian-blue-flat-design-optional",
+          "categorySlug": "observation",
+          "category": {
+            "en": "Observation Elevators",
+            "es": "Elevadores panorámicos"
+          },
+          "manufacturer": "GOTS Elevator",
+          "authorizedRetailer": "Altekmar",
+          "sku": null,
+          "source": {
+            "english": "https://www.gotselevator.com/product/gots-panoramic-elevator-cabin-g2507-prussian-blue-flat-design-optional/",
+            "spanish": "https://www.gotselevator.com/es/producto/gots-panoramic-elevator-cabin-g2507-prussian-blue-flat-design-optional/",
+            "category": "https://www.gotselevator.com/product-category/observation-elevator/",
+            "importedAt": "2026-07-20T00:56:29.269Z"
+          },
+          "title": {
+            "en": "G2507 Panoramic Elevator for Shopping Malls",
+            "es": "G2507 Elevador panorámico para centros comerciales"
+          },
+          "description": {
+            "en": "The elevator features refined contours and modern proportions.Therefore, it integrates naturally with contemporary architectural styles.",
+            "es": "G2507 Elevador panorámico para centros comerciales, una solución panorámica que combina movilidad vertical, cerramientos transparentes e integración arquitectónica. Puede configurarse según la capacidad, el recorrido y los acabados requeridos."
+          },
+          "specifications": {
+            "Model": "Load\n（kg/People） · Speed\n（m/s） · Car Dimensions\nAA*BB\n(MM) · Doorway Width\n(mm) · Shaft\nX*Y\n(MM) · Height Overhead Floor\n(MM)\n(OH) · Depth of pit\n（P）\n（mm） · Main stress points\n(KN)",
+            "R1": "R2 · R3 · R4 · R5",
+            "TKU-630-CO60": "1.5",
+            "TKU-800-CO60": "1.5",
+            "TKU-1050-CO60": "1.5",
+            "TKU-1150-CO60": "1.5",
+            "TKU-1350-CO60": "1.5",
+            "TKU-1600-CO60": "1.5"
+          },
+          "images": [
+            {
+              "sourceUrl": "https://www.gotselevator.com/wp-content/uploads/2025/09/G2507%EF%BC%88%E6%99%AE%E9%B2%81%E5%A3%AB%E8%93%9D-1000.png",
+              "file": "main-assets/img/elevators/gots/observation/gots-panoramic-elevator-cabin-g2507-prussian-blue-flat-design-optional/01-g2507-1000-6e58a8cc.png",
+              "publicUrl": "/main-assets/img/elevators/gots/observation/gots-panoramic-elevator-cabin-g2507-prussian-blue-flat-design-optional/01-g2507-1000-6e58a8cc.png",
+              "bytes": 674502,
+              "contentType": "image/png"
+            }
+          ],
+          "featuredImage": "/main-assets/img/elevators/gots/observation/gots-panoramic-elevator-cabin-g2507-prussian-blue-flat-design-optional/01-g2507-1000-6e58a8cc.png",
+          "needsSpanishReview": false,
+          "localization": {
+            "es": "Altekmar localized catalog copy"
+          }
+        },
+        {
+          "id": "gots-panoramic-elevator-cabin-g2505-champagne-gold-design-optional",
+          "categorySlug": "observation",
+          "category": {
+            "en": "Observation Elevators",
+            "es": "Elevadores panorámicos"
+          },
+          "manufacturer": "GOTS Elevator",
+          "authorizedRetailer": "Altekmar",
+          "sku": null,
+          "source": {
+            "english": "https://www.gotselevator.com/product/gots-panoramic-elevator-cabin-g2505-champagne-gold-design-optional/",
+            "spanish": "https://www.gotselevator.com/es/producto/gots-panoramic-elevator-cabin-g2505-champagne-gold-design-optional/",
+            "category": "https://www.gotselevator.com/product-category/observation-elevator/",
+            "importedAt": "2026-07-20T00:56:41.115Z"
+          },
+          "title": {
+            "en": "RG10 Custom Panoramic Elevator Design",
+            "es": "RG10 Diseño personalizado de elevador panorámico"
+          },
+          "description": {
+            "en": "GOTS panoramic elevators offers flexible sizes, colors, and configurations to match diverse architectural visions and functional requirements.",
+            "es": "RG10 DiseÃ±o personalizado de elevador panorÃ¡mico, una soluciÃ³n panorÃ¡mica que combina movilidad vertical, cerramientos transparentes e integraciÃ³n arquitectÃ³nica. Puede configurarse segÃºn la capacidad, el recorrido y los acabados requeridos."
+          },
+          "specifications": {
+            "Model": "Load（kg/People） · Speed（m/s） · Car Dimensions\nAA*BB\n(MM) · Doorway Width\n(mm) · Shaft\nX*Y\n(MM) · Height Overhead Floor\n(mm)\n(OH) · Depth of pit\n（P）\n（mm） · Main stress points\n(KN)",
+            "R1": "R2 · R3 · R4 · R5",
+            "TKU-630-CO60": "1.5",
+            "TKU-800-CO60": "1.5",
+            "TKU-1050-CO60": "1.5",
+            "TKU-1150-CO60": "1.5",
+            "TKU-1350-CO60": "1.5",
+            "TKU-1600-CO60": "1.5"
+          },
+          "images": [
+            {
+              "sourceUrl": "https://www.gotselevator.com/wp-content/uploads/2025/09/G2505%E9%A6%99%E6%A7%9F%E9%87%91-%E5%B9%B3-1000.png",
+              "file": "main-assets/img/elevators/gots/observation/gots-panoramic-elevator-cabin-g2505-champagne-gold-design-optional/01-g2505-1000-cd62550d.png",
+              "publicUrl": "/main-assets/img/elevators/gots/observation/gots-panoramic-elevator-cabin-g2505-champagne-gold-design-optional/01-g2505-1000-cd62550d.png",
+              "bytes": 581932,
+              "contentType": "image/png"
+            }
+          ],
+          "featuredImage": "/main-assets/img/elevators/gots/observation/gots-panoramic-elevator-cabin-g2505-champagne-gold-design-optional/01-g2505-1000-cd62550d.png",
+          "needsSpanishReview": false,
+          "localization": {
+            "es": "Altekmar localized catalog copy"
+          }
+        },
+        {
+          "id": "gots-panoramic-elevator-cabin-rg10",
+          "categorySlug": "observation",
+          "category": {
+            "en": "Observation Elevators",
+            "es": "Elevadores panorámicos"
+          },
+          "manufacturer": "GOTS Elevator",
+          "authorizedRetailer": "Altekmar",
+          "sku": null,
+          "source": {
+            "english": "https://www.gotselevator.com/product/gots-panoramic-elevator-cabin-rg10/",
+            "spanish": "https://www.gotselevator.com/es/producto/gots-panoramic-elevator-cabin-rg10/",
+            "category": "https://www.gotselevator.com/product-category/observation-elevator/",
+            "importedAt": "2026-07-20T00:56:44.393Z"
+          },
+          "title": {
+            "en": "RG10 GOTS Observation Elevators with Transparent Design",
+            "es": "RG10 Elevador panorámico GOTS con diseño transparente"
+          },
+          "description": {
+            "en": "Our glass elevators are equipped with VVVF drive and door operator systems, ensuring smooth starts, stops, and accurate leveling.",
+            "es": "RG10 Elevador panorámico GOTS con diseño transparente, una solución panorámica que combina movilidad vertical, cerramientos transparentes e integración arquitectónica. Puede configurarse según la capacidad, el recorrido y los acabados requeridos."
+          },
+          "specifications": {
+            "Model": "Load\n（kg/People） · Speed\n（m/s） · Car Dimensions\nAA*BB\n(MM) · Doorway Width\n(mm) · Shaft\nX*Y\n(MM) · Height Overhead Floor\n(mm)\n(OH) · Depth of pit\n（P）\n（mm） · Main stress points\n(KN)",
+            "R1": "R2 · R3 · R4 · R5",
+            "TKU-630-CO60": "1.5",
+            "TKU-800-CO60": "1.5",
+            "TKU-1050-CO60": "1.5",
+            "TKU-1150-CO60": "1.5",
+            "TKU-1350-CO60": "1.5",
+            "TKU-1600-CO60": "1.5"
+          },
+          "images": [
+            {
+              "sourceUrl": "https://www.gotselevator.com/wp-content/uploads/2025/09/RG10-1000.png",
+              "file": "main-assets/img/elevators/gots/observation/gots-panoramic-elevator-cabin-rg10/01-rg10-1000-a3a37833.png",
+              "publicUrl": "/main-assets/img/elevators/gots/observation/gots-panoramic-elevator-cabin-rg10/01-rg10-1000-a3a37833.png",
+              "bytes": 407467,
+              "contentType": "image/png"
+            }
+          ],
+          "featuredImage": "/main-assets/img/elevators/gots/observation/gots-panoramic-elevator-cabin-rg10/01-rg10-1000-a3a37833.png",
+          "needsSpanishReview": false,
+          "localization": {
+            "es": "Altekmar localized catalog copy"
+          }
+        },
+        {
+          "id": "moving-walks-indoor-outdoor-mini-escalator",
+          "categorySlug": "observation",
+          "category": {
+            "en": "Observation Elevators",
+            "es": "Elevadores panorámicos"
+          },
+          "manufacturer": "GOTS Elevator",
+          "authorizedRetailer": "Altekmar",
+          "sku": null,
+          "source": {
+            "english": "https://www.gotselevator.com/product/moving-walks-indoor-outdoor-mini-escalator/",
+            "spanish": "https://www.gotselevator.com/es/producto/moving-walks-indoor-outdoor-mini-escalator/",
+            "category": "https://www.gotselevator.com/product-category/observation-elevator/",
+            "importedAt": "2026-07-20T00:56:52.098Z"
+          },
+          "title": {
+            "en": "RG12 Panoramic Glass Elevator Manufacturer in China",
+            "es": "RG12 Elevador panorámico"
+          },
+          "description": {
+            "en": "Glass elevators, also known as observation or scenic elevators, are ideal solutions for buildings that require both functional transportation...",
+            "es": "RG12 Elevador panorámico, una solución panorámica que combina movilidad vertical, cerramientos transparentes e integración arquitectónica. Puede configurarse según la capacidad, el recorrido y los acabados requeridos."
+          },
+          "specifications": {},
+          "images": [
+            {
+              "sourceUrl": "https://www.gotselevator.com/wp-content/uploads/2025/05/Observation-Elevator4.png",
+              "file": "main-assets/img/elevators/gots/observation/moving-walks-indoor-outdoor-mini-escalator/01-observation-elevator4-9a3a8a96.png",
+              "publicUrl": "/main-assets/img/elevators/gots/observation/moving-walks-indoor-outdoor-mini-escalator/01-observation-elevator4-9a3a8a96.png",
+              "bytes": 276802,
+              "contentType": "image/png"
+            }
+          ],
+          "featuredImage": "/main-assets/img/elevators/gots/observation/moving-walks-indoor-outdoor-mini-escalator/01-observation-elevator4-9a3a8a96.png",
+          "needsSpanishReview": false,
+          "localization": {
+            "es": "Altekmar localized catalog copy"
+          }
+        },
+        {
+          "id": "gots-panoramic-elevator-cabin-g2505-silver-frost-design-optional",
+          "categorySlug": "observation",
+          "category": {
+            "en": "Observation Elevators",
+            "es": "Elevadores panorámicos"
+          },
+          "manufacturer": "GOTS Elevator",
+          "authorizedRetailer": "Altekmar",
+          "sku": null,
+          "source": {
+            "english": "https://www.gotselevator.com/product/gots-panoramic-elevator-cabin-g2505-silver-frost-design-optional/",
+            "spanish": "https://www.gotselevator.com/es/producto/gots-panoramic-elevator-cabin-g2505-silver-frost-design-optional/",
+            "category": "https://www.gotselevator.com/product-category/observation-elevator/",
+            "importedAt": "2026-07-20T00:56:47.853Z"
+          },
+          "title": {
+            "en": "RG13 Panoramic Glass Elevator Manufacturer",
+            "es": "RG13 Elevador panorámico"
+          },
+          "description": {
+            "en": "Panoramic elevators, also known as glass or observation elevators, are designed to combine vertical transportation with architectural aesthetics.glass elevator",
+            "es": "RG13 Elevador panorámico, una solución panorámica que combina movilidad vertical, cerramientos transparentes e integración arquitectónica. Puede configurarse según la capacidad, el recorrido y los acabados requeridos."
+          },
+          "specifications": {
+            "Model": "Load\n（kg/People） · Speed\n（m/s） · Car Dimensions\nAA*BB\n(MM) · Doorway Width\n(mm) · Shaft\nX*Y\n(MM) · Height Overhead Floor\n(mm)\n(OH) · Depth of pit\n（P）\n（mm） · Main stress points\n(KN)",
+            "R1": "R2 · R3 · R4 · R5",
+            "TKU-630-CO60": "1.5",
+            "TKU-800-CO60": "1.5",
+            "TKU-1050-CO60": "1.5",
+            "TKU-1150-CO60": "1.5",
+            "TKU-1350-CO60": "1.5",
+            "TKU-1600-CO60": "1.5"
+          },
+          "images": [
+            {
+              "sourceUrl": "https://www.gotselevator.com/wp-content/uploads/2025/09/G2505%EF%BC%88%E9%97%AA%E9%93%B6%E7%81%B0-1000.png",
+              "file": "main-assets/img/elevators/gots/observation/gots-panoramic-elevator-cabin-g2505-silver-frost-design-optional/01-g2505-1000-e795febf.png",
+              "publicUrl": "/main-assets/img/elevators/gots/observation/gots-panoramic-elevator-cabin-g2505-silver-frost-design-optional/01-g2505-1000-e795febf.png",
+              "bytes": 596540,
+              "contentType": "image/png"
+            }
+          ],
+          "featuredImage": "/main-assets/img/elevators/gots/observation/gots-panoramic-elevator-cabin-g2505-silver-frost-design-optional/01-g2505-1000-e795febf.png",
+          "needsSpanishReview": false,
+          "localization": {
+            "es": "Altekmar localized catalog copy"
+          }
+        }
+      ]
+    },
+    {
+      "slug": "hospital",
+      "sourceSlug": "hospital-elevator",
+      "sourceUrl": "https://www.gotselevator.com/product-category/hospital-elevator/",
+      "title": {
+        "en": "Hospital Elevators",
+        "es": "Elevadores Hospitalarios"
+      },
+      "description": {
+        "en": "Medical and bed elevator solutions developed for hospitals, clinics and care facilities.",
+        "es": "Elevadores para hospitales, clínicas y centros de atención. "
+      },
+      "productCount": 6,
+      "products": [
+        {
+          "id": "hospital-medical-elevators-life-critical-vertical-transport",
+          "categorySlug": "hospital",
+          "category": {
+            "en": "Hospital Elevators",
+            "es": "Elevadores Hospitalarios"
+          },
+          "manufacturer": "GOTS Elevator",
+          "authorizedRetailer": "Altekmar",
+          "sku": null,
+          "source": {
+            "english": "https://www.gotselevator.com/product/hospital-medical-elevators-life-critical-vertical-transport/",
+            "spanish": "https://www.gotselevator.com/es/producto/hospital-medical-elevators-life-critical-vertical-transport/",
+            "category": "https://www.gotselevator.com/product-category/hospital-elevator/",
+            "importedAt": "2026-07-20T00:56:54.859Z"
+          },
+          "title": {
+            "en": "Hospital & Medical Elevators: Life-Critical Vertical Transport",
+            "es": "Elevadores Hospitalarios y Medicos: transporte vertical para entornos cri­ticos"
+          },
+          "description": {
+            "en": "The cabin combines elegant panels with a clean, streamlined ceiling.Consequently, patients experience a calm and reassuring environment during transport.",
+            "es": "Elevadores hospitalarios y Medicos: transporte vertical para entornos cri­ticos, desarrollado para hospitales, clí­nicas y centros de atencion que requieren transporte estable de pacientes, personal y camillas. La configuracion considera capacidad, accesibilidad, higiene y operacion continua."
+          },
+          "specifications": {
+            "Feature": "Specification · Benefit",
+            "Load Capacity​": "1600 kg – 2500 kg (1.6T to 2.5T) · Accommodates heavy medical equipment, beds, and multiple staff.",
+            "Speed​": "1.0 m/s – 3.0 m/s · Balances rapid response with patient comfort and smooth starts/stops.",
+            "Cabin Dimensions​": "Deep and narrow design (e.g., 1400mm x 2400mm typical) · Optimized for stretcher maneuverability.",
+            "Door Systems​": "Wide openings (1000mm+), side-opening, optional贯通开门 · Easy access for wheelchairs and beds; reduces transfer time.",
+            "Noise Level​": "Low-noise operation (<55 dB) · Creates a calming environment conducive to patient recovery."
+          },
+          "images": [
+            {
+              "sourceUrl": "https://www.gotselevator.com/wp-content/uploads/2026/05/42.jpg",
+              "file": "main-assets/img/elevators/gots/hospital/hospital-medical-elevators-life-critical-vertical-transport/01-42-723e0f1c.jpg",
+              "publicUrl": "/main-assets/img/elevators/gots/hospital/hospital-medical-elevators-life-critical-vertical-transport/01-42-723e0f1c.jpg",
+              "bytes": 59355,
+              "contentType": "image/jpeg"
+            }
+          ],
+          "featuredImage": "/main-assets/img/elevators/gots/hospital/hospital-medical-elevators-life-critical-vertical-transport/01-42-723e0f1c.jpg",
+          "needsSpanishReview": false,
+          "localization": {
+            "es": "Altekmar localized catalog copy"
+          }
+        },
+        {
+          "id": "precision-mobility-for-life-critical-environments",
+          "categorySlug": "hospital",
+          "category": {
+            "en": "Hospital Elevators",
+            "es": "Elevadores Hospitalarios"
+          },
+          "manufacturer": "GOTS Elevator",
+          "authorizedRetailer": "Altekmar",
+          "sku": null,
+          "source": {
+            "english": "https://www.gotselevator.com/product/precision-mobility-for-life-critical-environments/",
+            "spanish": "https://www.gotselevator.com/es/producto/precision-mobility-for-life-critical-environments/",
+            "category": "https://www.gotselevator.com/product-category/hospital-elevator/",
+            "importedAt": "2026-07-20T00:56:58.936Z"
+          },
+          "title": {
+            "en": "Precision Mobility for Life-Critical Environments",
+            "es": "Movilidad de precision para entornos criticos"
+          },
+          "description": {
+            "en": "The GOTS Hospital Bed Elevator is specifically engineered for hospitals, clinics, and healthcare centers where the safe, smooth, and rapid transport..",
+            "es": "Movilidad de precision para entornos criticos, desarrollado para hospitales, clínicas y centros de atencion que requieren transporte estable de pacientes, personal y camillas. La configuracion considera capacidad, accesibilidad, higiene y operacion continua."
+          },
+          "specifications": {
+            "Feature": "Specifications",
+            "Rated Load": "1600kg / 2000kg / 2500kg",
+            "Rated Speed": "1.0 m/s, 1.5 m/s, 1.75 m/s",
+            "Control System": "32-Bit Micro-computer Integrated Intelligent Control",
+            "Drive System": "Permanent Magnet Synchronous (PM) Gearless Traction",
+            "Cabin Dimension": "Optimized for Standard Hospital Beds (e.g., 1500mm x 2400mm)",
+            "Door Opening": "Side Opening / Center Opening (Width: 1200mm – 1500mm)",
+            "Leveling Accuracy": "≤ ± 3mm"
+          },
+          "images": [
+            {
+              "sourceUrl": "https://www.gotselevator.com/wp-content/uploads/2025/06/hospital-elevator.jpg",
+              "file": "main-assets/img/elevators/gots/hospital/precision-mobility-for-life-critical-environments/01-hospital-elevator-088f3a55.jpg",
+              "publicUrl": "/main-assets/img/elevators/gots/hospital/precision-mobility-for-life-critical-environments/01-hospital-elevator-088f3a55.jpg",
+              "bytes": 1868943,
+              "contentType": "image/jpeg"
+            }
+          ],
+          "featuredImage": "/main-assets/img/elevators/gots/hospital/precision-mobility-for-life-critical-environments/01-hospital-elevator-088f3a55.jpg",
+          "needsSpanishReview": false,
+          "localization": {
+            "es": "Altekmar localized catalog copy"
+          }
+        },
+        {
+          "id": "gots-hospital-bed-elevator-with-stretcher-space",
+          "categorySlug": "hospital",
+          "category": {
+            "en": "Hospital Elevators",
+            "es": "Elevadores Hospitalarios"
+          },
+          "manufacturer": "GOTS Elevator",
+          "authorizedRetailer": "Altekmar",
+          "sku": null,
+          "source": {
+            "english": "https://www.gotselevator.com/product/gots-hospital-bed-elevator-with-stretcher-space/",
+            "spanish": "https://www.gotselevator.com/es/producto/gots-hospital-bed-elevator-with-stretcher-space/",
+            "category": "https://www.gotselevator.com/product-category/hospital-elevator/",
+            "importedAt": "2026-07-20T00:57:00.065Z"
+          },
+          "title": {
+            "en": "RD Series Precision Engineering for Lifesaving Environments",
+            "es": "Serie RD: ingenieri­a de precision para entornos de atencion medica"
+          },
+          "description": {
+            "en": "GOTS Elevator provides high-safety hospital elevators and bed elevators. Featuring smooth leveling, antibacterial cabins, and emergency priority functions",
+            "es": "Serie RD: ingeniería de precisión para entornos de atención médica, desarrollado para hospitales, clínicas y centros de atención que requieren transporte estable de pacientes, personal y camillas. La configuración considera capacidad, accesibilidad, higiene y operación continua."
+          },
+          "specifications": {
+            "Feature": "Specification",
+            "Rated Load": "1600kg / 2000kg / 2500kg",
+            "Rated Speed": "1.0 m/s – 1.75 m/s",
+            "Door Type": "Side-opening (2-Panel / 3-Panel)",
+            "Cabin Depth": "2400mm – 2700mm (Standard Bed Size)",
+            "Control System": "Dual 32-bit Micro-computer Integrated System",
+            "Interior Finish": "Hairline Stainless Steel / Anti-collision PVC Rails"
+          },
+          "images": [
+            {
+              "sourceUrl": "https://www.gotselevator.com/wp-content/uploads/2025/06/hospital-elevator.jpg",
+              "file": "main-assets/img/elevators/gots/hospital/gots-hospital-bed-elevator-with-stretcher-space/01-hospital-elevator-088f3a55.jpg",
+              "publicUrl": "/main-assets/img/elevators/gots/hospital/gots-hospital-bed-elevator-with-stretcher-space/01-hospital-elevator-088f3a55.jpg",
+              "bytes": 1868943,
+              "contentType": "image/jpeg"
+            }
+          ],
+          "featuredImage": "/main-assets/img/elevators/gots/hospital/gots-hospital-bed-elevator-with-stretcher-space/01-hospital-elevator-088f3a55.jpg",
+          "needsSpanishReview": false,
+          "localization": {
+            "es": "Altekmar localized catalog copy"
+          }
+        },
+        {
+          "id": "stainless-steel-large-medical-elevators-for-hospital",
+          "categorySlug": "hospital",
+          "category": {
+            "en": "Hospital Elevators",
+            "es": "Elevadores Hospitalarios"
+          },
+          "manufacturer": "GOTS Elevator",
+          "authorizedRetailer": "Altekmar",
+          "sku": null,
+          "source": {
+            "english": "https://www.gotselevator.com/product/stainless-steel-large-medical-elevators-for-hospital/",
+            "spanish": "https://www.gotselevator.com/es/producto/stainless-steel-large-medical-elevators-for-hospital/",
+            "category": "https://www.gotselevator.com/product-category/hospital-elevator/",
+            "importedAt": "2026-07-20T00:57:04.325Z"
+          },
+          "title": {
+            "en": "RD-H01 Medical Elevator for Hospitals & Clinics",
+            "es": "RD-H01 Elevador Medico para Hospitales y clínicas"
+          },
+          "description": {
+            "en": "Control panels and hall call systems are available in multiple materials, colors, and sizes.This flexibility helps hospitals match their interior standards.",
+            "es": "RD-H01 Elevador Medico para Hospitales y clínicas, desarrollado para hospitales, clínicas y centros de atención que requieren transporte estable de pacientes, personal y camillas. La configuración considera capacidad, accesibilidad, higiene y operación continua."
+          },
+          "specifications": {
+            "1050": "1.0-1.75 · 14 · 1200*2000*2500 · 900*2100 · 2200*2500 · 2200*2500*2500 · 4500",
+            "1600": "1.0-1.75 · 21 · 1400*2400*2500 · 1100*2100 · 2500*2800 · 2500*2800*2500 · 4500",
+            "2000": "1.0-1.75 · 26 · 1500*2700*2500 · 1200*2100 · 2600*2700 · 2600*3150*2500 · 4650",
+            "Load Capacity（KG）": "Speed（m/s） · Number of passengers · Car dimensions\n(mm)\nWidth*Depth*Height · Door opening dimensions\n(mm)\nWidth*Depth · Standard hoistway dimensions\n(mm)\nWidth*Depth · Standard machine room dimensions\n(mm)\nWidth*Depth*Height · Minimum overhead height\n(mm)"
+          },
+          "images": [
+            {
+              "sourceUrl": "https://www.gotselevator.com/wp-content/uploads/2025/05/Stainless-Steel-Large-Medical-Elevators-for-Hospital-300x300-1.png",
+              "file": "main-assets/img/elevators/gots/hospital/stainless-steel-large-medical-elevators-for-hospital/01-stainless-steel-large-medical-elevators-for-hospital-300x300-1-b353ee7f.png",
+              "publicUrl": "/main-assets/img/elevators/gots/hospital/stainless-steel-large-medical-elevators-for-hospital/01-stainless-steel-large-medical-elevators-for-hospital-300x300-1-b353ee7f.png",
+              "bytes": 254857,
+              "contentType": "image/png"
+            }
+          ],
+          "featuredImage": "/main-assets/img/elevators/gots/hospital/stainless-steel-large-medical-elevators-for-hospital/01-stainless-steel-large-medical-elevators-for-hospital-300x300-1-b353ee7f.png",
+          "needsSpanishReview": false,
+          "localization": {
+            "es": "Altekmar localized catalog copy"
+          }
+        },
+        {
+          "id": "safe-and-fast-hospital-elevator-rd-y2401",
+          "categorySlug": "hospital",
+          "category": {
+            "en": "Hospital Elevators",
+            "es": "Elevadores hospitalarios"
+          },
+          "manufacturer": "GOTS Elevator",
+          "authorizedRetailer": "Altekmar",
+          "sku": null,
+          "source": {
+            "english": "https://www.gotselevator.com/product/safe-and-fast-hospital-elevator-rd-y2401/",
+            "spanish": "https://www.gotselevator.com/es/producto/safe-and-fast-hospital-elevator-rd-y2401/",
+            "category": "https://www.gotselevator.com/product-category/hospital-elevator/",
+            "importedAt": "2026-07-20T00:57:06.059Z"
+          },
+          "title": {
+            "en": "RD-Y01 Hospital Medical Elevator with Human-Centered Design",
+            "es": "RD-Y01 Elevador medico hospitalario con diseo centrado en las personas"
+          },
+          "description": {
+            "en": "Soft colors, clean surfaces, and refined materials create a gentle visual experience.Thus, the elevator becomes an extension of the Medical Elevator",
+            "es": "RD-Y01 Elevador Medico hospitalario con diseño centrado en las personas, desarrollado para hospitales, clínicas y centros de atención que requieren transporte estable de pacientes, personal y camillas. La configuración considera capacidad, accesibilidad, higiene y operación continua."
+          },
+          "specifications": {
+            "1050": "1.0-1.75 · 14 · 1200*2000*2500 · 900*2100 · 2200*2500 · 2200*2500*2500 · 4500",
+            "1600": "1.0-1.75 · 21 · 1400*2400*2500 · 1100*2100 · 2500*2800 · 2500*2800*2500 · 4500",
+            "2000": "1.0-1.75 · 26 · 1500*2700*2500 · 1200*2100 · 2600*2700 · 2600*3150*2500 · 4650",
+            "Load Capacity（KG）": "Speed（m/s） · Number of passengers · Car dimensions\n(mm)\nWidth*Depth*Height · Door opening dimensions\n(mm)\nWidth*Depth · Standard hoistway dimensions\n(mm)\nWidth*Depth · Standard machine room dimensions\n(mm)\nWidth*Depth*Height · Minimum overhead height\n(mm)"
+          },
+          "images": [
+            {
+              "sourceUrl": "https://www.gotselevator.com/wp-content/uploads/2025/06/Medical-Elevator.png",
+              "file": "main-assets/img/elevators/gots/hospital/safe-and-fast-hospital-elevator-rd-y2401/01-medical-elevator-4b1d3fa2.png",
+              "publicUrl": "/main-assets/img/elevators/gots/hospital/safe-and-fast-hospital-elevator-rd-y2401/01-medical-elevator-4b1d3fa2.png",
+              "bytes": 215983,
+              "contentType": "image/png"
+            }
+          ],
+          "featuredImage": "/main-assets/img/elevators/gots/hospital/safe-and-fast-hospital-elevator-rd-y2401/01-medical-elevator-4b1d3fa2.png",
+          "needsSpanishReview": false,
+          "localization": {
+            "es": "Altekmar localized catalog copy"
+          }
+        },
+        {
+          "id": "clean-and-disinfected-medical-elevator-in-the-hospital-rd-y2401",
+          "categorySlug": "hospital",
+          "category": {
+            "en": "Hospital Elevators",
+            "es": "Elevadores hospitalarios"
+          },
+          "manufacturer": "GOTS Elevator",
+          "authorizedRetailer": "Altekmar",
+          "sku": null,
+          "source": {
+            "english": "https://www.gotselevator.com/product/clean-and-disinfected-medical-elevator-in-the-hospital-rd-y2401/",
+            "spanish": "https://www.gotselevator.com/es/producto/clean-and-disinfected-medical-elevator-in-the-hospital-rd-y2401/",
+            "category": "https://www.gotselevator.com/product-category/hospital-elevator/",
+            "importedAt": "2026-07-20T00:57:07.846Z"
+          },
+          "title": {
+            "en": "RD-Y2401 Medical Elevator with EMC Protection",
+            "es": "RD-Y2401 Elevador Médico con protección EMC"
+          },
+          "description": {
+            "en": "The cabin combines elegant panels with a clean, streamlined ceiling.Consequently, patients experience a calm and reassuring environment during transport.",
+            "es": "RD-Y2401 Elevador Médico con protección EMC, desarrollado para hospitales, clínicas y centros de atención que requieren transporte estable de pacientes, personal y camillas. La configuración considera capacidad, accesibilidad, higiene y operación continua."
+          },
+          "specifications": {
+            "1050": "1.0-1.75 · 14 · 1200*2000*2500 · 900*2100 · 2200*2500 · 2200*2500*2500 · 4500",
+            "1600": "1.0-1.75 · 21 · 1400*2400*2500 · 1100*2100 · 2500*2800 · 2500*2800*2500 · 4500",
+            "2000": "1.0-1.75 · 26 · 1500*2700*2500 · 1200*2100 · 2600*2700 · 2600*3150*2500 · 4650",
+            "Load Capacity（KG）": "Speed（m/s） · Number of passengers · Car dimensions\n(mm)\nWidth*Depth*Height · Door opening dimensions\n(mm)\nWidth*Depth · Standard hoistway dimensions\n(mm)\nWidth*Depth · Standard machine room dimensions\n(mm)\nWidth*Depth*Height · Minimum overhead height\n(mm)"
+          },
+          "images": [
+            {
+              "sourceUrl": "https://www.gotselevator.com/wp-content/uploads/2025/06/hospital-elevator.jpg",
+              "file": "main-assets/img/elevators/gots/hospital/clean-and-disinfected-medical-elevator-in-the-hospital-rd-y2401/01-hospital-elevator-088f3a55.jpg",
+              "publicUrl": "/main-assets/img/elevators/gots/hospital/clean-and-disinfected-medical-elevator-in-the-hospital-rd-y2401/01-hospital-elevator-088f3a55.jpg",
+              "bytes": 1868943,
+              "contentType": "image/jpeg"
+            }
+          ],
+          "featuredImage": "/main-assets/img/elevators/gots/hospital/clean-and-disinfected-medical-elevator-in-the-hospital-rd-y2401/01-hospital-elevator-088f3a55.jpg",
+          "needsSpanishReview": false,
+          "localization": {
+            "es": "Altekmar localized catalog copy"
+          }
+        }
+      ]
+    },
+    {
+      "slug": "freight",
+      "sourceSlug": "freight-elevator",
+      "sourceUrl": "https://www.gotselevator.com/product-category/freight-elevator/",
+      "title": {
+        "en": "Freight Elevators",
+        "es": "Elevadores de carga"
+      },
+      "description": {
+        "en": "Heavy-duty freight and cargo elevators for warehouses, industry and logistics facilities.",
+        "es": "Montacargas de alta resistencia para almacenes, industria e instalaciones logísticas."
+      },
+      "productCount": 4,
+      "products": [
+        {
+          "id": "freight-elevator-industrial-strength-solution-for-african-warehousing-logistics",
+          "categorySlug": "freight",
+          "category": {
+            "en": "Freight Elevators",
+            "es": "Elevadores de carga"
+          },
+          "manufacturer": "GOTS Elevator",
+          "authorizedRetailer": "Altekmar",
+          "sku": null,
+          "source": {
+            "english": "https://www.gotselevator.com/product/freight-elevator-industrial-strength-solution-for-african-warehousing-logistics/",
+            "spanish": "https://www.gotselevator.com/es/producto/freight-elevator-industrial-strength-solution-for-african-warehousing-logistics/",
+            "category": "https://www.gotselevator.com/product-category/freight-elevator/",
+            "importedAt": "2026-07-20T00:57:11.968Z"
+          },
+          "title": {
+            "en": "Heavy Duty Freight Elevator",
+            "es": "Elevador de carga de servicio pesado"
+          },
+          "description": {
+            "en": "Leading 5 Ton Freight Elevator Manufacturer offering customized heavy duty freight elevator solutions for industrial warehouses and factories.",
+            "es": "Elevador de carga de servicio pesado, diseñado para el movimiento seguro de mercancías y cargas pesadas. La capacidad, las dimensiones, las puertas y el sistema de accionamiento se definen según la operación."
+          },
+          "specifications": {
+            "Model": "Heavy Duty Series",
+            "Rated Capacity": "5000 kg (5 Tons)",
+            "Drive System": "VVVF Gearless/Geared Traction Drive",
+            "Speed Range": "0.25 m/s – 0.5 m/s",
+            "Control System": "Industrial Grade 32-Bit Microprocessor",
+            "Cabin Material": "Heavy-Duty Painted Steel (Optional Stainless Steel)",
+            "Door Clearance": "Full-Width Opening for Maximum Loading Efficiency",
+            "Safety Compliance": "International Standards (CE / ISO)",
+            "Heavy-duty option": "up to 10,000 kg"
+          },
+          "images": [
+            {
+              "sourceUrl": "https://www.gotselevator.com/wp-content/uploads/2025/04/Freight-lift.jpg",
+              "file": "main-assets/img/elevators/gots/freight/freight-elevator-industrial-strength-solution-for-african-warehousing-logistics/01-freight-lift-9df4aac5.jpg",
+              "publicUrl": "/main-assets/img/elevators/gots/freight/freight-elevator-industrial-strength-solution-for-african-warehousing-logistics/01-freight-lift-9df4aac5.jpg",
+              "bytes": 25518,
+              "contentType": "image/jpeg"
+            },
+            {
+              "sourceUrl": "https://www.gotselevator.com/wp-content/uploads/2026/05/Gemini_Generated_Image_58jyaa58jyaa58jy.png",
+              "file": "main-assets/img/elevators/gots/freight/freight-elevator-industrial-strength-solution-for-african-warehousing-logistics/02-gemini-generated-image-58jyaa58jyaa58jy-2d3f16db.png",
+              "publicUrl": "/main-assets/img/elevators/gots/freight/freight-elevator-industrial-strength-solution-for-african-warehousing-logistics/02-gemini-generated-image-58jyaa58jyaa58jy-2d3f16db.png",
+              "bytes": 1974471,
+              "contentType": "image/png"
+            }
+          ],
+          "featuredImage": "/main-assets/img/elevators/gots/freight/freight-elevator-industrial-strength-solution-for-african-warehousing-logistics/01-freight-lift-9df4aac5.jpg",
+          "needsSpanishReview": false,
+          "localization": {
+            "es": "Altekmar localized catalog copy"
+          }
+        },
+        {
+          "id": "gots-5-ton-heavy-duty-freight-elevator-factory-price",
+          "categorySlug": "freight",
+          "category": {
+            "en": "Freight Elevators",
+            "es": "Elevadores de carga"
+          },
+          "manufacturer": "GOTS Elevator",
+          "authorizedRetailer": "Altekmar",
+          "sku": null,
+          "source": {
+            "english": "https://www.gotselevator.com/product/gots-5-ton-heavy-duty-freight-elevator-factory-price/",
+            "spanish": "https://www.gotselevator.com/es/producto/gots-5-ton-heavy-duty-freight-elevator-factory-price/",
+            "category": "https://www.gotselevator.com/product-category/freight-elevator/",
+            "importedAt": "2026-07-20T00:57:13.068Z"
+          },
+          "title": {
+            "en": "Heavy Duty Freight Elevator",
+            "es": "Elevador de carga de servicio pesado"
+          },
+          "description": {
+            "en": "Leading 5 Ton Freight Elevator Manufacturer offering customized heavy duty freight elevator solutions for industrial warehouses and factories.",
+            "es": "Elevador de carga de servicio pesado, diseñado para el movimiento seguro de mercancías y cargas pesadas. La capacidad, las dimensiones, las puertas y el sistema de accionamiento se definen según la operación."
+          },
+          "specifications": {
+            "Model Series": "Rated Load (kg) · Speed (m/s) · Cabin Dimensions\n(WDH mm) · Door Opening Type",
+            "GOTS-THJ2000": "2000 kg · 0.5 – 1.0 · 1900 * 2200 * 2400 · Side-opening double-fold",
+            "GOTS-THJ3000": "3000 kg · 0.5 – 1.0 · 2100 * 2750 * 2400 · Side-opening / Center-opening",
+            "GOTS-THJ5000": "5000 kg · 0.5 – 1.0 · 2400 * 3600 * 2400 · Heavy-duty split-opening",
+            "GOTS-THJ10000": "10000 kg · 0.25 – 0.5 · 3000 * 5000 * 2400 · Customized heavy-duty doors"
+          },
+          "images": [
+            {
+              "sourceUrl": "https://www.gotselevator.com/wp-content/uploads/2025/04/Freight-lift.jpg",
+              "file": "main-assets/img/elevators/gots/freight/gots-5-ton-heavy-duty-freight-elevator-factory-price/01-freight-lift-9df4aac5.jpg",
+              "publicUrl": "/main-assets/img/elevators/gots/freight/gots-5-ton-heavy-duty-freight-elevator-factory-price/01-freight-lift-9df4aac5.jpg",
+              "bytes": 25518,
+              "contentType": "image/jpeg"
+            }
+          ],
+          "featuredImage": "/main-assets/img/elevators/gots/freight/gots-5-ton-heavy-duty-freight-elevator-factory-price/01-freight-lift-9df4aac5.jpg",
+          "needsSpanishReview": false,
+          "localization": {
+            "es": "Altekmar localized catalog copy"
+          }
+        },
+        {
+          "id": "2-tons-load-capacityindustrial-buildings-freight-elevator-rd-h01",
+          "categorySlug": "freight",
+          "category": {
+            "en": "Freight Elevators",
+            "es": "Elevadores de carga"
+          },
+          "manufacturer": "GOTS Elevator",
+          "authorizedRetailer": "Altekmar",
+          "sku": null,
+          "source": {
+            "english": "https://www.gotselevator.com/product/2-tons-load-capacityindustrial-buildings-freight-elevator-rd-h01/",
+            "spanish": "https://www.gotselevator.com/es/producto/2-tons-load-capacityindustrial-buildings-freight-elevator-rd-h01/",
+            "category": "https://www.gotselevator.com/product-category/freight-elevator/",
+            "importedAt": "2026-07-20T00:57:16.685Z"
+          },
+          "title": {
+            "en": "RD-H01 Heavy Duty Freight Elevators Built",
+            "es": "RD-H01 Elevador de carga de servicio pesado"
+          },
+          "description": {
+            "en": "GOTS freight elevators are engineered for safe, stable, and high-capacity goods transportation in industrial and commercial buildings.",
+            "es": "RD-H01 Elevador de carga de servicio pesado, diseñado para el movimiento seguro de mercancías y cargas pesadas. La capacidad, las dimensiones, las puertas y el sistema de accionamiento se definen según la operación."
+          },
+          "specifications": {
+            "1": "THJ2000/0.5-JXP · 2000 · 4:1 · 1900*2200*2400 · 0.5 · Side-opening double-fold",
+            "2": "THJ2000/0.5-JXP · 2000 · 4:1 · 1900*2200*2400 · 0.5 · Split in half",
+            "3": "THJ3000/0.5-JXP · 3000 · 4:1 · 2100*2750*2400 · 0.5 · Side-opening double-fold",
+            "4": "THJ3000/0.5-JXP · 3000 · 4:1 · 2100*2750*2400 · 0.5 · Split in half",
+            "5": "THJ5000/0.5-JXP · 5000 · 4:1 · 2400*3600*2400 · 0.5 · Split in half",
+            "6": "THJ7000/0.5-JXP · 7000 · 4:1 · 2700*4500*2400 · 0.5 · Split in half",
+            "No.": "Model · Rated load\nkg · Traction ratio · Car dimensions\nmm\nWidth * Depth * Height · Speed\nm/s · Door operation type",
+            "Door opening dimensions mm": "Lifting height m · Motor power kw · Hoistway dimensions mm Width*Depth · Machine room dimensions mm Width*Depth*Height · Overhead height mm · Pit depth mm · Main stress points",
+            "R1": "R2 · R3 · R4",
+            "1600*2200": "60 · 11 · 2950*2700 · 2950*2700*2500 · ≥4500 · ≥1600 · 75 · 65 · 170 · 120",
+            "1800*2200": "60 · 15 · 3250*3200 · 3250*3200*2500 · ≥4500 · ≥1600 · 80 · 100 · 190 · 155",
+            "2200*2200": "60 · 25 · 3900*4200 · 3900*4200*2500 · ≥4800 · ≥1700 · 200 · 150 · 150 · 155",
+            "2700*2200": "30 · 37 · 4600*4950 · 4600*4950*2500 · ≥5200 · ≥1700 · 300 · 250 · 350 · 220"
+          },
+          "images": [
+            {
+              "sourceUrl": "https://www.gotselevator.com/wp-content/uploads/2025/06/Freight-elevator.jpg",
+              "file": "main-assets/img/elevators/gots/freight/2-tons-load-capacityindustrial-buildings-freight-elevator-rd-h01/01-freight-elevator-820b7d8c.jpg",
+              "publicUrl": "/main-assets/img/elevators/gots/freight/2-tons-load-capacityindustrial-buildings-freight-elevator-rd-h01/01-freight-elevator-820b7d8c.jpg",
+              "bytes": 37156,
+              "contentType": "image/jpeg"
+            },
+            {
+              "sourceUrl": "https://www.gotselevator.com/wp-content/uploads/2025/06/Freight-elevator1.jpg",
+              "file": "main-assets/img/elevators/gots/freight/2-tons-load-capacityindustrial-buildings-freight-elevator-rd-h01/02-freight-elevator1-e92d102d.jpg",
+              "publicUrl": "/main-assets/img/elevators/gots/freight/2-tons-load-capacityindustrial-buildings-freight-elevator-rd-h01/02-freight-elevator1-e92d102d.jpg",
+              "bytes": 130953,
+              "contentType": "image/jpeg"
+            },
+            {
+              "sourceUrl": "https://www.gotselevator.com/wp-content/uploads/2025/06/Freight-elevator2.jpg",
+              "file": "main-assets/img/elevators/gots/freight/2-tons-load-capacityindustrial-buildings-freight-elevator-rd-h01/03-freight-elevator2-8b8d2267.jpg",
+              "publicUrl": "/main-assets/img/elevators/gots/freight/2-tons-load-capacityindustrial-buildings-freight-elevator-rd-h01/03-freight-elevator2-8b8d2267.jpg",
+              "bytes": 26269,
+              "contentType": "image/jpeg"
+            }
+          ],
+          "featuredImage": "/main-assets/img/elevators/gots/freight/2-tons-load-capacityindustrial-buildings-freight-elevator-rd-h01/01-freight-elevator-820b7d8c.jpg",
+          "needsSpanishReview": false,
+          "localization": {
+            "es": "Altekmar localized catalog copy"
+          }
+        },
+        {
+          "id": "freight-elevator-installation-service",
+          "categorySlug": "freight",
+          "category": {
+            "en": "Freight Elevators",
+            "es": "Elevadores de carga"
+          },
+          "manufacturer": "GOTS Elevator",
+          "authorizedRetailer": "Altekmar",
+          "sku": null,
+          "source": {
+            "english": "https://www.gotselevator.com/product/freight-elevator-installation-service/",
+            "spanish": "https://www.gotselevator.com/es/producto/freight-elevator-installation-service/",
+            "category": "https://www.gotselevator.com/product-category/freight-elevator/",
+            "importedAt": "2026-07-20T00:57:22.374Z"
+          },
+          "title": {
+            "en": "RD-H03 5Tons Load Capacity Freight Cargo Elevator Lift",
+            "es": "RD-H03 Elevador de carga con capacidad de 5 toneladas"
+          },
+          "description": {
+            "en": "GOTS 5 ton freight elevators are engineered for heavy-duty cargo transportation in factories, warehouses, and logistics centers.",
+            "es": "Los montacargas GOTS RD-H03 de 5 toneladas están diseñados para el transporte de cargas pesadas en fábricas, almacenes y centros logísticos."
+          },
+          "specifications": {
+            "1": "THJ2000/0.5-JXP · 2000 · 4:1 · 1900*2200*2400 · 0.5 · Side-opening double-fold",
+            "2": "THJ2000/0.5-JXP · 2000 · 4:1 · 1900*2200*2400 · 0.5 · Split in half",
+            "3": "THJ3000/0.5-JXP · 3000 · 4:1 · 2100*2750*2400 · 0.5 · Side-opening double-fold",
+            "4": "THJ3000/0.5-JXP · 3000 · 4:1 · 2100*2750*2400 · 0.5 · Split in half",
+            "5": "THJ5000/0.5-JXP · 5000 · 4:1 · 2400*3600*2400 · 0.5 · Split in half",
+            "6": "THJ7000/0.5-JXP · 7000 · 4:1 · 2700*4500*2400 · 0.5 · Split in half",
+            "No.": "Model · Rated load kg · Traction ratio · Car dimensions\nmm\nWidth * Depth * Height · Speed m/s · Door operation type",
+            "Door opening dimensions mm": "Lifting height m · Motor power kw · Hoistway dimensions mm Width*Depth · Machine room dimensions\nmm Width*Depth*Height · Overhead height mm · Pit depth mm · Main stress points",
+            "R1": "R2 · R3 · R4",
+            "1600*2200": "60 · 11 · 2950*2700 · 2950*2700*2500 · ≥4500 · ≥1600 · 75 · 65 · 170 · 120",
+            "1800*2200": "60 · 15 · 3250*3200 · 3250*3200*2500 · ≥4500 · ≥1600 · 80 · 100 · 190 · 155",
+            "2200*2200": "60 · 25 · 3900*4200 · 3900*4200*2500 · ≥4800 · ≥1700 · 200 · 150 · 150 · 155",
+            "2700*2200": "30 · 37 · 4600*4950 · 4600*4950*2500 · ≥5200 · ≥1700 · 300 · 250 · 350 · 220"
+          },
+          "images": [
+            {
+              "sourceUrl": "https://www.gotselevator.com/wp-content/uploads/2025/04/Freight-lift.jpg",
+              "file": "main-assets/img/elevators/gots/freight/freight-elevator-installation-service/01-freight-lift-9df4aac5.jpg",
+              "publicUrl": "/main-assets/img/elevators/gots/freight/freight-elevator-installation-service/01-freight-lift-9df4aac5.jpg",
+              "bytes": 25518,
+              "contentType": "image/jpeg"
+            }
+          ],
+          "featuredImage": "/main-assets/img/elevators/gots/freight/freight-elevator-installation-service/01-freight-lift-9df4aac5.jpg",
+          "needsSpanishReview": false,
+          "localization": {
+            "es": "Altekmar localized catalog copy"
+          }
+        }
+      ]
+    },
+    {
+      "slug": "escalators",
+      "sourceSlug": "escalators",
+      "sourceUrl": "https://www.gotselevator.com/product-category/escalators/",
+      "title": {
+        "en": "Escalators & Moving Walkways",
+        "es": "Escaleras mecánicas y pasillos moviles"
+      },
+      "description": {
+        "en": "Escalators and moving walkways for commercial buildings and high-traffic public spaces.",
+        "es": "Escaleras mecánicas y pasillos rodantes para edificios comerciales y espacios públicos de gran afluencia."
+      },
+      "productCount": 2,
+      "products": [
+        {
+          "id": "outside-escalator-parallel-escalator-shopping-mall-escalator",
+          "categorySlug": "escalators",
+          "category": {
+            "en": "Escalators & Moving Walkways",
+            "es": "Escaleras mecánicas y pasillos móviles"
+          },
+          "manufacturer": "GOTS Elevator",
+          "authorizedRetailer": "Altekmar",
+          "sku": null,
+          "source": {
+            "english": "https://www.gotselevator.com/product/outside-escalator-parallel-escalator-shopping-mall-escalator/",
+            "spanish": "https://www.gotselevator.com/es/producto/outside-escalator-parallel-escalator-shopping-mall-escalator/",
+            "category": "https://www.gotselevator.com/product-category/escalators/",
+            "importedAt": "2026-07-20T00:57:29.184Z"
+          },
+          "title": {
+            "en": "Commercial Escalator Manufacturer in China",
+            "es": "Escalera mecánica comercial"
+          },
+          "description": {
+            "en": "GOTS is a professional escalator manufacturer in China, providing safe, energy-efficient, and durable escalator solutions for shopping malls, airports..",
+            "es": "Escalera mecánica comercial, desarrollado para circulación continua de personas en centros comerciales, terminales, estaciones y espacios públicos de alto tráfico. La inclinación, la longitud, el ancho y la capacidad se especifican según el proyecto."
+          },
+          "specifications": {},
+          "images": [
+            {
+              "sourceUrl": "https://www.gotselevator.com/wp-content/uploads/2025/05/H185a4f92f8b84bb98ffba7382371a0f38-imageonline.co-8540417.jpg",
+              "file": "main-assets/img/elevators/gots/escalators/outside-escalator-parallel-escalator-shopping-mall-escalator/01-h185a4f92f8b84bb98ffba7382371a0f38-imageonline-co-8540417-b80f72b4.jpg",
+              "publicUrl": "/main-assets/img/elevators/gots/escalators/outside-escalator-parallel-escalator-shopping-mall-escalator/01-h185a4f92f8b84bb98ffba7382371a0f38-imageonline-co-8540417-b80f72b4.jpg",
+              "bytes": 28112,
+              "contentType": "image/jpeg"
+            },
+            {
+              "sourceUrl": "https://www.gotselevator.com/wp-content/uploads/2025/05/%E5%9B%BE%E5%B1%82-13.jpg",
+              "file": "main-assets/img/elevators/gots/escalators/outside-escalator-parallel-escalator-shopping-mall-escalator/02-13-4d05ddc6.jpg",
+              "publicUrl": "/main-assets/img/elevators/gots/escalators/outside-escalator-parallel-escalator-shopping-mall-escalator/02-13-4d05ddc6.jpg",
+              "bytes": 461261,
+              "contentType": "image/jpeg"
+            },
+            {
+              "sourceUrl": "https://www.gotselevator.com/wp-content/uploads/2025/05/%E5%9B%BE%E5%B1%82-12.jpg",
+              "file": "main-assets/img/elevators/gots/escalators/outside-escalator-parallel-escalator-shopping-mall-escalator/03-12-93486a84.jpg",
+              "publicUrl": "/main-assets/img/elevators/gots/escalators/outside-escalator-parallel-escalator-shopping-mall-escalator/03-12-93486a84.jpg",
+              "bytes": 375414,
+              "contentType": "image/jpeg"
+            },
+            {
+              "sourceUrl": "https://www.gotselevator.com/wp-content/uploads/2025/05/%E5%9B%BE%E5%B1%82-11.jpg",
+              "file": "main-assets/img/elevators/gots/escalators/outside-escalator-parallel-escalator-shopping-mall-escalator/04-11-a00d6bd7.jpg",
+              "publicUrl": "/main-assets/img/elevators/gots/escalators/outside-escalator-parallel-escalator-shopping-mall-escalator/04-11-a00d6bd7.jpg",
+              "bytes": 448137,
+              "contentType": "image/jpeg"
+            }
+          ],
+          "featuredImage": "/main-assets/img/elevators/gots/escalators/outside-escalator-parallel-escalator-shopping-mall-escalator/01-h185a4f92f8b84bb98ffba7382371a0f38-imageonline-co-8540417-b80f72b4.jpg",
+          "needsSpanishReview": false,
+          "localization": {
+            "es": "Altekmar localized catalog copy"
+          }
+        },
+        {
+          "id": "moving-walkway-manufacturer-in-china",
+          "categorySlug": "escalators",
+          "category": {
+            "en": "Escalators & Moving Walkways",
+            "es": "Escaleras mecánicas y pasillos móviles"
+          },
+          "manufacturer": "GOTS Elevator",
+          "authorizedRetailer": "Altekmar",
+          "sku": null,
+          "source": {
+            "english": "https://www.gotselevator.com/product/moving-walkway-manufacturer-in-china/",
+            "spanish": "https://www.gotselevator.com/es/producto/moving-walkway-manufacturer-in-china/",
+            "category": "https://www.gotselevator.com/product-category/escalators/",
+            "importedAt": "2026-07-20T00:57:32.317Z"
+          },
+          "title": {
+            "en": "Moving Walkway Manufacturer in China",
+            "es": "Pasillo móvil"
+          },
+          "description": {
+            "en": "A moving walk, also known as a moving walkway, is designed to transport pedestrians smoothly across long horizontal or slightly inclined distances.",
+            "es": "Pasillo móvil, desarrollado para circulación continua de personas en centros comerciales, terminales, estaciones y espacios públicos de alto tráfico. La inclinación, la longitud, el ancho y la capacidad se especifican según el proyecto."
+          },
+          "specifications": {},
+          "images": [
+            {
+              "sourceUrl": "https://www.gotselevator.com/wp-content/uploads/2026/01/scalator-airport-scaled.jpg",
+              "file": "main-assets/img/elevators/gots/escalators/moving-walkway-manufacturer-in-china/01-scalator-airport-scaled-c81459a9.jpg",
+              "publicUrl": "/main-assets/img/elevators/gots/escalators/moving-walkway-manufacturer-in-china/01-scalator-airport-scaled-c81459a9.jpg",
+              "bytes": 645402,
+              "contentType": "image/jpeg"
+            },
+            {
+              "sourceUrl": "https://www.gotselevator.com/wp-content/uploads/2026/01/scalator-airport.jpg",
+              "file": "main-assets/img/elevators/gots/escalators/moving-walkway-manufacturer-in-china/02-scalator-airport-f54eddda.jpg",
+              "publicUrl": "/main-assets/img/elevators/gots/escalators/moving-walkway-manufacturer-in-china/02-scalator-airport-f54eddda.jpg",
+              "bytes": 5925940,
+              "contentType": "image/jpeg"
+            }
+          ],
+          "featuredImage": "/main-assets/img/elevators/gots/escalators/moving-walkway-manufacturer-in-china/01-scalator-airport-scaled-c81459a9.jpg",
+          "needsSpanishReview": false,
+          "localization": {
+            "es": "Altekmar localized catalog copy"
+          }
+        }
+      ]
+    }
+  ],
+  "spanishCatalogUpdatedAt": "2026-07-20T02:49:30.117Z"
+}

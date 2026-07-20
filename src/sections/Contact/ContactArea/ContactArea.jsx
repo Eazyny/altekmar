@@ -13,7 +13,7 @@ const ContactArea = () => {
                   <i className="ri-phone-line"></i>
                   <Link
                     className="contact-page-card_link"
-                    href="tel:0022730240369"
+                    href="/contact"
                   >
                     +00 (22) 730 240 369
                   </Link>
@@ -22,7 +22,7 @@ const ContactArea = () => {
                   <i className="ri-mail-line"></i>
                   <Link
                     className="contact-page-card_link"
-                    href="mailto:construz.info@gmail.com"
+                    href="/contact"
                   >
                     construz.info@gmail.com
                   </Link>
@@ -45,7 +45,7 @@ const ContactArea = () => {
                   <i className="ri-phone-line"></i>
                   <Link
                     className="contact-page-card_link"
-                    href="tel:0022730240369"
+                    href="/contact"
                   >
                     +32 (0) 800 240 458
                   </Link>
@@ -54,7 +54,7 @@ const ContactArea = () => {
                   <i className="ri-mail-line"></i>
                   <Link
                     className="contact-page-card_link"
-                    href="mailto:construz.info@gmail.com"
+                    href="/contact"
                   >
                     construz.info@gmail.com
                   </Link>
@@ -77,7 +77,7 @@ const ContactArea = () => {
                   <i className="ri-phone-line"></i>
                   <Link
                     className="contact-page-card_link"
-                    href="tel:0022730240369"
+                    href="/contact"
                   >
                     +32 (0) 800 240 458
                   </Link>
@@ -86,7 +86,7 @@ const ContactArea = () => {
                   <i className="ri-mail-line"></i>
                   <Link
                     className="contact-page-card_link"
-                    href="mailto:construz.info@gmail.com"
+                    href="/contact"
                   >
                     construz.info@gmail.com
                   </Link>
