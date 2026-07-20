@@ -163,7 +163,7 @@ body .disable-scroll {
 /* home two testimonial css */
 .testimonial-area-2 .testi-slider2 .slick-dots li.slick-active button {
   width: 26px !important;
-  background-color: #EA5501 !important;
+  background-color: #B58B4A !important;
 }
 
 .testimonial-area-2 .testi-slider2 .slick-dots li button {
@@ -254,7 +254,7 @@ textPath {
 .service-area-6 li.slick-active {
   width: 8px !important;
   height: 8px !important;
-  background-color: #EA5501 !important;
+  background-color: #B58B4A !important;
   border-radius: 50%;
 }
 
@@ -315,7 +315,7 @@ textPath {
 .home-two-slider-navigation-dots .custom-dots li.slick-active button {
   width: 50px !important;
   height: 2px !important;
-  background-color: #EA5501 !important;
+  background-color: #B58B4A !important;
 }
 
 
@@ -635,12 +635,12 @@ textPath {
 
 /* Shop Page Filter css */
 .rc-slider-handle {
-  background-color: #EA5501 !important;
-  border: solid 1px #EA5501 !important;
+  background-color: #B58B4A !important;
+  border: solid 1px #B58B4A !important;
 }
 
 .rc-slider-handle-dragging.rc-slider-handle-dragging.rc-slider-handle-dragging {
-  border-color: #EA5501 !important;
+  border-color: #B58B4A !important;
   box-shadow: none !important;
 }
 
@@ -753,7 +753,7 @@ textPath {
 }
 
 .custom-border.accordion-card:has(.accordion-button:not(.collapsed)) {
-  border-top: 2px solid #ea5501 !important;
+  border-top: 2px solid #B58B4A !important;
 }
 
 .process-fixed-height {
@@ -778,7 +778,7 @@ textPath {
 }
 
 .homeTwo-testimonial-dots>.slick-dots>li.slick-active>button {
-  background-color: #ea5501 !important;
+  background-color: #B58B4A !important;
 }
 
 .homeTwo-custom-accordion-card>.accordion-card:has(.accordion-button:not(.collapsed)) {
@@ -844,7 +844,7 @@ textPath {
 .custom-dot2>.slick-dots>li {
   position: relative;
   padding: 7px;
-  color: #ea5501;
+  color: #B58B4A;
 }
 
 .custom-dot2>.slick-dots>li:nth-child(2) {
@@ -859,7 +859,7 @@ textPath {
 }
 
 .custom-dot2>.slick-dots>li.slick-active>button {
-  background-color: #ea5501 !important;
+  background-color: #B58B4A !important;
 }
 
 .custom-dot2>.slick-dots>li.slick-active::before {
@@ -913,7 +913,7 @@ span.current,
 
 .custom-form-design>.nice-select.open {
   transition: all 0.2s ease-in-out;
-  outline: 1px solid #EA5501;
+  outline: 1px solid #B58B4A;
 }
 
 
@@ -957,7 +957,7 @@ i.ri-star-fill {
 
 /* footer Two css */
 .btn-footer-two {
-  background-color: #EA5501 !important;
+  background-color: #B58B4A !important;
   color: #ffffff !important;
   padding: 19px 30px !important;
   display: inline-flex !important;
@@ -1050,7 +1050,7 @@ i.ri-star-fill {
   border: none;
   border-radius: 0px !important;
   text-align: center;
-  background-color: #EA5501 !important;
+  background-color: #B58B4A !important;
   color: #ffffff !important;
   font-family: var(--title-font);
   font-size: 16px;
@@ -1281,7 +1281,7 @@ i.ri-star-fill {
 }
 
 .service-card-dots .slick-active button {
-  background-color: #ea5501;
+  background-color: #B58B4A;
 }
 
 /* landing Page Sidebar CSS */

@@ -78,7 +78,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap');
 
 :root {
-  --theme-color: #EA5501;
+  --theme-color: #B58B4A;
   --title-color: #15161C;
   --body-color: #737373;
   --smoke-color: #FAFAFA;
@@ -8992,7 +8992,7 @@ li.trackback {
   top: 100px;
   width: 230px;
   height: 685px;
-  background: linear-gradient(180deg, rgba(234, 85, 1, 0) 0%, var(--theme-color) 100%);
+  background: linear-gradient(180deg, rgba(181, 139, 74, 0) 0%, var(--theme-color) 100%);
   opacity: 0.3;
   transform: matrix(0.75, -0.66, -0.66, -0.75, 0, 0);
   z-index: 1;
@@ -9011,7 +9011,7 @@ li.trackback {
   top: 250px;
   width: 230px;
   height: 685px;
-  background: linear-gradient(180deg, rgba(234, 85, 1, 0) 0%, var(--theme-color) 100%);
+  background: linear-gradient(180deg, rgba(181, 139, 74, 0) 0%, var(--theme-color) 100%);
   opacity: 0.3;
   transform: matrix(0.75, -0.66, -0.66, -0.75, 0, 0);
   z-index: 1;
@@ -16940,7 +16940,7 @@ li.trackback {
 }
 
 .process-card:hover {
-  box-shadow: 0px 4px 18.4px rgba(234, 85, 1, 0.2);
+  box-shadow: 0px 4px 18.4px rgba(181, 139, 74, 0.2);
 }
 
 .process-card:hover:after {
