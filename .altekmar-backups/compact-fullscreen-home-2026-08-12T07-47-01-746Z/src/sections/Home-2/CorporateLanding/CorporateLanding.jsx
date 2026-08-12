@@ -198,8 +198,8 @@ export default function CorporateLanding() {
   const text = copy[language] || copy.es;
 
   return (
-    <main className={styles.page} data-i18n-managed="true" data-corporate-home="true">
-      <section className={`${styles.hero} altekmar-snap-section`} data-home-section="hero">
+    <main className={styles.page} data-i18n-managed="true">
+      <section className={`${styles.hero} altekmar-snap-section`}>
         <div className={styles.heroDark}>
           <div className={styles.heroRule} />
           <p className={styles.eyebrow}>{text.heroEyebrow}</p>
@@ -236,7 +236,7 @@ export default function CorporateLanding() {
         </div>
       </section>
 
-      <section className={`${styles.intro} altekmar-snap-section`} data-home-section="intro">
+      <section className={`${styles.intro} altekmar-snap-section`}>
         <div className={styles.ruleHeading}>
           <span />
           <p>{text.introEyebrow}</p>
@@ -263,7 +263,6 @@ export default function CorporateLanding() {
       <section
         id="divisions"
         className={`${styles.divisions} altekmar-snap-section`}
-        data-home-section="divisions"
       >
         <div className={styles.divisionHeading}>
           <div>
@@ -295,7 +294,7 @@ export default function CorporateLanding() {
         </div>
       </section>
 
-      <section className={`${styles.process} altekmar-snap-section`} data-home-section="process">
+      <section className={`${styles.process} altekmar-snap-section`}>
         <div className={styles.processHeading}>
           <p className={styles.goldEyebrow}>{text.processEyebrow}</p>
           <h2>{text.processTitle}</h2>
@@ -312,10 +311,26 @@ export default function CorporateLanding() {
         </div>
       </section>
 
-      <section
-        className={`${styles.feature} altekmar-snap-section`}
-        data-home-section="capability-cta"
-      >
+      <section className={`${styles.cta} altekmar-snap-section`}>
+        <div>
+          <p className={styles.goldEyebrow}>{text.ctaEyebrow}</p>
+          <h2>{text.ctaTitle}</h2>
+          <p>{text.ctaBody}</p>
+        </div>
+
+        <div className={styles.actions}>
+          <Link href="/contact" className={styles.goldButton}>
+            {text.ctaPrimary}
+            <Arrow />
+          </Link>
+          <Link href="/project" className={styles.textLink}>
+            {text.ctaSecondary}
+            <Arrow />
+          </Link>
+        </div>
+      </section>
+
+      <section className={`${styles.feature} altekmar-snap-section`}>
         <div className={styles.featureImage}>
           <img
             src="/main-assets/img/elevators/elevator_escalator.png"
@@ -337,27 +352,10 @@ export default function CorporateLanding() {
             ))}
           </ul>
 
-          <div className="altekmar-inline-cta">
-            <p className={styles.goldEyebrow}>{text.ctaEyebrow}</p>
-            <h3 className="altekmar-inline-cta-title">
-              {text.ctaTitle}
-            </h3>
-            <p className="altekmar-inline-cta-copy">
-              {text.ctaBody}
-            </p>
-
-            <div className="altekmar-inline-cta-actions">
-              <Link href="/contact" className={styles.goldButton}>
-                {text.ctaPrimary}
-                <Arrow />
-              </Link>
-
-              <Link href="/project" className={styles.outlineButton}>
-                {text.ctaSecondary}
-                <Arrow />
-              </Link>
-            </div>
-          </div>
+          <Link href="/about" className={styles.outlineButton}>
+            {text.learnMore}
+            <Arrow />
+          </Link>
         </div>
       </section>
 
