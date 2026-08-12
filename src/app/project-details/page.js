@@ -1,17 +1,17 @@
 import BreadcumbEight from "~/sections/Project-Details/BreadcumbEight";
 import ContactSix from "~/sections/Project-Details/ContactSix";
 import ProjectDetails from "~/sections/Project-Details/ProjectDetails";
-import HeaderOne from "~/sections/Common/Header/HeaderOne";
-import FooterTwo from "~/sections/Common/Footer/FooterTwo";
+import HeaderFour from "~/sections/Common/Header/HeaderFour";
+import CorporateFooter from "~/sections/Common/Footer/CorporateFooter";
 import Scroll from "~/sections/Common/Scroll";
 export default function ProjectDetailsPage() {
     return (
-        <div style={{overflow: 'hidden'}}>
-            <HeaderOne />
+        <div className="altekmar-inner-page" style={{overflow: 'hidden'}}>
+            <HeaderFour />
             <BreadcumbEight />
             <ProjectDetails />
             <ContactSix />
-            <FooterTwo />
+            <CorporateFooter />
             <Scroll />
         </div>
     );

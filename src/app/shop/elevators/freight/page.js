@@ -1,5 +1,5 @@
-import HeaderOne from "~/sections/Common/Header/HeaderOne";
-import FooterTwo from "~/sections/Common/Footer/FooterTwo";
+import HeaderFour from "~/sections/Common/Header/HeaderFour";
+import CorporateFooter from "~/sections/Common/Footer/CorporateFooter";
 import Scroll from "~/sections/Common/Scroll";
 import {
   ElevatorCatalogBreadcumb,
@@ -12,11 +12,11 @@ export const metadata = {
 
 export default function CategoryPage() {
   return (
-    <div>
-      <HeaderOne />
+    <div className="altekmar-inner-page">
+      <HeaderFour />
       <ElevatorCatalogBreadcumb categorySlug="freight" />
       <ElevatorCategoryListing categorySlug="freight" />
-      <FooterTwo />
+      <CorporateFooter />
       <Scroll />
     </div>
   );

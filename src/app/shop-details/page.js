@@ -1,15 +1,15 @@
 import BreadcumbTwelve from "~/sections/Shop-Details/BreadcumbTwelve";
 import ProductDetails from "~/sections/Shop-Details/ProductDetails";
-import HeaderOne from "~/sections/Common/Header/HeaderOne";
-import FooterTwo from "~/sections/Common/Footer/FooterTwo";
+import HeaderFour from "~/sections/Common/Header/HeaderFour";
+import CorporateFooter from "~/sections/Common/Footer/CorporateFooter";
 import Scroll from "~/sections/Common/Scroll";
 export default function ShopDetailsPage() {
     return (
-        <div>
-            <HeaderOne />
+        <div className="altekmar-inner-page">
+            <HeaderFour />
             <BreadcumbTwelve />
             <ProductDetails />
-            <FooterTwo />
+            <CorporateFooter />
             <Scroll />
         </div>
     );

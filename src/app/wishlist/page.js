@@ -1,15 +1,15 @@
 import BreadcumbFifteen from "~/sections/Wishlist/BreadcumbFifteen";
 import Wishlist from "~/sections/Wishlist/Wishlist";
-import HeaderOne from "~/sections/Common/Header/HeaderOne";
-import FooterTwo from "~/sections/Common/Footer/FooterTwo";
+import HeaderFour from "~/sections/Common/Header/HeaderFour";
+import CorporateFooter from "~/sections/Common/Footer/CorporateFooter";
 import Scroll from "~/sections/Common/Scroll";
 export default function WishlistPage() {
     return (
-        <div>
-            <HeaderOne />
+        <div className="altekmar-inner-page">
+            <HeaderFour />
             <BreadcumbFifteen />
             <Wishlist />
-            <FooterTwo />
+            <CorporateFooter />
             <Scroll />
         </div>
     );

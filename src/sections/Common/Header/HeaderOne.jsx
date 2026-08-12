@@ -213,7 +213,7 @@ const HeaderOne = () => {
                                             <li><Link href="/">HOME</Link></li>
                                             <li><Link href="/about">ABOUT</Link></li>
                                             <li className="menu-item-has-children">
-                                                <Link href="/service">SERVICES</Link>
+                                                <Link href="/services">SERVICES</Link>
                                                 <ul className="sub-menu">
                                                     <li><Link href="/service-details">Elevators & Vertical Mobility</Link></li>
                                                     <li><Link href="/service-details">Generators & Power Systems</Link></li>

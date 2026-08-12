@@ -12,7 +12,7 @@ const BreadcumbTen = () => {
                             <h1 className="breadcumb-title">Service Details</h1>
                             <ul className="breadcumb-menu item-decoration">
                                 <li><Link href="/"><i className="ri-home-4-fill"></i> HOME</Link></li>
-                                <li><Link href="/service">OUR SERVICE</Link></li>
+                                <li><Link href="/services">OUR SERVICE</Link></li>
                                 <li className="active">SERVICE DETAILS </li>
                             </ul>
                         </div>

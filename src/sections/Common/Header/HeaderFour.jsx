@@ -1,301 +1,277 @@
 "use client";
+
+import { useEffect, useState } from "react";
 import Link from "next/link";
-import { useEffect, useRef, useState } from "react";
-import MultiPageMobileMenu from "../MultiPageMobileMenu/MultiPageMobileMenu";
-import LanguageSwitcher from "~/i18n/LanguageSwitcher";
+import { usePathname } from "next/navigation";
+import { useLanguage } from "~/i18n/LanguageProvider";
+import styles from "./HeaderFour.module.css";
 
-const HeaderFour = () => {
-    const [isSticky, setIsSticky] = useState(false);
-    const [isPopupOpen, setIsPopupOpen] = useState(false);
-    const [isMenuOpen, setIsMenuOpen] = useState(false);
-    const [isSideBarOpen, setIsSideBarOpen] = useState(false);
-    const sidebarRef = useRef(null);
-
-
-    useEffect(() => {
-        const handleScroll = () => {
-            if (window.scrollY > 500) {
-                setIsSticky(true);
-            } else {
-                setIsSticky(false);
-            }
-        };
-        window.addEventListener('scroll', handleScroll);
-        return () => {
-            window.removeEventListener('scroll', handleScroll);
-        };
-    }, []);
-
-    const handleSearchPopupOpen = () => {
-        setIsPopupOpen(true);
-    }
-    const handleSearchPopupClose = () => {
-        setIsPopupOpen(false);
-    }
-
-    const handleMobileMenuOpen = () => {
-        setIsMenuOpen(true);
-    }
-    const handleSideBarClose = () => {
-        setIsSideBarOpen(false);
-    }
-    const handleSideBarOpen = () => {
-        setIsSideBarOpen(true);
-    };
-
-    useEffect(() => {
-        function handleClickOutside(event) {
-            if (sidebarRef.current && !sidebarRef.current.contains(event.target)) {
-                setIsSideBarOpen(false);
-            }
-        }
-
-        document.addEventListener('mousedown', handleClickOutside);
-
-        return () => {
-            document.removeEventListener('mousedown', handleClickOutside);
-        };
-    }, [sidebarRef]);
-
-    return (
-        <div>
-            <div className={`popup-search-box ${isPopupOpen ? 'show' : ''}`}>
-                <button onClick={handleSearchPopupClose} className="searchClose">
-                    <i className="ri-close-line"></i>
-                </button>
-                <form action="#">
-                    <input type="text" placeholder="Search Here.." />
-                    <button type="submit">
-                        <i className="ri-search-line"></i>
-                    </button>
-                </form>
-            </div>
-            <div className={`sidemenu-wrapper ${isSideBarOpen ? 'show' : ''}`}>
-                <div ref={sidebarRef} className="sidemenu-content">
-                    <button onClick={handleSideBarClose} className="closeButton sideMenuCls">
-                        <i className="ri-close-line"></i>
-                    </button>
-                    <div className="widget widget-about footer-widget">
-                        <div className="footer-logo">
-                            <Link href="/">
-                                <img src="/main-assets/img/logo.svg" alt="Altekmar" />
-                            </Link>
-                        </div>
-                        <p className="about-text mb-4">
-                            A small business can be better than a big business because of
-                            agility and adaptability due to their size and scale.
-                        </p>
-                        <p className="footer-text">
-                            <Link href="/contact">
-                                <i className="ri-phone-line space-right-sidebar-icon"></i>+85 155 596 1658
-                            </Link>
-                        </p>
-                        <p className="contact-text">
-                            <i className="ri-map-pin-line space-right-sidebar-icon"></i> Losangle, Street Road 24,
-                            New York, USA - 67452
-                        </p>
-                        <p className="footer-text">
-                            <Link href="/contact">
-                                <i className="ri-mail-line space-right-sidebar-icon"></i>support@gmail.com
-                            </Link>
-                        </p>
-                        <div className="social-btn style3 mt-30">
-                            <Link href="https://www.twitter.com/">
-                                <i className="ri-twitter-x-line"></i>
-                            </Link>
-                            <Link href="https://instagram.com/">
-                                <i className="ri-instagram-line"></i>
-                            </Link>
-                            <Link href="https://facebook.com/">
-                                <i className="ri-facebook-fill"></i>
-                            </Link>
-                            <Link href="https://linkedin.com/">
-                                <i className="ri-linkedin-fill"></i>
-                            </Link>
-                        </div>
-                        <div className="recent-post-wrap mt-40">
-                            <div className="recent-post">
-                                <div className="media-img">
-                                    <Link href="/project">
-                                        <img
-                                            src="/main-assets/img/blog/recent-post1.png"
-                                            alt="Blog Image"
-                                        />
-                                    </Link>
-                                </div>
-                                <div className="media-body">
-                                    <h4 className="post-title">
-                                        <Link className="text-inherit" href="/project">
-                                            Best features of Building construction work
-                                        </Link>
-                                    </h4>
-                                    <div className="recent-post-meta">
-                                        <Link href="/project">By Nicholes</Link>
-                                        <Link href="/project">30 min ago</Link>
-                                    </div>
-                                </div>
-                            </div>
-                            <div className="recent-post">
-                                <div className="media-img">
-                                    <Link href="/project">
-                                        <img
-                                            src="/main-assets/img/blog/recent-post2.png"
-                                            alt="Blog Image"
-                                        />
-                                    </Link>
-                                </div>
-                                <div className="media-body">
-                                    <h4 className="post-title">
-                                        <Link className="text-inherit" href="/project">
-                                            The beast team is a around and how we make it
-                                        </Link>
-                                    </h4>
-                                    <div className="recent-post-meta">
-                                        <Link href="/project">By Nicholes</Link>
-                                        <Link href="/project">2 days ago</Link>
-                                    </div>
-                                </div>
-                            </div>
-                            <div className="recent-post">
-                                <div className="media-img">
-                                    <Link href="/project">
-                                        <img
-                                            src="/main-assets/img/blog/recent-post4.png"
-                                            alt="Blog Image"
-                                        />
-                                    </Link>
-                                </div>
-                                <div className="media-body">
-                                    <h4 className="post-title">
-                                        <Link className="text-inherit" href="/project">
-                                            A well designed construction website is user accessible
-                                        </Link>
-                                    </h4>
-                                    <div className="recent-post-meta">
-                                        <Link href="/project">By Nicholes</Link>
-                                        <Link href="/project">3 week ago</Link>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <MultiPageMobileMenu isMenuOpen={isMenuOpen} setIsMenuOpen={setIsMenuOpen} />
-            <header className="nav-header header-layout2">
-                <div className="header-top">
-                    <div className="container">
-                        <div className="row justify-content-center justify-content-lg-between align-items-center gy-2">
-                            <div className="col-auto d-none d-lg-block">
-                                <div className="header-top-left">
-                                    <div className="header-links">
-                                        <ul>
-                                            <li>
-                                                <div className="social-links">
-                                                    <Link href="https://www.facebook.com/"><i className="ri-facebook-fill"></i></Link>
-                                                    <Link href="https://www.twitter.com/"><i className="ri-twitter-x-fill"></i></Link>
-                                                    <Link href="https://www.instagram.com/"><i className="ri-instagram-line"></i></Link>
-                                                    <Link href="https://www.linkedin.com/"><i className="ri-linkedin-fill"></i></Link>
-                                                </div>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                            <div className="col-auto">
-                                <div className="header-top-right">
-                                    <div className="header-links ps-0">
-                                        <ul>
-                                            <li><i className="ri-time-line"></i>Mon - Sat / 8am : 12pm</li>
-                                            <li><i className="ri-map-pin-line"></i><Link href="/contact">96 Jones Street, New York, USA</Link></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div className={`sticky-wrapper ${isSticky ? 'sticky' : ''}`}>
-                    {/* Main Menu Area */}
-                    <div className="menu-area">
-                        <div className="header-navbar-logo">
-                            <Link href="/"><img src="/main-assets/img/logo.svg" alt="Altekmar" /></Link>
-                        </div>
-                        <div className="logo-bg"></div>
-                        <div className="container">
-                            <div className="row align-items-center justify-content-between home-two-header-justify-content-extra">
-                                <div className="col-auto d-xxl-none d-block">
-                                    <div className="header-logo">
-                                        <Link href="/"><img src="/main-assets/img/logo.svg" alt="Altekmar" /></Link>
-                                    </div>
-                                </div>
-                                <div className="col-auto ms-xxl-0">
-                                    <nav className="main-menu d-none d-lg-inline-block">
-                                        <ul>
-                                            <li><Link href="/">HOME</Link></li>
-                                            <li><Link href="/about">ABOUT</Link></li>
-                                            <li className="menu-item-has-children">
-                                                <Link href="/service">SERVICES</Link>
-                                                <ul className="sub-menu">
-                                                    <li><Link href="/service-details">Elevators & Vertical Mobility</Link></li>
-                                                    <li><Link href="/service-details">Generators & Power Systems</Link></li>
-                                                    <li><Link href="/service-details">Air Conditioning & HVAC</Link></li>
-                                                    <li><Link href="/service-details">Security Systems</Link></li>
-                                                    <li><Link href="/service-details">General Contracting</Link></li>
-                                                </ul>
-                                            </li>
-                                            <li><Link href="/project">PROJECTS</Link></li>
-                                            <li className="menu-item-has-children">
-                                                <Link href="/shop">SHOP</Link>
-                                                <ul className="sub-menu">
-                                                    <li><Link href="/shop">Equipment & Products</Link></li>
-                                                    <li><Link href="/shop-details">Product Details</Link></li>
-                                                    <li><Link href="/cart">Request Cart</Link></li>
-                                                    <li><Link href="/wishlist">Saved Products</Link></li>
-                                                </ul>
-                                            </li>
-                                            <li><Link href="/contact">CONTACT</Link></li>
-                                        </ul>
-                                    </nav>
-                                    <div className="navbar-right d-inline-flex d-lg-none">
-                                        <button onClick={handleMobileMenuOpen} type="button" className="menu-toggle icon-btn">
-                                            <i className="ri-menu-line"></i>
-                                        </button>
-                                    </div>
-                                </div>
-                                <div className="col-auto d-xl-block d-none">
-                                    <div className="header-button">
-                                        <LanguageSwitcher />
-                                        <Link href="/contact" className="btn">
-                                            GET A QUOTE <i className="ri-arrow-right-up-line"></i>
-                                        </Link>
-                                        <button onClick={handleSearchPopupOpen} type="button" className="search-btn searchBoxToggler simple-icon">
-                                            <i className="ri-search-line"></i>
-                                        </button>
-                                        <button onClick={handleSideBarOpen} type="button" className="sidebar-btn sideMenuToggler simple-icon">
-                                            <i className="ri-grid-fill"></i>
-                                        </button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div
-                            className="navbar-right-desc d-xxl-flex d-none background-image"
-                            style={{ backgroundImage: "url('/main-assets/img/bg/header-1-bg.png')" }}
-                        >
-                            <div className="icon-btn">
-                                <i className="ri-phone-fill"></i>
-                            </div>
-                            <div className="navbar-right-desc-details">
-                                <h6 className="title">Call us any time</h6>
-                                <Link className="link" href="/contact">+123 556 8824</Link>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </header>
-        </div>
-    );
+const copy = {
+  es: {
+    home: "Inicio",
+    about: "Nosotros",
+    services: "Servicios",
+    projects: "Proyectos",
+    shop: "Tienda",
+    contact: "Contacto",
+    quote: "Solicitar cotización",
+    call: "Solicitar llamada",
+    schedule: "Lunes–sábado · Con cita",
+    location: "República Dominicana",
+    openMenu: "Abrir menú",
+    closeMenu: "Cerrar menú",
+    switchLanguage: "Cambiar idioma",
+    servicesList: [
+      ["Elevadores y movilidad", "/shop/elevators"],
+      ["Generadores y respaldo eléctrico", "/shop/generators"],
+      ["Aire acondicionado", "/shop/airconditioners"],
+      ["Sistemas de seguridad", "/shop/security-systems"],
+      ["Cámaras y videovigilancia", "/shop/cameras-surveillance"],
+    ],
+  },
+  en: {
+    home: "Home",
+    about: "About",
+    services: "Services",
+    projects: "Projects",
+    shop: "Shop",
+    contact: "Contact",
+    quote: "Request a quote",
+    call: "Request a call",
+    schedule: "Monday–Saturday · By appointment",
+    location: "Dominican Republic",
+    openMenu: "Open menu",
+    closeMenu: "Close menu",
+    switchLanguage: "Switch language",
+    servicesList: [
+      ["Elevators and mobility", "/shop/elevators"],
+      ["Generators and backup power", "/shop/generators"],
+      ["Air conditioning", "/shop/airconditioners"],
+      ["Security systems", "/shop/security-systems"],
+      ["Cameras and surveillance", "/shop/cameras-surveillance"],
+    ],
+  },
 };
 
-export default HeaderFour;
+function Arrow() {
+  return (
+    <svg viewBox="0 0 24 24" aria-hidden="true" className={styles.arrow}>
+      <path d="M7 17 17 7M9 7h8v8" />
+    </svg>
+  );
+}
+
+function Chevron() {
+  return (
+    <svg viewBox="0 0 24 24" aria-hidden="true" className={styles.chevron}>
+      <path d="m7 9 5 5 5-5" />
+    </svg>
+  );
+}
+
+function Clock() {
+  return (
+    <svg viewBox="0 0 24 24" aria-hidden="true" className={styles.utilityIcon}>
+      <circle cx="12" cy="12" r="8" />
+      <path d="M12 7v5l3 2" />
+    </svg>
+  );
+}
+
+function Pin() {
+  return (
+    <svg viewBox="0 0 24 24" aria-hidden="true" className={styles.utilityIcon}>
+      <path d="M12 21s6-5.1 6-11a6 6 0 1 0-12 0c0 5.9 6 11 6 11Z" />
+      <circle cx="12" cy="10" r="2" />
+    </svg>
+  );
+}
+
+export default function HeaderFour() {
+  const pathname = usePathname();
+  const { language, toggleLanguage } = useLanguage();
+  const [menuOpen, setMenuOpen] = useState(false);
+  const [servicesOpen, setServicesOpen] = useState(false);
+  const text = copy[language] || copy.es;
+
+  const active = (href) =>
+    href === "/" ? pathname === "/" : pathname?.startsWith(href);
+
+  useEffect(() => {
+    setMenuOpen(false);
+    setServicesOpen(false);
+  }, [pathname]);
+
+  useEffect(() => {
+    const previous = document.body.style.overflow;
+    if (menuOpen) document.body.style.overflow = "hidden";
+    return () => {
+      document.body.style.overflow = previous;
+    };
+  }, [menuOpen]);
+
+  return (
+    <header
+      className={styles.header}
+      data-i18n-managed="true"
+    >
+      <div className={styles.utilityBar}>
+        <div className={styles.utilityInner}>
+          <div className={styles.socials} aria-label="Social media">
+            <a href="#" aria-label="Facebook">f</a>
+            <a href="#" aria-label="X">𝕏</a>
+            <a href="#" aria-label="Instagram">◎</a>
+            <a href="#" aria-label="LinkedIn">in</a>
+          </div>
+
+          <div className={styles.utilityInfo}>
+            <span><Clock />{text.schedule}</span>
+            <span><Pin />{text.location}</span>
+            <Link href="/contact">{text.call}</Link>
+          </div>
+        </div>
+      </div>
+
+      <div className={styles.mainBar}>
+        <div className={styles.mainInner}>
+          <Link href="/" className={styles.logoLink} aria-label="Altekmar Group">
+            <img
+              src="/brand/altekgoldwide.png"
+              alt="Altekmar Group"
+              className={styles.logoImage}
+              data-altekmar-header-logo="true"
+            />
+          </Link>
+
+          <nav className={styles.desktopNav} aria-label="Primary navigation">
+            <Link href="/" className={active("/") ? styles.active : ""}>
+              {text.home}
+            </Link>
+            <Link href="/about" className={active("/about") ? styles.active : ""}>
+              {text.about}
+            </Link>
+
+            <div className={styles.dropdown}>
+              <button
+                type="button"
+                onClick={() => setServicesOpen((value) => !value)}
+                aria-expanded={servicesOpen}
+              >
+                {text.services}
+                <Chevron />
+              </button>
+              <div className={`${styles.dropdownMenu} ${servicesOpen ? styles.dropdownOpen : ""}`}>
+                {text.servicesList.map(([label, href], index) => (
+                  <Link href={href} key={`${label}-${index}`}>
+                    <span>{String(index + 1).padStart(2, "0")}</span>
+                    {label}
+                    <Arrow />
+                  </Link>
+                ))}
+              </div>
+            </div>
+
+            <Link href="/project" className={active("/project") ? styles.active : ""}>
+              {text.projects}
+            </Link>
+            <Link href="/shop" className={active("/shop") ? styles.active : ""}>
+              {text.shop}
+            </Link>
+            <Link href="/contact" className={active("/contact") ? styles.active : ""}>
+              {text.contact}
+            </Link>
+          </nav>
+
+          <div className={styles.desktopActions}>
+            <button
+              type="button"
+              className={styles.language}
+              onClick={toggleLanguage}
+              aria-label={text.switchLanguage}
+            >
+              <span className={language === "es" ? styles.current : ""}>ES</span>
+              <i>/</i>
+              <span className={language === "en" ? styles.current : ""}>EN</span>
+            </button>
+
+            <Link href="/contact" className={styles.quote}>
+              {text.quote}
+              <Arrow />
+            </Link>
+          </div>
+
+          <div className={styles.mobileActions}>
+            <button
+              type="button"
+              className={styles.mobileLanguage}
+              onClick={toggleLanguage}
+              aria-label={text.switchLanguage}
+            >
+              {language.toUpperCase()}
+            </button>
+            <button
+              type="button"
+              className={`${styles.menuButton} ${menuOpen ? styles.menuButtonOpen : ""}`}
+              onClick={() => setMenuOpen((value) => !value)}
+              aria-label={menuOpen ? text.closeMenu : text.openMenu}
+              aria-expanded={menuOpen}
+            >
+              <span />
+              <span />
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div className={`${styles.mobilePanel} ${menuOpen ? styles.mobilePanelOpen : ""}`}>
+        <nav className={styles.mobileNav}>
+          <Link href="/"><span>01</span>{text.home}</Link>
+          <Link href="/about"><span>02</span>{text.about}</Link>
+
+          <div className={styles.mobileServices}>
+            <button
+              type="button"
+              onClick={() => setServicesOpen((value) => !value)}
+              aria-expanded={servicesOpen}
+            >
+              <span>03</span>
+              {text.services}
+              <Chevron />
+            </button>
+            <div className={`${styles.mobileServiceList} ${servicesOpen ? styles.mobileServiceListOpen : ""}`}>
+              {text.servicesList.map(([label, href], index) => (
+                <Link href={href} key={`${label}-mobile-${index}`}>
+                  {label}
+                  <Arrow />
+                </Link>
+              ))}
+            </div>
+          </div>
+
+          <Link href="/project"><span>04</span>{text.projects}</Link>
+          <Link href="/shop"><span>05</span>{text.shop}</Link>
+          <Link href="/contact"><span>06</span>{text.contact}</Link>
+        </nav>
+
+        <div className={styles.mobileFooter}>
+          <Link href="/contact" className={styles.mobileQuote}>
+            {text.quote}
+            <Arrow />
+          </Link>
+          <div className={styles.mobileMeta}>
+            <span><Clock />{text.schedule}</span>
+            <span><Pin />{text.location}</span>
+          </div>
+        </div>
+      </div>
+
+      <button
+        type="button"
+        className={`${styles.overlay} ${menuOpen ? styles.overlayOpen : ""}`}
+        onClick={() => setMenuOpen(false)}
+        tabIndex={menuOpen ? 0 : -1}
+        aria-label={text.closeMenu}
+      />
+    </header>
+  );
+}

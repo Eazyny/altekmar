@@ -36,7 +36,7 @@ const FooterTwo = () => {
                                     <div className="menu-all-pages-container grid-style">
                                         <ul className="menu">
                                             <li><Link href="/about">About Altekmar</Link></li>
-                                            <li><Link href="/service">Services</Link></li>
+                                            <li><Link href="/services">Services</Link></li>
                                             <li><Link href="/project">Projects</Link></li>
                                             <li><Link href="/shop">Equipment & Products</Link></li>
                                             <li><Link href="/contact">Contact</Link></li>
@@ -83,7 +83,7 @@ const FooterTwo = () => {
                             </div>
                             <div className="col-auto">
                                 <div className="footer-links">
-                                    <Link href="/service">Services</Link>
+                                    <Link href="/services">Services</Link>
                                     <Link href="/project">Projects</Link>
                                     <Link href="/contact">Contact Us</Link>
                                 </div>

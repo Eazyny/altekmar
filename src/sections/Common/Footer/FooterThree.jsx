@@ -29,7 +29,7 @@ const FooterThree = () => {
                                 <div className="menu-all-pages-container grid-style">
                                     <ul className="menu">
                                         <li><Link href="/about">About Altekmar</Link></li>
-                                        <li><Link href="/service">Services</Link></li>
+                                        <li><Link href="/services">Services</Link></li>
                                         <li><Link href="/project">Projects</Link></li>
                                         <li><Link href="/shop">Equipment & Products</Link></li>
                                         <li><Link href="/contact">Contact</Link></li>

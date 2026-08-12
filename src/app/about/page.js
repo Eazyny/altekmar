@@ -6,15 +6,15 @@ import PortfolioThree from "~/sections/About/PortfolioThree";
 import ProcessThree from "~/sections/About/ProcessThree";
 import TeamThree from "~/sections/About/TeamThree/TeamThree";
 import WhyChooseThree from "~/sections/About/WhyChooseThree";
-import HeaderOne from "~/sections/Common/Header/HeaderOne";
-import FooterTwo from "~/sections/Common/Footer/FooterTwo";
+import HeaderFour from "~/sections/Common/Header/HeaderFour";
+import CorporateFooter from "~/sections/Common/Footer/CorporateFooter";
 import CounterThree from "~/sections/Common/Counter/CounterThree";
 import TestimonialThree from "~/sections/Common/Testimonial/TestimonialThree";
 import Scroll from "~/sections/Common/Scroll";
 export default function AboutPage() {
   return (
     <>
-      <HeaderOne />
+      <HeaderFour />
       <Breadcumb />
       <AboutThree />
       <WhyChooseThree />
@@ -25,7 +25,7 @@ export default function AboutPage() {
       <TeamThree />
       <ClientThree />
       <BlogThree />
-      <FooterTwo />
+      <CorporateFooter />
       <Scroll />
     </>
   );

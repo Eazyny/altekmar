@@ -23,7 +23,7 @@ const MultiPageMobileMenu = ({ isMenuOpen, setIsMenuOpen }) => {
             <div className="mobile-menu-area">
                 <div className="mobile-logo">
                     <Link href="/" onClick={handleMobileMenuClose}>
-                        <img src="/main-assets/img/logo.svg" alt="Altekmar" />
+                        <img src="/brand/altekgoldwide.png" alt="Altekmar" />
                     </Link>
                     <div className="altekmar-mobile-language">
                         <LanguageSwitcher />
@@ -50,7 +50,7 @@ const MultiPageMobileMenu = ({ isMenuOpen, setIsMenuOpen }) => {
                                 className={`sub-menu submenu-class ${isServiceMenuOpen ? "menu-open" : ""}`}
                                 style={submenuStyle(isServiceMenuOpen)}
                             >
-                                <li><Link href="/service" onClick={handleMobileMenuClose}>All Services</Link></li>
+                                <li><Link href="/services" onClick={handleMobileMenuClose}>All Services</Link></li>
                                 <li><Link href="/service-details" onClick={handleMobileMenuClose}>Elevators & Vertical Mobility</Link></li>
                                 <li><Link href="/service-details" onClick={handleMobileMenuClose}>Generators & Power Systems</Link></li>
                                 <li><Link href="/service-details" onClick={handleMobileMenuClose}>Air Conditioning & HVAC</Link></li>

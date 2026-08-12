@@ -2,18 +2,18 @@ import BreadcumbSix from "~/sections/Contact/BreadcumbSix";
 import ContactArea from "~/sections/Contact/ContactArea";
 import ContactAreaTwo from "~/sections/Contact/ContactAreaTwo";
 import ContactMap from "~/sections/Contact/ContactMap";
-import HeaderOne from "~/sections/Common/Header/HeaderOne";
-import FooterTwo from "~/sections/Common/Footer/FooterTwo";
+import HeaderFour from "~/sections/Common/Header/HeaderFour";
+import CorporateFooter from "~/sections/Common/Footer/CorporateFooter";
 import Scroll from "~/sections/Common/Scroll";
 export default function ContactPage() {
   return (
-    <div style={{overflow: "hidden"}}>
-      <HeaderOne />
+    <div className="altekmar-inner-page" style={{overflow: "hidden"}}>
+      <HeaderFour />
       <BreadcumbSix />
       <ContactArea />
       <ContactAreaTwo />
       <ContactMap />
-      <FooterTwo />
+      <CorporateFooter />
       <Scroll />
     </div>
   );

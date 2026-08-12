@@ -14,7 +14,7 @@ const Service = () => {
                             <span className="sub-title"><img src="/main-assets/img/icon/section-subtitle-icon.svg" alt="img" /> What We Do</span>
                             <h2 className="sec-title">OUR SERVICES THAT WE PROVIDE</h2>
                             <div className="btn-group mt-50 justify-content-xl-start justify-content-center">
-                                <Link href="/service" className="btn">VIEW ALL SERVICES <i className="ri-arrow-right-up-line"></i></Link>
+                                <Link href="/services" className="btn">VIEW ALL SERVICES <i className="ri-arrow-right-up-line"></i></Link>
                             </div>
                         </div>
                     </div>

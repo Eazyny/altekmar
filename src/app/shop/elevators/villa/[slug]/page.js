@@ -1,7 +1,7 @@
 import { notFound } from "next/navigation";
 import catalog from "~/data/gots-elevator-catalog.json";
-import HeaderOne from "~/sections/Common/Header/HeaderOne";
-import FooterTwo from "~/sections/Common/Footer/FooterTwo";
+import HeaderFour from "~/sections/Common/Header/HeaderFour";
+import CorporateFooter from "~/sections/Common/Footer/CorporateFooter";
 import Scroll from "~/sections/Common/Scroll";
 import ElevatorBreadcumb from "~/sections/Shop-Details/ElevatorBreadcumb";
 import ElevatorDetails from "~/sections/Shop-Details/ElevatorDetails";
@@ -62,15 +62,15 @@ export default function ProductPage({ params }) {
     .slice(0, 4);
 
   return (
-    <div>
-      <HeaderOne />
+    <div className="altekmar-inner-page">
+      <HeaderFour />
       <ElevatorBreadcumb product={product} category={category} />
       <ElevatorDetails
         product={product}
         category={category}
         relatedProducts={relatedProducts}
       />
-      <FooterTwo />
+      <CorporateFooter />
       <Scroll />
     </div>
   );
