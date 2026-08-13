@@ -1,5 +1,6 @@
 "use client";
 
+import { useEffect, useRef } from "react";
 import Link from "next/link";
 import useDocumentLanguage from "~/i18n/useDocumentLanguage";
 import styles from "./CorporateLanding.module.css";
@@ -10,9 +11,19 @@ const copy = {
     heroTitle: "SOLUCIONES INTEGRADAS.",
     heroAccent: "EJECUCIÓN PRECISA.",
     heroBody:
-      "Suministro, instalación y coordinación de sistemas esenciales para proyectos residenciales, comerciales e institucionales.",
-    explore: "Explorar servicios",
-    consult: "Solicitar consulta",
+      "Movilidad · Energía · Clima · Seguridad · Videovigilancia",
+    explore: "Explorar soluciones",
+    consult: "Hablemos",
+    heroIndex: "01 / 05",
+    heroCapability: "CAPACIDAD INTEGRADA",
+    heroDescriptor: "UNA CORPORACIÓN · CINCO DIVISIONES",
+    heroSectors: [
+      "MOVILIDAD",
+      "ENERGÍA",
+      "CLIMA",
+      "SEGURIDAD",
+      "VIDEOVIGILANCIA",
+    ],
     introEyebrow: "UNA CORPORACIÓN. CINCO ÁREAS ESPECIALIZADAS.",
     introTitle:
       "Infraestructura, tecnología y equipos coordinados bajo una sola organización.",
@@ -99,9 +110,19 @@ const copy = {
     heroTitle: "INTEGRATED SOLUTIONS.",
     heroAccent: "PRECISE EXECUTION.",
     heroBody:
-      "Equipment supply, installation, and coordination of essential systems for residential, commercial, and institutional projects.",
-    explore: "Explore services",
-    consult: "Request a consultation",
+      "Mobility · Power · Climate · Security · Surveillance",
+    explore: "Explore solutions",
+    consult: "Let’s talk",
+    heroIndex: "01 / 05",
+    heroCapability: "INTEGRATED CAPABILITY",
+    heroDescriptor: "ONE CORPORATION · FIVE DIVISIONS",
+    heroSectors: [
+      "MOBILITY",
+      "POWER",
+      "CLIMATE",
+      "SECURITY",
+      "SURVEILLANCE",
+    ],
     introEyebrow: "ONE CORPORATION. FIVE SPECIALIZED DIVISIONS.",
     introTitle:
       "Infrastructure, technology, and equipment coordinated under one organization.",
@@ -196,42 +217,125 @@ function Arrow() {
 export default function CorporateLanding() {
   const language = useDocumentLanguage();
   const text = copy[language] || copy.es;
+  const heroVideoRef = useRef(null);
+
+  useEffect(() => {
+    const preference = window.matchMedia(
+      "(prefers-reduced-motion: reduce)",
+    );
+
+    const syncPlayback = () => {
+      const video = heroVideoRef.current;
+
+      if (!video) {
+        return;
+      }
+
+      if (preference.matches) {
+        video.pause();
+        video.currentTime = 0;
+        return;
+      }
+
+      const playback = video.play();
+
+      if (playback?.catch) {
+        playback.catch(() => {});
+      }
+    };
+
+    syncPlayback();
+    preference.addEventListener?.("change", syncPlayback);
+
+    return () => {
+      preference.removeEventListener?.("change", syncPlayback);
+    };
+  }, []);
 
   return (
     <main className={styles.page} data-i18n-managed="true" data-corporate-home="true">
-      <section className={`${styles.hero} altekmar-snap-section`} data-home-section="hero">
-        <div className={styles.heroDark}>
-          <div className={styles.heroRule} />
-          <p className={styles.eyebrow}>{text.heroEyebrow}</p>
+      <section
+        className={`${styles.hero} altekmar-snap-section`}
+        data-home-section="hero"
+      >
+        <div className={styles.heroMedia} aria-hidden="true">
+          <video
+            ref={heroVideoRef}
+            className={styles.heroVideo}
+            autoPlay
+            muted
+            loop
+            playsInline
+            preload="metadata"
+            poster="/footage/dr_drone-poster.jpg"
+            tabIndex={-1}
+          >
+            <source
+              src="/footage/dr_drone.webm"
+              type="video/webm"
+            />
+          </video>
 
-          <h1>
-            <span>{text.heroTitle}</span>
-            <strong>{text.heroAccent}</strong>
-          </h1>
-
-          <p className={styles.heroBody}>{text.heroBody}</p>
-
-          <div className={styles.actions}>
-            <Link href="#divisions" className={styles.goldButton}>
-              {text.explore}
-              <Arrow />
-            </Link>
-            <Link href="/contact" className={styles.textLink}>
-              {text.consult}
-              <Arrow />
-            </Link>
-          </div>
+          <div className={styles.heroFilm} />
+          <div className={styles.gridLines} />
         </div>
 
-        <div className={styles.heroVisual}>
-          <div className={styles.gridLines} />
-          <img
-            src="/main-assets/img/elevators/elevator_escalator.png"
-            alt=""
-          />
-          <div className={styles.visualLabel}>
-            <span>ALTEKMAR</span>
-            <small>SUPPLY · INSTALLATION · COORDINATION</small>
+        <div className={styles.heroFrame}>
+          <div className={styles.heroTopbar}>
+            <div className={styles.heroBrandLine}>
+              <span />
+              <p>{text.heroEyebrow}</p>
+            </div>
+
+            <span className={styles.heroCounter}>
+              {text.heroIndex}
+            </span>
+          </div>
+
+          <div className={styles.heroContent}>
+            <h1>
+              <span>{text.heroTitle}</span>
+              <strong>{text.heroAccent}</strong>
+            </h1>
+
+            <p className={styles.heroBody}>
+              {text.heroBody}
+            </p>
+
+            <div className={styles.actions}>
+              <Link
+                href="#divisions"
+                className={styles.goldButton}
+              >
+                {text.explore}
+                <Arrow />
+              </Link>
+
+              <Link
+                href="/contact"
+                className={styles.textLink}
+              >
+                {text.consult}
+                <Arrow />
+              </Link>
+            </div>
+          </div>
+
+          <div className={styles.heroFooter}>
+            <div className={styles.visualLabel}>
+              <span>{text.heroCapability}</span>
+              <small>{text.heroDescriptor}</small>
+            </div>
+
+            <div className={styles.heroSectors}>
+              {text.heroSectors.map((sector, index) => (
+                <span key={sector}>
+                  <i />
+                  {String(index + 1).padStart(2, "0")}
+                  <strong>{sector}</strong>
+                </span>
+              ))}
+            </div>
           </div>
         </div>
       </section>

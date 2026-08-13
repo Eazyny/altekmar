@@ -1,0 +1,491 @@
+"use client";
+
+import Link from "next/link";
+import CorporateFooter from "~/sections/Common/Footer/CorporateFooter";
+import useDocumentLanguage from "~/i18n/useDocumentLanguage";
+import styles from "./CorporateAbout.module.css";
+
+const copy = {
+  es: {
+    heroEyebrow: "ALTEKMAR GROUP · QUIÉNES SOMOS",
+    heroTitle: "UNA CORPORACIÓN.",
+    heroAccent: "UNA VISIÓN INTEGRADA.",
+    heroBody:
+      "Altekmar Group reúne suministro, instalación y coordinación de sistemas esenciales bajo una sola estructura de proyecto.",
+    heroPrimary: "Explorar servicios",
+    heroSecondary: "Iniciar conversación",
+    heroStat: "05",
+    heroStatLabel: "DIVISIONES ESPECIALIZADAS",
+    heroTracks: [
+      "MOVILIDAD",
+      "ENERGÍA",
+      "CLIMA",
+      "SEGURIDAD",
+      "VISIÓN",
+    ],
+
+    storyEyebrow: "NUESTRA FORMA DE PENSAR",
+    storyTitle:
+      "La complejidad del proyecto no debería convertirse en complejidad para el cliente.",
+    storyLead:
+      "Nuestro papel es conectar las piezas correctas: entender la necesidad, definir el sistema adecuado, coordinar la instalación y mantener una línea clara de responsabilidad.",
+    storyBody:
+      "Trabajamos con una visión integral para que cada disciplina responda al proyecto completo, no como una solución aislada.",
+    principles: [
+      {
+        number: "01",
+        title: "Rigor técnico",
+        body:
+          "Cada decisión parte de requisitos reales, condiciones del espacio y objetivos de operación.",
+      },
+      {
+        number: "02",
+        title: "Selección responsable",
+        body:
+          "Equipos y soluciones elegidos alrededor de la necesidad, no alrededor de un catálogo.",
+      },
+      {
+        number: "03",
+        title: "Ejecución coordinada",
+        body:
+          "Suministro, instalación y seguimiento organizados como una sola experiencia de proyecto.",
+      },
+      {
+        number: "04",
+        title: "Continuidad",
+        body:
+          "La relación no termina con la instalación; el soporte forma parte de la solución.",
+      },
+    ],
+
+    integrationEyebrow: "CAPACIDAD INTEGRADA",
+    integrationTitle:
+      "Cinco disciplinas conectadas por una misma forma de ejecutar.",
+    integrationBody:
+      "Altekmar integra sistemas que impactan directamente la movilidad, continuidad, confort y seguridad de un proyecto.",
+    divisionLink: "Explorar división",
+    divisions: [
+      {
+        number: "01",
+        title: "Elevadores y movilidad",
+        short: "MOVILIDAD",
+        body:
+          "Transporte vertical y soluciones de movilidad para entornos residenciales, comerciales e institucionales.",
+        href: "/shop/elevators",
+      },
+      {
+        number: "02",
+        title: "Generadores y respaldo eléctrico",
+        short: "ENERGÍA",
+        body:
+          "Generación y respaldo para proteger la continuidad operativa.",
+        href: "/shop/generators",
+      },
+      {
+        number: "03",
+        title: "Aire acondicionado",
+        short: "CLIMA",
+        body:
+          "Climatización coordinada alrededor del uso, el espacio y el rendimiento.",
+        href: "/shop/airconditioners",
+      },
+      {
+        number: "04",
+        title: "Sistemas de seguridad",
+        short: "SEGURIDAD",
+        body:
+          "Control, protección e integración para administrar accesos y riesgos.",
+        href: "/shop/security-systems",
+      },
+      {
+        number: "05",
+        title: "Cámaras y videovigilancia",
+        short: "VISIÓN",
+        body:
+          "Cobertura, grabación y supervisión para mantener visibilidad sobre cada entorno.",
+        href: "/shop/cameras-surveillance",
+      },
+    ],
+
+    directionEyebrow: "PROPÓSITO Y DIRECCIÓN",
+    directionTitle:
+      "Una organización construida alrededor de responsabilidad, coordinación y largo plazo.",
+    direction: [
+      {
+        number: "01",
+        title: "Misión",
+        body:
+          "Resolver necesidades esenciales con soluciones técnicas claras, bien seleccionadas y correctamente ejecutadas.",
+      },
+      {
+        number: "02",
+        title: "Visión",
+        body:
+          "Ser un socio de confianza para proyectos que necesitan múltiples sistemas coordinados bajo una sola visión.",
+      },
+      {
+        number: "03",
+        title: "Nuestro estándar",
+        body:
+          "Comunicación clara, criterio técnico y responsabilidad desde la evaluación inicial hasta el soporte posterior.",
+      },
+    ],
+
+    promiseEyebrow: "EL COMPROMISO ALTEKMAR",
+    promiseTitle:
+      "Claridad antes de instalar. Coordinación durante la ejecución. Respaldo después de entregar.",
+    promiseBody:
+      "Cada proyecto merece una solución que se sienta resuelta, no fragmentada. Ese es el estándar que buscamos llevar a cada disciplina.",
+    promisePoints: [
+      "Un solo punto de coordinación",
+      "Decisiones basadas en el proyecto",
+      "Ejecución profesional",
+      "Acompañamiento después de la instalación",
+    ],
+    promisePrimary: "Hablemos de su proyecto",
+    promiseSecondary: "Ver nuestros servicios",
+  },
+
+  en: {
+    heroEyebrow: "ALTEKMAR GROUP · ABOUT US",
+    heroTitle: "ONE CORPORATION.",
+    heroAccent: "ONE INTEGRATED VISION.",
+    heroBody:
+      "Altekmar Group brings equipment supply, installation, and coordination of essential systems under one project structure.",
+    heroPrimary: "Explore services",
+    heroSecondary: "Start a conversation",
+    heroStat: "05",
+    heroStatLabel: "SPECIALIZED DIVISIONS",
+    heroTracks: [
+      "MOBILITY",
+      "POWER",
+      "CLIMATE",
+      "SECURITY",
+      "VISION",
+    ],
+
+    storyEyebrow: "HOW WE THINK",
+    storyTitle:
+      "Project complexity should not become client complexity.",
+    storyLead:
+      "Our role is to connect the right pieces: understand the requirement, define the right system, coordinate installation, and maintain a clear line of responsibility.",
+    storyBody:
+      "We work with an integrated view so every discipline responds to the complete project rather than operating as an isolated solution.",
+    principles: [
+      {
+        number: "01",
+        title: "Technical rigor",
+        body:
+          "Every decision begins with actual requirements, site conditions, and operating goals.",
+      },
+      {
+        number: "02",
+        title: "Responsible selection",
+        body:
+          "Equipment and solutions are selected around the need, not around a catalog.",
+      },
+      {
+        number: "03",
+        title: "Coordinated execution",
+        body:
+          "Supply, installation, and follow-through are organized as one project experience.",
+      },
+      {
+        number: "04",
+        title: "Continuity",
+        body:
+          "The relationship does not end at installation; support is part of the solution.",
+      },
+    ],
+
+    integrationEyebrow: "INTEGRATED CAPABILITY",
+    integrationTitle:
+      "Five disciplines connected by one way of executing.",
+    integrationBody:
+      "Altekmar integrates systems that directly affect a project's mobility, continuity, comfort, and security.",
+    divisionLink: "Explore division",
+    divisions: [
+      {
+        number: "01",
+        title: "Elevators and mobility",
+        short: "MOBILITY",
+        body:
+          "Vertical transportation and mobility solutions for residential, commercial, and institutional environments.",
+        href: "/shop/elevators",
+      },
+      {
+        number: "02",
+        title: "Generators and backup power",
+        short: "POWER",
+        body:
+          "Generation and backup systems designed to protect operational continuity.",
+        href: "/shop/generators",
+      },
+      {
+        number: "03",
+        title: "Air conditioning",
+        short: "CLIMATE",
+        body:
+          "Climate solutions coordinated around use, space, and performance.",
+        href: "/shop/airconditioners",
+      },
+      {
+        number: "04",
+        title: "Security systems",
+        short: "SECURITY",
+        body:
+          "Control, protection, and integration for managing access and risk.",
+        href: "/shop/security-systems",
+      },
+      {
+        number: "05",
+        title: "Cameras and surveillance",
+        short: "VISION",
+        body:
+          "Coverage, recording, and oversight that maintain visibility across each environment.",
+        href: "/shop/cameras-surveillance",
+      },
+    ],
+
+    directionEyebrow: "PURPOSE AND DIRECTION",
+    directionTitle:
+      "An organization built around responsibility, coordination, and the long term.",
+    direction: [
+      {
+        number: "01",
+        title: "Mission",
+        body:
+          "Solve essential needs through clear technical solutions that are properly selected and properly executed.",
+      },
+      {
+        number: "02",
+        title: "Vision",
+        body:
+          "Be a trusted partner for projects that need multiple systems coordinated under one vision.",
+      },
+      {
+        number: "03",
+        title: "Our standard",
+        body:
+          "Clear communication, technical judgment, and accountability from initial assessment through post-installation support.",
+      },
+    ],
+
+    promiseEyebrow: "THE ALTEKMAR COMMITMENT",
+    promiseTitle:
+      "Clarity before installation. Coordination during execution. Support after delivery.",
+    promiseBody:
+      "Every project deserves a solution that feels resolved rather than fragmented. That is the standard we aim to bring to every discipline.",
+    promisePoints: [
+      "One point of coordination",
+      "Project-led decisions",
+      "Professional execution",
+      "Support after installation",
+    ],
+    promisePrimary: "Discuss your project",
+    promiseSecondary: "View our services",
+  },
+};
+
+function Arrow() {
+  return (
+    <span aria-hidden="true" className={styles.arrow}>
+      ↗
+    </span>
+  );
+}
+
+export default function CorporateAbout() {
+  const language = useDocumentLanguage();
+  const text = copy[language] || copy.es;
+
+  return (
+    <>
+      <main
+        className={styles.page}
+        data-corporate-about="true"
+        data-i18n-managed="true"
+      >
+        <section className={`${styles.section} ${styles.hero}`}>
+          <div className={styles.heroCopy}>
+            <div className={styles.heroRule} />
+            <p className={styles.eyebrow}>{text.heroEyebrow}</p>
+
+            <h1>
+              <span>{text.heroTitle}</span>
+              <strong>{text.heroAccent}</strong>
+            </h1>
+
+            <p className={styles.heroBody}>{text.heroBody}</p>
+
+            <div className={styles.actions}>
+              <Link href="/services" className={styles.goldButton}>
+                {text.heroPrimary}
+                <Arrow />
+              </Link>
+
+              <Link href="/contact" className={styles.textLink}>
+                {text.heroSecondary}
+                <Arrow />
+              </Link>
+            </div>
+          </div>
+
+          <div className={styles.heroSystem}>
+            <div className={styles.heroGrid} />
+
+            <div className={styles.heroNumber}>
+              <strong>{text.heroStat}</strong>
+              <span>{text.heroStatLabel}</span>
+            </div>
+
+            <div className={styles.heroTracks}>
+              {text.heroTracks.map((track, index) => (
+                <div key={track}>
+                  <span>{String(index + 1).padStart(2, "0")}</span>
+                  <strong>{track}</strong>
+                  <i />
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        <section className={`${styles.section} ${styles.story}`}>
+          <div className={styles.sectionLabel}>
+            <span />
+            <p>{text.storyEyebrow}</p>
+          </div>
+
+          <div className={styles.storyGrid}>
+            <div>
+              <h2>{text.storyTitle}</h2>
+            </div>
+
+            <div className={styles.storyCopy}>
+              <p className={styles.lead}>{text.storyLead}</p>
+              <p>{text.storyBody}</p>
+            </div>
+          </div>
+
+          <div className={styles.principleGrid}>
+            {text.principles.map((principle) => (
+              <article key={principle.number}>
+                <div className={styles.principleTop}>
+                  <span>{principle.number}</span>
+                  <i />
+                </div>
+                <h3>{principle.title}</h3>
+                <p>{principle.body}</p>
+              </article>
+            ))}
+          </div>
+        </section>
+
+        <section className={`${styles.section} ${styles.integration}`}>
+          <div className={styles.integrationHeading}>
+            <div>
+              <p className={styles.goldEyebrow}>
+                {text.integrationEyebrow}
+              </p>
+              <h2>{text.integrationTitle}</h2>
+            </div>
+
+            <p>{text.integrationBody}</p>
+          </div>
+
+          <div className={styles.divisionRail}>
+            {text.divisions.map((division) => (
+              <Link
+                href={division.href}
+                className={styles.division}
+                key={division.number}
+              >
+                <div className={styles.divisionTop}>
+                  <span>{division.number}</span>
+                  <small>{division.short}</small>
+                </div>
+
+                <div>
+                  <h3>{division.title}</h3>
+                  <p>{division.body}</p>
+                </div>
+
+                <div className={styles.divisionLink}>
+                  <span>{text.divisionLink}</span>
+                  <Arrow />
+                </div>
+              </Link>
+            ))}
+          </div>
+        </section>
+
+        <section className={`${styles.section} ${styles.direction}`}>
+          <div className={styles.directionHeading}>
+            <p className={styles.goldEyebrow}>
+              {text.directionEyebrow}
+            </p>
+            <h2>{text.directionTitle}</h2>
+          </div>
+
+          <div className={styles.directionGrid}>
+            {text.direction.map((item) => (
+              <article key={item.number}>
+                <div className={styles.directionNumber}>
+                  {item.number}
+                </div>
+                <div>
+                  <h3>{item.title}</h3>
+                  <p>{item.body}</p>
+                </div>
+              </article>
+            ))}
+          </div>
+        </section>
+
+        <section className={`${styles.section} ${styles.promise}`}>
+          <div className={styles.promiseGrid}>
+            <div className={styles.promiseStatement}>
+              <p className={styles.goldEyebrow}>
+                {text.promiseEyebrow}
+              </p>
+              <h2>{text.promiseTitle}</h2>
+              <p>{text.promiseBody}</p>
+            </div>
+
+            <div className={styles.promiseRight}>
+              <ul>
+                {text.promisePoints.map((point, index) => (
+                  <li key={point}>
+                    <span>{String(index + 1).padStart(2, "0")}</span>
+                    <p>{point}</p>
+                  </li>
+                ))}
+              </ul>
+
+              <div className={styles.actions}>
+                <Link href="/contact" className={styles.goldButton}>
+                  {text.promisePrimary}
+                  <Arrow />
+                </Link>
+
+                <Link href="/services" className={styles.darkTextLink}>
+                  {text.promiseSecondary}
+                  <Arrow />
+                </Link>
+              </div>
+            </div>
+          </div>
+
+          <div className={styles.wordmark} aria-hidden="true">
+            ALTEKMAR
+          </div>
+        </section>
+      </main>
+
+      <div className={styles.footerSnap}>
+        <CorporateFooter />
+      </div>
+    </>
+  );
+}
