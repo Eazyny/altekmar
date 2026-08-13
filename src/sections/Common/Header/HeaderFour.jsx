@@ -117,13 +117,6 @@ export default function HeaderFour() {
     >
       <div className={styles.utilityBar}>
         <div className={styles.utilityInner}>
-          <div className={styles.socials} aria-label="Social media">
-            <a href="#" aria-label="Facebook">f</a>
-            <a href="#" aria-label="X">𝕏</a>
-            <a href="#" aria-label="Instagram">◎</a>
-            <a href="#" aria-label="LinkedIn">in</a>
-          </div>
-
           <div className={styles.utilityInfo}>
             <span><Clock />{text.schedule}</span>
             <span><Pin />{text.location}</span>
@@ -136,7 +129,7 @@ export default function HeaderFour() {
         <div className={styles.mainInner}>
           <Link href="/" className={styles.logoLink} aria-label="Altekmar Group">
             <img
-              src="/brand/altekgoldwide.png"
+              src="/brand/altekgoldwide.webp"
               alt="Altekmar Group"
               className={styles.logoImage}
               data-altekmar-header-logo="true"

@@ -2087,16 +2087,14 @@ html {
  * Having snap rules on both html and body can create inconsistent
  * behavior between Chrome/Edge and other browsers.
  */
-html {
-  scroll-behavior: smooth !important;
-  scroll-snap-type: y mandatory !important;
-  scroll-padding-top:
-    var(--altekmar-snap-header) !important;
-  overscroll-behavior-y: none;
-}
-
+html,
 body {
   scroll-snap-type: none !important;
+}
+
+html {
+  scroll-behavior: smooth !important;
+  overscroll-behavior-y: auto;
 }
 
 
@@ -2109,7 +2107,7 @@ body {
 [data-corporate-home="true"]
   > .altekmar-snap-section {
   scroll-snap-align: start !important;
-  scroll-snap-stop: always !important;
+  scroll-snap-stop: normal !important;
   scroll-margin-top: 0 !important;
 
   min-height:
@@ -2127,10 +2125,9 @@ body {
  * has somewhere to land after the final homepage section.
  */
 .altekmar-corporate-page > footer,
-.altekmar-home-page > footer,
-body:has([data-corporate-home="true"]) footer {
+.altekmar-home-page > footer {
   scroll-snap-align: start !important;
-  scroll-snap-stop: always !important;
+  scroll-snap-stop: normal !important;
   scroll-margin-top: 0 !important;
 }
 
@@ -2139,13 +2136,11 @@ body:has([data-corporate-home="true"]) footer {
  * Prevent the previous proximity/native-scroll patch from taking
  * control again.
  */
-@media (min-width: 769px) {
-  html {
+@media (min-width: 1121px) {
+  html:has([data-corporate-home="true"]) {
     scroll-snap-type: y mandatory !important;
-  }
-
-  body {
-    scroll-snap-type: none !important;
+    scroll-padding-top:
+      var(--altekmar-snap-header) !important;
   }
 }
 
@@ -2156,7 +2151,8 @@ body:has([data-corporate-home="true"]) footer {
     --altekmar-snap-header: 74px;
   }
 
-  html {
+  html:has([data-corporate-home="true"]) {
+    scroll-snap-type: y proximity !important;
     scroll-padding-top:
       var(--altekmar-snap-header) !important;
   }
@@ -2181,21 +2177,17 @@ body:has([data-corporate-home="true"]) footer {
  * translated content genuinely needs more space.
  */
 @media (max-width: 768px) {
-  html {
+  html:has([data-corporate-home="true"]) {
     scroll-behavior: smooth !important;
-    scroll-snap-type: y mandatory !important;
+    scroll-snap-type: y proximity !important;
     scroll-padding-top:
       var(--altekmar-snap-header) !important;
-  }
-
-  body {
-    scroll-snap-type: none !important;
   }
 
   [data-corporate-home="true"]
     > .altekmar-snap-section {
     scroll-snap-align: start !important;
-    scroll-snap-stop: always !important;
+    scroll-snap-stop: normal !important;
     scroll-margin-top: 0 !important;
   }
 }
@@ -2214,7 +2206,7 @@ body:has([data-corporate-home="true"]) footer {
  * forced through animated snapping.
  */
 @media (prefers-reduced-motion: reduce) {
-  html {
+  html:has([data-corporate-home="true"]) {
     scroll-behavior: auto !important;
     scroll-snap-type: none !important;
   }
@@ -2225,8 +2217,8 @@ body:has([data-corporate-home="true"]) footer {
 
   [data-corporate-home="true"]
     > .altekmar-snap-section,
-  .altekmar-corporate-page > footer,
-  .altekmar-home-page > footer {
+    .altekmar-corporate-page > footer,
+    .altekmar-home-page > footer {
     scroll-snap-align: none !important;
     scroll-snap-stop: normal !important;
   }
@@ -3130,7 +3122,7 @@ div {
     none !important;
 
   transform:
-    none !important;
+    none;
 
   transition:
     background 220ms ease,
@@ -3576,3 +3568,354 @@ p {
 
 /* ALTEKMAR PROCESS EDITORIAL V3 END */
 
+
+/* ALTEKMAR DETACHED PROCESS CARDS START */
+
+body [data-corporate-home="true"] >
+[data-home-section="process"] >
+div:nth-child(2) {
+  align-items: center !important;
+  grid-template-columns:
+    1.08fr 0.9fr 1fr 1.12fr 0.88fr 1.02fr !important;
+  gap: clamp(10px, 1vw, 16px) !important;
+  background: transparent !important;
+  border: 0 !important;
+  box-shadow: none !important;
+  backdrop-filter: none !important;
+}
+
+body [data-corporate-home="true"] >
+[data-home-section="process"] >
+div:nth-child(2)::before {
+  display: none !important;
+}
+
+body [data-corporate-home="true"] >
+[data-home-section="process"] >
+div:nth-child(2) >
+div {
+  min-height: clamp(190px, 23svh, 250px) !important;
+  border: 1px solid var(--process-line) !important;
+  border-radius: 0 !important;
+  background: rgba(255, 253, 248, 0.018) !important;
+  clip-path: none !important;
+}
+
+body [data-corporate-home="true"] >
+[data-home-section="process"] >
+div:nth-child(2) >
+div:nth-child(2),
+body [data-corporate-home="true"] >
+[data-home-section="process"] >
+div:nth-child(2) >
+div:nth-child(5) {
+  min-height: clamp(168px, 20svh, 218px) !important;
+}
+
+body [data-corporate-home="true"] >
+[data-home-section="process"] >
+div:nth-child(2) >
+div:nth-child(3),
+body [data-corporate-home="true"] >
+[data-home-section="process"] >
+div:nth-child(2) >
+div:nth-child(6) {
+  min-height: clamp(208px, 25svh, 270px) !important;
+}
+
+@media (hover: hover) {
+  body [data-corporate-home="true"] >
+  [data-home-section="process"] >
+  div:nth-child(2) >
+  div:hover {
+    border-color: rgba(196, 161, 90, 0.62) !important;
+    box-shadow: none !important;
+  }
+}
+
+@media (max-width: 1120px) {
+  body [data-corporate-home="true"] >
+  [data-home-section="process"] >
+  div:nth-child(2) {
+    align-items: stretch !important;
+    grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
+  }
+
+  body [data-corporate-home="true"] >
+  [data-home-section="process"] >
+  div:nth-child(2) >
+  div:nth-child(n) {
+    min-height: 165px !important;
+    border: 1px solid var(--process-line) !important;
+  }
+}
+
+@media (max-width: 680px) {
+  body [data-corporate-home="true"] >
+  [data-home-section="process"] >
+  div:nth-child(2) {
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+    gap: 10px !important;
+  }
+
+  body [data-corporate-home="true"] >
+  [data-home-section="process"] >
+  div:nth-child(2) >
+  div:nth-child(n) {
+    min-height: 116px !important;
+    border: 1px solid var(--process-line) !important;
+  }
+}
+
+/* ALTEKMAR DETACHED PROCESS CARDS END */
+
+
+/* ALTEKMAR PROCESS LEDGER V4 START */
+
+@media (min-width: 1121px) {
+  body [data-corporate-home="true"] >
+  [data-home-section="process"] {
+    padding:
+      clamp(40px, 5svh, 58px)
+      clamp(34px, 6.4vw, 104px)
+      clamp(36px, 4.5svh, 50px) !important;
+    gap: clamp(28px, 3.6svh, 38px) !important;
+  }
+
+  body [data-corporate-home="true"] >
+  [data-home-section="process"] >
+  div:first-child >
+  h2 {
+    max-width: 940px !important;
+    font-size: clamp(46px, 4.8vw, 76px) !important;
+  }
+
+  body [data-corporate-home="true"] >
+  [data-home-section="process"] >
+  div:nth-child(2) {
+    align-items: stretch !important;
+    grid-template-columns: repeat(12, minmax(0, 1fr)) !important;
+    grid-template-rows: repeat(2, minmax(0, 1fr)) !important;
+    gap: clamp(10px, 1vw, 15px) !important;
+  }
+
+  body [data-corporate-home="true"] >
+  [data-home-section="process"] >
+  div:nth-child(2) >
+  div:nth-child(n) {
+    min-height: clamp(148px, 17.5svh, 178px) !important;
+  }
+
+  body [data-corporate-home="true"] >
+  [data-home-section="process"] >
+  div:nth-child(2) >
+  div:nth-child(1) {
+    grid-column: span 4;
+  }
+
+  body [data-corporate-home="true"] >
+  [data-home-section="process"] >
+  div:nth-child(2) >
+  div:nth-child(2) {
+    grid-column: span 3;
+  }
+
+  body [data-corporate-home="true"] >
+  [data-home-section="process"] >
+  div:nth-child(2) >
+  div:nth-child(3) {
+    grid-column: span 5;
+  }
+
+  body [data-corporate-home="true"] >
+  [data-home-section="process"] >
+  div:nth-child(2) >
+  div:nth-child(4) {
+    grid-column: span 5;
+  }
+
+  body [data-corporate-home="true"] >
+  [data-home-section="process"] >
+  div:nth-child(2) >
+  div:nth-child(5) {
+    grid-column: span 3;
+  }
+
+  body [data-corporate-home="true"] >
+  [data-home-section="process"] >
+  div:nth-child(2) >
+  div:nth-child(6) {
+    grid-column: span 4;
+  }
+}
+
+body [data-corporate-home="true"] >
+[data-home-section="process"] >
+div:nth-child(2) >
+div {
+  justify-content: flex-start !important;
+}
+
+body [data-corporate-home="true"] >
+[data-home-section="process"] >
+div:nth-child(2) >
+div::before {
+  display: none !important;
+}
+
+body [data-corporate-home="true"] >
+[data-home-section="process"] >
+div:nth-child(2) >
+div::after {
+  display: none !important;
+}
+
+body [data-corporate-home="true"] >
+[data-home-section="process"] >
+div:nth-child(2) >
+div >
+span {
+  padding-left: 0 !important;
+  font-size: clamp(30px, 2.3vw, 40px) !important;
+}
+
+body [data-corporate-home="true"] >
+[data-home-section="process"] >
+div:nth-child(2) >
+div >
+p {
+  max-width: none !important;
+  margin: auto 0 5px !important;
+  padding: 0 !important;
+  font-size: clamp(16px, 1.1vw, 19px) !important;
+}
+
+body [data-corporate-home="true"] >
+[data-home-section="process"] >
+div:nth-child(2) >
+div >
+small {
+  position: relative;
+  z-index: 2;
+  display: block;
+  max-width: 390px;
+  font-size: clamp(11px, 0.82vw, 13px);
+  line-height: 1.42;
+  color: rgba(255, 253, 248, 0.54);
+}
+
+@media (max-width: 1120px) {
+  body [data-corporate-home="true"] >
+  [data-home-section="process"] >
+  div:nth-child(2) >
+  div:nth-child(n) {
+    min-height: 190px !important;
+  }
+}
+
+@media (max-width: 680px) {
+  body [data-corporate-home="true"] >
+  [data-home-section="process"] >
+  div:nth-child(2) >
+  div:nth-child(n) {
+    min-height: 154px !important;
+  }
+
+  body [data-corporate-home="true"] >
+  [data-home-section="process"] >
+  div:nth-child(2) >
+  div >
+  p {
+    margin-bottom: 4px !important;
+    font-size: 14px !important;
+  }
+
+  body [data-corporate-home="true"] >
+  [data-home-section="process"] >
+  div:nth-child(2) >
+  div >
+  small {
+    font-size: 10px;
+    line-height: 1.35;
+  }
+}
+
+@media (max-width: 380px) {
+  body [data-corporate-home="true"] >
+  [data-home-section="process"] >
+  div:nth-child(2) >
+  div:nth-child(n) {
+    min-height: 128px !important;
+  }
+}
+
+/* ALTEKMAR PROCESS LEDGER V4 END */
+
+/* ALTEKMAR EXACT CARD EDGES START */
+
+body [data-corporate-home="true"] >
+[data-home-section="process"] >
+div:nth-child(2) >
+div:nth-child(n) {
+  border:
+    1px solid
+    var(--process-line) !important;
+  border-radius: 0 !important;
+  clip-path: none !important;
+}
+
+@media (min-width: 1121px) {
+  body [data-corporate-home="true"] >
+  [data-home-section="process"] >
+  div:nth-child(2) >
+  div:nth-child(n) {
+    min-height: clamp(166px, 20svh, 190px) !important;
+  }
+}
+
+/* ALTEKMAR EXACT CARD EDGES END */
+
+/* ALTEKMAR CINEMATIC CARD LAYERS START */
+
+body [data-corporate-home="true"]
+[data-card-media],
+body [data-corporate-home="true"]
+[data-card-shade] {
+  position: absolute !important;
+  z-index: 0 !important;
+  display: block !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  border: 0 !important;
+  font-size: 0 !important;
+}
+
+body [data-corporate-home="true"]
+[data-card-media] {
+  inset: -4% 0 -10% !important;
+  width: 100% !important;
+  height: 114% !important;
+}
+
+body [data-corporate-home="true"]
+[data-card-shade] {
+  inset: 0 !important;
+  width: 100% !important;
+  height: 200% !important;
+}
+
+body [data-corporate-home="true"] >
+[data-home-section="process"] >
+div:nth-child(2) >
+div >
+[data-card-media],
+body [data-corporate-home="true"] >
+[data-home-section="process"] >
+div:nth-child(2) >
+div >
+[data-card-shade] {
+  position: absolute !important;
+  z-index: 0 !important;
+}
+
+/* ALTEKMAR CINEMATIC CARD LAYERS END */

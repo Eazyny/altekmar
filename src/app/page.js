@@ -1,7 +1,6 @@
 import CorporateLanding from "~/sections/Home-2/CorporateLanding";
 import CorporateFooter from "~/sections/Common/Footer/CorporateFooter";
 import HeaderFour from "~/sections/Common/Header/HeaderFour";
-import Scroll from "~/sections/Common/Scroll";
 
 export default function HomeTwo() {
   return (
@@ -9,7 +8,6 @@ export default function HomeTwo() {
       <HeaderFour />
       <CorporateLanding />
       <CorporateFooter />
-      <Scroll />
     </div>
   );
 }

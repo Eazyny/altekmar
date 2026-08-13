@@ -11,6 +11,8 @@ const copy = {
     company: "Corporación",
     contact: "Contacto",
     consultation: "Solicitar una consulta",
+    closingEyebrow: "Altekmar Group",
+    closingTitle: "Cinco divisiones. Una sola visión.",
     rights: "Todos los derechos reservados.",
     links: [
       ["Elevadores y movilidad", "/shop/elevators"],
@@ -33,6 +35,8 @@ const copy = {
     company: "Company",
     contact: "Contact",
     consultation: "Request a consultation",
+    closingEyebrow: "Altekmar Group",
+    closingTitle: "Five divisions. One unified vision.",
     rights: "All rights reserved.",
     links: [
       ["Elevators and mobility", "/shop/elevators"],
@@ -56,12 +60,29 @@ export default function CorporateFooter() {
   const text = copy[language] || copy.es;
 
   return (
-    <footer className={styles.footer} data-i18n-managed="true">
+    <footer
+      className={styles.footer}
+      data-home-section="footer"
+      data-i18n-managed="true"
+    >
+      <div className={styles.closing}>
+        <div className={styles.closingCopy}>
+          <p>{text.closingEyebrow}</p>
+          <h2>{text.closingTitle}</h2>
+        </div>
+
+        <div className={styles.closingAside}>
+          <span aria-hidden="true">05</span>
+          <Link href="/contact" className={styles.closingLink}>
+            {text.consultation} <span>↗</span>
+          </Link>
+        </div>
+      </div>
+
       <div className={styles.grid}>
         <div className={styles.brand}>
-          <img src="/brand/altekgoldwide.png" alt="Altekmar Group" />
+          <img src="/brand/altekgoldwide.webp" alt="Altekmar Group" />
           <p>{text.summary}</p>
-          <Link href="/contact">{text.consultation} <span>↗</span></Link>
         </div>
 
         <div>

@@ -2,8 +2,97 @@
 
 import { useEffect, useRef } from "react";
 import Link from "next/link";
+import Image from "next/image";
+import { motion, useReducedMotion } from "motion/react";
 import useDocumentLanguage from "~/i18n/useDocumentLanguage";
 import styles from "./CorporateLanding.module.css";
+
+const heroHeadingVariants = {
+  hidden: ({ reducedMotion }) => ({
+    opacity: reducedMotion ? 1 : 0,
+    y: reducedMotion ? 0 : "110%",
+  }),
+  visible: ({ delay, reducedMotion }) => ({
+    opacity: 1,
+    y: 0,
+    transition: reducedMotion
+      ? { duration: 0 }
+      : {
+          delay,
+          duration: 0.9,
+          ease: [0.16, 1, 0.3, 1],
+        },
+  }),
+};
+
+const sceneVariants = {
+  hidden: {},
+  visible: {
+    transition: {
+      delayChildren: 0.05,
+      staggerChildren: 0.08,
+    },
+  },
+};
+
+const revealVariants = {
+  hidden: {
+    opacity: 0,
+    y: 26,
+  },
+  visible: {
+    opacity: 1,
+    y: 0,
+    transition: {
+      duration: 0.58,
+      ease: [0.22, 1, 0.36, 1],
+    },
+  },
+};
+
+const imageRevealVariants = {
+  hidden: {
+    opacity: 0,
+    scale: 1.035,
+  },
+  visible: {
+    opacity: 1,
+    scale: 1,
+    transition: {
+      duration: 0.72,
+      ease: [0.22, 1, 0.36, 1],
+    },
+  },
+};
+
+const sceneViewport = {
+  once: true,
+  amount: 0.24,
+};
+
+const strengthCardImages = [
+  "/main-assets/img/project/project1_1.png",
+  "/main-assets/img/project/project1_2.png",
+  "/main-assets/img/project/project1_3.png",
+  "/main-assets/img/project/project4_1.png",
+];
+
+const divisionCardImages = [
+  "/main-assets/img/elevators/gots/passenger/800kg-mirror-finish-passenger-elevator-stainless-steel-lift/01-passenger-elevator-5b1aeaaf.jpg",
+  "/main-assets/img/project/project1_1.png",
+  "/main-assets/img/project/project4_1.png",
+  "/main-assets/img/project/project2_1.png",
+  "/main-assets/img/project/project1_3.png",
+];
+
+const processCardImages = [
+  "/main-assets/img/project/project1_2.png",
+  "/main-assets/img/project/project2_1.png",
+  "/main-assets/img/project/project1_3.png",
+  "/main-assets/img/project/project2_2.png",
+  "/main-assets/img/project/project4_1.png",
+  "/main-assets/img/project/project1_1.png",
+];
 
 const copy = {
   es: {
@@ -14,7 +103,7 @@ const copy = {
       "Movilidad · Energía · Clima · Seguridad · Videovigilancia",
     explore: "Explorar soluciones",
     consult: "Hablemos",
-    heroIndex: "01 / 05",
+    heroIndex: "05 DIVISIONES",
     heroCapability: "CAPACIDAD INTEGRADA",
     heroDescriptor: "UNA CORPORACIÓN · CINCO DIVISIONES",
     heroSectors: [
@@ -86,6 +175,14 @@ const copy = {
       "Instalación",
       "Soporte",
     ],
+    processDetails: [
+      "Definimos la necesidad, el alcance y las prioridades.",
+      "Revisamos condiciones técnicas y viabilidad.",
+      "Coordinamos la solución con el proyecto.",
+      "Elegimos equipos según desempeño y entorno.",
+      "Ejecutamos, probamos y dejamos el sistema operativo.",
+      "Acompañamos el mantenimiento y la continuidad.",
+    ],
     featureEyebrow: "CAPACIDAD INTEGRADA",
     featureTitle: "Un solo socio para sistemas esenciales.",
     featureBody:
@@ -97,13 +194,6 @@ const copy = {
       "Acompañamiento antes y después de la instalación",
     ],
     learnMore: "Conocer Altekmar",
-    ctaEyebrow: "HABLEMOS DE SU PROYECTO",
-    ctaTitle:
-      "La solución correcta comienza con una evaluación clara.",
-    ctaBody:
-      "Cuéntenos qué necesita y coordinaremos el equipo, la instalación y el alcance adecuado.",
-    ctaPrimary: "Solicitar una consulta",
-    ctaSecondary: "Ver proyectos",
   },
   en: {
     heroEyebrow: "ALTEKMAR GROUP",
@@ -113,7 +203,7 @@ const copy = {
       "Mobility · Power · Climate · Security · Surveillance",
     explore: "Explore solutions",
     consult: "Let’s talk",
-    heroIndex: "01 / 05",
+    heroIndex: "05 DIVISIONS",
     heroCapability: "INTEGRATED CAPABILITY",
     heroDescriptor: "ONE CORPORATION · FIVE DIVISIONS",
     heroSectors: [
@@ -185,6 +275,14 @@ const copy = {
       "Install",
       "Support",
     ],
+    processDetails: [
+      "We define the need, scope, and priorities.",
+      "We review technical conditions and feasibility.",
+      "We coordinate the solution with the project.",
+      "We select equipment for performance and context.",
+      "We install, test, and leave the system operational.",
+      "We support maintenance and continuity.",
+    ],
     featureEyebrow: "INTEGRATED CAPABILITY",
     featureTitle: "One partner for essential systems.",
     featureBody:
@@ -196,13 +294,6 @@ const copy = {
       "Support before and after installation",
     ],
     learnMore: "About Altekmar",
-    ctaEyebrow: "LET’S DISCUSS YOUR PROJECT",
-    ctaTitle:
-      "The right solution begins with a clear assessment.",
-    ctaBody:
-      "Tell us what you need and we will coordinate the right equipment, installation, and scope.",
-    ctaPrimary: "Request a consultation",
-    ctaSecondary: "View projects",
   },
 };
 
@@ -218,6 +309,8 @@ export default function CorporateLanding() {
   const language = useDocumentLanguage();
   const text = copy[language] || copy.es;
   const heroVideoRef = useRef(null);
+  const reducedMotion = useReducedMotion();
+  const sceneInitial = reducedMotion ? false : "hidden";
 
   useEffect(() => {
     const preference = window.matchMedia(
@@ -294,8 +387,26 @@ export default function CorporateLanding() {
 
           <div className={styles.heroContent}>
             <h1>
-              <span>{text.heroTitle}</span>
-              <strong>{text.heroAccent}</strong>
+              <span className={styles.heroTitleLine}>
+                <motion.span
+                  custom={{ delay: 0.2, reducedMotion }}
+                  initial="hidden"
+                  animate="visible"
+                  variants={heroHeadingVariants}
+                >
+                  {text.heroTitle}
+                </motion.span>
+              </span>
+              <strong className={styles.heroAccentLine}>
+                <motion.span
+                  custom={{ delay: 0.36, reducedMotion }}
+                  initial="hidden"
+                  animate="visible"
+                  variants={heroHeadingVariants}
+                >
+                  {text.heroAccent}
+                </motion.span>
+              </strong>
             </h1>
 
             <p className={styles.heroBody}>
@@ -340,36 +451,59 @@ export default function CorporateLanding() {
         </div>
       </section>
 
-      <section className={`${styles.intro} altekmar-snap-section`} data-home-section="intro">
-        <div className={styles.ruleHeading}>
+      <motion.section
+        className={`${styles.intro} altekmar-snap-section`}
+        data-home-section="intro"
+        initial={sceneInitial}
+        whileInView="visible"
+        viewport={sceneViewport}
+        variants={sceneVariants}
+      >
+        <motion.div className={styles.ruleHeading} variants={revealVariants}>
           <span />
           <p>{text.introEyebrow}</p>
-        </div>
+        </motion.div>
 
         <div className={styles.introGrid}>
-          <h2>{text.introTitle}</h2>
+          <motion.h2 variants={revealVariants}>{text.introTitle}</motion.h2>
 
-          <div>
+          <motion.div variants={revealVariants}>
             <p className={styles.lead}>{text.introBody}</p>
 
-            <div className={styles.strengths}>
+            <motion.div className={styles.strengths} variants={sceneVariants}>
               {text.strengths.map((item, index) => (
-                <div key={item}>
-                  <span>{String(index + 1).padStart(2, "0")}</span>
-                  <p>{item}</p>
-                </div>
+                <motion.div
+                  key={`strength-${index}`}
+                  className={`${styles.interactiveCard} ${styles.strengthCard}`}
+                  variants={revealVariants}
+                  tabIndex={0}
+                  style={{ "--card-image": `url(${strengthCardImages[index]})` }}
+                >
+                  <span className={styles.cardMedia} data-card-media aria-hidden="true" />
+                  <span className={styles.cardShade} data-card-shade aria-hidden="true" />
+                  <div className={styles.interactiveCardContent} data-card-content>
+                    <p>{item}</p>
+                    <div className={styles.interactiveCardDetails}>
+                      <span>{String(index + 1).padStart(2, "0")}</span>
+                    </div>
+                  </div>
+                </motion.div>
               ))}
-            </div>
-          </div>
+            </motion.div>
+          </motion.div>
         </div>
-      </section>
+      </motion.section>
 
-      <section
+      <motion.section
         id="divisions"
         className={`${styles.divisions} altekmar-snap-section`}
         data-home-section="divisions"
+        initial={sceneInitial}
+        whileInView="visible"
+        viewport={sceneViewport}
+        variants={sceneVariants}
       >
-        <div className={styles.divisionHeading}>
+        <motion.div className={styles.divisionHeading} variants={revealVariants}>
           <div>
             <p className={styles.goldEyebrow}>
               {text.divisionsEyebrow}
@@ -377,57 +511,93 @@ export default function CorporateLanding() {
             <h2>{text.divisionsTitle}</h2>
           </div>
           <span className={styles.bigFive}>05</span>
-        </div>
+        </motion.div>
 
-        <div className={styles.divisionGrid}>
+        <motion.div className={styles.divisionGrid} variants={sceneVariants}>
           {text.divisions.map((division) => (
-            <article key={division.number}>
-              <div className={styles.cardRule}>
-                <span>{division.number}</span>
-                <i />
+            <motion.article
+              key={division.number}
+              className={`${styles.interactiveCard} ${styles.divisionCard}`}
+              variants={revealVariants}
+              style={{ "--card-image": `url(${divisionCardImages[Number(division.number) - 1]})` }}
+            >
+              <span className={styles.cardMedia} data-card-media aria-hidden="true" />
+              <span className={styles.cardShade} data-card-shade aria-hidden="true" />
+              <div className={styles.interactiveCardContent} data-card-content>
+                <h3>{division.title}</h3>
+                <div className={styles.interactiveCardDetails}>
+                  <div className={styles.cardRule}>
+                    <span>{division.number}</span>
+                    <i />
+                  </div>
+                  <p>{division.body}</p>
+                  <Link href={division.href}>
+                    {text.viewDivision}
+                    <Arrow />
+                  </Link>
+                </div>
               </div>
-
-              <h3>{division.title}</h3>
-              <p>{division.body}</p>
-
-              <Link href={division.href}>
-                {text.viewDivision}
-                <Arrow />
-              </Link>
-            </article>
+            </motion.article>
           ))}
-        </div>
-      </section>
+        </motion.div>
+      </motion.section>
 
-      <section className={`${styles.process} altekmar-snap-section`} data-home-section="process">
-        <div className={styles.processHeading}>
+      <motion.section
+        className={`${styles.process} altekmar-snap-section`}
+        data-home-section="process"
+        initial={sceneInitial}
+        whileInView="visible"
+        viewport={sceneViewport}
+        variants={sceneVariants}
+      >
+        <motion.div className={styles.processHeading} variants={revealVariants}>
           <p className={styles.goldEyebrow}>{text.processEyebrow}</p>
           <h2>{text.processTitle}</h2>
-        </div>
+        </motion.div>
 
-        <div className={styles.processTrack}>
+        <motion.div className={styles.processTrack} variants={sceneVariants}>
           {text.process.map((step, index) => (
-            <div key={step}>
-              <span>{String(index + 1).padStart(2, "0")}</span>
-              <i />
-              <p>{step}</p>
-            </div>
+            <motion.div
+              key={`process-${index}`}
+              className={`${styles.interactiveCard} ${styles.processCard}`}
+              variants={revealVariants}
+              tabIndex={0}
+              style={{ "--card-image": `url(${processCardImages[index]})` }}
+            >
+              <span className={styles.cardMedia} data-card-media aria-hidden="true" />
+              <span className={styles.cardShade} data-card-shade aria-hidden="true" />
+              <div className={styles.interactiveCardContent} data-card-content>
+                <p>{step}</p>
+                <div className={styles.interactiveCardDetails}>
+                  <span>{String(index + 1).padStart(2, "0")}</span>
+                  <i />
+                  <small>{text.processDetails[index]}</small>
+                </div>
+              </div>
+            </motion.div>
           ))}
-        </div>
-      </section>
+        </motion.div>
+      </motion.section>
 
-      <section
+      <motion.section
         className={`${styles.feature} altekmar-snap-section`}
-        data-home-section="capability-cta"
+        data-home-section="capability"
+        initial={sceneInitial}
+        whileInView="visible"
+        viewport={sceneViewport}
+        variants={sceneVariants}
       >
-        <div className={styles.featureImage}>
-          <img
+        <motion.div className={styles.featureImage} variants={imageRevealVariants}>
+          <Image
             src="/main-assets/img/elevators/elevator_escalator.png"
-            alt=""
+            alt={text.featureTitle}
+            fill
+            unoptimized
+            sizes="(max-width: 991px) 100vw, 55vw"
           />
-        </div>
+        </motion.div>
 
-        <div className={styles.featureCopy}>
+        <motion.div className={styles.featureCopy} variants={revealVariants}>
           <p className={styles.goldEyebrow}>{text.featureEyebrow}</p>
           <h2>{text.featureTitle}</h2>
           <p className={styles.lead}>{text.featureBody}</p>
@@ -440,31 +610,8 @@ export default function CorporateLanding() {
               </li>
             ))}
           </ul>
-
-          <div className="altekmar-inline-cta">
-            <p className={styles.goldEyebrow}>{text.ctaEyebrow}</p>
-            <h3 className="altekmar-inline-cta-title">
-              {text.ctaTitle}
-            </h3>
-            <p className="altekmar-inline-cta-copy">
-              {text.ctaBody}
-            </p>
-
-            <div className="altekmar-inline-cta-actions">
-              <Link href="/contact" className={styles.goldButton}>
-                {text.ctaPrimary}
-                <Arrow />
-              </Link>
-
-              <Link href="/project" className={styles.outlineButton}>
-                {text.ctaSecondary}
-                <Arrow />
-              </Link>
-            </div>
-          </div>
-        </div>
-      </section>
-
+        </motion.div>
+      </motion.section>
 
     </main>
   );

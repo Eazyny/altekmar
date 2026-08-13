@@ -757,6 +757,9 @@
   justify-content: space-between;
   gap: 28px;
   color: rgba(255, 254, 250, 0.78);
+  animation:
+    heroFadeIn
+    700ms 120ms cubic-bezier(0.2, 0.65, 0.25, 1) both;
 }
 
 .heroBrandLine {
@@ -796,22 +799,23 @@
 }
 
 .heroContent {
+  display: grid;
   align-self: center;
-  max-width: min(880px, 72vw);
+  width: min(100%, 1180px);
   padding:
     clamp(42px, 6svh, 72px)
     0
     clamp(36px, 4svh, 54px);
-  animation:
-    heroContentIn
-    900ms cubic-bezier(0.2, 0.65, 0.25, 1) both;
+  grid-template-columns: repeat(12, minmax(0, 1fr));
+  column-gap: clamp(12px, 1.7vw, 28px);
 }
 
 .page .hero h1 {
-  display: flex;
-  max-width: 900px;
-  margin: 0 0 28px;
-  flex-direction: column;
+  display: grid;
+  margin: 0 0 clamp(32px, 5svh, 58px);
+  grid-column: 1 / -1;
+  grid-template-columns: repeat(12, minmax(0, 1fr));
+  column-gap: clamp(12px, 1.7vw, 28px);
   font-size: clamp(60px, 7vw, 112px);
   font-weight: 700;
   letter-spacing: -0.058em;
@@ -820,8 +824,22 @@
   text-wrap: balance;
 }
 
-.page .hero h1 strong {
-  margin-top: 20px;
+.heroTitleLine {
+  display: block;
+  overflow: hidden;
+  grid-column: 1 / 10;
+}
+
+.heroTitleLine > span,
+.heroAccentLine > span {
+  display: block;
+}
+
+.page .hero h1 .heroAccentLine {
+  display: block;
+  overflow: hidden;
+  margin-top: clamp(14px, 2svh, 22px);
+  grid-column: 5 / -1;
   font-family:
     Georgia,
     "Times New Roman",
@@ -834,18 +852,28 @@
 }
 
 .page .heroBody {
+  grid-column: 2 / 8;
   max-width: 760px;
-  margin: 0 0 30px;
+  margin: 0;
   font-size: clamp(10px, 0.86vw, 13px);
   font-weight: 700;
   letter-spacing: 0.15em;
   line-height: 1.7;
   text-transform: uppercase;
   color: rgba(255, 254, 250, 0.72);
+  animation:
+    heroRevealUp
+    780ms 580ms cubic-bezier(0.2, 0.65, 0.25, 1) both;
 }
 
 .page .hero .actions {
+  align-self: start;
+  justify-self: end;
+  grid-column: 8 / -1;
   gap: 20px;
+  animation:
+    heroRevealUp
+    780ms 700ms cubic-bezier(0.2, 0.65, 0.25, 1) both;
 }
 
 .page .hero .goldButton {
@@ -876,6 +904,9 @@
   gap: clamp(36px, 6vw, 94px);
   border-top:
     1px solid rgba(196, 161, 90, 0.28);
+  animation:
+    heroFadeIn
+    800ms 840ms cubic-bezier(0.2, 0.65, 0.25, 1) both;
 }
 
 .hero .visualLabel {
@@ -940,15 +971,25 @@
   color: rgba(255, 254, 250, 0.72);
 }
 
-@keyframes heroContentIn {
+@keyframes heroRevealUp {
   from {
     opacity: 0;
-    transform: translateY(22px);
+    transform: translateY(18px);
   }
 
   to {
     opacity: 1;
     transform: translateY(0);
+  }
+}
+
+@keyframes heroFadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
   }
 }
 
@@ -981,11 +1022,23 @@
   }
 
   .heroContent {
-    max-width: min(780px, 82vw);
+    width: min(100%, 980px);
   }
 
   .page .hero h1 {
     font-size: clamp(56px, 9vw, 98px);
+  }
+
+  .heroTitleLine {
+    grid-column: 1 / 11;
+  }
+
+  .page .hero h1 .heroAccentLine {
+    grid-column: 4 / -1;
+  }
+
+  .page .heroBody {
+    grid-column: 1 / 8;
   }
 
   .heroFooter {
@@ -1043,24 +1096,34 @@
   }
 
   .heroContent {
+    display: block;
     max-width: 100%;
     padding: 34px 0 28px;
   }
 
   .page .hero h1 {
+    display: flex;
     max-width: 620px;
     margin-bottom: 22px;
+    flex-direction: column;
     font-size:
       clamp(46px, 14.5vw, 70px);
   }
 
-  .page .hero h1 strong {
+  .heroTitleLine {
+    width: 100%;
+  }
+
+  .page .hero h1 .heroAccentLine {
+    align-self: flex-end;
+    width: 86%;
     margin-top: 14px;
     font-size: 0.48em;
   }
 
   .page .heroBody {
-    margin-bottom: 24px;
+    width: min(92%, 520px);
+    margin: 0 0 24px;
     font-size: 9px;
     letter-spacing: 0.12em;
   }
@@ -1135,7 +1198,10 @@
     display: none;
   }
 
-  .heroContent,
+  .heroTopbar,
+  .heroBody,
+  .hero .actions,
+  .heroFooter,
   .hero .gridLines {
     animation: none;
   }
@@ -1145,78 +1211,609 @@
 
 
 
-/* ALTEKMAR HERO CENTER + SLOW V5 START */
+/* ALTEKMAR HERO ASYMMETRIC LOAD V6 END */
 
-/*
- * Hero-only alignment refinement.
- * No scroll, footer, header, or other section rules.
- */
+/* ALTEKMAR PREMIUM SCENE SYSTEM START */
 
-.page .hero .heroContent {
-  width: min(100%, 1080px) !important;
-  max-width: 1080px !important;
-  margin-right: auto !important;
-  margin-left: auto !important;
-  justify-self: center !important;
-  text-align: center !important;
+.page .feature {
+  min-height:
+    var(
+      --altekmar-home-viewport,
+      calc(100svh - 118px)
+    );
+  padding-block: clamp(44px, 5svh, 64px);
+  align-items: center;
 }
 
-.page .hero .heroContent h1 {
-  max-width: 1080px !important;
-  margin-right: auto !important;
-  margin-left: auto !important;
-  align-items: center !important;
-  text-align: center !important;
+.featureImage {
+  position: relative;
+  min-height: min(62svh, 580px);
 }
 
-.page .hero .heroBody {
-  margin-right: auto !important;
-  margin-left: auto !important;
-  text-align: center !important;
+.featureImage img {
+  object-position: center;
 }
-
-.page .hero .heroContent .actions {
-  justify-content: center !important;
-}
-
-
-/*
- * Keep the centered composition balanced on tablets.
- */
 
 @media (max-width: 1120px) {
-  .page .hero .heroContent {
-    width: min(100%, 900px) !important;
-    max-width: 900px !important;
-  }
-
-  .page .hero .heroContent h1 {
-    max-width: 900px !important;
+  .page .feature {
+    min-height:
+      calc(100svh - 74px);
   }
 }
 
+@media (max-width: 991px) {
+  .page .feature {
+    padding-block: clamp(54px, 7vw, 78px);
+  }
 
-/*
- * Mobile stays centered, but buttons remain comfortably usable.
- */
+  .featureImage {
+    min-height: min(58svh, 540px);
+  }
+
+}
 
 @media (max-width: 680px) {
-  .page .hero .heroContent {
-    width: 100% !important;
-    max-width: 620px !important;
-    margin-right: auto !important;
-    margin-left: auto !important;
+  .page .feature {
+    min-height:
+      calc(100svh - 68px);
   }
 
-  .page .hero .heroContent h1 {
-    max-width: 620px !important;
+  .featureImage {
+    min-height: 390px;
   }
 
-  .page .hero .heroContent .actions {
-    justify-content: center !important;
+}
+
+/* ALTEKMAR PREMIUM SCENE SYSTEM END */
+
+/* ALTEKMAR SINGLE-SLIDE DIVISIONS START */
+
+@media (min-width: 992px) {
+  .page .divisions {
+    box-sizing: border-box;
+    display: grid;
+    height:
+      var(
+        --altekmar-home-viewport,
+        calc(100svh - 118px)
+      );
+    padding:
+      clamp(28px, 3.5svh, 44px)
+      clamp(28px, 6vw, 96px);
+    overflow: hidden;
+    grid-template-rows: auto minmax(0, 1fr);
+  }
+
+  .page .divisionHeading {
+    margin-bottom: clamp(20px, 2.8svh, 30px);
+    align-items: center;
+  }
+
+  .page .divisionHeading .goldEyebrow {
+    margin-bottom: clamp(10px, 1.5svh, 16px);
+  }
+
+  .page .divisionHeading h2 {
+    max-width: 980px;
+    font-size:
+      clamp(
+        38px,
+        min(4vw, 6svh),
+        64px
+      );
+    line-height: 0.96;
+  }
+
+  .page .bigFive {
+    font-size:
+      clamp(
+        64px,
+        min(8vw, 12svh),
+        112px
+      );
+  }
+
+  .page .divisionGrid {
+    min-height: 0;
+    grid-template-rows:
+      repeat(2, minmax(0, 1fr));
+  }
+
+  .page .divisionGrid article {
+    display: flex;
+    min-height: 0;
+    padding:
+      clamp(18px, 2.2svh, 28px)
+      clamp(20px, 2vw, 30px);
+    flex-direction: column;
+  }
+
+  .page .cardRule {
+    margin-bottom: clamp(14px, 2svh, 22px);
+  }
+
+  .page .divisionGrid h3 {
+    margin-bottom: clamp(8px, 1.2svh, 14px);
+    font-size:
+      clamp(
+        20px,
+        min(2vw, 3.3svh),
+        30px
+      );
+    line-height: 1.02;
+  }
+
+  .page .divisionGrid article > p {
+    max-width: 96%;
+    margin: 0;
+    font-size: clamp(13px, 1vw, 15px);
+    line-height: 1.48;
+  }
+
+  .page .divisionGrid article > a {
+    position: static;
+    margin-top: auto;
+    padding-top: clamp(10px, 1.7svh, 18px);
   }
 }
 
+/* ALTEKMAR SINGLE-SLIDE DIVISIONS END */
 
-/* ALTEKMAR HERO CENTER + SLOW V5 END */
+/* ALTEKMAR ARCHITECTURAL CARD SYSTEM START */
 
+.page .strengths,
+.page .divisionGrid,
+.page .processTrack {
+  border: 0;
+  gap: clamp(10px, 1vw, 16px);
+}
+
+.page .strengths > div,
+.page .divisionGrid article,
+.page .processTrack > div {
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+  transition:
+    border-color 220ms ease,
+    background-color 220ms ease;
+  border-radius: 0;
+  clip-path: none;
+}
+
+.page .strengths > div::after,
+.page .divisionGrid article::after,
+.page .processTrack > div::after {
+  display: none;
+}
+
+.page .strengths {
+  grid-template-columns: repeat(12, minmax(0, 1fr));
+}
+
+.page .strengths > div {
+  min-height: 112px;
+  padding: clamp(18px, 2vw, 26px);
+  background: rgba(255, 254, 250, 0.46);
+  border: 1px solid rgba(11, 11, 12, 0.18);
+}
+
+.page .strengths > div:nth-child(1),
+.page .strengths > div:nth-child(4) {
+  grid-column: span 7;
+}
+
+.page .strengths > div:nth-child(2),
+.page .strengths > div:nth-child(3) {
+  grid-column: span 5;
+}
+
+.page .strengths > div:nth-child(2),
+.page .strengths > div:nth-child(4) {
+  transform-origin: right center;
+}
+
+.page .strengths > div:hover {
+  background: rgba(255, 254, 250, 0.9);
+  border-color: rgba(155, 121, 61, 0.52);
+}
+
+.page .strengths p {
+  margin-top: 16px;
+}
+
+.page .divisionGrid article {
+  background: #0d0d0e;
+  border: 1px solid rgba(196, 161, 90, 0.32);
+}
+
+.page .divisionGrid article:hover {
+  background-color: #121211;
+  border-color: rgba(196, 161, 90, 0.72);
+}
+
+.page .processTrack {
+  align-items: center;
+  grid-template-columns:
+    1.08fr 0.9fr 1fr 1.12fr 0.88fr 1.02fr;
+}
+
+.page .processTrack > div {
+  display: flex;
+  min-height: 190px;
+  padding: 24px 22px;
+  flex-direction: column;
+  background: rgba(255, 254, 250, 0.82);
+  border: 1px solid rgba(11, 11, 12, 0.18);
+}
+
+.page .processTrack > div:nth-child(2),
+.page .processTrack > div:nth-child(5) {
+  min-height: 166px;
+}
+
+.page .processTrack > div:nth-child(3),
+.page .processTrack > div:nth-child(6) {
+  min-height: 210px;
+}
+
+.page .processTrack > div:hover {
+  background: var(--paper);
+  border-color: rgba(155, 121, 61, 0.6);
+}
+
+.page .processTrack i {
+  margin: 20px 0;
+}
+
+.page .processTrack p {
+  margin: auto 0 0;
+}
+
+@media (min-width: 992px) {
+  .page .divisionGrid {
+    grid-template-columns: repeat(12, minmax(0, 1fr));
+  }
+
+  .page .divisionGrid article:nth-child(1) {
+    grid-column: span 7;
+  }
+
+  .page .divisionGrid article:nth-child(2) {
+    grid-column: span 5;
+  }
+
+  .page .divisionGrid article:nth-child(3) {
+    grid-column: span 3;
+  }
+
+  .page .divisionGrid article:nth-child(4) {
+    grid-column: span 4;
+  }
+
+  .page .divisionGrid article:nth-child(5) {
+    grid-column: span 5;
+  }
+}
+
+@media (max-width: 991px) {
+  .page .processTrack {
+    align-items: stretch;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .page .processTrack > div,
+  .page .processTrack > div:nth-child(n) {
+    min-height: 180px;
+  }
+}
+
+@media (max-width: 767px) {
+  .page .strengths,
+  .page .processTrack {
+    grid-template-columns: 1fr;
+  }
+
+  .page .strengths > div:nth-child(n) {
+    grid-column: auto;
+  }
+
+  .page .divisionGrid article,
+  .page .processTrack > div,
+  .page .processTrack > div:nth-child(n) {
+    min-height: auto;
+  }
+
+  .page .divisionGrid article + article {
+    margin-top: 12px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .page .strengths > div,
+  .page .divisionGrid article,
+  .page .processTrack > div {
+    transition: none;
+  }
+}
+
+/* ALTEKMAR ARCHITECTURAL CARD SYSTEM END */
+
+/* ALTEKMAR CINEMATIC REVEAL CARDS START */
+
+.page .interactiveCard {
+  --card-duration: 640ms;
+  --card-ease: cubic-bezier(0.19, 1, 0.22, 1);
+  position: relative;
+  isolation: isolate;
+  display: flex;
+  padding: 0 !important;
+  overflow: hidden;
+  align-items: flex-end;
+  color: var(--paper);
+  background: #090a0a !important;
+  border: 1px solid rgba(196, 161, 90, 0.3);
+  border-radius: 0;
+  clip-path: none;
+}
+
+.cardMedia,
+.cardShade {
+  position: absolute !important;
+  z-index: 0;
+  display: block !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  pointer-events: none;
+  border: 0 !important;
+  font-size: 0 !important;
+}
+
+.cardMedia {
+  inset: -4% 0 -10% !important;
+  width: 100% !important;
+  height: 114% !important;
+  opacity: 0.72;
+  background-image: var(--card-image);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  filter: grayscale(0.68) saturate(0.72) contrast(1.08);
+  transform: translateY(0) scale(1.025);
+  transition:
+    transform calc(var(--card-duration) * 1.35) var(--card-ease),
+    filter var(--card-duration) var(--card-ease),
+    opacity var(--card-duration) var(--card-ease);
+}
+
+.cardShade {
+  inset: 0 !important;
+  width: 100% !important;
+  height: 200% !important;
+  background-image:
+    linear-gradient(
+      to bottom,
+      rgba(5, 6, 6, 0.03) 0%,
+      rgba(5, 6, 6, 0.08) 18%,
+      rgba(5, 6, 6, 0.3) 38%,
+      rgba(5, 6, 6, 0.68) 62%,
+      rgba(5, 6, 6, 0.94) 82%,
+      #050606 100%
+    );
+  transform: translateY(0);
+  transition: transform calc(var(--card-duration) * 1.55) var(--card-ease);
+}
+
+.interactiveCardContent {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  width: 100%;
+  padding: clamp(18px, 2vw, 28px);
+  flex-direction: column;
+  align-items: flex-start;
+  transform: translateY(calc(100% - 5.25rem));
+  transition: transform var(--card-duration) var(--card-ease);
+}
+
+.interactiveCardDetails {
+  width: 100%;
+  opacity: 0;
+  transform: translateY(16px);
+  transition:
+    opacity var(--card-duration) var(--card-ease),
+    transform var(--card-duration) var(--card-ease);
+}
+
+.interactiveCard:hover .cardMedia,
+.interactiveCard:focus-within .cardMedia,
+.interactiveCard:focus-visible .cardMedia {
+  opacity: 0.9;
+  filter: grayscale(0.3) saturate(0.82) contrast(1.06);
+  transform: translateY(-4%) scale(1.06);
+}
+
+.interactiveCard:hover .cardShade,
+.interactiveCard:focus-within .cardShade,
+.interactiveCard:focus-visible .cardShade {
+  transform: translateY(-50%);
+}
+
+.interactiveCard:hover .interactiveCardContent,
+.interactiveCard:focus-within .interactiveCardContent,
+.interactiveCard:focus-visible .interactiveCardContent {
+  transform: translateY(0);
+}
+
+.interactiveCard:hover .interactiveCardDetails,
+.interactiveCard:focus-within .interactiveCardDetails,
+.interactiveCard:focus-visible .interactiveCardDetails {
+  opacity: 1;
+  transform: translateY(0);
+  transition-delay: calc(var(--card-duration) / 8);
+}
+
+.interactiveCard:focus-visible {
+  outline: 2px solid var(--gold);
+  outline-offset: 3px;
+}
+
+.page .strengthCard {
+  min-height: 154px;
+  border-color: rgba(155, 121, 61, 0.42);
+}
+
+.strengthCard .interactiveCardContent > p {
+  margin: 0;
+  font-size: clamp(16px, 1.25vw, 20px);
+  line-height: 1.12;
+  color: var(--paper);
+}
+
+.strengthCard .interactiveCardDetails {
+  margin-top: 16px;
+}
+
+.strengthCard .interactiveCardDetails > span {
+  font-family: Georgia, serif;
+  font-size: 22px;
+  color: var(--gold);
+}
+
+.divisionCard .interactiveCardContent {
+  padding: clamp(18px, 2vw, 28px);
+}
+
+.page .divisionCard h3 {
+  margin: 0;
+  font-size: clamp(21px, min(2vw, 3.1svh), 30px);
+  line-height: 1.03;
+  color: var(--paper);
+}
+
+.divisionCard .interactiveCardDetails {
+  margin-top: clamp(12px, 1.7svh, 18px);
+}
+
+.divisionCard .cardRule {
+  margin: 0 0 10px;
+}
+
+.divisionCard .interactiveCardDetails > p {
+  max-width: 96%;
+  margin: 0;
+  font-size: clamp(12px, 0.9vw, 14px);
+  line-height: 1.42;
+  color: rgba(255, 254, 250, 0.74);
+}
+
+.divisionCard .interactiveCardDetails > a {
+  position: static;
+  display: inline-flex;
+  margin-top: clamp(10px, 1.4svh, 15px);
+  align-items: center;
+  gap: 10px;
+  color: var(--gold);
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.page .processCard {
+  padding: 0 !important;
+  color: var(--paper);
+  background: #090a0a !important;
+  border-color: rgba(196, 161, 90, 0.3) !important;
+}
+
+.processCard .interactiveCardContent {
+  padding: clamp(16px, 1.6vw, 22px);
+  transform: translateY(calc(100% - 3.8rem));
+}
+
+.processCard .interactiveCardContent > p {
+  max-width: none !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  font-size: clamp(17px, 1.2vw, 20px) !important;
+  line-height: 1.1;
+  color: var(--paper);
+}
+
+.processCard .interactiveCardDetails {
+  margin-top: 12px;
+}
+
+.processCard .interactiveCardDetails > span {
+  padding: 0 !important;
+  font-family: Georgia, serif;
+  font-size: clamp(24px, 2vw, 32px) !important;
+  line-height: 1;
+  color: var(--gold);
+}
+
+.processCard .interactiveCardDetails > i {
+  display: block;
+  height: 1px;
+  margin: 9px 0;
+  background: rgba(196, 161, 90, 0.46);
+}
+
+.processCard .interactiveCardDetails > i::after {
+  display: none;
+}
+
+.processCard .interactiveCardDetails > small {
+  display: block;
+  max-width: 390px;
+  font-size: clamp(10px, 0.78vw, 12px);
+  line-height: 1.35;
+  color: rgba(255, 254, 250, 0.7);
+}
+
+@media (hover: none), (max-width: 991px) {
+  .interactiveCardContent,
+  .processCard .interactiveCardContent {
+    transform: translateY(0);
+  }
+
+  .interactiveCardDetails {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  .cardMedia {
+    opacity: 0.82;
+    transform: translateY(-2%) scale(1.04);
+  }
+
+  .cardShade {
+    transform: translateY(-50%);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .cardMedia,
+  .cardShade,
+  .interactiveCardContent,
+  .interactiveCardDetails {
+    transition: none;
+  }
+
+  .interactiveCardContent,
+  .processCard .interactiveCardContent {
+    transform: none;
+  }
+
+  .interactiveCardDetails {
+    opacity: 1;
+    transform: none;
+  }
+
+  .cardShade {
+    transform: translateY(-50%);
+  }
+}
+
+/* ALTEKMAR CINEMATIC REVEAL CARDS END */
