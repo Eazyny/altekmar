@@ -1,27 +1,52 @@
 "use client";
 
 import Link from "next/link";
+import { motion, useReducedMotion } from "motion/react";
 import catalog from "~/data/gots-elevator-catalog.json";
 import useDocumentLanguage from "~/i18n/useDocumentLanguage";
+import styles from "./ElevatorCatalog.module.css";
 
 const copy = {
   es: {
-    eyebrow: "Catalogo de movilidad vertical",
-    title: "Explora nuestras categorias.",
+    eyebrow: "SEIS FORMAS DE ELEVAR",
+    title: "Una solución para cada",
+    accent: "forma de avanzar.",
     intro:
-      "Cada categoria mantiene sus productos separados para que puedas comparar la solucion correcta para tu proyecto.",
+      "Desde residencias privadas hasta infraestructura de alto tránsito, cada categoría responde a una necesidad distinta.",
     products: "productos",
-    view: "Ver categoria",
-    authorized: "Distribuidor autorizado",
+    view: "EXPLORAR CATEGORÍA",
+    authorized: "DISTRIBUIDOR AUTORIZADO",
   },
   en: {
-    eyebrow: "Vertical mobility catalog",
-    title: "Explore our categories.",
+    eyebrow: "SIX WAYS TO RISE",
+    title: "A solution for every",
+    accent: "way forward.",
     intro:
-      "Each category keeps its products separate so you can compare the right solution for your project.",
+      "From private residences to high-traffic infrastructure, each category answers a different need.",
     products: "products",
-    view: "View category",
-    authorized: "Authorized retailer",
+    view: "EXPLORE CATEGORY",
+    authorized: "AUTHORIZED RETAILER",
+  },
+};
+
+const cardSpans = ["wide", "standard", "standard", "standard", "wide", "standard"];
+
+const scene = {
+  hidden: {},
+  visible: {
+    transition: {
+      delayChildren: 0.08,
+      staggerChildren: 0.085,
+    },
+  },
+};
+
+const reveal = {
+  hidden: { opacity: 0, y: 34 },
+  visible: {
+    opacity: 1,
+    y: 0,
+    transition: { duration: 0.66, ease: [0.16, 1, 0.3, 1] },
   },
 };
 
@@ -39,26 +64,34 @@ function imageForCategory(category) {
 
 export default function ElevatorCategoryHub() {
   const language = useDocumentLanguage();
+  const reduceMotion = useReducedMotion();
   const text = copy[language];
 
   return (
-    <section
-      className="space-top space-extra-bottom"
+    <motion.section
+      id="elevator-categories"
+      className={styles.catalogSection}
       data-i18n-managed="true"
+      initial={reduceMotion ? false : "hidden"}
+      whileInView="visible"
+      viewport={{ once: true, amount: 0.1 }}
+      variants={scene}
     >
-      <div className="container">
-        <div className="row justify-content-center">
-          <div className="col-xl-8">
-            <div className="title-area text-center">
-              <span className="sub-title">{text.eyebrow}</span>
-              <h2 className="sec-title">{text.title}</h2>
-              <p>{text.intro}</p>
-            </div>
+      <div className={styles.catalogInner}>
+        <motion.header className={styles.catalogHeader} variants={reveal}>
+          <span className={styles.sectionEyebrow}>{text.eyebrow}</span>
+          <h2>
+            {text.title}
+            <em>{text.accent}</em>
+          </h2>
+          <div className={styles.headerNote}>
+            <span aria-hidden="true">06</span>
+            <p>{text.intro}</p>
           </div>
-        </div>
+        </motion.header>
 
-        <div className="row gy-40">
-          {catalog.categories.map((category) => {
+        <div className={styles.categoryGrid}>
+          {catalog.categories.map((category, index) => {
             const title =
               category.title?.[language] || category.title?.en || category.slug;
             const description =
@@ -67,46 +100,46 @@ export default function ElevatorCategoryHub() {
               "";
 
             return (
-              <div className="col-xl-4 col-md-6" key={category.slug}>
-                <article className="product-card altekmar-category-card">
-                  <div className="product-img">
-                    <img src={imageForCategory(category)} alt={title} />
-                  </div>
+              <motion.article
+                className={`${styles.categoryCard} ${styles[cardSpans[index]]}`}
+                key={category.slug}
+                tabIndex={0}
+                variants={reveal}
+              >
+                <span
+                  className={styles.cardMedia}
+                  style={{ "--card-image": `url("${imageForCategory(category)}")` }}
+                  aria-hidden="true"
+                />
+                <span className={styles.cardShade} aria-hidden="true" />
 
-                  <div className="product-content">
-                    <span className="star-rating altekmar-product-label">
-                      <i className="ri-verified-badge-fill" />
-                      {text.authorized}
+                <div className={styles.cardContent}>
+                  <div className={styles.cardHeading}>
+                    <span className={styles.cardIndex}>
+                      {String(index + 1).padStart(2, "0")}
                     </span>
+                    <span className={styles.cardRule} aria-hidden="true" />
+                  </div>
+                  <h3>{title}</h3>
 
-                    <h3 className="product-title">
-                      <Link href={`/shop/elevators/${category.slug}`}>
-                        {title}
-                      </Link>
-                    </h3>
-
-                    <p className="altekmar-category-description">
-                      {description}
-                    </p>
-
-                    <div className="altekmar-category-footer">
+                  <div className={styles.cardDetails}>
+                    <span className={styles.authorized}>{text.authorized}</span>
+                    <p>{description}</p>
+                    <div className={styles.cardFooter}>
                       <span>
                         {category.productCount} {text.products}
                       </span>
-                      <Link
-                        className="btn style-border"
-                        href={`/shop/elevators/${category.slug}`}
-                      >
-                        {text.view}
+                      <Link href={`/shop/elevators/${category.slug}`}>
+                        {text.view} <span aria-hidden="true">↗</span>
                       </Link>
                     </div>
                   </div>
-                </article>
-              </div>
+                </div>
+              </motion.article>
             );
           })}
         </div>
       </div>
-    </section>
+    </motion.section>
   );
 }

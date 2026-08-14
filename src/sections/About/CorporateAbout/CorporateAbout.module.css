@@ -864,3 +864,367 @@
     transition: none;
   }
 }
+
+/* ALTEKMAR ABOUT SYSTEM V2 START */
+
+.heroTitleLine,
+.heroAccentLine {
+  display: block;
+  overflow: hidden;
+}
+
+.heroTitleLine > span,
+.heroAccentLine > span {
+  display: block;
+}
+
+.heroSystem {
+  background: var(--charcoal);
+}
+
+.heroMedia {
+  position: absolute;
+  z-index: -3;
+  inset: 0;
+  display: block;
+  opacity: 0.38;
+  background:
+    linear-gradient(
+      180deg,
+      rgba(9, 10, 10, 0.08),
+      rgba(9, 10, 10, 0.8)
+    ),
+    url("/main-assets/img/project/project1_3.png") center / cover;
+  filter: grayscale(0.72) contrast(1.08);
+  transform: scale(1.035);
+}
+
+.heroGrid {
+  z-index: -2;
+}
+
+.principleGrid,
+.divisionRail,
+.directionGrid {
+  border: 0;
+  gap: clamp(10px, 1vw, 16px);
+}
+
+.revealCard {
+  --card-duration: 640ms;
+  --card-ease: cubic-bezier(0.19, 1, 0.22, 1);
+  position: relative;
+  isolation: isolate;
+  display: flex;
+  padding: 0 !important;
+  overflow: hidden;
+  align-items: flex-end;
+  color: var(--paper);
+  background: #090a0a;
+  border: 1px solid rgba(196, 161, 90, 0.3) !important;
+  border-radius: 0;
+  clip-path: none;
+}
+
+.cardMedia,
+.cardShade {
+  position: absolute;
+  z-index: 0;
+  display: block;
+  margin: 0;
+  padding: 0;
+  pointer-events: none;
+}
+
+.cardMedia {
+  inset: -4% 0 -10%;
+  width: 100%;
+  height: 114%;
+  opacity: 0.72;
+  background-image: var(--card-image);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  filter: grayscale(0.68) saturate(0.72) contrast(1.08);
+  transform: translateY(0) scale(1.025);
+  transition:
+    transform calc(var(--card-duration) * 1.35) var(--card-ease),
+    filter var(--card-duration) var(--card-ease),
+    opacity var(--card-duration) var(--card-ease);
+}
+
+.cardShade {
+  inset: 0;
+  width: 100%;
+  height: 200%;
+  background:
+    linear-gradient(
+      to bottom,
+      rgba(5, 6, 6, 0.03) 0%,
+      rgba(5, 6, 6, 0.08) 18%,
+      rgba(5, 6, 6, 0.3) 38%,
+      rgba(5, 6, 6, 0.68) 62%,
+      rgba(5, 6, 6, 0.94) 82%,
+      #050606 100%
+    );
+  transform: translateY(0);
+  transition: transform calc(var(--card-duration) * 1.55) var(--card-ease);
+}
+
+.cardContent {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  width: 100%;
+  padding: clamp(18px, 2vw, 28px);
+  flex-direction: column;
+  align-items: flex-start;
+  transform: translateY(calc(100% - 5.2rem));
+  transition: transform var(--card-duration) var(--card-ease);
+}
+
+.cardDetails {
+  width: 100%;
+  margin-top: 15px;
+  opacity: 0;
+  transform: translateY(16px);
+  transition:
+    opacity var(--card-duration) var(--card-ease),
+    transform var(--card-duration) var(--card-ease);
+}
+
+.revealCard:hover .cardMedia,
+.revealCard:focus-within .cardMedia,
+.revealCard:focus-visible .cardMedia {
+  opacity: 0.9;
+  filter: grayscale(0.3) saturate(0.82) contrast(1.06);
+  transform: translateY(-4%) scale(1.06);
+}
+
+.revealCard:hover .cardShade,
+.revealCard:focus-within .cardShade,
+.revealCard:focus-visible .cardShade {
+  transform: translateY(-50%);
+}
+
+.revealCard:hover .cardContent,
+.revealCard:focus-within .cardContent,
+.revealCard:focus-visible .cardContent {
+  transform: translateY(0);
+}
+
+.revealCard:hover .cardDetails,
+.revealCard:focus-within .cardDetails,
+.revealCard:focus-visible .cardDetails {
+  opacity: 1;
+  transform: translateY(0);
+  transition-delay: calc(var(--card-duration) / 8);
+}
+
+.revealCard:focus-visible {
+  outline: 2px solid var(--gold);
+  outline-offset: 3px;
+}
+
+.principleGrid article {
+  min-height: clamp(176px, 23svh, 218px);
+}
+
+.principleCard h3,
+.directionCard h3 {
+  margin: 0;
+  font-size: clamp(20px, 1.55vw, 26px);
+  letter-spacing: -0.03em;
+  line-height: 1.05;
+  color: var(--paper);
+}
+
+.principleCard .principleTop {
+  margin-bottom: 12px;
+}
+
+.principleCard .cardDetails p,
+.directionCard .cardDetails p {
+  margin: 0;
+  font-size: clamp(12px, 0.92vw, 14px);
+  line-height: 1.5;
+  color: rgba(255, 254, 250, 0.72);
+}
+
+.divisionRail > div {
+  min-width: 0;
+}
+
+.division {
+  width: 100%;
+  height: 100%;
+  min-height: clamp(260px, 34svh, 350px);
+  justify-content: flex-end;
+}
+
+.division .cardContent {
+  transform: translateY(calc(100% - 6.1rem));
+}
+
+.division h3 {
+  margin: 0;
+  font-size: clamp(21px, 1.65vw, 29px);
+}
+
+.division .cardDetails > p {
+  margin: 12px 0 0;
+  font-size: 13px;
+  line-height: 1.5;
+  color: rgba(255, 254, 250, 0.72);
+}
+
+.divisionTop {
+  padding-bottom: 10px;
+  border-bottom: 1px solid var(--dark-line);
+}
+
+.divisionLink {
+  margin-top: 16px;
+  padding-top: 13px;
+}
+
+.directionGrid article {
+  min-height: clamp(230px, 31svh, 300px);
+  grid-template-rows: none;
+}
+
+.directionCard .directionNumber {
+  margin-bottom: 14px;
+  font-size: clamp(42px, 4vw, 66px);
+  color: rgba(196, 161, 90, 0.72);
+}
+
+.directionCard .cardDetails {
+  margin-top: 12px;
+}
+
+.promise {
+  background:
+    linear-gradient(
+      90deg,
+      rgba(245, 242, 235, 0.97),
+      rgba(245, 242, 235, 0.9) 58%,
+      rgba(245, 242, 235, 0.7)
+    ),
+    url("/main-assets/img/project/project1_2.png") center / cover;
+}
+
+@media (min-width: 1121px) {
+  .story,
+  .integration,
+  .direction,
+  .promise {
+    min-height: calc(100svh - var(--altekmar-snap-header, 118px));
+    padding-top: clamp(38px, 5svh, 56px);
+    padding-bottom: clamp(34px, 4.5svh, 52px);
+  }
+
+  .sectionLabel,
+  .integrationHeading,
+  .directionHeading {
+    margin-bottom: clamp(28px, 3.6svh, 40px);
+  }
+
+  .principleGrid {
+    margin-top: clamp(28px, 3.6svh, 42px);
+  }
+
+  .story h2 {
+    font-size: clamp(42px, min(4.6vw, 6.5svh), 72px);
+  }
+
+  .integration h2,
+  .directionHeading h2 {
+    font-size: clamp(40px, min(4.4vw, 6.2svh), 70px);
+  }
+}
+
+@media (max-width: 1120px) {
+  .divisionRail > div:last-child {
+    grid-column: 1 / -1;
+  }
+
+  .division,
+  .divisionRail > div:last-child .division {
+    min-height: 270px;
+  }
+
+  .directionGrid article {
+    display: flex;
+    min-height: 220px;
+  }
+}
+
+@media (hover: none), (max-width: 991px) {
+  .cardContent,
+  .division .cardContent {
+    transform: translateY(0);
+  }
+
+  .cardDetails {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  .cardMedia {
+    opacity: 0.82;
+    transform: translateY(-2%) scale(1.04);
+  }
+
+  .cardShade {
+    transform: translateY(-50%);
+  }
+}
+
+@media (max-width: 680px) {
+  .principleGrid,
+  .divisionRail,
+  .directionGrid {
+    gap: 10px;
+  }
+
+  .principleGrid article,
+  .division,
+  .divisionRail > div:last-child .division,
+  .directionGrid article {
+    min-height: 250px;
+  }
+
+  .divisionRail > div:last-child {
+    grid-column: auto;
+  }
+
+  .heroSystem {
+    min-height: 58svh;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .cardMedia,
+  .cardShade,
+  .cardContent,
+  .cardDetails {
+    transition: none;
+  }
+
+  .cardContent,
+  .division .cardContent {
+    transform: none;
+  }
+
+  .cardDetails {
+    opacity: 1;
+    transform: none;
+  }
+
+  .cardShade {
+    transform: translateY(-50%);
+  }
+}
+
+/* ALTEKMAR ABOUT SYSTEM V2 END */

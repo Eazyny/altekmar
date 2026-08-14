@@ -1,9 +1,73 @@
 "use client";
 
 import Link from "next/link";
+import { motion, useReducedMotion } from "motion/react";
 import CorporateFooter from "~/sections/Common/Footer/CorporateFooter";
 import useDocumentLanguage from "~/i18n/useDocumentLanguage";
 import styles from "./CorporateAbout.module.css";
+
+const sceneVariants = {
+  hidden: {},
+  visible: {
+    transition: {
+      delayChildren: 0.05,
+      staggerChildren: 0.08,
+    },
+  },
+};
+
+const revealVariants = {
+  hidden: { opacity: 0, y: 24 },
+  visible: {
+    opacity: 1,
+    y: 0,
+    transition: {
+      duration: 0.58,
+      ease: [0.22, 1, 0.36, 1],
+    },
+  },
+};
+
+const headingVariants = {
+  hidden: ({ reducedMotion }) => ({
+    opacity: reducedMotion ? 1 : 0,
+    y: reducedMotion ? 0 : "108%",
+  }),
+  visible: ({ delay, reducedMotion }) => ({
+    opacity: 1,
+    y: 0,
+    transition: reducedMotion
+      ? { duration: 0 }
+      : {
+          delay,
+          duration: 0.88,
+          ease: [0.16, 1, 0.3, 1],
+        },
+  }),
+};
+
+const sceneViewport = { once: true, amount: 0.2 };
+
+const principleImages = [
+  "/main-assets/img/project/project1_3.png",
+  "/main-assets/img/project/project2_1.png",
+  "/main-assets/img/project/project4_1.png",
+  "/main-assets/img/project/project1_1.png",
+];
+
+const divisionImages = [
+  "/main-assets/img/elevators/gots/passenger/800kg-mirror-finish-passenger-elevator-stainless-steel-lift/01-passenger-elevator-5b1aeaaf.jpg",
+  "/main-assets/img/project/project1_1.png",
+  "/main-assets/img/project/project4_1.png",
+  "/main-assets/img/project/project2_1.png",
+  "/main-assets/img/project/project1_3.png",
+];
+
+const directionImages = [
+  "/main-assets/img/project/project1_2.png",
+  "/main-assets/img/project/project1_3.png",
+  "/main-assets/img/project/project1_1.png",
+];
 
 const copy = {
   es: {
@@ -298,6 +362,8 @@ function Arrow() {
 export default function CorporateAbout() {
   const language = useDocumentLanguage();
   const text = copy[language] || copy.es;
+  const reducedMotion = useReducedMotion();
+  const sceneInitial = reducedMotion ? false : "hidden";
 
   return (
     <>
@@ -306,14 +372,37 @@ export default function CorporateAbout() {
         data-corporate-about="true"
         data-i18n-managed="true"
       >
-        <section className={`${styles.section} ${styles.hero}`}>
-          <div className={styles.heroCopy}>
+        <motion.section
+          className={`${styles.section} ${styles.hero}`}
+          initial={sceneInitial}
+          animate="visible"
+          variants={sceneVariants}
+        >
+          <motion.div className={styles.heroCopy} variants={revealVariants}>
             <div className={styles.heroRule} />
             <p className={styles.eyebrow}>{text.heroEyebrow}</p>
 
             <h1>
-              <span>{text.heroTitle}</span>
-              <strong>{text.heroAccent}</strong>
+              <span className={styles.heroTitleLine}>
+                <motion.span
+                  custom={{ delay: 0.16, reducedMotion }}
+                  initial="hidden"
+                  animate="visible"
+                  variants={headingVariants}
+                >
+                  {text.heroTitle}
+                </motion.span>
+              </span>
+              <strong className={styles.heroAccentLine}>
+                <motion.span
+                  custom={{ delay: 0.32, reducedMotion }}
+                  initial="hidden"
+                  animate="visible"
+                  variants={headingVariants}
+                >
+                  {text.heroAccent}
+                </motion.span>
+              </strong>
             </h1>
 
             <p className={styles.heroBody}>{text.heroBody}</p>
@@ -329,9 +418,10 @@ export default function CorporateAbout() {
                 <Arrow />
               </Link>
             </div>
-          </div>
+          </motion.div>
 
-          <div className={styles.heroSystem}>
+          <motion.div className={styles.heroSystem} variants={revealVariants}>
+            <span className={styles.heroMedia} aria-hidden="true" />
             <div className={styles.heroGrid} />
 
             <div className={styles.heroNumber}>
@@ -348,42 +438,66 @@ export default function CorporateAbout() {
                 </div>
               ))}
             </div>
-          </div>
-        </section>
+          </motion.div>
+        </motion.section>
 
-        <section className={`${styles.section} ${styles.story}`}>
-          <div className={styles.sectionLabel}>
+        <motion.section
+          className={`${styles.section} ${styles.story}`}
+          initial={sceneInitial}
+          whileInView="visible"
+          viewport={sceneViewport}
+          variants={sceneVariants}
+        >
+          <motion.div className={styles.sectionLabel} variants={revealVariants}>
             <span />
             <p>{text.storyEyebrow}</p>
-          </div>
+          </motion.div>
 
           <div className={styles.storyGrid}>
             <div>
-              <h2>{text.storyTitle}</h2>
+              <motion.h2 variants={revealVariants}>{text.storyTitle}</motion.h2>
             </div>
 
-            <div className={styles.storyCopy}>
+            <motion.div className={styles.storyCopy} variants={revealVariants}>
               <p className={styles.lead}>{text.storyLead}</p>
               <p>{text.storyBody}</p>
-            </div>
+            </motion.div>
           </div>
 
-          <div className={styles.principleGrid}>
-            {text.principles.map((principle) => (
-              <article key={principle.number}>
-                <div className={styles.principleTop}>
-                  <span>{principle.number}</span>
-                  <i />
+          <motion.div className={styles.principleGrid} variants={sceneVariants}>
+            {text.principles.map((principle, index) => (
+              <motion.article
+                key={principle.number}
+                className={`${styles.revealCard} ${styles.principleCard}`}
+                variants={revealVariants}
+                tabIndex={0}
+                style={{ "--card-image": `url(${principleImages[index]})` }}
+              >
+                <span className={styles.cardMedia} aria-hidden="true" />
+                <span className={styles.cardShade} aria-hidden="true" />
+                <div className={styles.cardContent}>
+                  <h3>{principle.title}</h3>
+                  <div className={styles.cardDetails}>
+                    <div className={styles.principleTop}>
+                      <span>{principle.number}</span>
+                      <i />
+                    </div>
+                    <p>{principle.body}</p>
+                  </div>
                 </div>
-                <h3>{principle.title}</h3>
-                <p>{principle.body}</p>
-              </article>
+              </motion.article>
             ))}
-          </div>
-        </section>
+          </motion.div>
+        </motion.section>
 
-        <section className={`${styles.section} ${styles.integration}`}>
-          <div className={styles.integrationHeading}>
+        <motion.section
+          className={`${styles.section} ${styles.integration}`}
+          initial={sceneInitial}
+          whileInView="visible"
+          viewport={sceneViewport}
+          variants={sceneVariants}
+        >
+          <motion.div className={styles.integrationHeading} variants={revealVariants}>
             <div>
               <p className={styles.goldEyebrow}>
                 {text.integrationEyebrow}
@@ -392,68 +506,92 @@ export default function CorporateAbout() {
             </div>
 
             <p>{text.integrationBody}</p>
-          </div>
+          </motion.div>
 
-          <div className={styles.divisionRail}>
-            {text.divisions.map((division) => (
+          <motion.div className={styles.divisionRail} variants={sceneVariants}>
+            {text.divisions.map((division, index) => (
+              <motion.div key={division.number} variants={revealVariants}>
               <Link
                 href={division.href}
-                className={styles.division}
-                key={division.number}
+                className={`${styles.division} ${styles.revealCard}`}
+                style={{ "--card-image": `url(${divisionImages[index]})` }}
               >
-                <div className={styles.divisionTop}>
-                  <span>{division.number}</span>
-                  <small>{division.short}</small>
-                </div>
-
-                <div>
+                <span className={styles.cardMedia} aria-hidden="true" />
+                <span className={styles.cardShade} aria-hidden="true" />
+                <div className={styles.cardContent}>
                   <h3>{division.title}</h3>
-                  <p>{division.body}</p>
-                </div>
-
-                <div className={styles.divisionLink}>
-                  <span>{text.divisionLink}</span>
-                  <Arrow />
+                  <div className={styles.cardDetails}>
+                    <div className={styles.divisionTop}>
+                      <span>{division.number}</span>
+                      <small>{division.short}</small>
+                    </div>
+                    <p>{division.body}</p>
+                    <div className={styles.divisionLink}>
+                      <span>{text.divisionLink}</span>
+                      <Arrow />
+                    </div>
+                  </div>
                 </div>
               </Link>
+              </motion.div>
             ))}
-          </div>
-        </section>
+          </motion.div>
+        </motion.section>
 
-        <section className={`${styles.section} ${styles.direction}`}>
-          <div className={styles.directionHeading}>
+        <motion.section
+          className={`${styles.section} ${styles.direction}`}
+          initial={sceneInitial}
+          whileInView="visible"
+          viewport={sceneViewport}
+          variants={sceneVariants}
+        >
+          <motion.div className={styles.directionHeading} variants={revealVariants}>
             <p className={styles.goldEyebrow}>
               {text.directionEyebrow}
             </p>
             <h2>{text.directionTitle}</h2>
-          </div>
+          </motion.div>
 
-          <div className={styles.directionGrid}>
-            {text.direction.map((item) => (
-              <article key={item.number}>
-                <div className={styles.directionNumber}>
-                  {item.number}
-                </div>
-                <div>
+          <motion.div className={styles.directionGrid} variants={sceneVariants}>
+            {text.direction.map((item, index) => (
+              <motion.article
+                key={item.number}
+                className={`${styles.revealCard} ${styles.directionCard}`}
+                variants={revealVariants}
+                tabIndex={0}
+                style={{ "--card-image": `url(${directionImages[index]})` }}
+              >
+                <span className={styles.cardMedia} aria-hidden="true" />
+                <span className={styles.cardShade} aria-hidden="true" />
+                <div className={styles.cardContent}>
                   <h3>{item.title}</h3>
-                  <p>{item.body}</p>
+                  <div className={styles.cardDetails}>
+                    <div className={styles.directionNumber}>{item.number}</div>
+                    <p>{item.body}</p>
+                  </div>
                 </div>
-              </article>
+              </motion.article>
             ))}
-          </div>
-        </section>
+          </motion.div>
+        </motion.section>
 
-        <section className={`${styles.section} ${styles.promise}`}>
+        <motion.section
+          className={`${styles.section} ${styles.promise}`}
+          initial={sceneInitial}
+          whileInView="visible"
+          viewport={sceneViewport}
+          variants={sceneVariants}
+        >
           <div className={styles.promiseGrid}>
-            <div className={styles.promiseStatement}>
+            <motion.div className={styles.promiseStatement} variants={revealVariants}>
               <p className={styles.goldEyebrow}>
                 {text.promiseEyebrow}
               </p>
               <h2>{text.promiseTitle}</h2>
               <p>{text.promiseBody}</p>
-            </div>
+            </motion.div>
 
-            <div className={styles.promiseRight}>
+            <motion.div className={styles.promiseRight} variants={revealVariants}>
               <ul>
                 {text.promisePoints.map((point, index) => (
                   <li key={point}>
@@ -474,13 +612,13 @@ export default function CorporateAbout() {
                   <Arrow />
                 </Link>
               </div>
-            </div>
+            </motion.div>
           </div>
 
           <div className={styles.wordmark} aria-hidden="true">
             ALTEKMAR
           </div>
-        </section>
+        </motion.section>
       </main>
 
       <div className={styles.footerSnap}>
