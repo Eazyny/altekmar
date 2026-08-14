@@ -13,10 +13,26 @@ function cleanText(value) {
   return String(value || "").replace(/[\u2013\u2014]/g, "-");
 }
 
+const categoryRoutes = {
+  passenger: "/shop/elevators/passenger",
+  villa: "/shop/elevators/villa",
+  observation: "/shop/elevators/observation",
+  hospital: "/shop/elevators/hospital",
+  freight: "/shop/elevators/freight",
+};
+
+function categoryRouteFor(category) {
+  const slug = String(category?.slug || "")
+    .trim()
+    .toLowerCase();
+
+  return categoryRoutes[slug] || "/shop/elevators";
+}
+
 export default function ElevatorBreadcumb({ product, category }) {
   const language = useDocumentLanguage();
   const text = copy[language];
-  const categoryHref = `/shop/elevators/${category.slug}`;
+  const categoryHref = categoryRouteFor(category);
   const productTitle = cleanText(
     product.title?.[language] || product.title?.en || product.id,
   );

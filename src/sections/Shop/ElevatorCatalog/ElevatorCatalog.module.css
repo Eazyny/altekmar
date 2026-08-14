@@ -991,12 +991,13 @@
   margin: 0;
   overflow: hidden;
   color: var(--paper);
-  font-size: clamp(23px, 1.9vw, 34px);
-  font-weight: 760;
-  letter-spacing: -0.045em;
-  line-height: 1.04;
+  font-size: clamp(21px, 1.55vw, 28px);
+  font-weight: 650;
+  letter-spacing: -0.018em;
+  line-height: 1.14;
   -webkit-box-orient: vertical;
-  -webkit-line-clamp: 2;
+  -webkit-line-clamp: 3;
+  line-clamp: 3;
 }
 
 .productCard .cardDetails {
@@ -1024,6 +1025,7 @@
   line-height: 1.65;
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 3;
+  line-clamp: 3;
 }
 
 .productCard:hover .cardMedia,

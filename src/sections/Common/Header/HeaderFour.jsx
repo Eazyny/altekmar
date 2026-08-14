@@ -5,6 +5,7 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useLanguage } from "~/i18n/LanguageProvider";
 import styles from "./HeaderFour.module.css";
+import Image from "next/image";
 
 const copy = {
   es: {
@@ -123,12 +124,19 @@ export default function HeaderFour() {
 
       <div className={styles.mainBar}>
         <div className={styles.mainInner}>
-          <Link href="/" className={styles.logoLink} aria-label="Altekmar Group">
-            <img
-              src="/brand/altekgoldwide.webp"
+          <Link
+            href="/"
+            className={styles.logoLink}
+            aria-label="Altekmar Group"
+          >
+            <Image
+              src="/brand/altekmar_wide.svg"
               alt="Altekmar Group"
+              width={532}
+              height={168}
               className={styles.logoImage}
               data-altekmar-header-logo="true"
+              priority
             />
           </Link>
 

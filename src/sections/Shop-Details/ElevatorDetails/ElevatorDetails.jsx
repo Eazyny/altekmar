@@ -80,6 +80,22 @@ function cleanText(value) {
   return String(value || "").replace(/[\u2013\u2014]/g, "-");
 }
 
+const categoryRoutes = {
+  passenger: "/shop/elevators/passenger",
+  villa: "/shop/elevators/villa",
+  observation: "/shop/elevators/observation",
+  hospital: "/shop/elevators/hospital",
+  freight: "/shop/elevators/freight",
+};
+
+function categoryRouteFor(category) {
+  const slug = String(category?.slug || "")
+    .trim()
+    .toLowerCase();
+
+  return categoryRoutes[slug] || "/shop/elevators";
+}
+
 function titleFor(product, language) {
   return cleanText(product.title?.[language] || product.title?.en || product.id);
 }
@@ -216,6 +232,7 @@ export default function ElevatorDetails({
   const categoryTitle = cleanText(
     category.title?.[language] || category.title?.en || category.slug,
   );
+  const categoryHref = categoryRouteFor(category);
   const specifications = Object.entries(product.specifications || {}).filter(
     ([, value]) => value !== null && value !== undefined && String(value).trim(),
   );
@@ -289,19 +306,19 @@ export default function ElevatorDetails({
                 <span>{text.request}</span>
                 <i className="ri-arrow-right-up-line" aria-hidden="true" />
               </Link>
-              <Link
-                href={`/shop/elevators/${category.slug}`}
+              <a
+                href={categoryHref}
                 className={styles.secondaryAction}
               >
                 <span>{text.back}</span>
                 <i className="ri-arrow-right-line" aria-hidden="true" />
-              </Link>
+              </a>
             </div>
 
             <dl className={styles.meta}>
               <div>
                 <dt>{text.category}</dt>
-                <dd><Link href={`/shop/elevators/${category.slug}`}>{categoryTitle}</Link></dd>
+                <dd><a href={categoryHref}>{categoryTitle}</a></dd>
               </div>
               <div>
                 <dt>{text.manufacturer}</dt>
@@ -379,10 +396,10 @@ export default function ElevatorDetails({
                 <h2>{text.related}</h2>
                 <p>{text.relatedIntro}</p>
               </div>
-              <Link href={`/shop/elevators/${category.slug}`}>
+              <a href={categoryHref}>
                 {text.viewAll}
                 <i className="ri-arrow-right-line" aria-hidden="true" />
-              </Link>
+              </a>
             </header>
 
             <div className={styles.relatedGrid}>

@@ -36,3 +36,6 @@ Thumbs.db
 .pnpm-store/
 pnpm-lock.yaml
 pnpm-workspace.yaml
+
+# Local Altekmar backups
+.altekmar-backups/
