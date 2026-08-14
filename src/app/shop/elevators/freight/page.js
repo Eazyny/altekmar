@@ -5,10 +5,14 @@ import {
   ElevatorCatalogBreadcumb,
   ElevatorCategoryListing,
 } from "~/sections/Shop/ElevatorCatalog";
+import { createPageMetadata } from "~/lib/seo";
 
-export const metadata = {
-  title: "freight | Altekmar",
-};
+export const metadata = createPageMetadata({
+  title: "Elevadores de carga",
+  description:
+    "Elevadores de carga para almacenes, comercios e instalaciones industriales, configurados según capacidad y recorrido.",
+  path: "/shop/elevators/freight",
+});
 
 export default function CategoryPage() {
   return (

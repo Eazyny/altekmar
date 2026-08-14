@@ -1,11 +1,9 @@
 "use client";
 
 import Link from "next/link";
-import { useEffect, useMemo, useState } from "react";
+import { useMemo, useState } from "react";
 import catalog from "~/data/gots-elevator-catalog.json";
 import useDocumentLanguage from "~/i18n/useDocumentLanguage";
-
-const PRODUCTS_PER_PAGE = 9;
 
 const copy = {
   es: {
@@ -14,19 +12,16 @@ const copy = {
     of: "de",
     products: "productos",
     defaultSort: "Orden predeterminado",
-    nameAscending: "Nombre: Aâ€“Z",
-    nameDescending: "Nombre: Zâ€“A",
+    nameAscending: "Nombre: A–Z",
+    nameDescending: "Nombre: Z–A",
     search: "Buscar productos",
-    placeholder: "Buscar por nombre o descripciÃ³n...",
-    categories: "Categori­as",
-    quote: "Precio bajo cotizacion",
+    placeholder: "Buscar por nombre o descripción...",
+    categories: "Categorías",
+    quote: "Precio bajo cotización",
     authorized: "Distribuidor autorizado",
     details: "Ver detalles",
-    request: "Solicitar cotizacion",
-    noResults: "No encontramos productos con ese termino.",
-    previous: "Pagina anterior",
-    next: "Pagina siguiente",
-    page: "Pagina",
+    request: "Solicitar cotización",
+    noResults: "No encontramos productos con ese término.",
   },
   en: {
     showing: "Showing",
@@ -34,8 +29,8 @@ const copy = {
     of: "of",
     products: "products",
     defaultSort: "Default sorting",
-    nameAscending: "Name: Aâ€“Z",
-    nameDescending: "Name: Zâ€“A",
+    nameAscending: "Name: A–Z",
+    nameDescending: "Name: Z–A",
     search: "Search products",
     placeholder: "Search by name or description...",
     categories: "Categories",
@@ -44,9 +39,6 @@ const copy = {
     details: "View details",
     request: "Request a quote",
     noResults: "No products matched that search.",
-    previous: "Previous page",
-    next: "Next page",
-    page: "Page",
   },
 };
 
@@ -74,7 +66,6 @@ export default function ElevatorCategoryListing({ categorySlug }) {
   );
   const [query, setQuery] = useState("");
   const [sort, setSort] = useState("default");
-  const [currentPage, setCurrentPage] = useState(1);
 
   const products = useMemo(() => {
     if (!category) return [];
@@ -109,29 +100,10 @@ export default function ElevatorCategoryListing({ categorySlug }) {
     return filtered;
   }, [category, language, query, sort]);
 
-  useEffect(() => {
-    setCurrentPage(1);
-  }, [language, query, sort, categorySlug]);
-
   if (!category) return null;
 
-  const pageCount = Math.max(1, Math.ceil(products.length / PRODUCTS_PER_PAGE));
-  const page = Math.min(currentPage, pageCount);
-  const startIndex = (page - 1) * PRODUCTS_PER_PAGE;
-  const visible = products.slice(startIndex, startIndex + PRODUCTS_PER_PAGE);
-  const first = products.length ? startIndex + 1 : 0;
-  const last = Math.min(startIndex + PRODUCTS_PER_PAGE, products.length);
-
-  function goToPage(nextPage) {
-    setCurrentPage(Math.min(Math.max(nextPage, 1), pageCount));
-
-    window.requestAnimationFrame(() => {
-      document.getElementById("category-products")?.scrollIntoView({
-        behavior: "smooth",
-        block: "start",
-      });
-    });
-  }
+  const first = products.length ? 1 : 0;
+  const last = products.length;
 
   return (
     <section
@@ -167,10 +139,10 @@ export default function ElevatorCategoryListing({ categorySlug }) {
               </div>
             </div>
 
-            {visible.length ? (
+            {products.length ? (
               <>
                 <div className="row gy-40">
-                  {visible.map((product) => {
+                  {products.map((product) => {
                     const title = titleFor(product, language);
                     const href = `/shop/elevators/${category.slug}/${product.id}`;
 
@@ -228,64 +200,6 @@ export default function ElevatorCategoryListing({ categorySlug }) {
                   })}
                 </div>
 
-                {pageCount > 1 ? (
-                  <div
-                    className="pagination justify-content-center"
-                    aria-label={`${text.page} navigation`}
-                  >
-                    <ul>
-                      {page > 1 ? (
-                        <li>
-                          <a
-                            href="#category-products"
-                            aria-label={text.previous}
-                            onClick={(event) => {
-                              event.preventDefault();
-                              goToPage(page - 1);
-                            }}
-                          >
-                            <i className="ri-arrow-left-line" />
-                          </a>
-                        </li>
-                      ) : null}
-
-                      {Array.from({ length: pageCount }, (_, index) => index + 1).map(
-                        (pageNumber) => (
-                          <li key={pageNumber}>
-                            <a
-                              href="#category-products"
-                              className={pageNumber === page ? "active" : ""}
-                              aria-current={
-                                pageNumber === page ? "page" : undefined
-                              }
-                              onClick={(event) => {
-                                event.preventDefault();
-                                goToPage(pageNumber);
-                              }}
-                            >
-                              {String(pageNumber).padStart(2, "0")}
-                            </a>
-                          </li>
-                        ),
-                      )}
-
-                      {page < pageCount ? (
-                        <li>
-                          <a
-                            href="#category-products"
-                            aria-label={text.next}
-                            onClick={(event) => {
-                              event.preventDefault();
-                              goToPage(page + 1);
-                            }}
-                          >
-                            <i className="ri-arrow-right-line" />
-                          </a>
-                        </li>
-                      ) : null}
-                    </ul>
-                  </div>
-                ) : null}
               </>
             ) : (
               <div className="altekmar-shop-empty">

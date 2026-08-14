@@ -5,12 +5,15 @@ import {
   ElevatorCatalogBreadcumb,
   ElevatorCategoryHub,
 } from "~/sections/Shop/ElevatorCatalog";
+import { createPageMetadata } from "~/lib/seo";
 
-export const metadata = {
-  title: "Elevator Categories | Altekmar",
+export const metadata = createPageMetadata({
+  title: "Elevadores y movilidad vertical",
   description:
-    "Passenger, home, panoramic, hospital and freight elevators plus escalators supplied by Altekmar.",
-};
+    "Elevadores de pasajeros, residenciales, panorámicos, hospitalarios y de carga, además de escaleras y pasillos móviles.",
+  path: "/shop/elevators",
+  image: "/main-assets/img/elevators/elevator_escalator.png",
+});
 
 export default function ElevatorCatalogPage() {
   return (

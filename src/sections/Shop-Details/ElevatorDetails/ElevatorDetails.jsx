@@ -6,32 +6,32 @@ import useDocumentLanguage from "~/i18n/useDocumentLanguage";
 
 const copy = {
   es: {
-    quote: "Precio bajo cotizaciÃ³n",
-    authorized: "Altekmar Â· Distribuidor autorizado",
-    request: "Solicitar cotizaciÃ³n",
-    back: "Volver a la categorÃ­a",
-    description: "DescripciÃ³n",
+    quote: "Precio bajo cotización",
+    authorized: "Altekmar · Distribuidor autorizado",
+    request: "Solicitar cotización",
+    back: "Volver a la categoría",
+    description: "Descripción",
     specifications: "Especificaciones",
     manufacturer: "Fabricante",
-    category: "CategorÃ­a",
-    source: "InformaciÃ³n del fabricante",
+    category: "Categoría",
+    source: "Información del fabricante",
     sourceText:
-      "Consulta la ficha original del fabricante para informaciÃ³n adicional.",
+      "Consulta la ficha original del fabricante para información adicional.",
     sourceButton: "Ver ficha del fabricante",
     related: "Productos relacionados.",
-    viewAll: "VER TODA LA CATEGORÃA",
+    viewAll: "VER TODA LA CATEGORÍA",
     installation:
-      "Venta, coordinaciÃ³n tÃ©cnica e instalaciÃ³n profesional disponibles.",
+      "Venta, coordinación técnica e instalación profesional disponibles.",
     configuration:
-      "La configuraciÃ³n final se define segÃºn capacidad, recorrido y proyecto.",
+      "La configuración final se define según capacidad, recorrido y proyecto.",
     availability:
-      "Disponibilidad, transporte y tiempos se confirman en la cotizaciÃ³n.",
+      "Disponibilidad, transporte y tiempos se confirman en la cotización.",
     noSpecifications:
-      "Las especificaciones se confirmarÃ¡n durante la evaluaciÃ³n tÃ©cnica.",
+      "Las especificaciones se confirmarán durante la evaluación técnica.",
   },
   en: {
     quote: "Pricing by quotation",
-    authorized: "Altekmar Â· Authorized retailer",
+    authorized: "Altekmar · Authorized retailer",
     request: "Request a quote",
     back: "Back to category",
     description: "Description",

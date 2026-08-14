@@ -5,10 +5,14 @@ import {
   ElevatorCatalogBreadcumb,
   ElevatorCategoryListing,
 } from "~/sections/Shop/ElevatorCatalog";
+import { createPageMetadata } from "~/lib/seo";
 
-export const metadata = {
-  title: "passenger | Altekmar",
-};
+export const metadata = createPageMetadata({
+  title: "Elevadores de pasajeros",
+  description:
+    "Modelos de elevadores de pasajeros configurables para edificios residenciales, comerciales e institucionales.",
+  path: "/shop/elevators/passenger",
+});
 
 export default function CategoryPage() {
   return (

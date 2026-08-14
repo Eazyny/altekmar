@@ -8,7 +8,7 @@ import {
   useMemo,
   useState,
 } from "react";
-import { getTranslatedText, META_COPY } from "./copy";
+import { getTranslatedText } from "./copy";
 
 const LanguageContext = createContext(null);
 const STORAGE_KEY = "altekmar-language";
@@ -145,12 +145,6 @@ export default function LanguageProvider({ children }) {
   useEffect(() => {
     document.documentElement.lang = language;
     document.documentElement.dataset.language = language;
-    document.title = META_COPY[language].title;
-
-    const metaDescription = document.querySelector('meta[name="description"]');
-    if (metaDescription) {
-      metaDescription.setAttribute("content", META_COPY[language].description);
-    }
 
     translateTree(document.body, language);
 

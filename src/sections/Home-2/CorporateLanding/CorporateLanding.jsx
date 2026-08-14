@@ -147,7 +147,7 @@ const copy = {
         title: "Aire acondicionado",
         body:
           "Climatización residencial y comercial, instalación, ventilación y soporte técnico.",
-        href: "/shop/airconditioners",
+        href: "/shop/air-conditioning",
       },
       {
         number: "04",
@@ -249,7 +249,7 @@ const copy = {
         title: "Air conditioning",
         body:
           "Residential and commercial climate systems, installation, ventilation, and support.",
-        href: "/shop/airconditioners",
+        href: "/shop/air-conditioning",
       },
       {
         number: "04",
@@ -320,6 +320,7 @@ export default function CorporateLanding() {
     const preference = window.matchMedia(
       "(prefers-reduced-motion: reduce)",
     );
+    let isVisible = true;
 
     const syncPlayback = () => {
       const video = heroVideoRef.current;
@@ -328,9 +329,9 @@ export default function CorporateLanding() {
         return;
       }
 
-      if (preference.matches) {
+      if (preference.matches || !isVisible || document.hidden) {
         video.pause();
-        video.currentTime = 0;
+        if (preference.matches) video.currentTime = 0;
         return;
       }
 
@@ -343,9 +344,24 @@ export default function CorporateLanding() {
 
     syncPlayback();
     preference.addEventListener?.("change", syncPlayback);
+    document.addEventListener("visibilitychange", syncPlayback);
+
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        isVisible = entry.isIntersecting;
+        syncPlayback();
+      },
+      { threshold: 0.08 },
+    );
+
+    if (heroVideoRef.current) {
+      observer.observe(heroVideoRef.current);
+    }
 
     return () => {
       preference.removeEventListener?.("change", syncPlayback);
+      document.removeEventListener("visibilitychange", syncPlayback);
+      observer.disconnect();
     };
   }, []);
 
@@ -364,12 +380,13 @@ export default function CorporateLanding() {
             loop
             playsInline
             preload="metadata"
-            poster="/footage/dr_drone-poster.jpg"
+            poster="/main-assets/img/hero/hero_bg_4_1.png"
             tabIndex={-1}
           >
             <source
               src="/footage/dr_drone.webm"
               type="video/webm"
+              media="(min-width: 769px)"
             />
           </video>
 

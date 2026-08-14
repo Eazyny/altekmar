@@ -5,10 +5,14 @@ import {
   ElevatorCatalogBreadcumb,
   ElevatorCategoryListing,
 } from "~/sections/Shop/ElevatorCatalog";
+import { createPageMetadata } from "~/lib/seo";
 
-export const metadata = {
-  title: "hospital | Altekmar",
-};
+export const metadata = createPageMetadata({
+  title: "Elevadores hospitalarios",
+  description:
+    "Elevadores hospitalarios diseñados para pacientes, personal, camillas y operación continua en centros de salud.",
+  path: "/shop/elevators/hospital",
+});
 
 export default function CategoryPage() {
   return (

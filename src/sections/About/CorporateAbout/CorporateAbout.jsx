@@ -151,7 +151,7 @@ const copy = {
         short: "CLIMA",
         body:
           "Climatización coordinada alrededor del uso, el espacio y el rendimiento.",
-        href: "/shop/airconditioners",
+        href: "/shop/air-conditioning",
       },
       {
         number: "04",
@@ -291,7 +291,7 @@ const copy = {
         short: "CLIMATE",
         body:
           "Climate solutions coordinated around use, space, and performance.",
-        href: "/shop/airconditioners",
+        href: "/shop/air-conditioning",
       },
       {
         number: "04",

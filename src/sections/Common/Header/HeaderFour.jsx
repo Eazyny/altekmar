@@ -11,8 +11,6 @@ const copy = {
     home: "Inicio",
     about: "Nosotros",
     services: "Servicios",
-    projects: "Proyectos",
-    shop: "Tienda",
     contact: "Contacto",
     quote: "Solicitar cotización",
     call: "Solicitar llamada",
@@ -24,7 +22,7 @@ const copy = {
     servicesList: [
       ["Elevadores y movilidad", "/shop/elevators"],
       ["Generadores y respaldo eléctrico", "/shop/generators"],
-      ["Aire acondicionado", "/shop/airconditioners"],
+      ["Aire acondicionado", "/shop/air-conditioning"],
       ["Sistemas de seguridad", "/shop/security-systems"],
       ["Cámaras y videovigilancia", "/shop/cameras-surveillance"],
     ],
@@ -33,8 +31,6 @@ const copy = {
     home: "Home",
     about: "About",
     services: "Services",
-    projects: "Projects",
-    shop: "Shop",
     contact: "Contact",
     quote: "Request a quote",
     call: "Request a call",
@@ -46,7 +42,7 @@ const copy = {
     servicesList: [
       ["Elevators and mobility", "/shop/elevators"],
       ["Generators and backup power", "/shop/generators"],
-      ["Air conditioning", "/shop/airconditioners"],
+      ["Air conditioning", "/shop/air-conditioning"],
       ["Security systems", "/shop/security-systems"],
       ["Cameras and surveillance", "/shop/cameras-surveillance"],
     ],
@@ -164,12 +160,6 @@ export default function HeaderFour() {
               </div>
             </div>
 
-            <Link href="/project" className={active("/project") ? styles.active : ""}>
-              {text.projects}
-            </Link>
-            <Link href="/shop" className={active("/shop") ? styles.active : ""}>
-              {text.shop}
-            </Link>
             <Link href="/contact" className={active("/contact") ? styles.active : ""}>
               {text.contact}
             </Link>
@@ -241,9 +231,7 @@ export default function HeaderFour() {
             </div>
           </div>
 
-          <Link href="/project"><span>04</span>{text.projects}</Link>
-          <Link href="/shop"><span>05</span>{text.shop}</Link>
-          <Link href="/contact"><span>06</span>{text.contact}</Link>
+          <Link href="/contact"><span>04</span>{text.contact}</Link>
         </nav>
 
         <div className={styles.mobileFooter}>

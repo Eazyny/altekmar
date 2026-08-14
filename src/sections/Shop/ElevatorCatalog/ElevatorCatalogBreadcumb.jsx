@@ -9,7 +9,7 @@ import styles from "./ElevatorCatalog.module.css";
 const copy = {
   es: {
     home: "INICIO",
-    shop: "TIENDA",
+    shop: "SERVICIOS",
     catalog: "ELEVADORES",
     hubTitle: "Categorías de elevadores",
     eyebrow: "MOVILIDAD VERTICAL · CATÁLOGO",
@@ -25,7 +25,7 @@ const copy = {
   },
   en: {
     home: "HOME",
-    shop: "SHOP",
+    shop: "SERVICES",
     catalog: "ELEVATORS",
     hubTitle: "Elevator categories",
     eyebrow: "VERTICAL MOBILITY · CATALOG",
@@ -160,7 +160,7 @@ export default function ElevatorCatalogBreadcumb({ categorySlug }) {
               </Link>
             </li>
             <li>
-              <Link href="/shop">{text.shop}</Link>
+              <Link href="/services">{text.shop}</Link>
             </li>
             {category ? (
               <>

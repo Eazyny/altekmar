@@ -5,6 +5,8 @@ import CorporateFooter from "~/sections/Common/Footer/CorporateFooter";
 import Scroll from "~/sections/Common/Scroll";
 import ElevatorBreadcumb from "~/sections/Shop-Details/ElevatorBreadcumb";
 import ElevatorDetails from "~/sections/Shop-Details/ElevatorDetails";
+import { productMetadata } from "~/lib/seo";
+import { ProductStructuredData } from "~/seo/StructuredData";
 
 const CATEGORY_SLUG = "hospital";
 
@@ -30,13 +32,7 @@ export function generateMetadata({ params }) {
     return { title: "Product Not Found | Altekmar" };
   }
 
-  return {
-    title: (product.title?.en || product.title?.es) + " | Altekmar",
-    description:
-      product.description?.en ||
-      product.description?.es ||
-      "GOTS product supplied by Altekmar.",
-  };
+  return productMetadata(product, category);
 }
 
 export default function ProductPage({ params }) {
@@ -63,6 +59,7 @@ export default function ProductPage({ params }) {
 
   return (
     <div className="altekmar-inner-page">
+      <ProductStructuredData product={product} category={category} />
       <HeaderFour />
       <ElevatorBreadcumb product={product} category={category} />
       <ElevatorDetails

@@ -25,9 +25,9 @@ const copy = {
     companyLinks: [
       ["Nosotros", "/about"],
       ["Servicios", "/services"],
-      ["Proyectos", "/project"],
-      ["Tienda", "/shop"],
       ["Contacto", "/contact"],
+      ["Privacidad", "/privacy"],
+      ["Términos", "/terms"],
     ],
   },
   en: {
@@ -50,9 +50,9 @@ const copy = {
     companyLinks: [
       ["About", "/about"],
       ["Services", "/services"],
-      ["Projects", "/project"],
-      ["Shop", "/shop"],
       ["Contact", "/contact"],
+      ["Privacy", "/privacy"],
+      ["Terms", "/terms"],
     ],
   },
 };
