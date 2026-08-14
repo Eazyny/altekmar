@@ -187,6 +187,8 @@ const copy = {
     featureTitle: "Un solo socio para sistemas esenciales.",
     featureBody:
       "Desde movilidad vertical y energía de respaldo hasta climatización y seguridad, Altekmar coordina equipos, instalación y ejecución con una visión unificada.",
+    featureImageAlt:
+      "Edificio de apartamentos con elevador central, aires acondicionados y un generador de respaldo",
     featurePoints: [
       "Soluciones residenciales y comerciales",
       "Coordinación entre múltiples disciplinas",
@@ -287,6 +289,8 @@ const copy = {
     featureTitle: "One partner for essential systems.",
     featureBody:
       "From vertical mobility and backup power to climate control and security, Altekmar coordinates equipment, installation, and execution with one unified view.",
+    featureImageAlt:
+      "Apartment building with a central elevator, wall-mounted air conditioners, and one backup generator",
     featurePoints: [
       "Residential and commercial solutions",
       "Coordination across multiple disciplines",
@@ -589,8 +593,8 @@ export default function CorporateLanding() {
       >
         <motion.div className={styles.featureImage} variants={imageRevealVariants}>
           <Image
-            src="/main-assets/img/elevators/elevator_escalator.png"
-            alt={text.featureTitle}
+            src="/main-assets/img/corporate/integrated-building-systems.webp"
+            alt={text.featureImageAlt}
             fill
             unoptimized
             sizes="(max-width: 991px) 100vw, 55vw"
