@@ -14,26 +14,37 @@ export const metadata = {
   title: "Altekmar | Equipos, Sistemas y Construcción",
   description:
     "Elevadores, generadores, aire acondicionado, seguridad, equipos y contratación general en República Dominicana.",
+  manifest: "/site.webmanifest",
   icons: {
     icon: [
       {
         rel: "icon",
+        url: "/favicon.ico",
+      },
+      {
+        rel: "icon",
+        type: "image/png",
+        sizes: "16x16",
+        url: "/favicon-16x16.png",
+      },
+      {
+        rel: "icon",
         type: "image/png",
         sizes: "32x32",
-        url: "/favicon.png",
+        url: "/favicon-32x32.png",
       },
     ],
     apple: [
       {
         rel: "apple-touch-icon",
         sizes: "180x180",
-        url: "/favicon.png",
+        url: "/apple-touch-icon.png",
       },
     ],
     shortcut: [
       {
         rel: "shortcut icon",
-        url: "/favicon.png",
+        url: "/favicon.ico",
       },
     ],
   },

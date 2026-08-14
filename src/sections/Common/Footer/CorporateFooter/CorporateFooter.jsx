@@ -14,6 +14,7 @@ const copy = {
     closingEyebrow: "Altekmar Group",
     closingTitle: "Cinco divisiones. Una sola visión.",
     rights: "Todos los derechos reservados.",
+    createdBy: "Creado por",
     links: [
       ["Elevadores y movilidad", "/shop/elevators"],
       ["Generadores", "/shop/generators"],
@@ -38,6 +39,7 @@ const copy = {
     closingEyebrow: "Altekmar Group",
     closingTitle: "Five divisions. One unified vision.",
     rights: "All rights reserved.",
+    createdBy: "Created by",
     links: [
       ["Elevators and mobility", "/shop/elevators"],
       ["Generators", "/shop/generators"],
@@ -114,9 +116,25 @@ export default function CorporateFooter() {
 
       <div className={styles.bottom}>
         <p>© {new Date().getFullYear()} Altekmar Group, SRL. {text.rights}</p>
-        <button type="button" onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}>
-          ↑
-        </button>
+        <div className={styles.bottomActions}>
+          <a
+            className={styles.creatorCredit}
+            href="https://ozony.tech"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label={`${text.createdBy} Ozony.tech`}
+          >
+            <img src="/brand/ozonytech300.svg" alt="" aria-hidden="true" />
+            <span>{text.createdBy} <strong>OZONY.TECH</strong></span>
+          </a>
+          <button
+            type="button"
+            aria-label={language === "en" ? "Back to top" : "Volver arriba"}
+            onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
+          >
+            ↑
+          </button>
+        </div>
       </div>
     </footer>
   );
