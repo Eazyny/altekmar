@@ -132,7 +132,7 @@ const copy = {
         number: "01",
         title: "Elevadores y movilidad",
         body:
-          "Elevadores de pasajeros, residenciales, panorámicos, hospitalarios y de carga, además de escaleras y pasillos móviles.",
+          "Elevadores de pasajeros, residenciales, panorámicos, hospitalarios y de carga para cada tipo de proyecto.",
         href: "/shop/elevators",
       },
       {
@@ -234,7 +234,7 @@ const copy = {
         number: "01",
         title: "Elevators and mobility",
         body:
-          "Passenger, residential, panoramic, hospital, and freight elevators, plus escalators and moving walkways.",
+          "Passenger, residential, panoramic, hospital, and freight elevators for every type of project.",
         href: "/shop/elevators",
       },
       {

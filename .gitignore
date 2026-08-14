@@ -31,3 +31,8 @@ Thumbs.db
 # Miscellaneous
 *.pem
 .vercel/
+
+# pnpm artifacts - this project uses npm
+.pnpm-store/
+pnpm-lock.yaml
+pnpm-workspace.yaml

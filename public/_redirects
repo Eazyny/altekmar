@@ -39,5 +39,6 @@
 /shop/elevators/passenger/ts-j18-reliable-elevator-supplier-for-modern-building-projects /shop/elevators/passenger/ts-j18-passenger-elevator 301
 /shop/elevators/freight/freight-elevator-industrial-strength-solution-for-african-warehousing-logistics /shop/elevators/freight/industrial-heavy-duty-freight-elevator 301
 /shop/elevators/freight/gots-5-ton-heavy-duty-freight-elevator-factory-price /shop/elevators/freight/five-ton-freight-elevator 301
-/shop/elevators/escalators/outside-escalator-parallel-escalator-shopping-mall-escalator /shop/elevators/escalators/commercial-outdoor-escalator 301
-/shop/elevators/escalators/moving-walkway-manufacturer-in-china /shop/elevators/escalators/moving-walkway 301
+/shop/elevators/escalators/* /shop/elevators 301
+/shop/elevators/escalators /shop/elevators 301
+/shop/elevators/observation/moving-walks-indoor-outdoor-mini-escalator /shop/elevators/observation/rg12-panoramic-glass-elevator 301

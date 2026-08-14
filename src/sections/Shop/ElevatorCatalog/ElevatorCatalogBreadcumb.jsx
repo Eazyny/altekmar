@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import { motion, useReducedMotion } from "motion/react";
-import catalog from "~/data/gots-elevator-catalog.json";
+import catalog from "~/lib/elevatorCatalog";
 import useDocumentLanguage from "~/i18n/useDocumentLanguage";
 import styles from "./ElevatorCatalog.module.css";
 
@@ -16,7 +16,7 @@ const copy = {
     title: "MOVILIDAD QUE",
     accent: "DEFINE EL PROYECTO.",
     intro:
-      "Elevadores, escaleras y soluciones de transporte vertical seleccionadas para cada entorno.",
+      "Elevadores de pasajeros, residenciales, panorámicos, hospitalarios y de carga seleccionados para cada entorno.",
     explore: "EXPLORAR CATEGORÍAS",
     consult: "SOLICITAR ASESORÍA",
     categories: "CATEGORÍAS",
@@ -32,7 +32,7 @@ const copy = {
     title: "MOBILITY THAT",
     accent: "DEFINES THE PROJECT.",
     intro:
-      "Elevators, escalators, and vertical transportation solutions selected for every environment.",
+      "Passenger, residential, observation, hospital, and freight elevators selected for every environment.",
     explore: "EXPLORE CATEGORIES",
     consult: "REQUEST GUIDANCE",
     categories: "CATEGORIES",

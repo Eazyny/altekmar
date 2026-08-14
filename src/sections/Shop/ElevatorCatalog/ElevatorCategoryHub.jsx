@@ -2,13 +2,13 @@
 
 import Link from "next/link";
 import { motion, useReducedMotion } from "motion/react";
-import catalog from "~/data/gots-elevator-catalog.json";
+import catalog from "~/lib/elevatorCatalog";
 import useDocumentLanguage from "~/i18n/useDocumentLanguage";
 import styles from "./ElevatorCatalog.module.css";
 
 const copy = {
   es: {
-    eyebrow: "SEIS FORMAS DE ELEVAR",
+    eyebrow: "CINCO FORMAS DE ELEVAR",
     title: "Una solución para cada",
     accent: "forma de avanzar.",
     intro:
@@ -18,7 +18,7 @@ const copy = {
     authorized: "DISTRIBUIDOR AUTORIZADO",
   },
   en: {
-    eyebrow: "SIX WAYS TO RISE",
+    eyebrow: "FIVE WAYS TO RISE",
     title: "A solution for every",
     accent: "way forward.",
     intro:
@@ -29,7 +29,7 @@ const copy = {
   },
 };
 
-const cardSpans = ["wide", "standard", "standard", "standard", "wide", "standard"];
+const cardSpans = ["wide", "standard", "standard", "wide", "wide"];
 
 const scene = {
   hidden: {},
@@ -85,7 +85,9 @@ export default function ElevatorCategoryHub() {
             <em>{text.accent}</em>
           </h2>
           <div className={styles.headerNote}>
-            <span aria-hidden="true">06</span>
+            <span aria-hidden="true">
+              {String(catalog.categories.length).padStart(2, "0")}
+            </span>
             <p>{text.intro}</p>
           </div>
         </motion.header>
@@ -123,15 +125,17 @@ export default function ElevatorCategoryHub() {
                   <h3>{title}</h3>
 
                   <div className={styles.cardDetails}>
-                    <span className={styles.authorized}>{text.authorized}</span>
-                    <p>{description}</p>
-                    <div className={styles.cardFooter}>
-                      <span>
-                        {category.productCount} {text.products}
-                      </span>
-                      <Link href={`/shop/elevators/${category.slug}`}>
-                        {text.view} <span aria-hidden="true">↗</span>
-                      </Link>
+                    <div className={styles.cardDetailsInner}>
+                      <span className={styles.authorized}>{text.authorized}</span>
+                      <p>{description}</p>
+                      <div className={styles.cardFooter}>
+                        <span>
+                          {category.productCount} {text.products}
+                        </span>
+                        <Link href={`/shop/elevators/${category.slug}`}>
+                          {text.view} <span aria-hidden="true">↗</span>
+                        </Link>
+                      </div>
                     </div>
                   </div>
                 </div>

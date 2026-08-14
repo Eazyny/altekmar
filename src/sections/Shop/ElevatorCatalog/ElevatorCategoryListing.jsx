@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import { useMemo, useState } from "react";
-import catalog from "~/data/gots-elevator-catalog.json";
+import catalog from "~/lib/elevatorCatalog";
 import useDocumentLanguage from "~/i18n/useDocumentLanguage";
 
 const copy = {

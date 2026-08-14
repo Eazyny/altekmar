@@ -1,5 +1,5 @@
 import { notFound } from "next/navigation";
-import catalog from "~/data/gots-elevator-catalog.json";
+import catalog from "~/lib/elevatorCatalog";
 import HeaderFour from "~/sections/Common/Header/HeaderFour";
 import CorporateFooter from "~/sections/Common/Footer/CorporateFooter";
 import Scroll from "~/sections/Common/Scroll";

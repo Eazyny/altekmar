@@ -119,6 +119,7 @@
   position: relative;
   z-index: 2;
   display: flex;
+  min-width: 0;
   padding:
     clamp(68px, 8vw, 128px)
     clamp(34px, 7vw, 112px);
@@ -135,14 +136,17 @@
 
 .hero h1 {
   display: flex;
+  width: 100%;
   max-width: 940px;
   margin: 24px 0 30px;
   flex-direction: column;
-  font-size: clamp(58px, 7vw, 114px);
+  font-family: var(--title-font);
+  font-size: clamp(58px, 5.4vw, 108px);
   font-weight: 700;
-  letter-spacing: -0.058em;
-  line-height: 0.85;
+  letter-spacing: -0.052em;
+  line-height: 0.88;
   color: var(--paper);
+  text-wrap: balance;
 }
 
 .hero h1 strong {
@@ -871,6 +875,11 @@
 .heroAccentLine {
   display: block;
   overflow: hidden;
+}
+
+.heroTitleLine {
+  width: calc(100% + 0.08em);
+  padding-right: 0.08em;
 }
 
 .heroTitleLine > span,

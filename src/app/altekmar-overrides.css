@@ -637,10 +637,10 @@ html {
 /* ALTEKMAR EXPLICIT HERO SNAP END */
 
 /* ALTEKMAR HERO ARCHITECTURAL IMAGE START */
-.altekmar-home-page img[src*="elevator_escalator"],
-.altekmar-home-page img[srcset*="elevator_escalator"],
-.altekmar-hero-shell img[src*="elevator_escalator"],
-.altekmar-hero-shell img[srcset*="elevator_escalator"] {
+.altekmar-home-page img[src*="01-passenger-elevator-5b1aeaaf"],
+.altekmar-home-page img[srcset*="01-passenger-elevator-5b1aeaaf"],
+.altekmar-hero-shell img[src*="01-passenger-elevator-5b1aeaaf"],
+.altekmar-hero-shell img[srcset*="01-passenger-elevator-5b1aeaaf"] {
   display: block;
   width: 100%;
   height: auto;
@@ -683,10 +683,10 @@ img[srcset*="/brand/altekgoldwide.png"] {
 }
 
 @media (max-width: 767px) {
-  .altekmar-home-page img[src*="elevator_escalator"],
-  .altekmar-home-page img[srcset*="elevator_escalator"],
-  .altekmar-hero-shell img[src*="elevator_escalator"],
-  .altekmar-hero-shell img[srcset*="elevator_escalator"] {
+  .altekmar-home-page img[src*="01-passenger-elevator-5b1aeaaf"],
+  .altekmar-home-page img[srcset*="01-passenger-elevator-5b1aeaaf"],
+  .altekmar-hero-shell img[src*="01-passenger-elevator-5b1aeaaf"],
+  .altekmar-hero-shell img[srcset*="01-passenger-elevator-5b1aeaaf"] {
     clip-path: polygon(
       0 0,
       92% 0,

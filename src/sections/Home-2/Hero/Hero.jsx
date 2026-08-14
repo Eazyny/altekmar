@@ -115,7 +115,10 @@ const Hero = () => {
                   </div>
                   <div className="col-lg-7">
                     <div className={`hero-thumb text-center slideinleft ${activeSlide == 0 ? 'slider-animated' : ''}`} style={{ animationDelay: '0.4s' }} >
-                      <img src="/main-assets/img/elevators/elevator_escalator.png" alt="img" />
+                      <img
+                        src="/main-assets/img/elevators/gots/passenger/800kg-mirror-finish-passenger-elevator-stainless-steel-lift/01-passenger-elevator-5b1aeaaf.jpg"
+                        alt="Elevador de pasajeros"
+                      />
                     </div>
                   </div>
                   <div className="col-lg-5">

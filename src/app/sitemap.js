@@ -1,4 +1,4 @@
-import catalog from "~/data/gots-elevator-catalog.json";
+import catalog from "~/lib/elevatorCatalog";
 import { absoluteUrl } from "~/lib/seo";
 
 const staticPages = [

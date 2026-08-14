@@ -86,7 +86,7 @@ const hub = {
     body: "Altekmar coordina sistemas esenciales desde la evaluación hasta la instalación y el soporte.",
     explore: "Explorar división",
     cards: [
-      ["01", "Elevadores y movilidad", "Elevadores, escaleras mecánicas y transporte vertical.", "/shop/elevators"],
+      ["01", "Elevadores y movilidad", "Elevadores de pasajeros, residenciales, panorámicos, hospitalarios y de carga.", "/shop/elevators"],
       ["02", "Generadores", "Generación y respaldo eléctrico.", "/shop/generators"],
       ["03", "Aire acondicionado", "Climatización residencial y comercial.", "/shop/air-conditioning"],
       ["04", "Sistemas de seguridad", "Alarmas, acceso e intercomunicación.", "/shop/security-systems"],
@@ -99,7 +99,7 @@ const hub = {
     body: "Altekmar coordinates essential systems from assessment through installation and support.",
     explore: "Explore division",
     cards: [
-      ["01", "Elevators and mobility", "Elevators, escalators, and vertical transportation.", "/shop/elevators"],
+      ["01", "Elevators and mobility", "Passenger, residential, observation, hospital, and freight elevators.", "/shop/elevators"],
       ["02", "Generators", "Generation and backup power.", "/shop/generators"],
       ["03", "Air conditioning", "Residential and commercial climate systems.", "/shop/air-conditioning"],
       ["04", "Security systems", "Alarms, access, and intercoms.", "/shop/security-systems"],
