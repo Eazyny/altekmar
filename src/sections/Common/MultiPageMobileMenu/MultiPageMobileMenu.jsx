@@ -1,5 +1,7 @@
 "use client";
 
+
+import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
 import LanguageSwitcher from "~/i18n/LanguageSwitcher";
@@ -23,7 +25,10 @@ const MultiPageMobileMenu = ({ isMenuOpen, setIsMenuOpen }) => {
             <div className="mobile-menu-area">
                 <div className="mobile-logo">
                     <Link href="/" onClick={handleMobileMenuClose}>
-                        <img src="/brand/altekgoldwide.png" alt="Altekmar" />
+                        <Image
+  width={1199}
+  height={800}
+  unoptimized src="/brand/altekgoldwide.png" alt="Altekmar" />
                     </Link>
                     <div className="altekmar-mobile-language">
                         <LanguageSwitcher />

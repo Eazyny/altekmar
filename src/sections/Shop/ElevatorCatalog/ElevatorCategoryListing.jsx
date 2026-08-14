@@ -1,5 +1,7 @@
 "use client";
 
+
+import Image from "next/image";
 import Link from "next/link";
 import { useMemo, useState } from "react";
 import catalog from "~/lib/elevatorCatalog";
@@ -153,7 +155,10 @@ export default function ElevatorCategoryListing({ categorySlug }) {
                       >
                         <article className="product-card altekmar-elevator-card">
                           <div className="product-img">
-                            <img
+                            <Image
+  width={1200}
+  height={1200}
+  unoptimized
                               src={imageFor(product)}
                               alt={title}
                               loading="lazy"

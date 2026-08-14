@@ -1,5 +1,7 @@
 "use client";
 
+
+import Image from "next/image";
 import Link from "next/link";
 import useDocumentLanguage from "~/i18n/useDocumentLanguage";
 import styles from "./CorporateFooter.module.css";
@@ -83,7 +85,10 @@ export default function CorporateFooter() {
 
       <div className={styles.grid}>
         <div className={styles.brand}>
-          <img src="/brand/altekgoldwide.webp" alt="Altekmar Group" />
+          <Image
+  width={1199}
+  height={800}
+  unoptimized src="/brand/altekgoldwide.webp" alt="Altekmar Group" />
           <p>{text.summary}</p>
         </div>
 
@@ -124,7 +129,10 @@ export default function CorporateFooter() {
             rel="noopener noreferrer"
             aria-label={`${text.createdBy} Ozony.tech`}
           >
-            <img src="/brand/ozonytech300.svg" alt="" aria-hidden="true" />
+            <Image
+  width={296}
+  height={295}
+  unoptimized src="/brand/ozonytech300.svg" alt="" aria-hidden="true" />
             <span>{text.createdBy} <strong>OZONY.TECH</strong></span>
           </a>
           <button

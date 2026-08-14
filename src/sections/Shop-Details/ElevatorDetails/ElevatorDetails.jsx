@@ -1,5 +1,7 @@
 "use client";
 
+
+import Image from "next/image";
 import Link from "next/link";
 import { useEffect, useMemo, useState } from "react";
 import useDocumentLanguage from "~/i18n/useDocumentLanguage";
@@ -257,7 +259,10 @@ export default function ElevatorDetails({
         <div className={styles.heroInner}>
           <div className={styles.mediaColumn}>
             <figure className={styles.mediaStage}>
-              <img key={activeImage} src={activeImage} alt={title} />
+              <Image
+  width={1200}
+  height={1200}
+  unoptimized key={activeImage} src={activeImage} alt={title} />
               <figcaption>
                 <span>{categoryTitle}</span>
                 <span>{String(images.indexOf(activeImage) + 1).padStart(2, "0")} / {String(images.length).padStart(2, "0")}</span>
@@ -275,7 +280,10 @@ export default function ElevatorDetails({
                     aria-label={`${text.imageLabel} ${index + 1}: ${title}`}
                     aria-pressed={activeImage === image}
                   >
-                    <img src={image} alt="" loading="lazy" />
+                    <Image
+  width={240}
+  height={240}
+  unoptimized src={image} alt="" loading="lazy" />
                     <span>{String(index + 1).padStart(2, "0")}</span>
                   </button>
                 ))}
@@ -416,7 +424,10 @@ export default function ElevatorDetails({
                     href={`/shop/elevators/${category.slug}/${related.id}`}
                     key={related.id}
                   >
-                    <img src={relatedImage} alt="" loading="lazy" />
+                    <Image
+  width={900}
+  height={900}
+  unoptimized src={relatedImage} alt="" loading="lazy" />
                     <span className={styles.relatedShade} aria-hidden="true" />
                     <span className={styles.relatedNumber}>{String(index + 1).padStart(2, "0")}</span>
                     <span className={styles.relatedContent}>
