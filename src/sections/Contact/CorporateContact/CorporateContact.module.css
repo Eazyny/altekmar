@@ -517,3 +517,77 @@
     transition: none;
   }
 }
+
+/* ALTEKMAR PRODUCT INQUIRY START */
+.productContext {
+  display: grid;
+  padding: clamp(18px, 2.4vw, 26px);
+  grid-column: 1 / -1;
+  gap: 8px;
+  background:
+    linear-gradient(
+      120deg,
+      rgba(196, 161, 90, 0.12),
+      rgba(196, 161, 90, 0.025)
+    );
+  border: 1px solid rgba(196, 161, 90, 0.42);
+}
+
+.productContextLabel {
+  color: var(--gold);
+  font-size: 9px;
+  font-weight: 800;
+  letter-spacing: 0.18em;
+}
+
+.productContext strong {
+  max-width: 720px;
+  color: var(--paper);
+  font-family: "Archivo", sans-serif;
+  font-size: clamp(18px, 2vw, 24px);
+  font-weight: 650;
+  letter-spacing: -0.025em;
+  line-height: 1.2;
+}
+
+.productContext p,
+.productContext small {
+  margin: 0;
+}
+
+.productContext p {
+  color: rgba(255, 254, 250, 0.68);
+  font-size: 13px;
+  line-height: 1.5;
+}
+
+.productContext small {
+  max-width: 650px;
+  color: rgba(255, 254, 250, 0.52);
+  font-size: 12px;
+  line-height: 1.55;
+}
+
+.productContextLink {
+  display: inline-flex;
+  width: fit-content;
+  margin-top: 8px;
+  align-items: center;
+  gap: 10px;
+  color: var(--gold);
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: 0.12em;
+}
+
+.productContextLink:hover,
+.productContextLink:focus-visible {
+  color: var(--paper);
+}
+
+.productContextLink:focus-visible {
+  outline: 2px solid var(--gold);
+  outline-offset: 4px;
+}
+/* ALTEKMAR PRODUCT INQUIRY END */
+

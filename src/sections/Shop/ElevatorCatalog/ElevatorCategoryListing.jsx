@@ -176,7 +176,7 @@ export default function ElevatorCategoryListing({ categorySlug }) {
                               <Link
                                 href={`/contact?product=${encodeURIComponent(
                                   product.id,
-                                )}&category=${category.slug}`}
+                                )}&category=${category.slug}#contact-form`}
                                 className="icon-btn"
                                 aria-label={`${text.request}: ${title}`}
                               >

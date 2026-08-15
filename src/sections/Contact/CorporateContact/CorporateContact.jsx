@@ -1,9 +1,10 @@
 "use client";
 
-import { useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import Link from "next/link";
 import { motion, useReducedMotion } from "motion/react";
 import useDocumentLanguage from "~/i18n/useDocumentLanguage";
+import inquiryProducts from "~/data/elevator-inquiry-products.json";
 import styles from "./CorporateContact.module.css";
 
 const copy = {
@@ -95,6 +96,61 @@ const copy = {
   },
 };
 
+
+// ALTEKMAR PRODUCT INQUIRY START
+const productInquiryCopy = {
+  es: {
+    signal: "CONSULTA DE PRODUCTO / 01",
+    selected: "MODELO SELECCIONADO",
+    note:
+      "Este modelo exacto y su enlace se incluirán automáticamente con tu consulta.",
+    viewModel: "VER MODELO",
+    subjectPrefix: "Consulta de elevador",
+  },
+  en: {
+    signal: "PRODUCT INQUIRY / 01",
+    selected: "SELECTED MODEL",
+    note:
+      "This exact model and its link will be included automatically with your inquiry.",
+    viewModel: "VIEW MODEL",
+    subjectPrefix: "Elevator inquiry",
+  },
+};
+
+function productMessageFor(inquiry, language) {
+  if (!inquiry) return "";
+
+  const title =
+    inquiry.title?.[language] ||
+    inquiry.title?.en ||
+    inquiry.id;
+
+  if (language === "en") {
+    return `I'm interested in the "${title}" model. Please send me information about pricing, availability, installation requirements, estimated lead time, and the next steps for evaluating this elevator for my project.`;
+  }
+
+  return `Estoy interesado en el modelo "${title}". Quisiera recibir información sobre precio, disponibilidad, requisitos de instalación, tiempo estimado de entrega y los próximos pasos para evaluar este elevador para mi proyecto.`;
+}
+
+function resolveProductInquiry() {
+  if (typeof window === "undefined") return null;
+
+  const params = new URLSearchParams(window.location.search);
+  const productId = params.get("product");
+  const categorySlug = params.get("category");
+
+  if (!productId || !categorySlug) return null;
+
+  return (
+    inquiryProducts.find(
+      (item) =>
+        item.id === productId &&
+        item.categorySlug === categorySlug,
+    ) || null
+  );
+}
+// ALTEKMAR PRODUCT INQUIRY END
+
 const scene = {
   hidden: {},
   visible: { transition: { delayChildren: 0.1, staggerChildren: 0.085 } },
@@ -118,7 +174,47 @@ export default function CorporateContact() {
   const reduceMotion = useReducedMotion();
   const text = copy[language] || copy.es;
   const [formStatus, setFormStatus] = useState("idle");
+  const [productInquiry, setProductInquiry] = useState(null);
+  const [division, setDivision] = useState("");
+  const [messageValue, setMessageValue] = useState("");
+  const messageEditedRef = useRef(false);
   const accessKey = process.env.NEXT_PUBLIC_WEB3FORMS_ACCESS_KEY;
+  const inquiryText =
+    productInquiryCopy[language] || productInquiryCopy.es;
+
+  const productTitle = productInquiry
+    ? productInquiry.title?.[language] ||
+      productInquiry.title?.en ||
+      productInquiry.id
+    : "";
+
+  const productCategoryTitle = productInquiry
+    ? productInquiry.categoryTitle?.[language] ||
+      productInquiry.categoryTitle?.en ||
+      productInquiry.categorySlug
+    : "";
+
+  const productPath = productInquiry
+    ? `/shop/elevators/${productInquiry.categorySlug}/${productInquiry.id}`
+    : "";
+
+  useEffect(() => {
+    const inquiry = resolveProductInquiry();
+
+    setProductInquiry(inquiry);
+
+    if (inquiry) {
+      setDivision("elevators");
+    }
+  }, []);
+
+  useEffect(() => {
+    if (!productInquiry || messageEditedRef.current) return;
+
+    setMessageValue(
+      productMessageFor(productInquiry, language),
+    );
+  }, [language, productInquiry]);
 
   const handleSubmit = async (event) => {
     event.preventDefault();
@@ -146,6 +242,13 @@ export default function CorporateContact() {
       }
 
       form.reset();
+      messageEditedRef.current = false;
+      setDivision(productInquiry ? "elevators" : "");
+      setMessageValue(
+        productInquiry
+          ? productMessageFor(productInquiry, language)
+          : "",
+      );
       setFormStatus("success");
     } catch {
       setFormStatus("error");
@@ -218,7 +321,11 @@ export default function CorporateContact() {
         </div>
 
         <motion.div className={styles.formShell} variants={rise}>
-          <span className={styles.formSignal} aria-hidden="true">PROJECT BRIEF / 01</span>
+          <span className={styles.formSignal} aria-hidden="true">
+            {productInquiry
+              ? inquiryText.signal
+              : "PROJECT BRIEF / 01"}
+          </span>
           <form
             action="https://api.web3forms.com/submit"
             method="POST"
@@ -229,11 +336,76 @@ export default function CorporateContact() {
             <input
               type="hidden"
               name="subject"
-              value={language === "en"
-                ? "New project inquiry from the Altekmar website"
-                : "Nueva consulta de proyecto desde el sitio web de Altekmar"}
+              value={productInquiry
+                ? `${inquiryText.subjectPrefix}: ${productTitle} | Altekmar`
+                : language === "en"
+                  ? "New project inquiry from the Altekmar website"
+                  : "Nueva consulta de proyecto desde el sitio web de Altekmar"}
             />
-            <input type="hidden" name="from_name" value="Altekmar Website" />
+            <input
+              type="hidden"
+              name="from_name"
+              value="Altekmar Website"
+            />
+            <input
+              type="hidden"
+              name="inquiry_type"
+              value={
+                productInquiry
+                  ? "elevator_product"
+                  : "general_project"
+              }
+            />
+            {productInquiry ? (
+              <>
+                <input
+                  type="hidden"
+                  name="product_id"
+                  value={productInquiry.id}
+                />
+                <input
+                  type="hidden"
+                  name="product_name"
+                  value={productTitle}
+                />
+                <input
+                  type="hidden"
+                  name="product_category"
+                  value={productCategoryTitle}
+                />
+                <input
+                  type="hidden"
+                  name="product_url"
+                  value={`https://altekmar.com${productPath}`}
+                />
+              </>
+            ) : null}
+            {productInquiry ? (
+              <div className={styles.productContext}>
+                <span className={styles.productContextLabel}>
+                  {inquiryText.selected}
+                </span>
+
+                <strong>{productTitle}</strong>
+
+                <p>
+                  {productCategoryTitle}
+                  {productInquiry.manufacturer
+                    ? ` · ${productInquiry.manufacturer}`
+                    : ""}
+                </p>
+
+                <small>{inquiryText.note}</small>
+
+                <Link
+                  href={productPath}
+                  className={styles.productContextLink}
+                >
+                  {inquiryText.viewModel} <Arrow />
+                </Link>
+              </div>
+            ) : null}
+
             <div className={styles.botCheck} aria-hidden="true">
               <label htmlFor="contact-botcheck">Leave this field empty</label>
               <input
@@ -262,7 +434,15 @@ export default function CorporateContact() {
 
             <div className={styles.field}>
               <label htmlFor="contact-subject">{text.subject}</label>
-              <select id="contact-subject" name="division" defaultValue="" required>
+              <select
+                id="contact-subject"
+                name="division"
+                value={division}
+                onChange={(event) =>
+                  setDivision(event.target.value)
+                }
+                required
+              >
                 <option value="" disabled>{text.select}</option>
                 {text.options.map(([value, label]) => (
                   <option key={value} value={value}>{label}</option>
@@ -272,7 +452,17 @@ export default function CorporateContact() {
 
             <div className={`${styles.field} ${styles.messageField}`}>
               <label htmlFor="contact-message">{text.message}</label>
-              <textarea id="contact-message" name="message" rows="5" required />
+              <textarea
+                id="contact-message"
+                name="message"
+                rows="5"
+                value={messageValue}
+                onChange={(event) => {
+                  messageEditedRef.current = true;
+                  setMessageValue(event.target.value);
+                }}
+                required
+              />
             </div>
 
             <button

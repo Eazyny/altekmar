@@ -308,7 +308,7 @@ export default function ElevatorDetails({
 
             <div className={styles.actions}>
               <Link
-                href={`/contact?product=${encodeURIComponent(product.id)}&category=${category.slug}`}
+                href={`/contact?product=${encodeURIComponent(product.id)}&category=${category.slug}#contact-form`}
                 className={styles.primaryAction}
               >
                 <span>{text.request}</span>
@@ -371,7 +371,7 @@ export default function ElevatorDetails({
             <div className={styles.emptySpecifications}>
               <p>{text.noSpecifications}</p>
               <Link
-                href={`/contact?product=${encodeURIComponent(product.id)}&category=${category.slug}`}
+                href={`/contact?product=${encodeURIComponent(product.id)}&category=${category.slug}#contact-form`}
               >
                 {text.assessment}
                 <i className="ri-arrow-right-up-line" aria-hidden="true" />
