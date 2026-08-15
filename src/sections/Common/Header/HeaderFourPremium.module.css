@@ -1,0 +1,326 @@
+.premiumHeader {
+  --premium-ink: #0b0b0c;
+  --premium-paper: #fffefa;
+  --premium-ivory: #f6f3ed;
+  --premium-gold: #c4a15a;
+  --premium-gold-dark: #8f6f36;
+  --premium-line: rgba(11, 11, 12, 0.10);
+  transition: box-shadow 220ms ease;
+}
+
+.premiumHeader.scrolled {
+  box-shadow: 0 12px 34px rgba(11, 11, 12, 0.09);
+}
+
+.premiumUtility {
+  height: 31px;
+  overflow: hidden;
+  background: #f7f4ee;
+  border-bottom: 1px solid rgba(11, 11, 12, 0.065);
+  transition:
+    height 220ms ease,
+    opacity 180ms ease,
+    border-color 180ms ease;
+}
+
+.scrolled .premiumUtility {
+  height: 0;
+  opacity: 0;
+  border-color: transparent;
+}
+
+.premiumUtilityInner,
+.premiumMainInner {
+  max-width: 1760px;
+  padding-inline: clamp(28px, 4vw, 72px);
+}
+
+.premiumUtilityInfo {
+  gap: clamp(18px, 2.1vw, 34px);
+  font-size: 11px;
+  letter-spacing: 0.015em;
+  color: #777168;
+}
+
+.premiumUtilityInfo > span {
+  position: relative;
+}
+
+.premiumUtilityInfo > span + span::before {
+  position: absolute;
+  top: 50%;
+  left: calc(clamp(18px, 2.1vw, 34px) / -2);
+  width: 1px;
+  height: 12px;
+  content: "";
+  background: rgba(11, 11, 12, 0.10);
+  transform: translateY(-50%);
+}
+
+.premiumUtilityInfo > a {
+  padding-inline: 16px 2px;
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: 0.045em;
+  text-transform: uppercase;
+  border-inline: 0;
+  transition: color 180ms ease;
+}
+
+.premiumUtilityInfo > a:hover {
+  color: var(--premium-gold-dark);
+}
+
+.premiumMainBar {
+  background: rgba(255, 254, 250, 0.985);
+  border-bottom: 1px solid var(--premium-line);
+  backdrop-filter: saturate(130%) blur(12px);
+}
+
+.premiumMainInner {
+  min-height: 88px;
+  grid-template-columns: minmax(206px, 238px) minmax(0, 1fr) auto;
+  gap: clamp(24px, 2.8vw, 50px);
+  transition: min-height 220ms ease;
+}
+
+.scrolled .premiumMainInner {
+  min-height: 74px;
+}
+
+.premiumLogoLink {
+  width: 228px;
+  height: 72px;
+  justify-content: flex-start;
+  transition:
+    width 220ms ease,
+    height 220ms ease;
+}
+
+.scrolled .premiumLogoLink {
+  width: 208px;
+  height: 64px;
+}
+
+.premiumLogoImage {
+  width: 212px !important;
+  transform: translateY(-1px) scale(1.22) !important;
+  transition: width 220ms ease, transform 220ms ease !important;
+}
+
+.scrolled .premiumLogoImage {
+  width: 194px !important;
+  transform: translateY(-1px) scale(1.18) !important;
+}
+
+.premiumNav {
+  height: 88px;
+  gap: clamp(22px, 1.8vw, 34px);
+  transition: height 220ms ease;
+}
+
+.scrolled .premiumNav {
+  height: 74px;
+}
+
+.premiumNav > a,
+.premiumDropdown > button {
+  font-size: clamp(11px, 0.68vw, 13px);
+  font-weight: 750;
+  letter-spacing: 0.065em;
+  color: #1b1b1d;
+  transition: color 160ms ease;
+}
+
+.premiumNav > a::after,
+.premiumDropdown > button::after {
+  right: 50%;
+  bottom: 15px;
+  left: 50%;
+  height: 1px;
+  background: var(--premium-gold);
+  transform: none;
+  transition:
+    left 180ms ease,
+    right 180ms ease;
+}
+
+.premiumNav > a:hover::after,
+.premiumNav > a[class*="active"]::after,
+.premiumDropdown:hover > button::after,
+.premiumDropdown > button[aria-expanded="true"]::after {
+  right: 0;
+  left: 0;
+}
+
+.scrolled .premiumNav > a::after,
+.scrolled .premiumDropdown > button::after {
+  bottom: 11px;
+}
+
+.premiumNav > a:hover,
+.premiumNav > a[class*="active"],
+.premiumDropdown:hover > button,
+.premiumDropdown > button[aria-expanded="true"] {
+  color: var(--premium-gold-dark);
+}
+
+.premiumActions {
+  gap: clamp(16px, 1.5vw, 24px);
+}
+
+.premiumLanguage {
+  position: relative;
+  width: auto;
+  height: 42px;
+  padding: 0 2px;
+  gap: 8px;
+  font-size: 11px;
+  letter-spacing: 0.055em;
+  border: 0;
+}
+
+.premiumLanguage::after {
+  position: absolute;
+  right: 0;
+  bottom: 6px;
+  left: 0;
+  height: 1px;
+  content: "";
+  background: rgba(196, 161, 90, 0.32);
+}
+
+.premiumQuote {
+  min-width: 214px;
+  height: 48px;
+  padding-inline: 22px;
+  justify-content: space-between;
+  gap: 20px;
+  font-size: 11px;
+  letter-spacing: 0.065em;
+  box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.08);
+  transition:
+    color 180ms ease,
+    background 180ms ease,
+    border-color 180ms ease,
+    transform 180ms ease;
+}
+
+.premiumQuote svg {
+  transition: transform 180ms ease;
+}
+
+.premiumQuote:hover {
+  transform: translateY(-1px);
+}
+
+.premiumQuote:hover svg {
+  transform: translate(2px, -2px);
+}
+
+.premiumDropdownMenu {
+  top: calc(100% - 6px);
+  left: -32px;
+  width: min(390px, 88vw);
+  padding: 10px;
+  border-top-width: 1px;
+  box-shadow: 0 26px 64px rgba(11, 11, 12, 0.24);
+}
+
+.premiumDropdownMenu a {
+  min-height: 56px;
+  padding-inline: 16px;
+}
+
+@media (max-width: 1450px) {
+  .premiumUtilityInner,
+  .premiumMainInner {
+    padding-inline: 28px;
+  }
+
+  .premiumMainInner {
+    grid-template-columns: 198px minmax(0, 1fr) auto;
+    gap: 20px;
+  }
+
+  .premiumLogoLink {
+    width: 198px;
+  }
+
+  .premiumLogoImage {
+    width: 188px !important;
+  }
+
+  .premiumNav {
+    gap: 18px;
+  }
+
+  .premiumQuote {
+    min-width: 184px;
+    padding-inline: 18px;
+  }
+}
+
+@media (max-width: 1240px) {
+  .premiumMainInner {
+    grid-template-columns: 176px minmax(0, 1fr) auto;
+    gap: 14px;
+  }
+
+  .premiumLogoLink {
+    width: 174px;
+  }
+
+  .premiumLogoImage {
+    width: 168px !important;
+    transform: translateY(-1px) scale(1.18) !important;
+  }
+
+  .premiumNav {
+    gap: 13px;
+  }
+
+  .premiumActions {
+    gap: 12px;
+  }
+
+  .premiumQuote {
+    min-width: 156px;
+    padding-inline: 14px;
+    font-size: 9.5px;
+  }
+}
+
+@media (max-width: 1120px) {
+  .premiumMainInner,
+  .scrolled .premiumMainInner {
+    min-height: 74px;
+    padding-inline: 20px;
+    grid-template-columns: minmax(0, 1fr) auto;
+  }
+
+  .premiumLogoLink,
+  .scrolled .premiumLogoLink {
+    width: 192px;
+    height: 68px;
+  }
+
+  .premiumLogoImage,
+  .scrolled .premiumLogoImage {
+    width: 182px !important;
+    transform: translateY(0) scale(1.18) !important;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .premiumHeader,
+  .premiumUtility,
+  .premiumMainInner,
+  .premiumLogoLink,
+  .premiumLogoImage,
+  .premiumNav,
+  .premiumQuote,
+  .premiumQuote svg {
+    transition: none !important;
+  }
+}
