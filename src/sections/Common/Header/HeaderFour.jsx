@@ -5,6 +5,7 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useLanguage } from "~/i18n/LanguageProvider";
 import styles from "./HeaderFour.module.css";
+import premiumStyles from "./HeaderFourPremium.module.css";
 import Image from "next/image";
 
 const copy = {
@@ -89,6 +90,7 @@ export default function HeaderFour() {
   const { language, toggleLanguage } = useLanguage();
   const [menuOpen, setMenuOpen] = useState(false);
   const [servicesOpen, setServicesOpen] = useState(false);
+  const [scrolled, setScrolled] = useState(false);
   const text = copy[language] || copy.es;
 
   const active = (href) =>
@@ -107,14 +109,24 @@ export default function HeaderFour() {
     };
   }, [menuOpen]);
 
+  useEffect(() => {
+    const updateScrolledState = () => setScrolled(window.scrollY > 24);
+    updateScrolledState();
+    window.addEventListener("scroll", updateScrolledState, { passive: true });
+
+    return () => {
+      window.removeEventListener("scroll", updateScrolledState);
+    };
+  }, []);
+
   return (
     <header
-      className={styles.header}
+      className={`${styles.header} ${premiumStyles.premiumHeader} ${scrolled ? premiumStyles.scrolled : ""}`}
       data-i18n-managed="true"
     >
-      <div className={styles.utilityBar}>
-        <div className={styles.utilityInner}>
-          <div className={styles.utilityInfo}>
+      <div className={`${styles.utilityBar} ${premiumStyles.premiumUtility}`}>
+        <div className={`${styles.utilityInner} ${premiumStyles.premiumUtilityInner}`}>
+          <div className={`${styles.utilityInfo} ${premiumStyles.premiumUtilityInfo}`}>
             <span><Clock />{text.schedule}</span>
             <span><Pin />{text.location}</span>
             <Link href="/contact">{text.call}</Link>
@@ -122,11 +134,11 @@ export default function HeaderFour() {
         </div>
       </div>
 
-      <div className={styles.mainBar}>
-        <div className={styles.mainInner}>
+      <div className={`${styles.mainBar} ${premiumStyles.premiumMainBar}`}>
+        <div className={`${styles.mainInner} ${premiumStyles.premiumMainInner}`}>
           <Link
             href="/"
-            className={styles.logoLink}
+            className={`${styles.logoLink} ${premiumStyles.premiumLogoLink}`}
             aria-label="Altekmar Group"
           >
             <Image
@@ -134,13 +146,13 @@ export default function HeaderFour() {
               alt="Altekmar Group"
               width={532}
               height={168}
-              className={styles.logoImage}
+              className={`${styles.logoImage} ${premiumStyles.premiumLogoImage}`}
               data-altekmar-header-logo="true"
               priority
             />
           </Link>
 
-          <nav className={styles.desktopNav} aria-label="Primary navigation">
+          <nav className={`${styles.desktopNav} ${premiumStyles.premiumNav}`} aria-label="Primary navigation">
             <Link href="/" className={active("/") ? styles.active : ""}>
               {text.home}
             </Link>
@@ -148,7 +160,7 @@ export default function HeaderFour() {
               {text.about}
             </Link>
 
-            <div className={styles.dropdown}>
+            <div className={`${styles.dropdown} ${premiumStyles.premiumDropdown}`}>
               <button
                 type="button"
                 onClick={() => setServicesOpen((value) => !value)}
@@ -157,7 +169,7 @@ export default function HeaderFour() {
                 {text.services}
                 <Chevron />
               </button>
-              <div className={`${styles.dropdownMenu} ${servicesOpen ? styles.dropdownOpen : ""}`}>
+              <div className={`${styles.dropdownMenu} ${premiumStyles.premiumDropdownMenu} ${servicesOpen ? styles.dropdownOpen : ""}`}>
                 {text.servicesList.map(([label, href], index) => (
                   <Link href={href} key={`${label}-${index}`}>
                     <span>{String(index + 1).padStart(2, "0")}</span>
@@ -173,10 +185,10 @@ export default function HeaderFour() {
             </Link>
           </nav>
 
-          <div className={styles.desktopActions}>
+          <div className={`${styles.desktopActions} ${premiumStyles.premiumActions}`}>
             <button
               type="button"
-              className={styles.language}
+              className={`${styles.language} ${premiumStyles.premiumLanguage}`}
               onClick={toggleLanguage}
               aria-label={text.switchLanguage}
             >
@@ -185,7 +197,7 @@ export default function HeaderFour() {
               <span className={language === "en" ? styles.current : ""}>EN</span>
             </button>
 
-            <Link href="/contact" className={styles.quote}>
+            <Link href="/contact" className={`${styles.quote} ${premiumStyles.premiumQuote}`}>
               {text.quote}
               <Arrow />
             </Link>
