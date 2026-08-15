@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useLanguage } from "~/i18n/LanguageProvider";
@@ -85,12 +85,153 @@ function Pin() {
   );
 }
 
+
+function parseColor(color) {
+  if (!color || color === "transparent") return null;
+
+  const match = color.match(
+    /rgba?\(\s*([\d.]+)\s*,\s*([\d.]+)\s*,\s*([\d.]+)(?:\s*[,/]\s*([\d.]+%?))?\s*\)/
+  );
+
+  if (!match) return null;
+
+  const alphaRaw = match[4];
+  const alpha =
+    alphaRaw === undefined
+      ? 1
+      : alphaRaw.endsWith("%")
+        ? Number(alphaRaw.slice(0, -1)) / 100
+        : Number(alphaRaw);
+
+  return {
+    r: Number(match[1]),
+    g: Number(match[2]),
+    b: Number(match[3]),
+    a: alpha,
+  };
+}
+
+function relativeLuminance({ r, g, b }) {
+  const convert = (channel) => {
+    const value = channel / 255;
+    return value <= 0.03928
+      ? value / 12.92
+      : ((value + 0.055) / 1.055) ** 2.4;
+  };
+
+  return (
+    0.2126 * convert(r) +
+    0.7152 * convert(g) +
+    0.0722 * convert(b)
+  );
+}
+
+function toneFromElement(element) {
+  let node = element;
+
+  while (node && node !== document.documentElement) {
+    if (node instanceof HTMLElement) {
+      const declaredTone = node.dataset?.headerTone;
+
+      if (declaredTone === "dark" || declaredTone === "light") {
+        return declaredTone;
+      }
+
+      if (node.tagName === "VIDEO") {
+        return "dark";
+      }
+
+      const style = window.getComputedStyle(node);
+      const backgroundColor = parseColor(style.backgroundColor);
+
+      if (backgroundColor && backgroundColor.a >= 0.35) {
+        return relativeLuminance(backgroundColor) >= 0.42
+          ? "light"
+          : "dark";
+      }
+    }
+
+    node = node.parentElement;
+  }
+
+  const bodyColor = parseColor(
+    window.getComputedStyle(document.body).backgroundColor
+  );
+
+  if (bodyColor) {
+    return relativeLuminance(bodyColor) >= 0.42 ? "light" : "dark";
+  }
+
+  return "light";
+}
+
+function getUnderlyingElement(header, x, y) {
+  const previousPointerEvents = header.style.pointerEvents;
+
+  /*
+   * elementFromPoint normally hits the sticky header itself.
+   * Temporarily remove the header from hit-testing so we inspect
+   * the real page surface directly behind it.
+   */
+  header.style.pointerEvents = "none";
+  const element = document.elementFromPoint(x, y);
+  header.style.pointerEvents = previousPointerEvents;
+
+  return element;
+}
+
+function getHeaderSurfaceTone(header, mainBar) {
+  if (!header || !mainBar) return "light";
+
+  const rect = mainBar.getBoundingClientRect();
+
+  if (rect.width <= 0 || rect.height <= 0) {
+    return "light";
+  }
+
+  /*
+   * Sample the ACTUAL area behind the main navigation instead of
+   * sampling below the header. Five horizontal points prevents one
+   * unusual card/image from deciding the entire header state.
+   */
+  const xPositions = [0.14, 0.32, 0.5, 0.68, 0.86];
+  const yPositions = [0.42, 0.68];
+
+  let light = 0;
+  let dark = 0;
+
+  for (const yRatio of yPositions) {
+    const y = Math.min(
+      window.innerHeight - 1,
+      Math.max(1, rect.top + rect.height * yRatio)
+    );
+
+    for (const xRatio of xPositions) {
+      const x = Math.min(
+        window.innerWidth - 1,
+        Math.max(1, rect.left + rect.width * xRatio)
+      );
+
+      const underlying = getUnderlyingElement(header, x, y);
+      const tone = toneFromElement(underlying);
+
+      if (tone === "dark") dark += 1;
+      else light += 1;
+    }
+  }
+
+  return dark > light ? "dark" : "light";
+}
+
 export default function HeaderFour() {
   const pathname = usePathname();
   const { language, toggleLanguage } = useLanguage();
   const [menuOpen, setMenuOpen] = useState(false);
   const [servicesOpen, setServicesOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
+  const [surfaceTone, setSurfaceTone] = useState("light");
+  const headerRef = useRef(null);
+  const mainBarRef = useRef(null);
   const text = copy[language] || copy.es;
 
   const active = (href) =>
@@ -119,10 +260,73 @@ export default function HeaderFour() {
     };
   }, []);
 
+  useEffect(() => {
+    let frameId = 0;
+    const timers = [];
+
+    const updateSurfaceTone = () => {
+      cancelAnimationFrame(frameId);
+
+      frameId = requestAnimationFrame(() => {
+        /*
+         * At the absolute top of the page, force the light-surface mode
+         * so the header starts with dark text and never flashes white
+         * before the hero/layout finishes settling.
+         */
+        if (window.scrollY <= 4) {
+          setSurfaceTone("light");
+          return;
+        }
+
+        const nextTone = getHeaderSurfaceTone(
+          headerRef.current,
+          mainBarRef.current
+        );
+
+        setSurfaceTone((currentTone) =>
+          currentTone === nextTone ? currentTone : nextTone
+        );
+      });
+    };
+
+    updateSurfaceTone();
+
+    /*
+     * Re-check after hydration, fonts, video/poster loading and layout
+     * have had time to settle. This prevents stale first-load contrast.
+     */
+    [100, 300, 700, 1500].forEach((delay) => {
+      timers.push(window.setTimeout(updateSurfaceTone, delay));
+    });
+
+    window.addEventListener("scroll", updateSurfaceTone, { passive: true });
+    window.addEventListener("resize", updateSurfaceTone, { passive: true });
+    window.addEventListener("load", updateSurfaceTone);
+
+    return () => {
+      cancelAnimationFrame(frameId);
+
+      timers.forEach((timer) => {
+        window.clearTimeout(timer);
+      });
+
+      window.removeEventListener("scroll", updateSurfaceTone);
+      window.removeEventListener("resize", updateSurfaceTone);
+      window.removeEventListener("load", updateSurfaceTone);
+    };
+  }, [pathname]);
+
+
   return (
     <header
-      className={`${styles.header} ${premiumStyles.premiumHeader} ${scrolled ? premiumStyles.scrolled : ""}`}
+      ref={headerRef}
+      className={`${styles.header} ${premiumStyles.premiumHeader} ${
+        surfaceTone === "dark"
+          ? premiumStyles.overDark
+          : premiumStyles.overLight
+      } ${scrolled ? premiumStyles.scrolled : ""}`}
       data-i18n-managed="true"
+      data-surface-tone={surfaceTone}
     >
       <div className={`${styles.utilityBar} ${premiumStyles.premiumUtility}`}>
         <div className={`${styles.utilityInner} ${premiumStyles.premiumUtilityInner}`}>
@@ -134,7 +338,10 @@ export default function HeaderFour() {
         </div>
       </div>
 
-      <div className={`${styles.mainBar} ${premiumStyles.premiumMainBar}`}>
+      <div
+        ref={mainBarRef}
+        className={`${styles.mainBar} ${premiumStyles.premiumMainBar}`}
+      >
         <div className={`${styles.mainInner} ${premiumStyles.premiumMainInner}`}>
           <Link
             href="/"

@@ -1,20 +1,6 @@
-ALTEKMAR SVG 3D GOLD
+Fixes the first-load header contrast flash.
 
-Replace ONLY:
-src/sections/Common/Header/HeaderFour.module.css
-
-Keeps:
-- tight cropped SVG
-- current HeaderFour.jsx
-- exact header/nav layout
-- exact click target sizing
-- current routes and behavior
-
-Adds:
-- bronze extrusion behind the gold face
-- beveled top-left highlight
-- darker bottom-right depth
-- polished champagne face
-- tighter specular sweep
-- shallow hover depth
-- reduced-motion support
+- Keeps the working scroll/background detector.
+- Forces the absolute top of the page to light-surface mode (dark text).
+- Rechecks after 100/300/700/1500 ms plus window load so hydration/video/layout cannot leave a stale tone.
+- Changes only HeaderFour.jsx.
