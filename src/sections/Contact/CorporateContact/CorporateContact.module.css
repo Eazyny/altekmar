@@ -1,4 +1,4 @@
-.page {
+﻿.page {
   --ink: #080909;
   --paper: #fffefa;
   --ivory: #f2efe7;
@@ -310,7 +310,21 @@
 }
 
 .formShell .field select {
-  color-scheme: dark;
+  /*
+   * The closed control lives on the dark form, so its selected value
+   * stays white. Use the light native color scheme for the popup list.
+   */
+  color-scheme: light;
+}
+
+.formShell .field select option {
+  color: #111210;
+  background: #fffefa;
+}
+
+.formShell .field select option:checked {
+  color: #111210;
+  background: #c4a15a;
 }
 
 .formShell .field textarea {
@@ -590,4 +604,5 @@
   outline-offset: 4px;
 }
 /* ALTEKMAR PRODUCT INQUIRY END */
+
 

@@ -68,7 +68,7 @@
   display: flex;
   height: 100%;
   align-items: center;
-  gap: clamp(18px, 2vw, 34px);
+  gap: clamp(16px, 1.8vw, 30px);
   font-size: 12px;
   font-weight: 600;
   letter-spacing: 0.015em;
@@ -79,13 +79,23 @@
 
 .utilityInfo span,
 .utilityInfo a {
-  padding-inline: 16px;
-  font-weight: 700;
+  font-weight: 800;
+  letter-spacing: 0.045em;
+  text-transform: uppercase;
   color: var(--header-text);
-  border-inline: 1px solid var(--header-divider);
+  border: 0;
+
   transition:
     color 180ms ease,
-    border-color 180ms ease;
+    opacity 180ms ease;
+}
+
+.utilityInfo a:hover {
+  color: var(--gold);
+}
+
+.utilityInfo a:hover {
+  color: var(--gold);
 }
 
 .utilityInfo a {
