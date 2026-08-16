@@ -2,7 +2,7 @@ import { Archivo, Titillium_Web } from "next/font/google";
 import "~/public/main-assets/css/bootstrap.min.css";
 import "~/public/main-assets/css/remixicon.css";
 import "~/public/main-assets/css/style.css";
-import "~/public/main-assets/css/react-adjustment.css";
+import "./legacy-react-adjustment.css";
 import LanguageProvider from "~/i18n/LanguageProvider";
 import { SITE_URL } from "~/lib/seo";
 import { OrganizationStructuredData } from "~/seo/StructuredData";

@@ -1,0 +1,54 @@
+/*
+  ALTEKMAR GENERATED LEGACY BRIDGE
+  Phase 4A: only react-adjustment.css rules that match live global
+  class names in src/ are retained here.
+  Generated automatically; do not hand-edit until the migration is complete.
+*/
+
+.right-end {
+text-align: right !important;
+}
+
+.text-right {
+text-align: right;
+}
+
+.shop-page-select-width .nice-select {
+border: none !important;
+}
+
+.product-card {
+margin: 0 0.5rem;
+}
+
+.cart_table .actions>.btn {
+margin-right: 17px;
+}
+
+.product-space-none {
+padding: 0px 4px;
+}
+
+.portfolio-slider3 .global-carousel .slick-slide.slick-current .portfolio-card .portfolio-card-thumb .icon-btn {
+opacity: 1;
+  top: 75px;
+}
+
+.nav-item {
+cursor: pointer;
+}
+
+.footer-img img {
+width: 183px;
+  height: auto;
+}
+
+.display-none {
+display: none;
+}
+
+@media only screen and (min-width: 768px) {
+.shop-page-select-width {
+width: 200px;
+}
+}
