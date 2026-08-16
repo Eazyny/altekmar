@@ -386,7 +386,6 @@ export default function CorporateLanding() {
             <source
               src="/footage/dr_drone.webm"
               type="video/webm"
-              media="(min-width: 769px)"
             />
           </video>
 

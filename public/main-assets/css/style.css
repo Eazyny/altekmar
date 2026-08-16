@@ -1751,6 +1751,7 @@ input::-webkit-inner-spin-button {
 /* Firefox */
 input[type=number] {
   -moz-appearance: textfield;
+  appearance: textfield;
 }
 
 input[type=checkbox] {
@@ -5156,10 +5157,6 @@ a.text-theme:hover,
   color: var(--title-color);
 }
 
-.widget_project_info {
-  /* Medium devices */
-}
-
 .widget_project_info:after {
   display: none;
 }
@@ -6056,10 +6053,6 @@ ul.wp-block-latest-posts li:last-child {
 .newsletter-form input:hover {
   background: transparent;
   color: var(--white-color);
-}
-
-.newsletter-form.style2 {
-  /* Extra small devices */
 }
 
 .newsletter-form.style2 .form-group input {
@@ -11461,11 +11454,6 @@ li.trackback {
   }
 }
 
-.about_shape_1-1 {
-  /* Extra large devices */
-  /* Medium Large devices */
-}
-
 @media (max-width: 1500px) {
   .about_shape_1-1 {
     width: 250px;
@@ -12324,10 +12312,6 @@ li.trackback {
 
 /*------------------- 4.00. Testimonial  -------------------*/
 /* Testimonial 1 ---------------------------------- */
-.testimonial-area-1 {
-  /* Large devices */
-}
-
 @media (max-width: 1199px) {
   .testimonial-area-1 {
     background-image: none !important;
@@ -12832,10 +12816,6 @@ li.trackback {
   }
 }
 
-.testi-slider3 {
-  /* Medium devices */
-}
-
 .testi-slider3 .slick-slide.slick-center .testi-card.style3 {
   background: var(--title-color);
 }
@@ -13292,10 +13272,6 @@ li.trackback {
   z-index: -1;
 }
 
-.client_shape_1-1 {
-  /* Extra large devices */
-}
-
 @media (max-width: 1500px) {
   .client_shape_1-1 {
     display: none;
@@ -13547,18 +13523,10 @@ li.trackback {
   margin-top: 5px;
 }
 
-.checklist.mb-40 {
-  /* Large devices */
-}
-
 @media (max-width: 1199px) {
   .checklist.mb-40 {
     margin-bottom: 32px;
   }
-}
-
-.checklist.mb-45 {
-  /* Large devices */
 }
 
 @media (max-width: 1199px) {
@@ -16339,10 +16307,6 @@ li.trackback {
   }
 }
 
-.portfolio-slider1 .slick-current .portfolio-card {
-  /* Small devices */
-}
-
 .portfolio-slider1 .slick-current .portfolio-card .portfolio-card-thumb .icon-btn {
   opacity: 1;
   top: 40px;
@@ -16949,10 +16913,6 @@ li.trackback {
 }
 
 /* Process Area 2 ---------------------------------- */
-.process_shape_2-1 {
-  /* Extra large devices */
-}
-
 @media (max-width: 1500px) {
   .process_shape_2-1 {
     display: none;
@@ -18766,6 +18726,7 @@ li.trackback {
 
 .cart_table .qty-input[type=number] {
   -moz-appearance: textfield;
+  appearance: textfield;
 }
 
 .cart_table .actions {
