@@ -91,8 +91,8 @@
   --success-color: #28a745;
   --error-color: #dc3545;
   --border-color: rgba(21, 22, 28, 0.15);
-  --title-font: "Titillium Web", sans-serif;
-  --body-font: "Archivo", sans-serif;
+  --title-font: var(--font-titillium), sans-serif;
+  --body-font: var(--font-archivo), sans-serif;
   --icon-font: remixicon !important;
   --main-container: 1362px;
   --container-gutters: 24px;

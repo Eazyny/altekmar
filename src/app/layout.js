@@ -1,15 +1,28 @@
+import { Archivo, Titillium_Web } from "next/font/google";
 import "~/public/main-assets/css/bootstrap.min.css";
 import "~/public/main-assets/css/nice-select.min.css";
 import "~/public/main-assets/css/remixicon.css";
 import "~/public/main-assets/css/slick.min.css";
 import "~/public/main-assets/css/style.css";
 import "~/public/main-assets/css/react-adjustment.css";
-import "~/public/main-assets/css/fonts.css";
 import LanguageProvider from "~/i18n/LanguageProvider";
 import { SITE_URL } from "~/lib/seo";
 import { OrganizationStructuredData } from "~/seo/StructuredData";
 import "./altekmar-overrides.css";
 
+
+const archivo = Archivo({
+  subsets: ["latin"],
+  variable: "--font-archivo",
+  display: "swap",
+});
+
+const titillium = Titillium_Web({
+  subsets: ["latin"],
+  weight: ["200", "300", "400", "600", "700", "900"],
+  variable: "--font-titillium",
+  display: "swap",
+});
 export const metadata = {
   metadataBase: new URL(SITE_URL),
   title: {
@@ -71,7 +84,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="es" suppressHydrationWarning>
-      <body>
+      <body className={`${archivo.variable} ${titillium.variable}`}>
         <OrganizationStructuredData />
         <LanguageProvider>{children}</LanguageProvider>
       </body>
