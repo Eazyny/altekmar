@@ -1817,3 +1817,503 @@
 }
 
 /* ALTEKMAR CINEMATIC REVEAL CARDS END */
+
+/* ALTEKMAR QUIET LUXURY HERO V8 START */
+
+.page .hero {
+  position: relative;
+  isolation: isolate;
+  display: block !important;
+  min-height:
+    var(
+      --altekmar-home-viewport,
+      calc(100svh - 118px)
+    ) !important;
+  overflow: hidden;
+  color: var(--paper);
+  background: var(--ink);
+}
+
+.heroVideo {
+  object-position: 50% center;
+  filter:
+    saturate(0.76)
+    contrast(1.09)
+    brightness(0.78);
+  transform: scale(1.01);
+}
+
+.heroFilm {
+  background:
+    linear-gradient(
+      90deg,
+      rgba(5, 6, 6, 0.90) 0%,
+      rgba(5, 6, 6, 0.72) 28%,
+      rgba(5, 6, 6, 0.38) 50%,
+      rgba(5, 6, 6, 0.16) 73%,
+      rgba(5, 6, 6, 0.30) 100%
+    ),
+    linear-gradient(
+      180deg,
+      rgba(5, 6, 6, 0.25) 0%,
+      rgba(5, 6, 6, 0.02) 36%,
+      rgba(5, 6, 6, 0.12) 63%,
+      rgba(5, 6, 6, 0.88) 100%
+    );
+}
+
+.hero .gridLines {
+  left: 61%;
+  opacity: 0.075;
+  background-size: 88px 88px;
+}
+
+.heroMedia::after {
+  left: 74%;
+  opacity: 0.20;
+}
+
+.heroFrame {
+  min-height: inherit;
+  padding:
+    clamp(26px, 3vw, 44px)
+    clamp(36px, 5.8vw, 98px)
+    clamp(24px, 2.7vw, 38px);
+  grid-template-rows: auto 1fr auto;
+}
+
+.heroTopbar {
+  min-height: 40px;
+  align-items: center;
+}
+
+.heroBrandLine {
+  gap: 16px;
+}
+
+.heroBrandLine > span {
+  width: clamp(46px, 4.6vw, 72px);
+}
+
+.heroBrandLine p {
+  font-size: 9px;
+  letter-spacing: 0.24em;
+}
+
+.heroContent {
+  display: grid;
+  width: 100%;
+  max-width: none;
+  align-self: center;
+  padding:
+    clamp(44px, 6.5svh, 78px)
+    0
+    clamp(34px, 4.5svh, 52px);
+  grid-template-columns: repeat(12, minmax(0, 1fr));
+  column-gap: clamp(14px, 1.7vw, 28px);
+}
+
+.page .hero h1 {
+  display: grid;
+  margin: 0;
+  grid-column: 1 / -1;
+  grid-template-columns: repeat(12, minmax(0, 1fr));
+  column-gap: clamp(14px, 1.7vw, 28px);
+  font-size: clamp(62px, 7.1vw, 116px);
+  font-weight: 720;
+  letter-spacing: -0.061em;
+  line-height: 0.82;
+}
+
+.heroTitleLine {
+  grid-column: 1 / 9;
+}
+
+.page .hero h1 .heroAccentLine {
+  margin-top: clamp(18px, 2.4svh, 28px);
+  grid-column: 4 / 10;
+  font-size: 0.42em;
+  font-weight: 500;
+  letter-spacing: -0.018em;
+  line-height: 1;
+  color: var(--gold);
+  text-shadow: 0 2px 20px rgba(0, 0, 0, 0.32);
+}
+
+.heroSupport {
+  display: grid;
+  margin-top: clamp(36px, 5svh, 56px);
+  grid-column: 1 / -1;
+  align-items: center;
+  grid-template-columns:
+    minmax(340px, 0.86fr)
+    minmax(120px, 0.34fr)
+    auto;
+  gap: clamp(22px, 3vw, 46px);
+}
+
+.page .heroBody {
+  grid-column: 1;
+  max-width: 620px;
+  margin: 0;
+  font-size: clamp(12px, 0.92vw, 15px);
+  font-weight: 500;
+  letter-spacing: 0.01em;
+  line-height: 1.65;
+  text-transform: none;
+  color: rgba(255, 254, 250, 0.72);
+}
+
+.page .hero .actions {
+  grid-column: 3;
+  justify-self: end;
+  align-items: center;
+  gap: clamp(18px, 1.8vw, 28px);
+}
+
+.page .hero .goldButton {
+  min-height: 52px;
+  padding: 0 24px;
+  font-size: 10px;
+  font-weight: 850;
+  letter-spacing: 0.09em;
+  box-shadow: 0 12px 34px rgba(0, 0, 0, 0.18);
+  transition:
+    color 220ms ease,
+    background-color 220ms ease,
+    border-color 220ms ease,
+    transform 220ms ease;
+}
+
+.page .hero .goldButton:hover {
+  transform: translateY(-2px);
+}
+
+.page .hero .textLink {
+  min-height: 52px;
+  padding: 0;
+  font-size: 10px;
+  font-weight: 820;
+  letter-spacing: 0.09em;
+  color: rgba(255, 254, 250, 0.84);
+}
+
+.heroFooter {
+  display: grid;
+  min-height: 60px;
+  padding-top: 17px;
+  align-items: center;
+  grid-template-columns:
+    minmax(210px, 0.42fr)
+    minmax(0, 1.58fr);
+  gap: clamp(28px, 4.5vw, 70px);
+  border-top: 1px solid rgba(196, 161, 90, 0.20);
+}
+
+.heroFooterLabel {
+  font-size: 8.5px;
+  font-weight: 850;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: rgba(255, 254, 250, 0.62);
+}
+
+.heroSectors {
+  display: grid;
+  grid-template-columns:
+    repeat(5, minmax(max-content, 1fr));
+  gap: clamp(12px, 1.5vw, 24px);
+  justify-content: end;
+}
+
+.heroSectors > span {
+  display: inline-flex;
+  min-width: 0;
+  align-items: center;
+  gap: 8px;
+}
+
+.heroSectors i {
+  width: 12px;
+  height: 1px;
+  flex: 0 0 auto;
+  opacity: 0.68;
+  background: var(--gold);
+}
+
+.heroSectors strong {
+  overflow: visible;
+  font-family:
+    Arial,
+    Helvetica,
+    sans-serif;
+  font-size: 7.25px;
+  font-weight: 760;
+  letter-spacing: 0.105em;
+  text-overflow: clip;
+  white-space: nowrap;
+  color: rgba(255, 254, 250, 0.58);
+}
+
+@media (max-width: 1120px) {
+  .heroFrame {
+    padding:
+      26px
+      clamp(26px, 5vw, 56px)
+      24px;
+  }
+
+  .page .hero h1 {
+    font-size: clamp(56px, 8.8vw, 98px);
+  }
+
+  .heroTitleLine {
+    grid-column: 1 / 10;
+  }
+
+  .page .hero h1 .heroAccentLine {
+    grid-column: 4 / 11;
+  }
+
+  .heroSupport {
+    grid-template-columns: 1fr auto;
+  }
+
+  .page .hero .actions {
+    grid-column: 2;
+  }
+
+  .heroFooter {
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+
+  .heroSectors {
+    justify-content: start;
+  }
+}
+
+@media (max-width: 680px) {
+  .heroFrame {
+    padding: 20px 18px 18px;
+  }
+
+  .heroContent {
+    display: block;
+    padding: 32px 0 24px;
+  }
+
+  .page .hero h1 {
+    display: flex;
+    flex-direction: column;
+    font-size: clamp(46px, 14.6vw, 70px);
+    line-height: 0.86;
+  }
+
+  .page .hero h1 .heroAccentLine {
+    align-self: flex-end;
+    width: 86%;
+    margin-top: 16px;
+    font-size: 0.49em;
+  }
+
+  .heroSupport {
+    display: block;
+    margin-top: 28px;
+  }
+
+  .page .heroBody {
+    max-width: 520px;
+    margin-bottom: 22px;
+    font-size: 12px;
+    line-height: 1.55;
+  }
+
+  .page .hero .actions {
+    justify-content: flex-start;
+  }
+
+  .page .hero .goldButton,
+  .page .hero .textLink {
+    min-height: 46px;
+    font-size: 9px;
+  }
+
+  .heroFooter {
+    min-height: 48px;
+  }
+
+  .heroSectors {
+    display: none;
+  }
+
+  .heroFooterLabel {
+    font-size: 8px;
+  }
+
+  .hero .gridLines {
+    left: 44%;
+    opacity: 0.055;
+  }
+
+  .heroMedia::after {
+    display: none;
+  }
+}
+
+@media (max-width: 390px) {
+  .page .hero .actions {
+    width: 100%;
+    align-items: stretch;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .page .hero .goldButton,
+  .page .hero .textLink {
+    width: 100%;
+    justify-content: center;
+  }
+}
+
+/* ALTEKMAR QUIET LUXURY HERO V8 END */
+
+/* ALTEKMAR QUIET LUXURY HERO V9 — READABILITY + CTA RESTORE START */
+
+.page .hero h1 {
+  max-width: min(980px, 76vw);
+  font-family:
+    Arial,
+    Helvetica,
+    sans-serif;
+  font-size: clamp(60px, 6.65vw, 108px);
+  font-weight: 800;
+  letter-spacing: -0.045em;
+  line-height: 0.94;
+}
+
+.heroTitleLine {
+  grid-column: 1 / 10;
+  overflow: visible;
+}
+
+.heroTitleLine > span {
+  color: #fffefa !important;
+  text-shadow:
+    0 3px 22px rgba(0, 0, 0, 0.34),
+    0 1px 0 rgba(255, 255, 255, 0.04);
+}
+
+.page .hero h1 .heroAccentLine {
+  margin-top: clamp(22px, 2.8svh, 34px);
+  grid-column: 4 / 11;
+  font-size: 0.40em;
+  line-height: 1.08;
+}
+
+.page .hero h1 .heroAccentLine > span {
+  color: var(--gold) !important;
+  text-shadow:
+    0 3px 20px rgba(0, 0, 0, 0.42);
+}
+
+.heroSupport {
+  margin-top: clamp(40px, 5.2svh, 64px);
+  grid-template-columns:
+    minmax(360px, 0.9fr)
+    minmax(70px, 0.22fr)
+    auto;
+}
+
+.page .heroBody {
+  max-width: 590px;
+  font-size: clamp(12px, 0.88vw, 14px);
+  line-height: 1.7;
+  color: rgba(255, 254, 250, 0.78);
+}
+
+.page .hero .actions {
+  gap: 14px;
+}
+
+.page .hero .goldButton,
+.page .hero .textLink {
+  box-sizing: border-box;
+  min-height: 50px;
+  padding: 0 22px;
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 0;
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  transition:
+    color 220ms ease,
+    background-color 220ms ease,
+    border-color 220ms ease,
+    transform 220ms ease,
+    box-shadow 220ms ease;
+}
+
+.page .hero .goldButton {
+  color: #0b0b0c !important;
+  background: var(--gold) !important;
+  border-color: var(--gold) !important;
+  box-shadow:
+    0 12px 32px rgba(0, 0, 0, 0.20),
+    inset 0 1px 0 rgba(255, 255, 255, 0.16);
+}
+
+.page .hero .goldButton:hover {
+  color: #fffefa !important;
+  background: rgba(11, 11, 12, 0.62) !important;
+  border-color: var(--gold) !important;
+  transform: translateY(-2px);
+}
+
+.page .hero .textLink {
+  color: #fffefa !important;
+  background: rgba(255, 255, 255, 0.035);
+  border-color: rgba(255, 254, 250, 0.34);
+}
+
+.page .hero .textLink:hover {
+  color: var(--gold) !important;
+  background: rgba(255, 255, 255, 0.06);
+  border-color: rgba(196, 161, 90, 0.78);
+  transform: translateY(-2px);
+}
+
+@media (max-width: 1120px) {
+  .page .hero h1 {
+    max-width: min(900px, 88vw);
+    font-size: clamp(56px, 8.4vw, 94px);
+    line-height: 0.95;
+  }
+
+  .page .hero h1 .heroAccentLine {
+    grid-column: 3 / 11;
+  }
+}
+
+@media (max-width: 680px) {
+  .page .hero h1 {
+    max-width: 100%;
+    font-size: clamp(44px, 13.8vw, 66px);
+    line-height: 0.96;
+    letter-spacing: -0.04em;
+  }
+
+  .page .hero h1 .heroAccentLine {
+    width: 90%;
+    margin-top: 18px;
+    font-size: 0.47em;
+  }
+
+  .page .hero .goldButton,
+  .page .hero .textLink {
+    min-height: 46px;
+    padding: 0 17px;
+  }
+}
+
+/* ALTEKMAR QUIET LUXURY HERO V9 — READABILITY + CTA RESTORE END */

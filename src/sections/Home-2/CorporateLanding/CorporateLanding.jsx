@@ -100,7 +100,7 @@ const copy = {
     heroTitle: "SOLUCIONES INTEGRADAS.",
     heroAccent: "EJECUCIÓN PRECISA.",
     heroBody:
-      "Movilidad · Energía · Clima · Seguridad · Videovigilancia",
+      "Ingeniería, suministro e instalación coordinados para proyectos que exigen precisión.",
     explore: "Explorar soluciones",
     consult: "Hablemos",
     heroIndex: "05 DIVISIONES",
@@ -202,7 +202,7 @@ const copy = {
     heroTitle: "INTEGRATED SOLUTIONS.",
     heroAccent: "PRECISE EXECUTION.",
     heroBody:
-      "Mobility · Power · Climate · Security · Surveillance",
+      "Engineering, procurement, and installation coordinated for projects that demand precision.",
     explore: "Explore solutions",
     consult: "Let’s talk",
     heroIndex: "05 DIVISIONS",
@@ -400,11 +400,7 @@ export default function CorporateLanding() {
               <span />
               <p>{text.heroEyebrow}</p>
             </div>
-
-            <span className={styles.heroCounter}>
-              {text.heroIndex}
-            </span>
-          </div>
+</div>
 
           <div className={styles.heroContent}>
             <h1>
@@ -430,40 +426,40 @@ export default function CorporateLanding() {
               </strong>
             </h1>
 
-            <p className={styles.heroBody}>
-              {text.heroBody}
-            </p>
+            <div className={styles.heroSupport}>
+              <p className={styles.heroBody}>
+                {text.heroBody}
+              </p>
 
-            <div className={styles.actions}>
-              <Link
-                href="#divisions"
-                className={styles.goldButton}
-              >
-                {text.explore}
-                <Arrow />
-              </Link>
+              <div className={styles.actions}>
+                <Link
+                  href="#divisions"
+                  className={styles.goldButton}
+                >
+                  {text.explore}
+                  <Arrow />
+                </Link>
 
-              <Link
-                href="/contact"
-                className={styles.textLink}
-              >
-                {text.consult}
-                <Arrow />
-              </Link>
+                <Link
+                  href="/contact"
+                  className={styles.textLink}
+                >
+                  {text.consult}
+                  <Arrow />
+                </Link>
+              </div>
             </div>
           </div>
 
           <div className={styles.heroFooter}>
-            <div className={styles.visualLabel}>
-              <span>{text.heroCapability}</span>
-              <small>{text.heroDescriptor}</small>
-            </div>
+            <span className={styles.heroFooterLabel}>
+              {text.heroCapability}
+            </span>
 
             <div className={styles.heroSectors}>
-              {text.heroSectors.map((sector, index) => (
+              {text.heroSectors.map((sector) => (
                 <span key={sector}>
                   <i />
-                  {String(index + 1).padStart(2, "0")}
                   <strong>{sector}</strong>
                 </span>
               ))}
