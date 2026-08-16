@@ -380,7 +380,7 @@ export default function CorporateLanding() {
             loop
             playsInline
             preload="metadata"
-            poster="/main-assets/img/hero/hero_bg_4_1.png"
+            poster="/footage/dr_drone-poster.webp"
             tabIndex={-1}
           >
             <source
