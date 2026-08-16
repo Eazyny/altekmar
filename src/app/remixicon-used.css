@@ -1,0 +1,72 @@
+﻿/*
+  ALTEKMAR GENERATED REMIX ICON SUBSET
+  Phase 5B v2.
+
+  Generated from live ri-* references found in src/.
+  Font URLs are root-relative to /public so Next.js does not
+  try to resolve them relative to src/app.
+
+  Original full library remains at:
+  public/main-assets/css/remixicon.css
+*/
+
+@font-face {
+  font-family: "remixicon";
+  src: url("/main-assets/webfonts/remixicon.eot?t=1708865856766"); /* IE9 */
+  src: url("/main-assets/webfonts/remixicon.eot?t=1708865856766#iefix") format("embedded-opentype"),
+       url("/main-assets/webfonts/remixicon.woff2?t=1708865856766") format("woff2"),
+       url("/main-assets/webfonts/remixicon.woff?t=1708865856766") format("woff"),
+       url("/main-assets/webfonts/remixicon.ttf?t=1708865856766") format("truetype"); /* Removed SVG */
+}
+
+[class^="ri-"],
+[class*=" ri-"] {
+  font-family: "remixicon" !important;
+  font-style: normal;
+  font-weight: normal !important;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  speak: never;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+
+.ri-arrow-left-line:before {
+  content: "\ea60";
+}
+.ri-arrow-right-line:before {
+  content: "\ea6c";
+}
+.ri-arrow-right-up-line:before {
+  content: "\ea70";
+}
+.ri-external-link-line:before {
+  content: "\ecaf";
+}
+.ri-eye-line:before {
+  content: "\ecb5";
+}
+.ri-file-list-3-line:before {
+  content: "\ecef";
+}
+.ri-home-4-fill:before {
+  content: "\ee1c";
+}
+.ri-layout-4-line:before {
+  content: "\ee83";
+}
+.ri-price-tag-3-line:before {
+  content: "\f023";
+}
+.ri-search-line:before {
+  content: "\f0d1";
+}
+.ri-tools-line:before {
+  content: "\f21b";
+}
+.ri-verified-badge-fill:before {
+  content: "\f3e8";
+}
+
