@@ -32,8 +32,16 @@
 .premiumUtility {
   height: 31px;
   overflow: hidden;
-  background: rgba(247, 244, 238, 0.1);
-  border-bottom: 1px solid rgba(196, 161, 90, 0.16);
+
+  background: rgba(247, 244, 238, 0.08);
+
+  border-bottom: 1px solid rgba(196, 161, 90, 0.14);
+
+  backdrop-filter: blur(14px) saturate(130%);
+  -webkit-backdrop-filter: blur(14px) saturate(130%);
+
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.05);
 }
 
 .premiumUtilityInner,
@@ -86,8 +94,15 @@
 
 /* Main navigation shell */
 .premiumMainBar {
-  background: rgba(255, 254, 250, 0.1);
-  border-bottom: 1px solid rgba(196, 161, 90, 0.18);
+  background: rgba(255, 254, 250, 0.08);
+
+  border-bottom: 1px solid rgba(196, 161, 90, 0.16);
+
+  backdrop-filter: blur(18px) saturate(135%);
+  -webkit-backdrop-filter: blur(18px) saturate(135%);
+
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.06);
 }
 
 .premiumMainInner {
